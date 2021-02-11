@@ -14,25 +14,34 @@ class OrderMEUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testBringAMenu() throws {
         let app = XCUIApplication()
         app.launch()
-        
-        app.staticTexts["Login Later"].tap()
-        
-        let tablesQuery = app.tables
-        tablesQuery.cells.containing(.staticText,
-                                     identifier: "12229 Ventura Blvd, Studio City, CA").element.swipeUp()
-        tablesQuery.staticTexts["Republique"].tap()
-        
-        let collectionViewsQuery = app.collectionViews
-        collectionViewsQuery.staticTexts["Detect table"].tap()
-        app.textFields["tableNumberTextField"].tap()
-        app.buttons["Select table"].tap()
-        collectionViewsQuery.staticTexts["Call a waiter"].tap()
-        app.alerts["The waiter is on his way"].scrollViews.otherElements.buttons["Bring a menu"].tap()
-        app.alerts["Got it!"].scrollViews.otherElements.buttons["OK"].tap()
-        
+
+        let loginLaterButton = app.buttons["loginLaterButton"]
+        loginLaterButton.tap()
+
+        let republiqueRest = app.staticTexts["Republique"]
+        republiqueRest.tap()
+
+        let detectTableOption = app.collectionViews.staticTexts["Detect table"]
+        detectTableOption.tap()
+
+        let tableNumberField = app.textFields["tableNumberTextField"]
+        tableNumberField.tap()
+        tableNumberField.typeText("3")
+        let selectTableButton = app.buttons["Select table"]
+        selectTableButton.tap()
+
+        let callAWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
+        callAWaiterOption.tap()
+
+        let waiterAlert = app.alerts["The waiter is on his way"]
+        let bringAMenuButton = waiterAlert.buttons["Bring a menu"]
+        bringAMenuButton.tap()
+
+        let gotItAlert = app.alerts["Got it!"]
+        let okButton = gotItAlert.buttons["OK"]
+        okButton.tap()
     }
 }
