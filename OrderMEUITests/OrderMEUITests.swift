@@ -41,7 +41,6 @@ class OrderMEUITests: XCTestCase {
         bringAMenuButton.tap()
 
         let gotItAlert = app.alerts["Got it!"]
-        let okButton = gotItAlert.buttons["OK"]
-        okButton.tap()
+        XCTAssert(gotItAlert.waitForExistence(timeout: 2), "Got it alert is not present")
     }
 }
