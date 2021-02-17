@@ -43,4 +43,22 @@ class OrderMEUITests: XCTestCase {
         let gotItAlert = app.alerts["Got it!"]
         XCTAssert(gotItAlert.waitForExistence(timeout: 2), "Got it alert is not present")
     }
+    
+    func testCallRestaurant() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        let loginLaterButton = app.buttons["loginLaterButton"]
+        loginLaterButton.tap()
+
+        let republiqueRest = app.staticTexts["Republique"]
+        republiqueRest.tap()
+
+        let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
+        callRestOption.tap()
+
+        let callAlert = app.alerts["Call Republique"]
+
+        XCTAssert(callAlert.waitForExistence(timeout: 2), "Call alert is not present")
+    }
 }
