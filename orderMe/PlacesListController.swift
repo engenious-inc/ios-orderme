@@ -22,6 +22,7 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
     fileprivate lazy var searchView: SearchView = .init()
     fileprivate let searchViewHeight: CGFloat = 80.0
+    fileprivate let searchViewHeightWithSafeArea: CGFloat = 110.0
     fileprivate var searchText: String = ""
     
     fileprivate var userIsSearching: Bool {
@@ -88,7 +89,13 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
         searchView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         searchView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         searchView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        searchView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: searchViewHeight).isActive = true
+        
+        if UIDevice().hasSafeArea {
+            searchView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: searchViewHeightWithSafeArea).isActive = true
+        } else {
+            searchView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: searchViewHeight).isActive = true
+        }
+        
         let tableViewEdgeInsets = UIEdgeInsets(top: self.searchViewHeight - 8.0, left: 0, bottom: 0, right: 0)
         tableView.contentInset = tableViewEdgeInsets
         tableView.scrollIndicatorInsets = tableViewEdgeInsets
