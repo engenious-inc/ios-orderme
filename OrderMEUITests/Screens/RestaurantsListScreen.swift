@@ -8,9 +8,7 @@
 
 import XCTest
 
-class RestaurantsListScreen {
-    static let app = XCUIApplication()
-
+class RestaurantsListScreen: BaseScreen {
     private let republiqueRest = app.staticTexts["Republique"]
 
     public func openRepubliqueRestaurant() {

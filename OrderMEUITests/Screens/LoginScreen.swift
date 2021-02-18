@@ -8,9 +8,7 @@
 
 import XCTest
 
-class LoginScreen {
-    static let app = XCUIApplication()
-
+class LoginScreen: BaseScreen {
     private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
 
     public func loginLater() {

@@ -53,6 +53,8 @@
 		931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFB225DDB35200D04D00 /* LoginScreen.swift */; };
 		931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */; };
 		931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */; };
+		933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D2E25DF06F400DC2058 /* BaseScreen.swift */; };
+		933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D3225DF080300DC2058 /* BaseTest.swift */; };
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +122,8 @@
 		931BAFB225DDB35200D04D00 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListScreen.swift; sourceTree = "<group>"; };
 		931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
+		933B0D2E25DF06F400DC2058 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		933B0D3225DF080300DC2058 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -289,6 +293,7 @@
 				931BAFB225DDB35200D04D00 /* LoginScreen.swift */,
 				931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */,
 				931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */,
+				933B0D2E25DF06F400DC2058 /* BaseScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				931BAFB125DDB34000D04D00 /* Screens */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				93A7AC6625D3713200D4BB77 /* Info.plist */,
+				933B0D3225DF080300DC2058 /* BaseTest.swift */,
 			);
 			path = OrderMEUITests;
 			sourceTree = "<group>";
@@ -561,6 +567,8 @@
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
+				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
+				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

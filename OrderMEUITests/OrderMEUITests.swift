@@ -8,11 +8,7 @@
 
 import XCTest
 
-class OrderMEUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
+class OrderMEUITests: BaseTest {
 
     func testBringAMenu() throws {
         let app = XCUIApplication()
@@ -45,9 +41,6 @@ class OrderMEUITests: XCTestCase {
     }
 
     func testCallRestaurant() throws {
-        let app = XCUIApplication()
-        app.launch()
-
         let loginScreen = LoginScreen()
         loginScreen.loginLater()
 
