@@ -10,11 +10,11 @@ import XCTest
 
 class RestaurantScreen {
     static let app = XCUIApplication()
-    
+
     private let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
-    
+
     let callAlert = app.alerts["Call Republique"]
-    
+
     public func callRestaurant() {
         callRestOption.tap()
     }

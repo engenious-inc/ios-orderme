@@ -10,9 +10,9 @@ import XCTest
 
 class RestaurantsListScreen {
     static let app = XCUIApplication()
-    
+
     private let republiqueRest = app.staticTexts["Republique"]
-    
+
     public func openRepubliqueRestaurant() {
         republiqueRest.tap()
     }
