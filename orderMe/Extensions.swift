@@ -103,3 +103,12 @@ extension Date {
 }
 
 // this is comment from Boris
+
+extension UIDevice {
+    var hasSafeArea: Bool {
+        if #available(iOS 11.0, *) {
+            return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+        }
+        return false
+    }
+}

@@ -21,6 +21,7 @@ class BucketController: UIViewController, UITextViewDelegate, UIScrollViewDelega
     @IBOutlet weak var headerView: UIView!
     
     private let buttonCornerRadius: CGFloat = 4.0
+    fileprivate let headerViewHeightWithSafeArea: CGFloat = 100.0
     
     var dishesInBucket: [Dish]?
     var amountOfDishesInBucket: [Int]?
@@ -70,6 +71,9 @@ class BucketController: UIViewController, UITextViewDelegate, UIScrollViewDelega
         self.commentTextView.layer.borderWidth = 1
         self.commentTextView.layer.borderColor = UIColor.darkGray.cgColor
         
+        if UIDevice().hasSafeArea {
+            headerView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: headerViewHeightWithSafeArea).isActive = true
+        }
         self.headerView.layer.insertSublayer(self.headerView.themeGradient(), at: 0)
         self.headerView.clipsToBounds = true
 
