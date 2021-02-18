@@ -11,7 +11,22 @@ import XCTest
 class LoginScreen: BaseScreen {
     private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
 
-    public func loginLater() {
+    override init() {
+        super.init()
+        visible()
+    }
+
+    public func loginLater() -> RestaurantsListScreen {
         loginLaterButton.tap()
+        return RestaurantsListScreen()
+    }
+}
+
+extension LoginScreen {
+    func visible() {
+        guard loginLaterButton.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("Login screen is not present")
+            return
+        }
     }
 }

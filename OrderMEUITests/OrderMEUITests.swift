@@ -42,14 +42,10 @@ class OrderMEUITests: BaseTest {
 
     func testCallRestaurant() throws {
         let loginScreen = LoginScreen()
-        loginScreen.loginLater()
-
-        let restaurantsListScreen = RestaurantsListScreen()
-        restaurantsListScreen.openRepubliqueRestaurant()
-
-        let restaurantScreen = RestaurantScreen()
+        let restaurantsListScreen = loginScreen.loginLater()
+        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
         restaurantScreen.callRestaurant()
-        
+
         XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2),
                   "Call alert is not present")
     }

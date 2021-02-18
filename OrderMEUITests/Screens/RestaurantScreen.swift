@@ -13,7 +13,21 @@ class RestaurantScreen: BaseScreen {
 
     let callAlert = app.alerts["Call Republique"]
 
+    override init() {
+        super.init()
+        visible()
+    }
+
     public func callRestaurant() {
         callRestOption.tap()
+    }
+}
+
+extension RestaurantScreen {
+    func visible() {
+        guard callRestOption.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("Login screen is not present")
+            return
+        }
     }
 }

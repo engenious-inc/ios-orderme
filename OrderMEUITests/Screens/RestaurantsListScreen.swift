@@ -11,7 +11,22 @@ import XCTest
 class RestaurantsListScreen: BaseScreen {
     private let republiqueRest = app.staticTexts["Republique"]
 
-    public func openRepubliqueRestaurant() {
+    override init() {
+        super.init()
+        visible()
+    }
+
+    public func openRepubliqueRestaurant() -> RestaurantScreen {
         republiqueRest.tap()
+        return RestaurantScreen()
+    }
+}
+
+extension RestaurantsListScreen {
+    func visible() {
+        guard republiqueRest.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("Login screen is not present")
+            return
+        }
     }
 }
