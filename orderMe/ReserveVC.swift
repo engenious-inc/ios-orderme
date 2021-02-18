@@ -49,6 +49,9 @@ class ReserveVC: UIViewController {
     }
     
     private func setupAppearance() {
+        if #available(iOS 13.4, *) {
+            self.datePicker.preferredDatePickerStyle = .wheels
+        }
         self.pickDateLabel.textColor = Constants.secondaryThemeColor
         self.bookButton.layer.insertSublayer(bookButton.themeGradient(), at: 0)
         self.bookButton.layer.cornerRadius = Constants.cornerRadius
