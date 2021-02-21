@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BackProtocol: BaseScreen {
+protocol BackProtocol {
     @discardableResult
     func backTo<T>(screen: T.Type) -> T where T: BaseScreen
 }
