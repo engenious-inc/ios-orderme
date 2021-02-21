@@ -8,14 +8,33 @@
 
 import XCTest
 
+enum RestaurantOption {
+    case detectTable
+    case callAWaiter
+    case callRestaurant
+}
+
 class RestaurantScreen: BaseScreen {
     private let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
+    private let detectTableOption = app.collectionViews.staticTexts["Detect table"]
+    private let callAWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
 
     let callAlert = app.alerts["Call Republique"]
 
     override init() {
         super.init()
         visible()
+    }
+
+    public func choose(option: RestaurantOption) {
+        switch option {
+        case .detectTable:
+            detectTableOption.tap()
+        case .callAWaiter:
+            callAWaiterOption.tap()
+        case .callRestaurant:
+            callRestOption.tap()
+        }
     }
 
     public func callRestaurant() {
