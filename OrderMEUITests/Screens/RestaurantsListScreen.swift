@@ -25,7 +25,7 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
 extension RestaurantsListScreen {
     func visible() {
         guard republiqueRest.waitForExistence(timeout: visibleTimeout) else {
-            XCTFail("Login screen is not present")
+            XCTFail("Restaurants list screen is not present")
             return
         }
     }

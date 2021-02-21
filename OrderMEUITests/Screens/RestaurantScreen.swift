@@ -45,7 +45,7 @@ class RestaurantScreen: BaseScreen, BackProtocol {
 extension RestaurantScreen {
     func visible() {
         guard callRestOption.waitForExistence(timeout: visibleTimeout) else {
-            XCTFail("Login screen is not present")
+            XCTFail("Restaurant screen is not present")
             return
         }
     }
