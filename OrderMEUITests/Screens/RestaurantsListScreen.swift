@@ -8,7 +8,7 @@
 
 import XCTest
 
-class RestaurantsListScreen: BaseScreen {
+class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private let republiqueRest = app.staticTexts["Republique"]
 
     override init() {

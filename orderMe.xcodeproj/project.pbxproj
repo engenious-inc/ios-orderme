@@ -50,6 +50,8 @@
 		4390A4592031D58A00E1CD80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390A4582031D58A00E1CD80 /* Constants.swift */; };
 		43A8036F203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */; };
 		43B95CEC2059716B00E8C016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */; };
+		9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */; };
+		9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */; };
 		931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFB225DDB35200D04D00 /* LoginScreen.swift */; };
 		931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */; };
 		931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */; };
@@ -119,6 +121,8 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
+		9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsScreen.swift; sourceTree = "<group>"; };
 		931BAFB225DDB35200D04D00 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListScreen.swift; sourceTree = "<group>"; };
 		931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
@@ -287,6 +291,14 @@
 			name = JsonTransforms;
 			sourceTree = "<group>";
 		};
+		9318CDC725E2DA5800F1A9DE /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
 		931BAFB125DDB34000D04D00 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +306,7 @@
 				931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */,
 				931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */,
 				933B0D2E25DF06F400DC2058 /* BaseScreen.swift */,
+				9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -301,6 +314,7 @@
 		93A7AC6325D3713200D4BB77 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9318CDC725E2DA5800F1A9DE /* Utills */,
 				931BAFB125DDB34000D04D00 /* Screens */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				93A7AC6625D3713200D4BB77 /* Info.plist */,
@@ -563,10 +577,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
+				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 			);
