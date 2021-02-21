@@ -10,4 +10,8 @@ import XCTest
 
 class MyReservationsScreen: BaseScreen {
     let youDidNotLoginAlert = app.alerts["You did not login"]
+
+    required init() {
+        super.init()
+    }
 }

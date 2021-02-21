@@ -58,4 +58,11 @@ class OrderMEUITests: BaseTest {
         XCTAssert(myReservationsScreen.youDidNotLoginAlert.waitForExistence(timeout: 2),
                   "You did not login alert is not present")
     }
+
+    func testVerifyBackNavigationFromRestaurantScreen() {
+        let loginScreen = LoginScreen()
+        let restaurantsListScreen = loginScreen.loginLater()
+        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
+        restaurantScreen.backTo(screen: RestaurantsListScreen.self)
+    }
 }

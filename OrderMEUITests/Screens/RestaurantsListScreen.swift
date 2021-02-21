@@ -11,7 +11,7 @@ import XCTest
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private let republiqueRest = app.staticTexts["Republique"]
 
-    override init() {
+    required init() {
         super.init()
         visible()
     }

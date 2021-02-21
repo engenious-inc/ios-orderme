@@ -11,7 +11,7 @@ import XCTest
 class LoginScreen: BaseScreen {
     private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
 
-    override init() {
+    required init() {
         super.init()
         visible()
     }

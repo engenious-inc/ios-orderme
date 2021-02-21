@@ -14,14 +14,14 @@ enum RestaurantOption {
     case callRestaurant
 }
 
-class RestaurantScreen: BaseScreen {
+class RestaurantScreen: BaseScreen, BackProtocol {
     private let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
     private let detectTableOption = app.collectionViews.staticTexts["Detect table"]
     private let callAWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
 
     let callAlert = app.alerts["Call Republique"]
 
-    override init() {
+    required init() {
         super.init()
         visible()
     }
