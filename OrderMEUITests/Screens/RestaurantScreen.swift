@@ -15,9 +15,9 @@ enum RestaurantOption {
 }
 
 class RestaurantScreen: BaseScreen, BackProtocol {
-    private let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
-    private let detectTableOption = app.collectionViews.staticTexts["Detect table"]
-    private let callAWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
+    private let callRestOption = app.collectionViews.firstMatch.cells.element(boundBy: 4)
+    private let detectTableOption = app.collectionViews.firstMatch.cells.element(boundBy: 0)
+    private let callAWaiterOption = app.collectionViews.firstMatch.cells.element(boundBy: 3)
 
     let callAlert = app.alerts["Call Republique"]
 
