@@ -10,23 +10,34 @@ import XCTest
 
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private let republiqueRest = app.staticTexts["Republique"]
+    private let allowWhileUsingAppAlert = springboard.alerts.firstMatch.buttons["Allow While Using App"]
 
     required init() {
         super.init()
-        visible()
+        if visible() == false {
+            XCTFail("Restaurants list screen is not present")
+            return
+        }
     }
 
     public func openRepubliqueRestaurant() -> RestaurantScreen {
         republiqueRest.tap()
         return RestaurantScreen()
     }
+
+    @discardableResult
+    public func handleLocationAlert() -> Self {
+        allowWhileUsingAppAlert.tap()
+        return self
+    }
 }
 
 extension RestaurantsListScreen {
-    func visible() {
-        guard republiqueRest.waitForExistence(timeout: visibleTimeout) else {
-            XCTFail("Restaurants list screen is not present")
-            return
+    func visible() -> Bool {
+        if republiqueRest.waitForExistence(timeout: visibleTimeout) {
+            return true
+        } else {
+            return false
         }
     }
 }

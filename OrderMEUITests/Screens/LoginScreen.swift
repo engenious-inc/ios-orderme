@@ -10,6 +10,8 @@ import XCTest
 
 class LoginScreen: BaseScreen {
     private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
+    private let facebookLoginButton: XCUIElement = app.buttons["facebookLoginButton"]
+    private let continueWithFacebookAlert: XCUIElement = springboard.alerts.firstMatch.buttons["Continue"]
 
     required init() {
         super.init()
@@ -19,6 +21,13 @@ class LoginScreen: BaseScreen {
     public func loginLater() -> RestaurantsListScreen {
         loginLaterButton.tap()
         return RestaurantsListScreen()
+    }
+
+    public func loginWithFacebook() -> FacebookLoginScreen {
+        facebookLoginButton.tap()
+        continueWithFacebookAlert.waitForExistence(timeout: 5)
+        continueWithFacebookAlert.tap()
+        return FacebookLoginScreen()
     }
 }
 

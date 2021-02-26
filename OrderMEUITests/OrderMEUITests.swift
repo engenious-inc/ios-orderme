@@ -65,4 +65,16 @@ class OrderMEUITests: BaseTest {
         let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
         restaurantScreen.backTo(screen: RestaurantsListScreen.self)
     }
+
+    func testLoginWithFacebook() {
+        let loginScreen = LoginScreen()
+        let facebookLoginScreen = loginScreen.loginWithFacebook()
+        let restaurantsListScreen = facebookLoginScreen.typeEmail("zkpedymhza_1614299001@tfbnw.net")
+                                                       .typePassword("orderme12345")
+                                                       .login()
+        restaurantsListScreen.handleLocationAlert()
+        XCTAssertTrue(restaurantsListScreen.visible(),
+                      "Login with facebook wasn't successful")
+    }
+
 }
