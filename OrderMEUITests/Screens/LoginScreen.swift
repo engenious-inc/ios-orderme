@@ -17,7 +17,7 @@ class LoginScreen: BaseScreen {
     }
 
     public func loginLater() -> RestaurantsListScreen {
-        loginLaterButton.tap()
+        tap(loginLaterButton)
         return RestaurantsListScreen()
     }
 }

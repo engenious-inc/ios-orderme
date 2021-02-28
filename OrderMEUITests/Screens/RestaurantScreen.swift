@@ -15,9 +15,9 @@ enum RestaurantOption {
 }
 
 class RestaurantScreen: BaseScreen, BackProtocol {
-    private let callRestOption = app.collectionViews.firstMatch.cells.element(boundBy: 4)
-    private let detectTableOption = app.collectionViews.firstMatch.cells.element(boundBy: 0)
-    private let callAWaiterOption = app.collectionViews.firstMatch.cells.element(boundBy: 3)
+    private lazy var callRestOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 4)
+    private lazy var detectTableOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 0)
+    private lazy var callAWaiterOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 3)
 
     let callAlert = app.alerts["Call Republique"]
 
@@ -29,16 +29,12 @@ class RestaurantScreen: BaseScreen, BackProtocol {
     public func choose(option: RestaurantOption) {
         switch option {
         case .detectTable:
-            detectTableOption.tap()
+            tap(detectTableOption)
         case .callAWaiter:
-            callAWaiterOption.tap()
+            tap(callAWaiterOption)
         case .callRestaurant:
-            callRestOption.tap()
+            tap(callRestOption)
         }
-    }
-
-    public func callRestaurant() {
-        callRestOption.tap()
     }
 }
 

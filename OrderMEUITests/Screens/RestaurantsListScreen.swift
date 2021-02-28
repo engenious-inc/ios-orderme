@@ -17,7 +17,7 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     }
 
     public func openRepubliqueRestaurant() -> RestaurantScreen {
-        republiqueRest.tap()
+        tap(republiqueRest)
         return RestaurantScreen()
     }
 }

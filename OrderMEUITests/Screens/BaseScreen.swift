@@ -13,4 +13,12 @@ class BaseScreen {
     let visibleTimeout: TimeInterval = 2.0
 
     required init() {}
+
+    func tap(_ element: XCUIElement) {
+        guard element.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("\(element.description) is not visible")
+            return
+        }
+        element.tap()
+    }
 }
