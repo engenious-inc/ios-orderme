@@ -27,17 +27,19 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
 
     @discardableResult
     public func handleLocationAlert() -> Self {
-        allowWhileUsingAppAlert.tap()
+        if isLocationAlertVisible() {
+            allowWhileUsingAppAlert.tap()
+        }
         return self
     }
 }
 
 extension RestaurantsListScreen {
     func visible() -> Bool {
-        if republiqueRest.waitForExistence(timeout: visibleTimeout) {
-            return true
-        } else {
-            return false
-        }
+        return republiqueRest.waitForExistence(timeout: visibleTimeout)
+    }
+
+    func isLocationAlertVisible() -> Bool {
+        return allowWhileUsingAppAlert.waitForExistence(timeout: visibleTimeout)
     }
 }
