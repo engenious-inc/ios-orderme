@@ -12,13 +12,9 @@ class FacebookLoginScreen: BaseScreen {
     private let emailTextField: XCUIElement = app.textFields.firstMatch
     private let passwordTextFielld: XCUIElement = app.secureTextFields.firstMatch
     private let loginButton: XCUIElement = app.buttons["Log In"]
-    private let continueButton: XCUIElement = app.buttons["Continue"]
+    private let continueWithFacebookButton: XCUIElement = app.buttons["Continue"]
+    private let loginWithFacebookLabel: XCUIElement = app.staticTexts["Log in With Facebook"]
 
-    required init() {
-        super.init()
-        visible()
-    }
-    
     @discardableResult
     public func typeEmail(_ email: String) -> Self {
         emailTextField.tap()
@@ -34,19 +30,24 @@ class FacebookLoginScreen: BaseScreen {
     }
 
     @discardableResult
-    public func login() -> RestaurantsListScreen {
+    public func login() -> Self {
         loginButton.tap()
-        continueButton.waitForExistence(timeout: 5)
-        continueButton.tap()
+        return self
+    }
+
+    @discardableResult
+    public func continueWithFacebook() -> RestaurantsListScreen {
+        if isContinueWithFacebookButtonVisible() {
+            continueWithFacebookButton.tap()
+        } else {
+            XCTFail("Continue with facebook button is not present")
+        }
         return RestaurantsListScreen()
     }
 }
 
 extension FacebookLoginScreen {
-    func visible() {
-        guard loginButton.waitForExistence(timeout: visibleTimeout) else {
-            XCTFail("Facebook login screen is not present")
-            return
-        }
+    func isContinueWithFacebookButtonVisible() -> Bool {
+        return continueWithFacebookButton.waitForExistence(timeout: visibleTimeout)
     }
 }

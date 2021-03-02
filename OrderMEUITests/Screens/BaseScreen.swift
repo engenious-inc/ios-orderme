@@ -11,7 +11,7 @@ import XCTest
 class BaseScreen {
     static let app = XCUIApplication()
     static let springboard: XCUIApplication = .init(bundleIdentifier: "com.apple.springboard")
-    let visibleTimeout: TimeInterval = 7.0
+    let visibleTimeout: TimeInterval = 5.0
 
     required init() {}
 }

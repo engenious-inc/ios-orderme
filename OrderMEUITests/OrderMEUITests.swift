@@ -69,12 +69,18 @@ class OrderMEUITests: BaseTest {
     func testLoginWithFacebook() {
         let loginScreen = LoginScreen()
         let facebookLoginScreen = loginScreen.loginWithFacebook()
-        let restaurantsListScreen = facebookLoginScreen.typeEmail("zkpedymhza_1614299001@tfbnw.net")
+        if !facebookLoginScreen.isContinueWithFacebookButtonVisible() {
+            facebookLoginScreen.typeEmail("zkpedymhza_1614299001@tfbnw.net")
                                                        .typePassword("orderme12345")
                                                        .login()
-        restaurantsListScreen.handleLocationAlert()
-        XCTAssertTrue(restaurantsListScreen.visible(),
+                                                       .continueWithFacebook()
+                                                       .handleLocationAlert()
+        } else {
+            facebookLoginScreen.continueWithFacebook()
+                               .handleLocationAlert()
+        }
+        XCTAssertTrue(RestaurantsListScreen().visible(),
                       "Login with facebook wasn't successful")
+        deleteApp()
     }
-
 }

@@ -25,8 +25,9 @@ class LoginScreen: BaseScreen {
 
     public func loginWithFacebook() -> FacebookLoginScreen {
         facebookLoginButton.tap()
-        continueWithFacebookAlert.waitForExistence(timeout: 5)
-        continueWithFacebookAlert.tap()
+        if isContinueWithFacebookAlertVisible() {
+            continueWithFacebookAlert.tap()
+        }
         return FacebookLoginScreen()
     }
 }
@@ -37,5 +38,9 @@ extension LoginScreen {
             XCTFail("Login screen is not present")
             return
         }
+    }
+
+    func isContinueWithFacebookAlertVisible() -> Bool {
+        return continueWithFacebookAlert.waitForExistence(timeout: visibleTimeout)
     }
 }
