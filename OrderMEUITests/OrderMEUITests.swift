@@ -74,13 +74,9 @@ class OrderMEUITests: BaseTest {
                                                        .typePassword("orderme12345")
                                                        .login()
                                                        .continueWithFacebook()
-                                                       .handleLocationAlert()
         } else {
             facebookLoginScreen.continueWithFacebook()
-                               .handleLocationAlert()
         }
-        XCTAssertTrue(RestaurantsListScreen().visible(),
-                      "Login with facebook wasn't successful")
         deleteApp()
     }
 }

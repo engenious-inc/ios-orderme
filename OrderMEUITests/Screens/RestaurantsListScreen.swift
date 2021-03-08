@@ -14,10 +14,8 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
 
     required init() {
         super.init()
-        if visible() == false {
-            XCTFail("Restaurants list screen is not present")
-            return
-        }
+        handleLocationAlertIfNeeded()
+        visible()
     }
 
     public func openRepubliqueRestaurant() -> RestaurantScreen {
@@ -25,21 +23,22 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
         return RestaurantScreen()
     }
 
-    @discardableResult
-    public func handleLocationAlert() -> Self {
+    func handleLocationAlertIfNeeded() {
         if isLocationAlertVisible() {
             allowWhileUsingAppAlert.tap()
         }
-        return self
+    }
+
+    func isLocationAlertVisible() -> Bool {
+        return allowWhileUsingAppAlert.waitForExistence(timeout: 0.5)
     }
 }
 
 extension RestaurantsListScreen {
-    func visible() -> Bool {
-        return republiqueRest.waitForExistence(timeout: visibleTimeout)
-    }
-
-    func isLocationAlertVisible() -> Bool {
-        return allowWhileUsingAppAlert.waitForExistence(timeout: visibleTimeout)
+    func visible() {
+        guard republiqueRest.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("Restaurants list screen is not present")
+            return
+        }
     }
 }
