@@ -58,6 +58,7 @@
 		931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */; };
 		933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D2E25DF06F400DC2058 /* BaseScreen.swift */; };
 		933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D3225DF080300DC2058 /* BaseTest.swift */; };
+		934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */; };
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
 		933B0D2E25DF06F400DC2058 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		933B0D3225DF080300DC2058 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */,
 				933B0D2E25DF06F400DC2058 /* BaseScreen.swift */,
 				9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */,
+				934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
 				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,
 				9318CDEA25E2E8CD00F1A9DE /* BackProtocol.swift in Sources */,
+				934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 			);

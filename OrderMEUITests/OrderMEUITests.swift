@@ -65,4 +65,18 @@ class OrderMEUITests: BaseTest {
         let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
         restaurantScreen.backTo(screen: RestaurantsListScreen.self)
     }
+
+    func testLoginWithFacebook() {
+        let loginScreen = LoginScreen()
+        let facebookScreen = loginScreen.loginWithFacebook()
+        if !facebookScreen.isContinueWithFacebookButtonVisible() {
+            facebookScreen
+                .typeEmail("zkpedymhza_1614299001@tfbnw.net")
+                .typePassword("orderme12345")
+                .login()
+                .continueWithFacebook()
+        } else {
+            facebookScreen.continueWithFacebook()
+        }
+    }
 }

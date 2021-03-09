@@ -22,4 +22,12 @@ class BaseScreen {
         }
         element.tap()
     }
+
+    func type(_ text: String, element: XCUIElement) {
+        guard element.waitForExistence(timeout: visibleTimeout) else {
+            XCTFail("\(element.description) is not visible")
+            return
+        }
+        element.typeText(text)
+    }
 }
