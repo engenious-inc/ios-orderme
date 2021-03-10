@@ -14,6 +14,7 @@ class BaseTest: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+        app.launchArguments = ["logOut"]
         app.launch()
     }
 

@@ -23,7 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         ApplicationDelegate.shared.application(application,
                                                didFinishLaunchingWithOptions: launchOptions)
-        
+
+        if ProcessInfo.processInfo.arguments.contains("logOut") {
+            let loginManager = LoginManager()
+            loginManager.logOut()
+        }
+
         self.window?.tintColor = Constants.mainThemeColor
 
         return true
