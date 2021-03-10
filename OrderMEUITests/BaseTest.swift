@@ -9,9 +9,23 @@
 import XCTest
 
 class BaseTest: XCTestCase {
+
+    let app = XCUIApplication()
+
     override func setUpWithError() throws {
         continueAfterFailure = false
-        let app = XCUIApplication()
         app.launch()
+    }
+
+    func deleteApp() {
+        app.terminate()
+        let icon = BaseScreen.springboard.icons["OrderMe"]
+        icon.press(forDuration: 1.3)
+        let removeAppButton = BaseScreen.springboard.buttons["Remove App"]
+        removeAppButton.tap()
+        let deleteAppButton = BaseScreen.springboard.buttons["Delete App"]
+        deleteAppButton.tap()
+        let deleteButton = BaseScreen.springboard.buttons["Delete"]
+        deleteButton.tap()
     }
 }
