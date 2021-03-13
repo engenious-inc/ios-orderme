@@ -25,5 +25,3 @@ extension Date {
         return (futureDay, futureMonth, futureYear)
     }
 }
-
-
