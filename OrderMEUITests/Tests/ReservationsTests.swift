@@ -10,10 +10,22 @@ import XCTest
 
 class ReservationsTests: BaseTest {
     func testPhoneNumberRequired() {
-        LoginScreen()
-            .loginLater()
-            .openRepubliqueRestaurant()
-            .choose(option: .reservation)
+        XCTContext
+            .runActivity(named: "Login and open reservation") { _ in
+            LoginScreen()
+                .loginLater()
+                .openRepubliqueRestaurant()
+                .choose(option: .reservation)
+        }
+        
+        XCTContext
+            .runActivity(named: "Attach the screenshot of the reservation") { activity in
+                let screen = XCUIScreen.main
+                let fullScreenshot = screen.screenshot()
+                let fullScreenshotAttachment = XCTAttachment(screenshot: fullScreenshot)
+                fullScreenshotAttachment.lifetime = .keepAlways
+                activity.add(fullScreenshotAttachment)
+        }
 
         let today = Date()
         guard let futureDate = today.getUIDateForTodayPlus(days: 3) else {

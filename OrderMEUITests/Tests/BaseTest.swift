@@ -14,8 +14,10 @@ class BaseTest: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
-        app.launchArguments = ["logOut"]
-        app.launch()
+        XCTContext.runActivity(named: "Given I have launched app in clean state") { _ in
+            app.launchArguments = ["logOut"]
+            app.launch()
+        }
     }
 
     func deleteApp() {
