@@ -60,6 +60,9 @@
 		933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D3225DF080300DC2058 /* BaseTest.swift */; };
 		934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */; };
 		934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A798825F854D4002A26A7 /* FacebookTests.swift */; };
+		93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C5725FC0FAF0055B866 /* ReservationsScreen.swift */; };
+		93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C5C25FC13290055B866 /* ReservationsTests.swift */; };
+		93642C6325FC15570055B866 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C6225FC15570055B866 /* DateExtension.swift */; };
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +137,9 @@
 		933B0D3225DF080300DC2058 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		934A798825F854D4002A26A7 /* FacebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTests.swift; sourceTree = "<group>"; };
+		93642C5725FC0FAF0055B866 /* ReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsScreen.swift; sourceTree = "<group>"; };
+		93642C5C25FC13290055B866 /* ReservationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsTests.swift; sourceTree = "<group>"; };
+		93642C6225FC15570055B866 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -302,6 +308,7 @@
 			children = (
 				9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */,
 				9318CDE925E2E8CD00F1A9DE /* BackProtocol.swift */,
+				93642C6225FC15570055B866 /* DateExtension.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -315,19 +322,29 @@
 				933B0D2E25DF06F400DC2058 /* BaseScreen.swift */,
 				9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */,
 				934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */,
+				93642C5725FC0FAF0055B866 /* ReservationsScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		93642C5B25FC130E0055B866 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				933B0D3225DF080300DC2058 /* BaseTest.swift */,
+				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
+				934A798825F854D4002A26A7 /* FacebookTests.swift */,
+				93642C5C25FC13290055B866 /* ReservationsTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		93A7AC6325D3713200D4BB77 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93642C5B25FC130E0055B866 /* Tests */,
 				9318CDC725E2DA5800F1A9DE /* Utills */,
 				931BAFB125DDB34000D04D00 /* Screens */,
-				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				93A7AC6625D3713200D4BB77 /* Info.plist */,
-				933B0D3225DF080300DC2058 /* BaseTest.swift */,
-				934A798825F854D4002A26A7 /* FacebookTests.swift */,
 			);
 			path = OrderMEUITests;
 			sourceTree = "<group>";
@@ -586,10 +603,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */,
+				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
+				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
 				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,

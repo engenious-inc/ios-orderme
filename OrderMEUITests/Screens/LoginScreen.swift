@@ -25,7 +25,7 @@ class LoginScreen: BaseScreen {
 
     public func loginWithFacebook() -> FacebookLoginScreen {
         tap(facebookButton)
-        if continueWithFacebookSpringAlert.waitForExistence(timeout: 0.5){
+        if continueWithFacebookSpringAlert.waitForExistence(timeout: 0.5) {
             tap(continueWithFacebookSpringAlert)
         }
         return FacebookLoginScreen()
