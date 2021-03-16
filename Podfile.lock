@@ -31,7 +31,20 @@ PODS:
     - FBSDKShareKit/Share (= 5.7.0)
   - FBSDKShareKit/Share (5.7.0):
     - FBSDKCoreKit (~> 5.0)
+  - GCDWebServer (3.5.3):
+    - GCDWebServer/Core (= 3.5.3)
+  - GCDWebServer/Core (3.5.3)
   - ObjectMapper (3.5.1)
+  - SBTUITestTunnelClient (5.0.0):
+    - SBTUITestTunnelClient/Connectionless (= 5.0.0)
+    - SBTUITestTunnelCommon
+  - SBTUITestTunnelClient/Connectionless (5.0.0):
+    - SBTUITestTunnelCommon
+    - SBTUITestTunnelServer
+  - SBTUITestTunnelCommon (5.0.0)
+  - SBTUITestTunnelServer (5.0.0):
+    - GCDWebServer (~> 3.0)
+    - SBTUITestTunnelCommon
   - SwiftLint (0.35.0)
 
 DEPENDENCIES:
@@ -46,11 +59,14 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - FBSDKPlacesKit
   - FBSDKShareKit
+  - GCDWebServer
   - ObjectMapper
+  - SBTUITestTunnelClient
+  - SBTUITestTunnelServer
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireImage
     - Crashlytics
@@ -62,7 +78,11 @@ SPEC REPOS:
     - FBSDKLoginKit
     - FBSDKPlacesKit
     - FBSDKShareKit
+    - GCDWebServer
     - ObjectMapper
+    - SBTUITestTunnelClient
+    - SBTUITestTunnelCommon
+    - SBTUITestTunnelServer
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -77,9 +97,13 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 4127e8260b96e0e4cc8ba0c10c95ee63941aa24a
   FBSDKPlacesKit: 0388766304ff7a89630bcc211db9f500d549f403
   FBSDKShareKit: 0dc4bd06e11eb2ad30d165132c6c879b8d449ae3
+  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SBTUITestTunnelClient: 66909276134a255decd9565edcc51776e98a6629
+  SBTUITestTunnelCommon: e6a1ba9db98afbfda3f11eb1776745bc1e023662
+  SBTUITestTunnelServer: c5d9d4c2d12b25f1d1f36bd288b58a30fefb00e1
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
 
-PODFILE CHECKSUM: a62fff48e26955a9c310861348f8a92384f5b44f
+PODFILE CHECKSUM: 923d557e8a302af6ae0ae9590f9a44d176687dd9
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3

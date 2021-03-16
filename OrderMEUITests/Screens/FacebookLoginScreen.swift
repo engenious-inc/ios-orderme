@@ -9,10 +9,10 @@
 import XCTest
 
 class FacebookLoginScreen: BaseScreen {
-    private let emailTextField: XCUIElement = app.textFields.firstMatch
-    private let passwordTextField: XCUIElement = app.secureTextFields.firstMatch
-    private let loginButton: XCUIElement = app.buttons["Log In"]
-    private let continueWithFacebookButton: XCUIElement = app.buttons["Continue"]
+    private lazy var emailTextField: XCUIElement = app.textFields.firstMatch
+    private lazy var passwordTextField: XCUIElement = app.secureTextFields.firstMatch
+    private lazy var loginButton: XCUIElement = app.buttons["Log In"]
+    private lazy var continueWithFacebookButton: XCUIElement = app.buttons["Continue"]
 
     @discardableResult
     public func typeEmail(_ email: String) -> Self {

@@ -9,8 +9,8 @@
 import XCTest
 
 class LoginScreen: BaseScreen {
-    private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
-    private let facebookButton: XCUIElement = app.buttons["facebookLoginButton"]
+    private lazy var loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
+    private lazy var facebookButton: XCUIElement = app.buttons["facebookLoginButton"]
     private let continueWithFacebookSpringAlert: XCUIElement = springboard.alerts.firstMatch.buttons["Continue"]
 
     required init() {
@@ -18,7 +18,8 @@ class LoginScreen: BaseScreen {
         visible()
     }
 
-    public func loginLater() -> RestaurantsListScreen {
+    public func loginLater(stub: PlacesStub? = nil) -> RestaurantsListScreen {
+        stub?.start()
         tap(loginLaterButton)
         return RestaurantsListScreen()
     }

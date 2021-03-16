@@ -18,4 +18,10 @@ target "orderMe" do
 	pod 'FBSDKLoginKit'
 	pod 'FBSDKShareKit'
 	pod 'FBSDKPlacesKit'
+  pod 'SBTUITestTunnelServer'
+  pod 'GCDWebServer', :inhibit_warnings => true
+end
+
+target 'OrderMEUITests' do
+  pod 'SBTUITestTunnelClient'
 end

@@ -16,7 +16,7 @@ protocol BackProtocol {
 extension BackProtocol {
     @discardableResult
     func backTo<T>(screen: T.Type) -> T where T: BaseScreen {
-        let backButton = BaseScreen.app.buttons["backButton"]
+        let backButton = BaseTest.shared.app.buttons["backButton"]
         backButton.tap()
         return T.init()
     }

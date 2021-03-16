@@ -9,7 +9,7 @@
 import XCTest
 
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
-    private let republiqueRest = app.staticTexts["Republique"]
+    private lazy var republiqueRest = app.staticTexts["Republique"]
     private let allowWhileUsingAppAlert = springboard.alerts.firstMatch.buttons["Allow While Using App"]
 
     required init() {

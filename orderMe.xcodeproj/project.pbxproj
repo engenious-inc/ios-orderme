@@ -50,6 +50,7 @@
 		4390A4592031D58A00E1CD80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390A4582031D58A00E1CD80 /* Constants.swift */; };
 		43A8036F203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */; };
 		43B95CEC2059716B00E8C016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */; };
+		440992A8935399852E0A2016 /* Pods_OrderMEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */; };
 		9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */; };
 		9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */; };
 		9318CDEA25E2E8CD00F1A9DE /* BackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318CDE925E2E8CD00F1A9DE /* BackProtocol.swift */; };
@@ -64,6 +65,8 @@
 		93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C5C25FC13290055B866 /* ReservationsTests.swift */; };
 		93642C6325FC15570055B866 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C6225FC15570055B866 /* DateExtension.swift */; };
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
+		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
+		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +146,8 @@
 		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B27BB226015AF600A45BB9 /* PlacesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesStub.swift; sourceTree = "<group>"; };
+		93B27BB826015CF100A45BB9 /* Places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Places.json; sourceTree = "<group>"; };
 		A02526015C2AC40E8E286088 /* Pods-orderMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.debug.xcconfig"; sourceTree = "<group>"; };
 		B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderMEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440992A8935399852E0A2016 /* Pods_OrderMEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,12 +347,30 @@
 		93A7AC6325D3713200D4BB77 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93B27BAF260159CE00A45BB9 /* Stubs */,
 				93642C5B25FC130E0055B866 /* Tests */,
 				9318CDC725E2DA5800F1A9DE /* Utills */,
 				931BAFB125DDB34000D04D00 /* Screens */,
 				93A7AC6625D3713200D4BB77 /* Info.plist */,
 			);
 			path = OrderMEUITests;
+			sourceTree = "<group>";
+		};
+		93B27BAF260159CE00A45BB9 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				93B27BB0260159D600A45BB9 /* Places */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		93B27BB0260159D600A45BB9 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				93B27BB226015AF600A45BB9 /* PlacesStub.swift */,
+				93B27BB826015CF100A45BB9 /* Places.json */,
+			);
+			path = Places;
 			sourceTree = "<group>";
 		};
 		C9DF39D983637B40F1924EE8 /* Pods */ = {
@@ -398,9 +422,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A7AC6B25D3713200D4BB77 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
 			buildPhases = (
+				5915415850A62D98F7238403 /* [CP] Check Pods Manifest.lock */,
 				93A7AC5E25D3713200D4BB77 /* Sources */,
 				93A7AC5F25D3713200D4BB77 /* Frameworks */,
 				93A7AC6025D3713200D4BB77 /* Resources */,
+				924A4460006AAF8690F36A72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B27BB926015CF100A45BB9 /* Places.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +522,28 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		5915415850A62D98F7238403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderMEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		842538B1ECA89D2A457917D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +562,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		924A4460006AAF8690F36A72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTUITestTunnelCommon/SBTUITestTunnelCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTUITestTunnelServer/SBTUITestTunnelServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTUITestTunnelClient/SBTUITestTunnelClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTUITestTunnelCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTUITestTunnelServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTUITestTunnelClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CCC3C6237C0F3B25C5950EFD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,7 +602,10 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTUITestTunnelCommon/SBTUITestTunnelCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTUITestTunnelServer/SBTUITestTunnelServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -542,7 +618,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTUITestTunnelCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTUITestTunnelServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -607,6 +686,7 @@
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
+				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
 				934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
@@ -783,6 +863,7 @@
 		};
 		93A7AC6925D3713200D4BB77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -808,6 +889,7 @@
 		};
 		93A7AC6A25D3713200D4BB77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1E6C06FD11E1DB88A716D9 /* Pods-OrderMEUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

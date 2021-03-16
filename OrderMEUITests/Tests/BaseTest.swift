@@ -7,16 +7,18 @@
 //
 
 import XCTest
+import SBTUITestTunnelClient
 
 class BaseTest: XCTestCase {
 
-    let app = XCUIApplication()
+    static var shared: BaseTest!
 
     override func setUpWithError() throws {
+        BaseTest.shared = self
         continueAfterFailure = false
         XCTContext.runActivity(named: "Given I have launched app in clean state") { _ in
-            app.launchArguments = ["logOut"]
-            app.launch()
+            app.launchArguments = ["startStubServer", "logOut"]
+            app.launchTunnel()
         }
     }
 

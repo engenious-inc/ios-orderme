@@ -7,9 +7,10 @@
 //
 
 import XCTest
+import SBTUITestTunnelClient
 
 class BaseScreen {
-    static let app = XCUIApplication()
+    lazy var app: SBTUITunneledApplication! = BaseTest.shared.app
     let visibleTimeout: TimeInterval = 2.0
     static let springboard: XCUIApplication = .init(bundleIdentifier: "com.apple.springboard")
 

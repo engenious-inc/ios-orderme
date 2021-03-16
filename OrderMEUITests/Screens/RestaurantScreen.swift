@@ -16,12 +16,12 @@ enum RestaurantOption {
 }
 
 class RestaurantScreen: BaseScreen, BackProtocol {
-    private lazy var callRestOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 4)
-    private lazy var detectTableOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 0)
-    private lazy var callAWaiterOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 3)
-    private lazy var reservationOption = BaseScreen.app.collectionViews.firstMatch.cells.element(boundBy: 2)
+    private lazy var callRestOption = app.collectionViews.firstMatch.cells.element(boundBy: 4)
+    private lazy var detectTableOption = app.collectionViews.firstMatch.cells.element(boundBy: 0)
+    private lazy var callAWaiterOption = app.collectionViews.firstMatch.cells.element(boundBy: 3)
+    private lazy var reservationOption = app.collectionViews.firstMatch.cells.element(boundBy: 2)
 
-    let callAlert = app.alerts["Call Republique"]
+    lazy var callAlert = app.alerts["Call Republique"]
 
     required init() {
         super.init()

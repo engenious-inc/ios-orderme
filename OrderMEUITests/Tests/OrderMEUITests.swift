@@ -42,7 +42,7 @@ class OrderMEUITests: BaseTest {
 
     func testCallRestaurant() throws {
         let loginScreen = LoginScreen()
-        let restaurantsListScreen = loginScreen.loginLater()
+        let restaurantsListScreen = loginScreen.loginLater(stub: .multiplePlaces)
         let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
         restaurantScreen.choose(option: .callRestaurant)
 

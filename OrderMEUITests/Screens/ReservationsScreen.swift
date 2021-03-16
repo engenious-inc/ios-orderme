@@ -14,13 +14,13 @@ enum AmPm: String {
 }
 
 class ReservationsScreen: BaseScreen {
-    private let monthDayPicker: XCUIElement = app.pickerWheels.element(boundBy: 0)
-    private let hourPicker: XCUIElement = app.pickerWheels.element(boundBy: 1)
-    private let minutePicker: XCUIElement = app.pickerWheels.element(boundBy: 2)
-    private let amPmPicker: XCUIElement = app.pickerWheels.element(boundBy: 3)
+    private lazy var monthDayPicker: XCUIElement = app.pickerWheels.element(boundBy: 0)
+    private lazy var hourPicker: XCUIElement = app.pickerWheels.element(boundBy: 1)
+    private lazy var minutePicker: XCUIElement = app.pickerWheels.element(boundBy: 2)
+    private lazy var amPmPicker: XCUIElement = app.pickerWheels.element(boundBy: 3)
 
-    private let bookButton: XCUIElement = app.staticTexts["Book"]
-    private let weNeedPhoneAlert: XCUIElement = app.alerts["We need your phone number"]
+    private lazy var bookButton: XCUIElement = app.staticTexts["Book"]
+    private lazy var weNeedPhoneAlert: XCUIElement = app.alerts["We need your phone number"]
 
     required init() {
         super.init()
