@@ -10,6 +10,11 @@ import XCTest
 
 class OrderMEUITests: BaseTest {
 
+    override func setUp() {
+        super.setUp()
+        app.launchTunnel()
+    }
+
     func testBringAMenu() throws {
         let app = XCUIApplication()
         app.launch()

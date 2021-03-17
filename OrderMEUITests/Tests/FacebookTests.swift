@@ -10,6 +10,11 @@ import XCTest
 
 class FacebookTests: BaseTest {
 
+    override func setUp() {
+        super.setUp()
+        app.launchTunnel()
+    }
+
     override func tearDown() {
         deleteApp()
         super.tearDown()

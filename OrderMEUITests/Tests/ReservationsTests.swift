@@ -9,6 +9,11 @@
 import XCTest
 
 class ReservationsTests: BaseTest {
+    override func setUp() {
+        super.setUp()
+        app.launchTunnel()
+    }
+
     func testPhoneNumberRequired() {
         XCTContext
             .runActivity(named: "Login and open reservation") { _ in

@@ -18,7 +18,6 @@ class BaseTest: XCTestCase {
         continueAfterFailure = false
         XCTContext.runActivity(named: "Given I have launched app in clean state") { _ in
             app.launchArguments = ["startStubServer", "logOut"]
-//            app.launchTunnel()
         }
     }
 
