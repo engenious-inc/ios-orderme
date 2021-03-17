@@ -24,6 +24,13 @@ class LoginScreen: BaseScreen {
         return RestaurantsListScreen()
     }
 
+    public func skipFacebook(authStub: AuthStub, placesStub: PlacesStub) -> RestaurantsListScreen {
+        authStub.start()
+        placesStub.start()
+        tap(facebookButton)
+        return .init()
+    }
+
     public func loginWithFacebook() -> FacebookLoginScreen {
         tap(facebookButton)
         if continueWithFacebookSpringAlert.waitForExistence(timeout: 0.5) {

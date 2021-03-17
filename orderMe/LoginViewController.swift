@@ -55,7 +55,14 @@ class LoginViewController: UIViewController {
     }
     
     fileprivate func loginToServerAfterFacebook() {
-        guard let accessToken = AccessToken.current?.tokenString else { return }
+
+        var token = AccessToken.current?.tokenString
+
+        if ProcessInfo.processInfo.arguments.contains("mockFacebook") {
+            token = "UI_TEST_ACCESS_TOKEN"
+        }
+        guard let accessToken = token else { return }
+
         NetworkClient.login(accessToken: accessToken) { (user, error) in
             if let error = error { 
                 self.errorAlert(error)
@@ -68,6 +75,11 @@ class LoginViewController: UIViewController {
     }
     
     fileprivate func loginButtonClicked() {
+        if ProcessInfo.processInfo.arguments.contains("mockFacebook") {
+            loginToServerAfterFacebook()
+            return
+        }
+
         loginManager.logIn(permissions: ["email", "public_profile"],
                            from: self) { (result, error) in
                             if result != nil {
