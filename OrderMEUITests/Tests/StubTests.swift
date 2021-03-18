@@ -44,6 +44,13 @@ class StubTests: BaseTest {
                   "No Places alert is not visible")
     }
 
+    func test500ServerError() {
+        let loginScreen = LoginScreen()
+        let restaurantsListScreen = loginScreen.loginLater(stub: .failure(code: 500))
+        XCTAssert(restaurantsListScreen.unexpectedServerError.waitForExistence(timeout: 2),
+                  "Unexpected Server Error is not visible")
+    }
+
     func assertAnalytics(action: AnalyticsAction, info: String) {
         let analytics = app.monitoredRequestsPeekAll()
             // filter only analytics requests

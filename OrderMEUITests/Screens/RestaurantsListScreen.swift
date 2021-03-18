@@ -12,6 +12,7 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private lazy var republiqueRest = app.staticTexts["Republique"]
     private let allowWhileUsingAppAlert = springboard.alerts.firstMatch.buttons["Allow While Using App"]
     lazy var noPlacesAlert = app.alerts["No Places"]
+    lazy var unexpectedServerError = app.alerts["Unexpected server error"]
 
     required init() {
         super.init()
