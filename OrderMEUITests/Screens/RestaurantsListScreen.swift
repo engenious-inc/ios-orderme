@@ -28,6 +28,7 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
         return allowWhileUsingAppAlert.waitForExistence(timeout: 0.5)
     }
 
+    @discardableResult
     public func openRepubliqueRestaurant() -> RestaurantScreen {
         tap(republiqueRest)
         return RestaurantScreen()

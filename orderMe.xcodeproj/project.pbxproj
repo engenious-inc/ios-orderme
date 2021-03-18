@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = 223EE1A82603D24100C6D847 /* EmptyPlaces.json */; };
+		223EE1B22603D67200C6D847 /* AnalyticsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EE1B12603D67200C6D847 /* AnalyticsStub.swift */; };
 		22CC1BD22602B21D007B8402 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD12602B21D007B8402 /* AuthStub.swift */; };
 		22CC1BD62602B261007B8402 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD52602B261007B8402 /* StubTests.swift */; };
 		22CC1BF32602B53A007B8402 /* BucketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7A81CBB0403001507DD /* BucketController.swift */; };
@@ -89,6 +90,7 @@
 		1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223EE1A82603D24100C6D847 /* EmptyPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyPlaces.json; sourceTree = "<group>"; };
+		223EE1B12603D67200C6D847 /* AnalyticsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsStub.swift; sourceTree = "<group>"; };
 		22CC1BD12602B21D007B8402 /* AuthStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
 		22CC1BD52602B261007B8402 /* StubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
 		22CC1BFA2602C6B2007B8402 /* Auth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223EE1B02603D66900C6D847 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				223EE1B12603D67200C6D847 /* AnalyticsStub.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		22CC1BC62602B1D9007B8402 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +387,7 @@
 		93B27BAF260159CE00A45BB9 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				223EE1B02603D66900C6D847 /* Analytics */,
 				22CC1BC62602B1D9007B8402 /* Auth */,
 				93B27BB0260159D600A45BB9 /* Places */,
 			);
@@ -706,6 +717,7 @@
 			files = (
 				93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */,
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
+				223EE1B22603D67200C6D847 /* AnalyticsStub.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
