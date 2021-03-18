@@ -32,4 +32,11 @@ class StubTests: BaseTest {
         XCTAssert(restaurantsListScreen.noPlacesAlert.waitForExistence(timeout: 2),
                   "No Places alert is not visible")
     }
+
+    func test500ServerError() {
+        let loginScreen = LoginScreen()
+        let restaurantsListScreen = loginScreen.loginLater(stub: .failure(code: 500))
+        XCTAssert(restaurantsListScreen.unexpectedServerError.waitForExistence(timeout: 2),
+                  "Unexpected Server Error is not visible")
+    }
 }

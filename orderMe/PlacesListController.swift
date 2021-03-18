@@ -106,6 +106,11 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
     fileprivate func getPlaces() {
         NetworkClient.getPlaces { (placesOpt, error) in
             if let error = error {
+                let alert = UIAlertController(title: "Unexpected server error",
+                                              message: "Please contact app support",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(error.localizedDescription)
                 return
             }
