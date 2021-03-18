@@ -21,8 +21,15 @@ class StubTests: BaseTest {
         let restaurantsListScreen = loginScreen.skipFacebook(authStub: .success, placesStub: .multiplePlaces)
         let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
         restaurantScreen.choose(option: .callRestaurant)
-
+        
         XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2),
                   "Call alert is not present")
-     }
+    }
+
+    func testPlacesError() {
+        let loginScreen = LoginScreen()
+        let restaurantsListScreen = loginScreen.loginLater(stub: .emptyList)
+        XCTAssert(restaurantsListScreen.noPlacesAlert.waitForExistence(timeout: 2),
+                  "No Places alert is not visible")
+    }
 }

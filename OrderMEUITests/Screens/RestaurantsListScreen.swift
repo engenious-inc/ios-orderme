@@ -11,11 +11,11 @@ import XCTest
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private lazy var republiqueRest = app.staticTexts["Republique"]
     private let allowWhileUsingAppAlert = springboard.alerts.firstMatch.buttons["Allow While Using App"]
+    lazy var noPlacesAlert = app.alerts["No Places"]
 
     required init() {
         super.init()
         handleLocationAlertIfNeeded()
-        visible()
     }
 
     func handleLocationAlertIfNeeded() {
@@ -31,14 +31,5 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     public func openRepubliqueRestaurant() -> RestaurantScreen {
         tap(republiqueRest)
         return RestaurantScreen()
-    }
-}
-
-extension RestaurantsListScreen {
-    func visible() {
-        guard republiqueRest.waitForExistence(timeout: visibleTimeout) else {
-            XCTFail("Restaurants list screen is not present")
-            return
-        }
     }
 }

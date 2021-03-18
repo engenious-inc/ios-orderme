@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = 223EE1A82603D24100C6D847 /* EmptyPlaces.json */; };
 		22CC1BD22602B21D007B8402 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD12602B21D007B8402 /* AuthStub.swift */; };
 		22CC1BD62602B261007B8402 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD52602B261007B8402 /* StubTests.swift */; };
 		22CC1BF32602B53A007B8402 /* BucketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7A81CBB0403001507DD /* BucketController.swift */; };
@@ -87,6 +88,7 @@
 		0A1E6C06FD11E1DB88A716D9 /* Pods-OrderMEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223EE1A82603D24100C6D847 /* EmptyPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyPlaces.json; sourceTree = "<group>"; };
 		22CC1BD12602B21D007B8402 /* AuthStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
 		22CC1BD52602B261007B8402 /* StubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
 		22CC1BFA2602C6B2007B8402 /* Auth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			children = (
 				93B27BB226015AF600A45BB9 /* PlacesStub.swift */,
 				93B27BB826015CF100A45BB9 /* Places.json */,
+				223EE1A82603D24100C6D847 /* EmptyPlaces.json */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B27BB926015CF100A45BB9 /* Places.json in Resources */,
+				223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */,
 				22CC1BFB2602C6B2007B8402 /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

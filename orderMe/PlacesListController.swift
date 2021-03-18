@@ -115,6 +115,13 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
             self.places = places
             SingletonStore.sharedInstance.allplaces = self.places
             self.tableView.reloadData()
+            if places.isEmpty {
+                let alert = UIAlertController(title: "No Places",
+                                              message: "There are no restaurants in your areaa",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             NetworkClient.analytics(action: .placesListShown, info: "\(places.count) places")
         }
     }
