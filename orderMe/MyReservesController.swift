@@ -149,6 +149,7 @@ class ReservesController: UIViewController, RepeatQuestionProtocol {
         let toFacebookAction = UIAlertAction(title: "Login", style: .default) { _ in
             self.navigationController?.popToRootViewController(animated: true)
             if let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "RootNaviVC") as? UINavigationController {
+                LoginViewController.modalPresentationStyle = .fullScreen
                 self.present(LoginViewController, animated: true) {
                     SingletonStore.sharedInstance.user = nil
                 }

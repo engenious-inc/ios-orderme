@@ -118,7 +118,8 @@ class ReserveVC: UIViewController {
         let toFacebookAction = UIAlertAction(title: "Login", style: .default) { (action: UIAlertAction) in
             if let LoginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController {
                 LoginVC.cameFromReserveOrOrderProcess = true
-                self.navigationController?.pushViewController(LoginVC, animated: true)
+                LoginVC.modalPresentationStyle = .fullScreen
+                self.present(LoginVC, animated: true)
             }
         }
         alertController.addAction(cancelAction)
