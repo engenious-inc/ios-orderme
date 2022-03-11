@@ -26,12 +26,14 @@
 
 #if ENABLE_UITUNNEL && ENABLE_UITUNNEL_SWIZZLING
 
+@import SBTUITestTunnelCommon;
+@import CoreLocation;
+
 #import "CLLocationManager+Swizzles.h"
-#import <SBTUITestTunnelCommon/SBTSwizzleHelpers.h>
-#import <CoreLocation/CLLocationManagerDelegate.h>
 
 static NSMapTable *_instanceHashTable;
 static NSString *_autorizationStatus;
+static NSString *_accuracyAuthorization;
 static NSString *_serviceStatus;
 
 @implementation CLLocationManager (Swizzles)
@@ -88,6 +90,22 @@ static NSString *_serviceStatus;
     return (CLAuthorizationStatus)status;
 }
 
+- (CLAuthorizationStatus)swz_authorizationStatus
+{
+    NSString *defaultStatus = [@(kCLAuthorizationStatusAuthorizedAlways) stringValue];
+    NSInteger status = (_autorizationStatus.length > 0 ? _autorizationStatus : defaultStatus).intValue;
+    return (CLAuthorizationStatus)status;
+}
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
+- (CLAccuracyAuthorization)swz_accuracyAuthorization API_AVAILABLE(ios(14.0))
+{
+    NSString *defaultAccuracy = [@(CLAccuracyAuthorizationFullAccuracy) stringValue];
+    NSInteger accuracy = (_accuracyAuthorization.length > 0 ? _accuracyAuthorization : defaultAccuracy).intValue;
+    return (CLAccuracyAuthorization)accuracy;
+}
+#endif
+
 + (BOOL)swz_locationServicesEnabled
 {
     NSString *defaultStatus = @"YES";
@@ -105,10 +123,19 @@ static NSString *_serviceStatus;
     return [_instanceHashTable objectForKey:self];
 }
 
-+ (void)loadSwizzlesWithInstanceHashTable:(NSMapTable<CLLocationManager *, id<CLLocationManagerDelegate>>*)hashTable authorizationStatus:(NSString *)autorizationStatus
++ (void)setStubbedAuthorizationStatus:(NSString *)autorizationStatus
+{
+    _autorizationStatus = autorizationStatus;
+}
+
++ (void)setStubbedAccuracyAuthorization:(NSString *)accuracyAuthorization
+{
+    _accuracyAuthorization = accuracyAuthorization;
+}
+
++ (void)loadSwizzlesWithInstanceHashTable:(NSMapTable<CLLocationManager *, id<CLLocationManagerDelegate>>*)hashTable
 {
     _instanceHashTable = hashTable;
-    _autorizationStatus = autorizationStatus;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -122,7 +149,12 @@ static NSString *_serviceStatus;
         SBTTestTunnelInstanceSwizzle(self.class, @selector(requestAlwaysAuthorization), @selector(swz_requestAlwaysAuthorization));
         SBTTestTunnelInstanceSwizzle(self.class, @selector(requestWhenInUseAuthorization), @selector(swz_requestWhenInUseAuthorization));
         SBTTestTunnelInstanceSwizzle(self.class, @selector(setDelegate:), @selector(swz_setDelegate:));
-
+        
+        SBTTestTunnelInstanceSwizzle(self.class, @selector(authorizationStatus), @selector(swz_authorizationStatus));            
+        #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
+            SBTTestTunnelInstanceSwizzle(self.class, @selector(accuracyAuthorization), @selector(swz_accuracyAuthorization));
+        #endif
+            
         SBTTestTunnelClassSwizzle(self, @selector(authorizationStatus), @selector(swz_authorizationStatus));
         SBTTestTunnelClassSwizzle(self, @selector(locationServicesEnabled), @selector(swz_locationServicesEnabled));
     });
@@ -145,6 +177,11 @@ static NSString *_serviceStatus;
         SBTTestTunnelInstanceSwizzle(self.class, @selector(requestAlwaysAuthorization), @selector(swz_requestAlwaysAuthorization));
         SBTTestTunnelInstanceSwizzle(self.class, @selector(requestWhenInUseAuthorization), @selector(swz_requestWhenInUseAuthorization));
         SBTTestTunnelInstanceSwizzle(self.class, @selector(setDelegate:), @selector(swz_setDelegate:));
+        
+        SBTTestTunnelInstanceSwizzle(self.class, @selector(authorizationStatus), @selector(swz_authorizationStatus));
+        #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
+            SBTTestTunnelInstanceSwizzle(self.class, @selector(accuracyAuthorization), @selector(swz_accuracyAuthorization));
+        #endif
 
         SBTTestTunnelClassSwizzle(self, @selector(authorizationStatus), @selector(swz_authorizationStatus));
         SBTTestTunnelClassSwizzle(self, @selector(locationServicesEnabled), @selector(swz_locationServicesEnabled));

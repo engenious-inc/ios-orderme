@@ -10,13 +10,11 @@
 #endif
 #endif
 
-#import "NSURLRequest+SBTUITestTunnelMatch.h"
 #import "SBTMonitoredNetworkRequest.h"
-#import "SBTRequestMatch.h"
-#import "SBTRewrite.h"
-#import "SBTStubResponse.h"
+#import "SBTRegularExpressionMatcher.h"
 #import "SBTSwizzleHelpers.h"
 #import "SBTUITestTunnel.h"
+#import "SBTUITestTunnelCommon.h"
 
 FOUNDATION_EXPORT double SBTUITestTunnelCommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char SBTUITestTunnelCommonVersionString[];
