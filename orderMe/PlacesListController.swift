@@ -50,6 +50,7 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         locationManager.startUpdatingLocation()
+        self.navigationController?.navigationBar.isHidden = true
         
         if SingletonStore.sharedInstance.qrCodeDetected {
             SingletonStore.sharedInstance.qrCodeDetected = false

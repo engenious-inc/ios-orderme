@@ -22,8 +22,9 @@
 
 #if ENABLE_UITUNNEL
 
+@import SBTUITestTunnelCommon;
+
 #import "UIViewController+SBTUITestTunnel.h"
-#import <SBTUITestTunnelCommon/SBTSwizzleHelpers.h>
 
 @interface SBTUIViewControllerPreviewingGroup : NSObject
 
@@ -57,7 +58,7 @@ static NSMapTable<UIView *, id<UIViewControllerPreviewingDelegate>> *previewingD
     id<UIViewControllerPreviewing> ret = [self swz_registerForPreviewingWithDelegate:delegate sourceView:sourceView];
     
     if (previewingDelegates == nil) {
-        previewingDelegates = [NSMapTable weakToStrongObjectsMapTable];
+        previewingDelegates = [NSMapTable weakToWeakObjectsMapTable];
     }
     
     [previewingDelegates setObject:delegate forKey:sourceView];

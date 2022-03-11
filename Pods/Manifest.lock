@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.9.0)
-  - AlamofireImage (3.5.2):
-    - Alamofire (~> 4.8)
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - Fabric (1.10.2)
@@ -15,37 +15,33 @@ PODS:
     - FacebookCore (~> 0.9.0)
     - FBSDKCoreKit (~> 5.0)
     - FBSDKShareKit (~> 5.0)
-  - FBSDKCoreKit (5.7.0):
-    - FBSDKCoreKit/Basics (= 5.7.0)
-    - FBSDKCoreKit/Core (= 5.7.0)
-  - FBSDKCoreKit/Basics (5.7.0)
-  - FBSDKCoreKit/Core (5.7.0):
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
     - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.7.0):
-    - FBSDKLoginKit/Login (= 5.7.0)
-  - FBSDKLoginKit/Login (5.7.0):
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
     - FBSDKCoreKit (~> 5.0)
-  - FBSDKPlacesKit (5.3.0):
+  - FBSDKPlacesKit (5.15.0):
     - FBSDKCoreKit (~> 5.0)
-  - FBSDKShareKit (5.7.0):
-    - FBSDKShareKit/Share (= 5.7.0)
-  - FBSDKShareKit/Share (5.7.0):
+  - FBSDKShareKit (5.15.1):
+    - FBSDKShareKit/Share (= 5.15.1)
+  - FBSDKShareKit/Share (5.15.1):
     - FBSDKCoreKit (~> 5.0)
-  - GCDWebServer (3.5.3):
-    - GCDWebServer/Core (= 3.5.3)
-  - GCDWebServer/Core (3.5.3)
-  - ObjectMapper (3.5.1)
-  - SBTUITestTunnelClient (5.0.0):
-    - SBTUITestTunnelClient/Connectionless (= 5.0.0)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - ObjectMapper (4.2.0)
+  - SBTUITestTunnelClient (6.6.4):
     - SBTUITestTunnelCommon
-  - SBTUITestTunnelClient/Connectionless (5.0.0):
-    - SBTUITestTunnelCommon
-    - SBTUITestTunnelServer
-  - SBTUITestTunnelCommon (5.0.0)
-  - SBTUITestTunnelServer (5.0.0):
+  - SBTUITestTunnelCommon (6.6.4)
+  - SBTUITestTunnelServer (6.6.4):
     - GCDWebServer (~> 3.0)
     - SBTUITestTunnelCommon
-  - SwiftLint (0.35.0)
+  - SwiftLint (0.46.5)
 
 DEPENDENCIES:
   - Alamofire
@@ -86,24 +82,24 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
-  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
   FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
   FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
-  FBSDKCoreKit: 0d2d450fe9447e204fa6e912e0df76dd36693699
-  FBSDKLoginKit: 4127e8260b96e0e4cc8ba0c10c95ee63941aa24a
-  FBSDKPlacesKit: 0388766304ff7a89630bcc211db9f500d549f403
-  FBSDKShareKit: 0dc4bd06e11eb2ad30d165132c6c879b8d449ae3
-  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  SBTUITestTunnelClient: 66909276134a255decd9565edcc51776e98a6629
-  SBTUITestTunnelCommon: e6a1ba9db98afbfda3f11eb1776745bc1e023662
-  SBTUITestTunnelServer: c5d9d4c2d12b25f1d1f36bd288b58a30fefb00e1
-  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  FBSDKPlacesKit: 26d4033cb8cc8640f1e0eadb3635e7dd29c4d073
+  FBSDKShareKit: 259737eab3cc807087374553abdf588b3096ba55
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SBTUITestTunnelClient: e986b85ed005d74357b43acb2ab81147f6ec8270
+  SBTUITestTunnelCommon: a645b44f41e731c1d31ef8df9c54d1542a8d7fcc
+  SBTUITestTunnelServer: 10dd11ea5c3b59e6a4b73c3a5d73b06d25a8b2b6
+  SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
 
-PODFILE CHECKSUM: 923d557e8a302af6ae0ae9590f9a44d176687dd9
+PODFILE CHECKSUM: 8b8191208008126aa9207c8e8aad1df1af16cd4f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

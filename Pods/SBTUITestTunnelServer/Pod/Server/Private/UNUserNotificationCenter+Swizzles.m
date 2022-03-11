@@ -26,9 +26,10 @@
 
 #if ENABLE_UITUNNEL && ENABLE_UITUNNEL_SWIZZLING
 
+@import UserNotifications;
+@import SBTUITestTunnelCommon;
+
 #import "UNUserNotificationCenter+Swizzles.h"
-#import <UserNotifications/UNNotificationSettings.h>
-#import <SBTUITestTunnelCommon/SBTSwizzleHelpers.h>
 
 static NSString *_autorizationStatus;
 
@@ -62,10 +63,16 @@ static NSString *_autorizationStatus;
     [settings setValue:defaultNotificationSetting forKey:@"lockScreenSetting"];
     [settings setValue:defaultNotificationSetting forKey:@"carPlaySetting"];
     [settings setValue:defaultNotificationSetting forKey:@"alertSetting"];
-    [settings setValue:defaultNotificationSetting forKey:@"showPreviewsSetting"];
-    [settings setValue:defaultNotificationSetting forKey:@"announcementSetting"];
-    [settings setValue:defaultNotificationSetting forKey:@"groupingSetting"];
     
+    if (@available(iOS 11, macOS 10.14, *)) {
+        [settings setValue:defaultNotificationSetting forKey:@"showPreviewsSetting"];
+    }
+
+    if (@available(iOS 13, *)) {
+        [settings setValue:defaultNotificationSetting forKey:@"announcementSetting"];
+        [settings setValue:defaultNotificationSetting forKey:@"groupingSetting"];        
+    }
+
     if (completionHandler != nil) {
         completionHandler(settings);
     }

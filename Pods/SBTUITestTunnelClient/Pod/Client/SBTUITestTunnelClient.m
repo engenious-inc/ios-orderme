@@ -22,10 +22,10 @@
 
 #if ENABLE_UITUNNEL
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+@import SBTUITestTunnelCommon;
+
 #import "SBTUITestTunnelClient.h"
-#import <SBTUITestTunnelCommon/SBTUITestTunnel.h>
-#import <SBTUITestTunnelCommon/NSURLRequest+SBTUITestTunnelMatch.h>
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 
@@ -90,7 +90,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     self.connectionTimeout = SBTUITunneledApplicationDefaultTimeout;
 }
 
-- (void)shutDownWithError:(nullable NSError *)error
+- (void)shutDownWithError:(NSError *)error
 {
     [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandShutDown params:nil assertOnError:NO];
     
@@ -223,19 +223,11 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 - (NSString *)stubRequestsMatching:(SBTRequestMatch *)match response:(SBTStubResponse *)response
 {
-    return [self stubRequestsMatching:match response:response removeAfterIterations:0];
-}
-
-#pragma mark - Stub And Remove Commands
-
-- (NSString *)stubRequestsMatching:(SBTRequestMatch *)match response:(SBTStubResponse *)response removeAfterIterations:(NSUInteger)iterations
-{
     NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelStubMatchRuleKey: [self base64SerializeObject:match],
-                                                     SBTUITunnelStubResponseKey: [self base64SerializeObject:response],
-                                                     SBTUITunnelStubIterationsKey: [@(iterations) stringValue]
+                                                     SBTUITunnelStubResponseKey: [self base64SerializeObject:response]
                                                      };
     
-    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandStubAndRemoveMatching params:params];
+    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandStubMatching params:params];
 }
 
 #pragma mark - Stub Remove Commands
@@ -262,23 +254,29 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandStubRequestsRemoveAll params:nil] boolValue];
 }
 
+- (NSDictionary<SBTRequestMatch *, SBTStubResponse *> *)stubRequestsAll
+{
+    NSString *objectBase64 = [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandStubRequestsAll params:nil];
+    if (objectBase64) {
+        NSData *objectData = [[NSData alloc] initWithBase64EncodedString:objectBase64 options:0];
+        
+        NSDictionary *result = [NSKeyedUnarchiver unarchiveTopLevelObjectWithData:objectData error:nil];
+        
+        return result ?: @{};
+    }
+    
+    return @{};
+}
+
 #pragma mark - Rewrite Commands
 
 - (NSString *)rewriteRequestsMatching:(SBTRequestMatch *)match rewrite:(SBTRewrite *)rewrite
 {
-    return [self rewriteRequestsMatching:match rewrite:rewrite removeAfterIterations:0];
-}
-
-#pragma mark - Rewrite And Remove Commands
-
-- (NSString *)rewriteRequestsMatching:(SBTRequestMatch *)match rewrite:(SBTRewrite *)rewrite removeAfterIterations:(NSUInteger)iterations
-{
     NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelRewriteMatchRuleKey: [self base64SerializeObject:match],
-                                                     SBTUITunnelRewriteKey: [self base64SerializeObject:rewrite],
-                                                     SBTUITunnelRewriteIterationsKey: [@(iterations) stringValue]
+                                                     SBTUITunnelRewriteKey: [self base64SerializeObject:rewrite]
                                                      };
     
-    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandRewriteAndRemoveMatching params:params];
+    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandRewriteMatching params:params];
 }
 
 #pragma mark - Rewrite Remove Commands
@@ -323,7 +321,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
         return [NSKeyedUnarchiver unarchiveObjectWithData:objectData] ?: @[];
     }
     
-    return nil;
+    return @[];
 }
 
 - (NSArray<SBTMonitoredNetworkRequest *> *)monitoredRequestsFlushAll
@@ -335,7 +333,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
         return [NSKeyedUnarchiver unarchiveObjectWithData:objectData] ?: @[];
     }
     
-    return nil;
+    return @[];
 }
 
 - (BOOL)monitorRequestRemoveWithId:(NSString *)reqId
@@ -376,14 +374,15 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 - (void)waitForMonitoredRequestsWithMatchingBlock:(BOOL(^)(SBTMonitoredNetworkRequest *))matchingBlock timeout:(NSTimeInterval)timeout iterations:(NSUInteger)iterations completionBlock:(void (^)(BOOL))completionBlock
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^() {
+    __weak typeof(self)weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^() {
         NSTimeInterval start = CFAbsoluteTimeGetCurrent();
         
         BOOL timedout = NO;
         
         for(;;) {
             NSUInteger localIterations = iterations;
-            NSArray<SBTMonitoredNetworkRequest *> *requests = [self monitoredRequestsPeekAll];
+            NSArray<SBTMonitoredNetworkRequest *> *requests = [weakSelf monitoredRequestsPeekAll];
             
             for (SBTMonitoredNetworkRequest *request in requests) {
                 if (matchingBlock(request)) {
@@ -480,15 +479,15 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 - (NSString *)blockCookiesInRequestsMatching:(SBTRequestMatch *)match
 {
-    return [self blockCookiesInRequestsMatching:match iterations:0];
+    return [self blockCookiesInRequestsMatching:match activeIterations:0];
 }
 
-- (NSString *)blockCookiesInRequestsMatching:(SBTRequestMatch *)match iterations:(NSUInteger)iterations
+- (NSString *)blockCookiesInRequestsMatching:(SBTRequestMatch *)match activeIterations:(NSUInteger)activeIterations
 {
     NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelCookieBlockMatchRuleKey: [self base64SerializeObject:match],
-                                                     SBTUITunnelCookieBlockQueryIterationsKey: [@(iterations) stringValue]};
+                                                     SBTUITunnelCookieBlockQueryIterationsKey: [@(activeIterations) stringValue]};
     
-    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCookieBlockAndRemoveMatching params:params];
+    return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCookieBlockMatching params:params];
 }
 
 - (BOOL)blockCookiesRequestsRemoveWithId:(NSString *)reqId
@@ -577,7 +576,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 #pragma mark - NSBundle
 
-- (nullable NSDictionary<NSString *, id> *)mainBundleInfoDictionary;
+- (NSDictionary<NSString *, id> *)mainBundleInfoDictionary;
 {
     NSString *objectBase64 = [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandMainBundleInfoDictionary params:nil];
     
@@ -675,7 +674,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 #pragma mark - XCUITest scroll extensions
 
-- (BOOL)scrollTableViewWithIdentifier:(nonnull NSString *)identifier toRow:(NSInteger)row animated:(BOOL)flag
+- (BOOL)scrollTableViewWithIdentifier:(NSString *)identifier toRow:(NSInteger)row animated:(BOOL)flag
 {
     NSAssert([identifier length] > 0, @"Invalid empty identifier!");
     
@@ -686,7 +685,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandXCUIExtensionScrollTableView params:params] boolValue];
 }
 
-- (BOOL)scrollCollectionViewWithIdentifier:(nonnull NSString *)identifier toRow:(NSInteger)row animated:(BOOL)flag
+- (BOOL)scrollCollectionViewWithIdentifier:(NSString *)identifier toRow:(NSInteger)row animated:(BOOL)flag
 {
     NSAssert([identifier length] > 0, @"Invalid empty identifier!");
     
@@ -697,7 +696,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandXCUIExtensionScrollCollectionView params:params] boolValue];
 }
 
-- (BOOL)scrollScrollViewWithIdentifier:(nonnull NSString *)identifier toElementWitIdentifier:(nonnull NSString *)targetIdentifier animated:(BOOL)flag
+- (BOOL)scrollScrollViewWithIdentifier:(NSString *)identifier toElementWitIdentifier:(NSString *)targetIdentifier animated:(BOOL)flag
 {
     NSAssert([identifier length] > 0, @"Invalid empty identifier!");
     NSAssert([targetIdentifier length] > 0, @"Invalid empty target identifier!");
@@ -711,7 +710,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
 
 #pragma mark - XCUITest 3D touch extensions
 
-- (BOOL)forcePressViewWithIdentifier:(nonnull NSString *)identifier
+- (BOOL)forcePressViewWithIdentifier:(NSString *)identifier
 {
     NSAssert([identifier length] > 0, @"Invalid empty identifier!");
     
@@ -736,6 +735,15 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCoreLocationStubAuthorizationStatus params:params] boolValue];
 }
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
+- (BOOL)coreLocationStubAccuracyAuthorization:(CLAccuracyAuthorization)authorization API_AVAILABLE(ios(14))
+{
+    NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelObjectValueKey: [@(authorization) stringValue]};
+    
+    return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCoreLocationStubAccuracyAuthorization params:params] boolValue];
+}
+#endif
+
 - (BOOL)coreLocationStubLocationServicesEnabled:(BOOL)flag
 {
     NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelObjectValueKey: flag ? @"YES" : @"NO"};
@@ -743,7 +751,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCoreLocationStubServiceStatus params:params] boolValue];
 }
 
-- (BOOL)coreLocationNotifyLocationUpdate:(nonnull NSArray<CLLocation *>*)locations
+- (BOOL)coreLocationNotifyLocationUpdate:(NSArray<CLLocation *>*)locations
 {
     NSAssert([locations count] > 0, @"Location array should contain at least one element!");
     
@@ -752,7 +760,7 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandCoreLocationNotifyUpdate params:params] boolValue];
 }
 
-- (BOOL)coreLocationNotifyLocationError:(nonnull NSError *)error
+- (BOOL)coreLocationNotifyLocationError:(NSError *)error
 {
     NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelObjectKey: [self base64SerializeObject:error]};
     
@@ -775,6 +783,14 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
     return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandNotificationCenterStubAuthorizationStatus params:params] boolValue];
 }
 
+#pragma mark - XCUITest WKWebView stubbing
+
+- (BOOL)wkWebViewStubEnabled:(BOOL)flag
+{
+    NSDictionary<NSString *, NSString *> *params = @{SBTUITunnelObjectValueKey: flag ? @"YES" : @"NO"};
+    
+    return [[self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandWKWebViewStubbing params:params] boolValue];
+}
 
 #pragma mark - Helper Methods
 

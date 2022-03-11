@@ -125,13 +125,6 @@
     return [self.client stubRequestsMatching:match response:response];
 }
 
-#pragma mark - Stub And Remove Commands
-
-- (NSString *)stubRequestsMatching:(SBTRequestMatch *)match response:(SBTStubResponse *)response removeAfterIterations:(NSUInteger)iterations
-{
-    return [self.client stubRequestsMatching:match response:response removeAfterIterations:iterations];
-}
-
 #pragma mark - Stub Remove Commands
 
 - (BOOL)stubRequestsRemoveWithId:(NSString *)stubId
@@ -149,18 +142,16 @@
     return [self.client stubRequestsRemoveAll];
 }
 
+- (NSDictionary<SBTRequestMatch *, SBTStubResponse *> *)stubRequestsAll
+{
+    return [self.client stubRequestsAll];
+}
+
 #pragma mark - Rewrite Commands
 
 - (NSString *)rewriteRequestsMatching:(SBTRequestMatch *)match rewrite:(SBTRewrite *)rewrite
 {
     return [self.client rewriteRequestsMatching:match rewrite:rewrite];
-}
-
-#pragma mark - Rewrite And Remove Commands
-
-- (NSString *)rewriteRequestsMatching:(SBTRequestMatch *)match rewrite:(SBTRewrite *)rewrite removeAfterIterations:(NSUInteger)iterations
-{
-    return [self.client rewriteRequestsMatching:match rewrite:rewrite removeAfterIterations:iterations];
 }
 
 #pragma mark - Rewrite Remove Commands
@@ -253,9 +244,9 @@
     return [self.client blockCookiesInRequestsMatching:match];
 }
 
-- (NSString *)blockCookiesInRequestsMatching:(SBTRequestMatch *)match iterations:(NSUInteger)iterations
+- (NSString *)blockCookiesInRequestsMatching:(SBTRequestMatch *)match activeIterations:(NSUInteger)iterations
 {
-    return [self.client blockCookiesInRequestsMatching:match iterations:iterations];
+    return [self.client blockCookiesInRequestsMatching:match activeIterations:iterations];
 }
 
 - (BOOL)blockCookiesRequestsRemoveWithId:(NSString *)reqId
@@ -285,7 +276,7 @@
     return [self.client userDefaultsRemoveObjectForKey:key];
 }
 
-- (nullable id)userDefaultsObjectForKey:(NSString *)key
+- (id)userDefaultsObjectForKey:(NSString *)key
 {
     return [self.client userDefaultsObjectForKey:key];
 }
@@ -399,6 +390,13 @@
     return [self.client coreLocationStubAuthorizationStatus:status];
 }
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
+- (BOOL)coreLocationStubAccuracyAuthorization:(CLAccuracyAuthorization)authorization API_AVAILABLE(ios(14));
+{
+    return [self.client coreLocationStubAccuracyAuthorization:authorization];
+}
+#endif
+
 - (BOOL)coreLocationStubLocationServicesEnabled:(BOOL)flag
 {
     return [self.client coreLocationStubLocationServicesEnabled:flag];
@@ -424,6 +422,13 @@
 - (BOOL)notificationCenterStubAuthorizationStatus:(UNAuthorizationStatus)status API_AVAILABLE(ios(10.0))
 {
     return [self.client notificationCenterStubAuthorizationStatus:status];
+}
+
+#pragma mark - XCUITest WKWebView stubbing
+
+- (BOOL)wkWebViewStubEnabled:(BOOL)flag
+{
+    return [self.client wkWebViewStubEnabled:flag];
 }
 
 @end

@@ -14,10 +14,6 @@
 #import "SBTUITestTunnelClientProtocol.h"
 #import "SBTUITunneledApplication.h"
 #import "XCTestCase+AppExtension.h"
-#import "SBTUITestTunnelClient.h"
-#import "SBTUITestTunnelClientProtocol.h"
-#import "SBTUITunneledApplication.h"
-#import "XCTestCase+AppExtension.h"
 
 FOUNDATION_EXPORT double SBTUITestTunnelClientVersionNumber;
 FOUNDATION_EXPORT const unsigned char SBTUITestTunnelClientVersionString[];
