@@ -21,14 +21,14 @@ enum HostURL {
     var baseURL: String {
         switch self {
         case .heroku:               return "https://peaceful-spire-96979.herokuapp.com"
-        case .digitalOcean:         return "http://46.101.208.201:8282"
+        case .digitalOcean:         return "http://ec2-18-118-12-123.us-east-2.compute.amazonaws.com:3000"
         case .localhost(let value): return value
         }
     }
     
     var analyticsURL: String {
         switch self {
-        case .digitalOcean:         return "http://46.101.208.201:8282"
+        case .digitalOcean:         return "http://ec2-18-118-12-123.us-east-2.compute.amazonaws.com:3000"
         case .localhost(let value): return value
         default: return ""
         }
@@ -365,7 +365,7 @@ class NetworkClient {
             completion(nil, NSError())
             return
         }
-        send(api: "/menu/orders", method: .get, parameters: nil, token: token, completion: response_completion )
+        send(api: "/menu/order", method: .get, parameters: nil, token: token, completion: response_completion )
     }
 
     // For Testing 
