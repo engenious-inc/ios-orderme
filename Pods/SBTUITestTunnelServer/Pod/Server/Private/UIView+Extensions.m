@@ -15,14 +15,15 @@
 // limitations under the License.
 
 #if DEBUG
-#ifndef ENABLE_UITUNNEL
-#define ENABLE_UITUNNEL 1
-#endif
+    #ifndef ENABLE_UITUNNEL
+        #define ENABLE_UITUNNEL 1
+    #endif
 #endif
 
 #if ENABLE_UITUNNEL
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
 #import "UIView+Extensions.h"
 
 @implementation UIView (Recursion)
