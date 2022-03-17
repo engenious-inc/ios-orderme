@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "2CD97659-EC55-4D54-ADF2-9D7A57299A04",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:orderMe.xcodeproj",
+        "identifier" : "93A7AC6125D3713200D4BB77",
+        "name" : "OrderMEUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

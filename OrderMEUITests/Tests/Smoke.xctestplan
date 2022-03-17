@@ -1,0 +1,43 @@
+{
+  "configurations" : [
+    {
+      "id" : "1F91C885-31D5-4711-A006-03B9ECAC6AC3",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "language" : "en",
+    "region" : "US",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:orderMe.xcodeproj",
+      "identifier" : "2B2EA7681CBB0377001507DD",
+      "name" : "orderMe"
+    }
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "BaseTest",
+        "FacebookTests",
+        "ReservationStubTests",
+        "ReservationTest",
+        "ReservationTest\/testNoNumberOfPeopleReservation()",
+        "ReservationTest\/testReservationWithoutPhoneNumber()",
+        "ReservationsStubTest",
+        "ReservationsStubTest\/testReservationHappyPath()",
+        "ReservationsTests",
+        "StubTests"
+      ],
+      "target" : {
+        "containerPath" : "container:orderMe.xcodeproj",
+        "identifier" : "93A7AC6125D3713200D4BB77",
+        "name" : "OrderMEUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

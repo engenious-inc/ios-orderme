@@ -140,6 +140,8 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8472894627E3D4A500B77403 /* Smoke.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Smoke.xctestplan; sourceTree = "<group>"; };
+		8472894727E3D5CB00B77403 /* Regression.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Regression.xctestplan; sourceTree = "<group>"; };
 		86B5628C4E54AB689B730F74 /* Pods-orderMe-OrderMEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe-OrderMEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe-OrderMEUITests/Pods-orderMe-OrderMEUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
 		9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsScreen.swift; sourceTree = "<group>"; };
@@ -367,6 +369,8 @@
 			children = (
 				933B0D3225DF080300DC2058 /* BaseTest.swift */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
+				8472894627E3D4A500B77403 /* Smoke.xctestplan */,
+				8472894727E3D5CB00B77403 /* Regression.xctestplan */,
 				934A798825F854D4002A26A7 /* FacebookTests.swift */,
 				93642C5C25FC13290055B866 /* ReservationsTests.swift */,
 				22CC1BD52602B261007B8402 /* StubTests.swift */,
