@@ -1,13 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 use_frameworks!
 
 target "orderMe" do
    inhibit_all_warnings!
-	pod 'Alamofire'
+	pod 'Alamofire', '~> 4.9.1'
 	pod 'ObjectMapper'
-	pod 'AlamofireImage'
+	pod 'AlamofireImage', '~> 3.6.0'
 	pod 'FacebookCore'
 	pod 'FacebookLogin'
 	pod 'FacebookShare'
@@ -18,11 +18,11 @@ target "orderMe" do
 	pod 'FBSDKLoginKit'
 	pod 'FBSDKShareKit'
 	pod 'FBSDKPlacesKit'
-  pod 'SBTUITestTunnelServer'
+  pod 'SBTUITestTunnelServer', '~> 8.2.0'
   pod 'GCDWebServer', :inhibit_warnings => true
 
 target 'OrderMEUITests' do
-  pod 'SBTUITestTunnelClient'
+	pod 'SBTUITestTunnelClient', '~> 8.2.0'
 
   post_install do |installer|
       installer.pods_project.targets.each do |target|

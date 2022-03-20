@@ -35,17 +35,17 @@ PODS:
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
   - ObjectMapper (4.2.0)
-  - SBTUITestTunnelClient (6.6.4):
+  - SBTUITestTunnelClient (8.2.0):
     - SBTUITestTunnelCommon
-  - SBTUITestTunnelCommon (6.6.4)
-  - SBTUITestTunnelServer (6.6.4):
-    - GCDWebServer (~> 3.0)
+  - SBTUITestTunnelCommon (8.2.0)
+  - SBTUITestTunnelServer (8.2.0):
+    - GCDWebServer
     - SBTUITestTunnelCommon
   - SwiftLint (0.46.5)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireImage
+  - Alamofire (~> 4.9.1)
+  - AlamofireImage (~> 3.6.0)
   - Crashlytics
   - Fabric
   - FacebookCore
@@ -57,8 +57,8 @@ DEPENDENCIES:
   - FBSDKShareKit
   - GCDWebServer
   - ObjectMapper
-  - SBTUITestTunnelClient
-  - SBTUITestTunnelServer
+  - SBTUITestTunnelClient (~> 8.2.0)
+  - SBTUITestTunnelServer (~> 8.2.0)
   - SwiftLint
 
 SPEC REPOS:
@@ -95,11 +95,11 @@ SPEC CHECKSUMS:
   FBSDKShareKit: 259737eab3cc807087374553abdf588b3096ba55
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
-  SBTUITestTunnelClient: e986b85ed005d74357b43acb2ab81147f6ec8270
-  SBTUITestTunnelCommon: a645b44f41e731c1d31ef8df9c54d1542a8d7fcc
-  SBTUITestTunnelServer: 10dd11ea5c3b59e6a4b73c3a5d73b06d25a8b2b6
+  SBTUITestTunnelClient: 92e0762194e39d677745ed5e59792c6eb6d3b181
+  SBTUITestTunnelCommon: 6c310b521b617dc7e0c799ce26720fea9f133356
+  SBTUITestTunnelServer: 272e21d58948497213b2c6ea7c0f81777450a94d
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
 
-PODFILE CHECKSUM: 8b8191208008126aa9207c8e8aad1df1af16cd4f
+PODFILE CHECKSUM: 1c89e61a85edb4d5f3cc44fed749907a4dce8213
 
 COCOAPODS: 1.10.1

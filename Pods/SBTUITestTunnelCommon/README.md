@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SBTUITestTunnelServer.svg?style=flat)](http://cocoadocs.org/docsets/SBTUITestTunnel)
 [![License](https://img.shields.io/cocoapods/l/SBTUITestTunnel.svg?style=flat)](http://cocoadocs.org/docsets/SBTUITestTunnel)
 [![Platform](https://img.shields.io/cocoapods/p/SBTUITestTunnel.svg?style=flat)](http://cocoadocs.org/docsets/SBTUITestTunnel)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-green?style=flat)](https://img.shields.io/badge/Swift_Package_Manager-compatible-green?style=flat)
 
 ## Overview
 
@@ -48,6 +49,7 @@ We made additional resources available to improve the UI Testing experience:
 Kudos to the developers of the following pods which we use in SBTUITestTunnel:
 
 * [GCDWebServer](https://github.com/swisspol/GCDWebServer)
+* [DetoxIPC](https://github.com/wix/DetoxIPC)
 
 ## Contributions
 
