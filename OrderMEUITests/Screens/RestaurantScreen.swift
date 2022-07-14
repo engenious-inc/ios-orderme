@@ -13,6 +13,7 @@ enum RestaurantOption {
     case callAWaiter
     case callRestaurant
     case reservation
+    case menu
 }
 
 class RestaurantScreen: BaseScreen, BackProtocol {
@@ -20,8 +21,12 @@ class RestaurantScreen: BaseScreen, BackProtocol {
     private lazy var detectTableOption = app.collectionViews.firstMatch.cells.element(boundBy: 0)
     private lazy var callAWaiterOption = app.collectionViews.firstMatch.cells.element(boundBy: 3)
     private lazy var reservationOption = app.collectionViews.firstMatch.cells.element(boundBy: 2)
+    private lazy var menuOption = app.collectionViews.firstMatch.cells.element(boundBy: 1)
 
     lazy var callAlert = app.alerts["Call Republique"]
+    lazy var callWaiterAlert = app.alerts["Pick the table, please"]
+    lazy var tableNumberOneLabel = app.staticTexts["Table #1"]
+    lazy var networkProblemAlert = app.alerts["Network problem"]
 
     required init() {
         super.init()
@@ -38,7 +43,19 @@ class RestaurantScreen: BaseScreen, BackProtocol {
             tap(callRestOption)
         case .reservation:
             tap(reservationOption)
+        case .menu:
+            tap(menuOption)
         }
+    }
+}
+
+// MARK: - Verifications
+extension RestaurantScreen {
+    @discardableResult
+    func assertNetworkProblemAlert() -> Self {
+        XCTAssert(networkProblemAlert.waitForExistence(timeout: 2),
+                  "Network problem alert is not present")
+        return self
     }
 }
 

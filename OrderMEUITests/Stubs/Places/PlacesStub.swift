@@ -17,7 +17,7 @@ enum PlacesStub {
         switch self {
         case .multiplePlaces:
             let request = SBTRequestMatch(url: "/places", method: "GET")
-            let response = SBTStubResponse(fileNamed: "Places.json")
+            let response = SBTStubResponse(fileNamed: "AllPlaces.json")
             BaseTest.shared.app.stubRequests(matching: request, response: response)
         case .emptyList:
              let request = SBTRequestMatch(url: "/places", method: "GET")

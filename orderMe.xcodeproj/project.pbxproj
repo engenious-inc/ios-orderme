@@ -72,7 +72,13 @@
 		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
 		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
 		B5F6CFB1E845F4E1333907FC /* Pods_orderMe_OrderMEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ED80C33B1B6D9627312FB1 /* Pods_orderMe_OrderMEUITests.framework */; };
-		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
+		F3B3CEF6287B15C6000E7938 /* SelectATableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3CEF5287B15C6000E7938 /* SelectATableScreen.swift */; };
+		F3B3CEF8287B3153000E7938 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3CEF7287B3153000E7938 /* MenuScreen.swift */; };
+		F3B3CEFA287C7941000E7938 /* AllPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = F3B3CEF9287C78DF000E7938 /* AllPlaces.json */; };
+		F3B3CF1E28801F91000E7938 /* MenuStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3CF1D28801F91000E7938 /* MenuStub.swift */; };
+		F3B3CF202880201E000E7938 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F3B3CF1F2880201E000E7938 /* Menu.json */; };
+		F3B3CF2228802077000E7938 /* EmptyMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = F3B3CF2128802077000E7938 /* EmptyMenu.json */; };
+		F3B3CF2428802381000E7938 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3CF2328802381000E7938 /* MenuTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +172,13 @@
 		D0ED80C33B1B6D9627312FB1 /* Pods_orderMe_OrderMEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe_OrderMEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B3CEF5287B15C6000E7938 /* SelectATableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectATableScreen.swift; sourceTree = "<group>"; };
+		F3B3CEF7287B3153000E7938 /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		F3B3CEF9287C78DF000E7938 /* AllPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AllPlaces.json; sourceTree = "<group>"; };
+		F3B3CF1D28801F91000E7938 /* MenuStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStub.swift; sourceTree = "<group>"; };
+		F3B3CF1F2880201E000E7938 /* Menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
+		F3B3CF2128802077000E7938 /* EmptyMenu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyMenu.json; sourceTree = "<group>"; };
+		F3B3CF2328802381000E7938 /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8417EC9327E65F320056804E /* Pods_orderMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,8 @@
 				9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */,
 				934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */,
 				93642C5725FC0FAF0055B866 /* ReservationsScreen.swift */,
+				F3B3CEF5287B15C6000E7938 /* SelectATableScreen.swift */,
+				F3B3CEF7287B3153000E7938 /* MenuScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 				934A798825F854D4002A26A7 /* FacebookTests.swift */,
 				93642C5C25FC13290055B866 /* ReservationsTests.swift */,
 				22CC1BD52602B261007B8402 /* StubTests.swift */,
+				F3B3CF2328802381000E7938 /* MenuTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -396,6 +411,7 @@
 				223EE1B02603D66900C6D847 /* Analytics */,
 				22CC1BC62602B1D9007B8402 /* Auth */,
 				93B27BB0260159D600A45BB9 /* Places */,
+				F3B3CF1C28801F4D000E7938 /* Menu */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -405,6 +421,7 @@
 			children = (
 				93B27BB226015AF600A45BB9 /* PlacesStub.swift */,
 				93B27BB826015CF100A45BB9 /* Places.json */,
+				F3B3CEF9287C78DF000E7938 /* AllPlaces.json */,
 				223EE1A82603D24100C6D847 /* EmptyPlaces.json */,
 			);
 			path = Places;
@@ -432,6 +449,16 @@
 				D0ED80C33B1B6D9627312FB1 /* Pods_orderMe_OrderMEUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3B3CF1C28801F4D000E7938 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F3B3CF1D28801F91000E7938 /* MenuStub.swift */,
+				F3B3CF1F2880201E000E7938 /* Menu.json */,
+				F3B3CF2128802077000E7938 /* EmptyMenu.json */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,9 +564,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B3CF2228802077000E7938 /* EmptyMenu.json in Resources */,
 				93B27BB926015CF100A45BB9 /* Places.json in Resources */,
 				223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */,
+				F3B3CF202880201E000E7938 /* Menu.json in Resources */,
 				22CC1BFB2602C6B2007B8402 /* Auth.json in Resources */,
+				F3B3CEFA287C7941000E7938 /* AllPlaces.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		5915415850A62D98F7238403 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -733,13 +763,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B3CEF8287B3153000E7938 /* MenuScreen.swift in Sources */,
 				93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */,
+				F3B3CF2428802381000E7938 /* MenuTests.swift in Sources */,
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
 				223EE1B22603D67200C6D847 /* AnalyticsStub.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
 				934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */,
+				F3B3CF1E28801F91000E7938 /* MenuStub.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
@@ -750,6 +783,7 @@
 				934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
+				F3B3CEF6287B15C6000E7938 /* SelectATableScreen.swift in Sources */,
 				22CC1BD62602B261007B8402 /* StubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
