@@ -71,52 +71,6 @@ class StubTests: BaseTest {
         XCTAssert(restaurantScreen.tableNumberOneLabel.waitForExistence(timeout: 2),
                   "Select Table textField is not present")
     }
-    
-    func testMenu() {
-        let loginScreen = LoginScreen()
-        let restaurantsListScreen = loginScreen.skipFacebook(authStub: .success, placesStub: .multiplePlaces)
-        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
-        restaurantScreen.choose(option: .menu)
-        
-        let menuScreen = MenuScreen()
-        menuScreen.assertMenu()
-    }
-    
-    func testReservation() {
-        let loginScreen = LoginScreen()
-        let restaurantsListScreen = loginScreen.skipFacebook(authStub: .success, placesStub: .multiplePlaces)
-        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
-        restaurantScreen.choose(option: .reservation)
-        
-        let reservationScreen = ReservationsScreen()
-        reservationScreen.selectDate(month: "May", day: "22", hour: 11, minute: 30, amPm: .pmTime)
-        reservationScreen.reserve()
-        reservationScreen.assertWeNeedPhoneExist()
-    }
-    
-    func testReservationScreenNumberOfPeopleAlert() {
-        let loginScreen = LoginScreen()
-        let restaurantsListScreen = loginScreen.skipFacebook(authStub: .success, placesStub: .multiplePlaces)
-        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
-        restaurantScreen.choose(option: .reservation)
-        
-        let reservationScreen = ReservationsScreen()
-        reservationScreen.typePhoneNumber()
-        reservationScreen.dismissKeyboard()
-        reservationScreen.selectDate(month: "May", day: "22", hour: 11, minute: 30, amPm: .pmTime)
-        reservationScreen.reserve()
-        reservationScreen.assertWeNeedNumberOfPeopleExist()
-    }
-    
-    func testOrderTotal() {
-        let loginScreen = LoginScreen()
-        let restaurantsListScreen = loginScreen.skipFacebook(authStub: .success, placesStub: .multiplePlaces)
-        let restaurantScreen = restaurantsListScreen.openRepubliqueRestaurant()
-        restaurantScreen.choose(option: .menu)
-        let menuScreen = MenuScreen()
-        menuScreen.openSaladsSection().addMenuItem()
-        menuScreen.assertOrderTotal()
-    }
 
     func testPlacesError() {
         let loginScreen = LoginScreen()

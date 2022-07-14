@@ -18,6 +18,9 @@ class MenuScreen: BaseScreen {
     lazy var pastaCellLabel = app.cells.staticTexts["Pasta"]
     lazy var addMenuItemButton = app.buttons["plusButton"].firstMatch
     lazy var oderTotalLabel = app.staticTexts["18.0"]
+    lazy var oderMultipleItemsLabel = app.staticTexts["80.0"]
+    lazy var fishMenuItem = app.cells.staticTexts["CHANNEL ISLANDS ROCK FISH"]
+    lazy var backButton = app.buttons["backButton"]
 
     required init() {
         super.init()
@@ -35,6 +38,24 @@ extension MenuScreen {
     @discardableResult
     func addMenuItem() -> Self {
         tap(addMenuItemButton)
+        return self
+    }
+    
+    @discardableResult
+    func openFishSection() -> Self {
+        tap(fishCellLabel)
+        return self
+    }
+    
+    @discardableResult
+    func openPastaSection() -> Self {
+        tap(pASTACellLabel)
+        return self
+    }
+    
+    @discardableResult
+    func tapBackButton() -> Self {
+        tap(backButton)
         return self
     }
 }
@@ -59,9 +80,40 @@ extension MenuScreen {
     }
     
     @discardableResult
+    func assertMenuNotVisible() -> Self {
+        XCTAssertFalse(saladsCellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        XCTAssertFalse(fishCellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        XCTAssertFalse(pASTACellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        XCTAssertFalse(meatCellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        XCTAssertFalse(lasagnaCellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        XCTAssertFalse(pastaCellLabel.waitForExistence(timeout: 3),
+                      "Menu is visible")
+        return self
+    }
+    
+    @discardableResult
     func assertOrderTotal() -> Self {
         XCTAssert(oderTotalLabel.waitForExistence(timeout: 3),
                       "Oder total is not visible")
+        return self
+    }
+    
+    @discardableResult
+    func assertOrderTotalForMultipleItems() -> Self {
+        XCTAssert(oderMultipleItemsLabel.waitForExistence(timeout: 3),
+                      "Oder total is not visible")
+        return self
+    }
+    
+    @discardableResult
+    func assertFishMenuItem() -> Self {
+        XCTAssert(fishMenuItem.waitForExistence(timeout: 3),
+                      "Fish Menu Item is not visible")
         return self
     }
 }

@@ -60,6 +60,7 @@ extension ReservationsScreen {
     func typePhoneNumber() -> Self {
         tap(phoneNumberTextFiled)
         type("111", element: phoneNumberTextFiled)
+        dismissKeyboard()
         return self
     }
 
@@ -67,6 +68,7 @@ extension ReservationsScreen {
     func typeNumberOfPeople() -> Self {
         tap(numberOfPeopleTextFiled)
         type("3", element: numberOfPeopleTextFiled)
+        dismissKeyboard()
         return self
     }
     

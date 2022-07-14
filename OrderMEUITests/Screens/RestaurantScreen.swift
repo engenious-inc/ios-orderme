@@ -26,6 +26,7 @@ class RestaurantScreen: BaseScreen, BackProtocol {
     lazy var callAlert = app.alerts["Call Republique"]
     lazy var callWaiterAlert = app.alerts["Pick the table, please"]
     lazy var tableNumberOneLabel = app.staticTexts["Table #1"]
+    lazy var networkProblemAlert = app.alerts["Network problem"]
 
     required init() {
         super.init()
@@ -45,6 +46,16 @@ class RestaurantScreen: BaseScreen, BackProtocol {
         case .menu:
             tap(menuOption)
         }
+    }
+}
+
+// MARK: - Verifications
+extension RestaurantScreen {
+    @discardableResult
+    func assertNetworkProblemAlert() -> Self {
+        XCTAssert(networkProblemAlert.waitForExistence(timeout: 2),
+                  "Network problem alert is not present")
+        return self
     }
 }
 

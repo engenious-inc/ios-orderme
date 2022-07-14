@@ -30,6 +30,14 @@ class LoginScreen: BaseScreen {
         tap(facebookButton)
         return .init()
     }
+    
+    public func skipFacebook(authStub: AuthStub, placesStub: PlacesStub, menuStub: MenuStub) -> RestaurantsListScreen {
+        authStub.start()
+        placesStub.start()
+        menuStub.start()
+        tap(facebookButton)
+        return .init()
+    }
 
     public func loginWithFacebook() -> FacebookLoginScreen {
         tap(facebookButton)
