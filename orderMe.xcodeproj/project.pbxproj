@@ -72,7 +72,6 @@
 		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
 		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
 		B5F6CFB1E845F4E1333907FC /* Pods_orderMe_OrderMEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ED80C33B1B6D9627312FB1 /* Pods_orderMe_OrderMEUITests.framework */; };
-		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,7 +172,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8417EC9327E65F320056804E /* Pods_orderMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +559,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		5915415850A62D98F7238403 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
