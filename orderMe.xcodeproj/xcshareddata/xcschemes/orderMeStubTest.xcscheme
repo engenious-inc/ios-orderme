@@ -27,12 +27,21 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2B2EA7681CBB0377001507DD"
+            BuildableName = "OrderME.app"
+            BlueprintName = "orderMe"
+            ReferencedContainer = "container:orderMe.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22FB824B21758B710004B281"
+               BlueprintIdentifier = "93A7AC6125D3713200D4BB77"
                BuildableName = "OrderMEUITests.xctest"
                BlueprintName = "OrderMEUITests"
                ReferencedContainer = "container:orderMe.xcodeproj">
@@ -74,17 +83,6 @@
             </SkippedTests>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B2EA7681CBB0377001507DD"
-            BuildableName = "OrderME.app"
-            BlueprintName = "orderMe"
-            ReferencedContainer = "container:orderMe.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -106,8 +104,6 @@
             ReferencedContainer = "container:orderMe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -130,7 +126,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
