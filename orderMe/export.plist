@@ -8,8 +8,8 @@
 	<string>development</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.assesment.orderme</key>
-		<string>Xcode Managed Profiles</string>
+		<key>com.engenious.orderme</key>
+		<string>1bf61206-7850-4317-94cf-d2641cf8bec6</string>
 	</dict>
 </dict>
 </plist>
