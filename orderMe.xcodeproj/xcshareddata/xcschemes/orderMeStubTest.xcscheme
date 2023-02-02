@@ -57,6 +57,9 @@
                   Identifier = "CallWaiterTest">
                </Test>
                <Test
+                  Identifier = "FacebookTests/testLoginWithFacebook()">
+               </Test>
+               <Test
                   Identifier = "FindRestaurantFromList">
                </Test>
                <Test
