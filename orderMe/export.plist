@@ -11,7 +11,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.engenious.orderme</key>
-		<string>orderme</string>
+		<string>orderme_demo</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution: ENGENIOUS INC (8BLYD5L95G)
