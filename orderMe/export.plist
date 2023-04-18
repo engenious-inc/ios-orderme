@@ -14,19 +14,7 @@
 		<string>orderme_demo</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>Apple Distribution: ENGENIOUS INC (8BLYD5L95G)
-
-
-
-
-
-Apple Distribution: ENGENIOUS INC (8BLYD5L95G)
-
-
-
-
-
-</string>
+	<string>Apple Distribution: ENGENIOUS INC (8BLYD5L95G)</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>
