@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import Foundation
 
 class Reserve: Mappable {
     var id: Int?

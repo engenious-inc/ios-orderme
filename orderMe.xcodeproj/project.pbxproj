@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,12 +50,18 @@
 		4390A4592031D58A00E1CD80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390A4582031D58A00E1CD80 /* Constants.swift */; };
 		43A8036F203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */; };
 		43B95CEC2059716B00E8C016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */; };
-		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
-		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
+		843B9C172AA2A42E00D3F075 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9C162AA2A42E00D3F075 /* OrderMEUITests.swift */; };
+		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
+		A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
+		A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
+		A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1C2A96D0D1007FF2D6 /* FacebookCore */; };
+		A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
+		A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
+		A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93A7AC6725D3713200D4BB77 /* PBXContainerItemProxy */ = {
+		884FFF662AA20AB4002CF4CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B2EA7611CBB0377001507DD /* Project object */;
 			proxyType = 1;
@@ -65,10 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A1E6C06FD11E1DB88A716D9 /* Pods-OrderMEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.release.xcconfig"; sourceTree = "<group>"; };
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B2EA7691CBB0377001507DD /* OrderME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EA7781CBB0377001507DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,11 +116,8 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
-		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A02526015C2AC40E8E286088 /* Pods-orderMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.debug.xcconfig"; sourceTree = "<group>"; };
-		B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderMEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843B9C162AA2A42E00D3F075 /* OrderMEUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
+		884FFF602AA20AB4002CF4CA /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,11 +127,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */,
+				A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */,
+				A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */,
+				A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */,
+				A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */,
+				A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */,
+				A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */,
+				A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93A7AC5F25D3713200D4BB77 /* Frameworks */ = {
+		884FFF5D2AA20AB4002CF4CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,9 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA76B1CBB0377001507DD /* orderMe */,
-				93A7AC6325D3713200D4BB77 /* OrderMEUITests */,
+				884FFF612AA20AB4002CF4CA /* OrderMEUITests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
-				C9DF39D983637B40F1924EE8 /* Pods */,
 				ED4E7941F9C50F3BEA03680F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA7691CBB0377001507DD /* OrderME.app */,
-				93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */,
+				884FFF602AA20AB4002CF4CA /* OrderMEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,24 +281,12 @@
 			name = JsonTransforms;
 			sourceTree = "<group>";
 		};
-		93A7AC6325D3713200D4BB77 /* OrderMEUITests */ = {
+		884FFF612AA20AB4002CF4CA /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
-				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
-				93A7AC6625D3713200D4BB77 /* Info.plist */,
+				843B9C162AA2A42E00D3F075 /* OrderMEUITests.swift */,
 			);
 			path = OrderMEUITests;
-			sourceTree = "<group>";
-		};
-		C9DF39D983637B40F1924EE8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A02526015C2AC40E8E286088 /* Pods-orderMe.debug.xcconfig */,
-				2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */,
-				1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */,
-				0A1E6C06FD11E1DB88A716D9 /* Pods-OrderMEUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		ED4E7941F9C50F3BEA03680F /* Frameworks */ = {
@@ -302,8 +294,6 @@
 			children = (
 				EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */,
 				EDDBFC792085FA8700A45B71 /* Bolts.framework */,
-				1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */,
-				B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,38 +305,46 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B2EA77B1CBB0377001507DD /* Build configuration list for PBXNativeTarget "orderMe" */;
 			buildPhases = (
-				842538B1ECA89D2A457917D9 /* [CP] Check Pods Manifest.lock */,
 				2B2EA7651CBB0377001507DD /* Sources */,
 				2B2EA7661CBB0377001507DD /* Frameworks */,
 				2B2EA7671CBB0377001507DD /* Resources */,
-				CCC3C6237C0F3B25C5950EFD /* [CP] Embed Pods Frameworks */,
-				22F01ADB23553F82009CCDF0 /* ShellScript */,
+				22F01ADB23553F82009CCDF0 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				889392842A978D0D00D44D65 /* PBXTargetDependency */,
 			);
 			name = orderMe;
+			packageProductDependencies = (
+				A7140EFC2A96C57A007FF2D6 /* ObjectMapper */,
+				A7140F162A96CB16007FF2D6 /* AlamofireImage */,
+				A7140F192A96CB4F007FF2D6 /* Alamofire */,
+				A7140F1C2A96D0D1007FF2D6 /* FacebookCore */,
+				A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */,
+				A7140F202A96D0D1007FF2D6 /* FacebookLogin */,
+				A7140F222A96D0D1007FF2D6 /* FacebookShare */,
+			);
 			productName = orderMe;
 			productReference = 2B2EA7691CBB0377001507DD /* OrderME.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93A7AC6125D3713200D4BB77 /* OrderMEUITests */ = {
+		884FFF5F2AA20AB4002CF4CA /* OrderMEUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93A7AC6B25D3713200D4BB77 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
+			buildConfigurationList = 884FFF6A2AA20AB4002CF4CA /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
 			buildPhases = (
-				93A7AC5E25D3713200D4BB77 /* Sources */,
-				93A7AC5F25D3713200D4BB77 /* Frameworks */,
-				93A7AC6025D3713200D4BB77 /* Resources */,
+				884FFF5C2AA20AB4002CF4CA /* Sources */,
+				884FFF5D2AA20AB4002CF4CA /* Frameworks */,
+				884FFF5E2AA20AB4002CF4CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				93A7AC6825D3713200D4BB77 /* PBXTargetDependency */,
+				884FFF672AA20AB4002CF4CA /* PBXTargetDependency */,
 			);
 			name = OrderMEUITests;
 			productName = OrderMEUITests;
-			productReference = 93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */;
+			productReference = 884FFF602AA20AB4002CF4CA /* OrderMEUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +353,7 @@
 		2B2EA7611CBB0377001507DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Boris Gurtovoy";
 				TargetAttributes = {
@@ -368,15 +366,15 @@
 							};
 						};
 					};
-					93A7AC6125D3713200D4BB77 = {
-						CreatedOnToolsVersion = 12.1;
-						ProvisioningStyle = Automatic;
+					884FFF5F2AA20AB4002CF4CA = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1420;
 						TestTargetID = 2B2EA7681CBB0377001507DD;
 					};
 				};
 			};
 			buildConfigurationList = 2B2EA7641CBB0377001507DD /* Build configuration list for PBXProject "orderMe" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -384,12 +382,19 @@
 				Base,
 			);
 			mainGroup = 2B2EA7601CBB0377001507DD;
+			packageReferences = (
+				A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				889392852A97C47100D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 2B2EA76A1CBB0377001507DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2B2EA7681CBB0377001507DD /* orderMe */,
-				93A7AC6125D3713200D4BB77 /* OrderMEUITests */,
+				884FFF5F2AA20AB4002CF4CA /* OrderMEUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -405,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93A7AC6025D3713200D4BB77 /* Resources */ = {
+		884FFF5E2AA20AB4002CF4CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,8 +420,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22F01ADB23553F82009CCDF0 /* ShellScript */ = {
+		22F01ADB23553F82009CCDF0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -424,67 +430,14 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		842538B1ECA89D2A457917D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-orderMe-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCC3C6237C0F3B25C5950EFD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-orderMe/Pods-orderMe-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKPlacesKit/FBSDKPlacesKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKPlacesKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orderMe/Pods-orderMe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# cd $(git rev-parse --show-toplevel)\n# swiftlint lint --config ./.swiftlint.yml\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -536,21 +489,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93A7AC5E25D3713200D4BB77 /* Sources */ = {
+		884FFF5C2AA20AB4002CF4CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
+				843B9C172AA2A42E00D3F075 /* OrderMEUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93A7AC6825D3713200D4BB77 /* PBXTargetDependency */ = {
+		884FFF672AA20AB4002CF4CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2B2EA7681CBB0377001507DD /* orderMe */;
-			targetProxy = 93A7AC6725D3713200D4BB77 /* PBXContainerItemProxy */;
+			targetProxy = 884FFF662AA20AB4002CF4CA /* PBXContainerItemProxy */;
+		};
+		889392842A978D0D00D44D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 889392832A978D0D00D44D65 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -589,7 +546,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -604,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -647,7 +603,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -656,101 +611,137 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2B2EA77C1CBB0377001507DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A02526015C2AC40E8E286088 /* Pods-orderMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2B2EA77D1CBB0377001507DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		93A7AC6925D3713200D4BB77 /* Debug */ = {
+		884FFF682AA20AB4002CF4CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48ZGK5S53A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.oleksi.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = orderMe;
 			};
 			name = Debug;
 		};
-		93A7AC6A25D3713200D4BB77 /* Release */ = {
+		884FFF692AA20AB4002CF4CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48ZGK5S53A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.oleksi.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = orderMe;
@@ -778,16 +769,110 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93A7AC6B25D3713200D4BB77 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */ = {
+		884FFF6A2AA20AB4002CF4CA /* Build configuration list for PBXNativeTarget "OrderMEUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93A7AC6925D3713200D4BB77 /* Debug */,
-				93A7AC6A25D3713200D4BB77 /* Release */,
+				884FFF682AA20AB4002CF4CA /* Debug */,
+				884FFF692AA20AB4002CF4CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		889392822A978CDB00D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.4;
+			};
+		};
+		889392852A97C47100D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.4;
+			};
+		};
+		A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		889392832A978D0D00D44D65 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889392822A978CDB00D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+		A7140EFC2A96C57A007FF2D6 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		A7140F162A96CB16007FF2D6 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		A7140F192A96CB4F007FF2D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A7140F1C2A96D0D1007FF2D6 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		A7140F202A96D0D1007FF2D6 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		A7140F222A96D0D1007FF2D6 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B2EA7611CBB0377001507DD /* Project object */;
 }
