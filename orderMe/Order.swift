@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import Foundation
 
 class Order: Mappable {
     var id : Int?
