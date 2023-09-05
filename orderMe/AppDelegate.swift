@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import FBSDKShareKit
-import Crashlytics
+//import Crashlytics
 import SBTUITestTunnelServer
 
 
