@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -66,6 +66,22 @@
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
 		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
+		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
+		A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
+		A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
+		A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1C2A96D0D1007FF2D6 /* FacebookCore */; };
+		A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
+		A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
+		A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
+		A77910302AA6CE5B00F5267D /* SBTUITestTunnelClient in Frameworks */ = {isa = PBXBuildFile; productRef = A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */; };
+		A77910322AA6CE5B00F5267D /* SBTUITestTunnelServer in Frameworks */ = {isa = PBXBuildFile; productRef = A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */; };
+		A77F225E2AA4313900ECD9FC /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
+		A77F225F2AA4313900ECD9FC /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
+		A77F22602AA4313900ECD9FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
+		A77F22612AA4313900ECD9FC /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1C2A96D0D1007FF2D6 /* FacebookCore */; };
+		A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
+		A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
+		A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +167,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */,
+				A77910322AA6CE5B00F5267D /* SBTUITestTunnelServer in Frameworks */,
+				A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */,
+				A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */,
+				A77F22612AA4313900ECD9FC /* FacebookCore in Frameworks */,
+				A77F22602AA4313900ECD9FC /* Alamofire in Frameworks */,
+				A77F225F2AA4313900ECD9FC /* AlamofireImage in Frameworks */,
+				A77F225E2AA4313900ECD9FC /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +182,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */,
+				A77910302AA6CE5B00F5267D /* SBTUITestTunnelClient in Frameworks */,
+				A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */,
+				A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */,
+				A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */,
+				A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */,
+				A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */,
+				A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,13 +413,22 @@
 				2B2EA7651CBB0377001507DD /* Sources */,
 				2B2EA7661CBB0377001507DD /* Frameworks */,
 				2B2EA7671CBB0377001507DD /* Resources */,
-				22F01ADB23553F82009CCDF0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = orderMe;
+			packageProductDependencies = (
+				A7140EFC2A96C57A007FF2D6 /* ObjectMapper */,
+				A7140F162A96CB16007FF2D6 /* AlamofireImage */,
+				A7140F192A96CB4F007FF2D6 /* Alamofire */,
+				A7140F1C2A96D0D1007FF2D6 /* FacebookCore */,
+				A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */,
+				A7140F202A96D0D1007FF2D6 /* FacebookLogin */,
+				A7140F222A96D0D1007FF2D6 /* FacebookShare */,
+				A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */,
+			);
 			productName = orderMe;
 			productReference = 2B2EA7691CBB0377001507DD /* OrderME.app */;
 			productType = "com.apple.product-type.application";
@@ -406,6 +447,9 @@
 				93A7AC6825D3713200D4BB77 /* PBXTargetDependency */,
 			);
 			name = OrderMEUITests;
+			packageProductDependencies = (
+				A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */,
+			);
 			productName = OrderMEUITests;
 			productReference = 93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -437,7 +481,7 @@
 				};
 			};
 			buildConfigurationList = 2B2EA7641CBB0377001507DD /* Build configuration list for PBXProject "orderMe" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -445,6 +489,13 @@
 				Base,
 			);
 			mainGroup = 2B2EA7601CBB0377001507DD;
+			packageReferences = (
+				A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */,
+			);
 			productRefGroup = 2B2EA76A1CBB0377001507DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -475,26 +526,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22F01ADB23553F82009CCDF0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B2EA7651CBB0377001507DD /* Sources */ = {
@@ -611,7 +642,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -669,7 +699,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -678,11 +707,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -695,17 +725,26 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -717,15 +756,24 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -741,15 +789,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = orderMe;
 			};
 			name = Debug;
@@ -766,13 +822,21 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = orderMe;
 			};
 			name = Release;
@@ -808,6 +872,97 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Subito-it/SBTUITestTunnel.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7140EFC2A96C57A007FF2D6 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		A7140F162A96CB16007FF2D6 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		A7140F192A96CB4F007FF2D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A7140F1C2A96D0D1007FF2D6 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		A7140F202A96D0D1007FF2D6 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		A7140F222A96D0D1007FF2D6 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelClient;
+		};
+		A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B2EA7611CBB0377001507DD /* Project object */;
 }
