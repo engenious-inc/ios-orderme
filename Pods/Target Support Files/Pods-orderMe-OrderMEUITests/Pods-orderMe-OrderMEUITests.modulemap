@@ -1,6 +1,0 @@
-framework module Pods_orderMe_OrderMEUITests {
-  umbrella header "Pods-orderMe-OrderMEUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
