@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = 223EE1A82603D24100C6D847 /* EmptyPlaces.json */; };
-		22CC1BD22602B21D007B8402 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD12602B21D007B8402 /* AuthStub.swift */; };
-		22CC1BD62602B261007B8402 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC1BD52602B261007B8402 /* StubTests.swift */; };
 		22CC1BF32602B53A007B8402 /* BucketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7A81CBB0403001507DD /* BucketController.swift */; };
-		22CC1BFB2602C6B2007B8402 /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 22CC1BFA2602C6B2007B8402 /* Auth.json */; };
+		22CC1BFB2602C6B2007B8402 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2B13B0281E064472004A09D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B0271E064472004A09D2 /* Menu.swift */; };
 		2B2EA7911CBB03D6001507DD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7821CBB03D6001507DD /* CategoryCell.swift */; };
 		2B2EA7921CBB03D6001507DD /* PlaceMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7831CBB03D6001507DD /* PlaceMainMenuController.swift */; };
@@ -70,6 +68,25 @@
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
 		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
+		A707BF142AA7112D00B1A5EB /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = A707BF122AA7112C00B1A5EB /* Auth.json */; };
+		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
+		A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
+		A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
+		A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1C2A96D0D1007FF2D6 /* FacebookCore */; };
+		A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
+		A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
+		A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
+		A77190C52AA713B500D88803 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77190C42AA713B500D88803 /* AuthStub.swift */; };
+		A77190C72AA7141A00D88803 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77190C62AA7141A00D88803 /* StubTests.swift */; };
+		A77910302AA6CE5B00F5267D /* SBTUITestTunnelClient in Frameworks */ = {isa = PBXBuildFile; productRef = A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */; };
+		A77910322AA6CE5B00F5267D /* SBTUITestTunnelServer in Frameworks */ = {isa = PBXBuildFile; productRef = A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */; };
+		A77F225E2AA4313900ECD9FC /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
+		A77F225F2AA4313900ECD9FC /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
+		A77F22602AA4313900ECD9FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
+		A77F22612AA4313900ECD9FC /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1C2A96D0D1007FF2D6 /* FacebookCore */; };
+		A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
+		A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
+		A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +101,6 @@
 
 /* Begin PBXFileReference section */
 		223EE1A82603D24100C6D847 /* EmptyPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyPlaces.json; sourceTree = "<group>"; };
-		22CC1BD12602B21D007B8402 /* AuthStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
-		22CC1BD52602B261007B8402 /* StubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
-		22CC1BFA2602C6B2007B8402 /* Auth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B2EA7691CBB0377001507DD /* OrderME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EA7781CBB0377001507DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +164,9 @@
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93B27BB226015AF600A45BB9 /* PlacesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesStub.swift; sourceTree = "<group>"; };
 		93B27BB826015CF100A45BB9 /* Places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Places.json; sourceTree = "<group>"; };
+		A707BF122AA7112C00B1A5EB /* Auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
+		A77190C42AA713B500D88803 /* AuthStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
+		A77190C62AA7141A00D88803 /* StubTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +176,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */,
+				A77910322AA6CE5B00F5267D /* SBTUITestTunnelServer in Frameworks */,
+				A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */,
+				A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */,
+				A77F22612AA4313900ECD9FC /* FacebookCore in Frameworks */,
+				A77F22602AA4313900ECD9FC /* Alamofire in Frameworks */,
+				A77F225F2AA4313900ECD9FC /* AlamofireImage in Frameworks */,
+				A77F225E2AA4313900ECD9FC /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +191,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */,
+				A77910302AA6CE5B00F5267D /* SBTUITestTunnelClient in Frameworks */,
+				A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */,
+				A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */,
+				A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */,
+				A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */,
+				A7140F1D2A96D0D1007FF2D6 /* FacebookCore in Frameworks */,
+				A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +208,8 @@
 		22CC1BC62602B1D9007B8402 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				22CC1BD12602B21D007B8402 /* AuthStub.swift */,
-				22CC1BFA2602C6B2007B8402 /* Auth.json */,
+				A77190C42AA713B500D88803 /* AuthStub.swift */,
+				A707BF122AA7112C00B1A5EB /* Auth.json */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -197,6 +230,7 @@
 				93A7AC6325D3713200D4BB77 /* OrderMEUITests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
 				ED4E7941F9C50F3BEA03680F /* Frameworks */,
+				A77190C32AA7130100D88803 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,10 +377,10 @@
 			isa = PBXGroup;
 			children = (
 				933B0D3225DF080300DC2058 /* BaseTest.swift */,
+				A77190C62AA7141A00D88803 /* StubTests.swift */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				934A798825F854D4002A26A7 /* FacebookTests.swift */,
 				93642C5C25FC13290055B866 /* ReservationsTests.swift */,
-				22CC1BD52602B261007B8402 /* StubTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -382,6 +416,13 @@
 			path = Places;
 			sourceTree = "<group>";
 		};
+		A77190C32AA7130100D88803 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		ED4E7941F9C50F3BEA03680F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,13 +442,22 @@
 				2B2EA7651CBB0377001507DD /* Sources */,
 				2B2EA7661CBB0377001507DD /* Frameworks */,
 				2B2EA7671CBB0377001507DD /* Resources */,
-				22F01ADB23553F82009CCDF0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = orderMe;
+			packageProductDependencies = (
+				A7140EFC2A96C57A007FF2D6 /* ObjectMapper */,
+				A7140F162A96CB16007FF2D6 /* AlamofireImage */,
+				A7140F192A96CB4F007FF2D6 /* Alamofire */,
+				A7140F1C2A96D0D1007FF2D6 /* FacebookCore */,
+				A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */,
+				A7140F202A96D0D1007FF2D6 /* FacebookLogin */,
+				A7140F222A96D0D1007FF2D6 /* FacebookShare */,
+				A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */,
+			);
 			productName = orderMe;
 			productReference = 2B2EA7691CBB0377001507DD /* OrderME.app */;
 			productType = "com.apple.product-type.application";
@@ -426,6 +476,9 @@
 				93A7AC6825D3713200D4BB77 /* PBXTargetDependency */,
 			);
 			name = OrderMEUITests;
+			packageProductDependencies = (
+				A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */,
+			);
 			productName = OrderMEUITests;
 			productReference = 93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -457,7 +510,7 @@
 				};
 			};
 			buildConfigurationList = 2B2EA7641CBB0377001507DD /* Build configuration list for PBXProject "orderMe" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -465,6 +518,13 @@
 				Base,
 			);
 			mainGroup = 2B2EA7601CBB0377001507DD;
+			packageReferences = (
+				A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */,
+			);
 			productRefGroup = 2B2EA76A1CBB0377001507DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -492,31 +552,12 @@
 			files = (
 				93B27BB926015CF100A45BB9 /* Places.json in Resources */,
 				223EE1A92603D24100C6D847 /* EmptyPlaces.json in Resources */,
-				22CC1BFB2602C6B2007B8402 /* Auth.json in Resources */,
+				22CC1BFB2602C6B2007B8402 /* (null) in Resources */,
+				A707BF142AA7112D00B1A5EB /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22F01ADB23553F82009CCDF0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B2EA7651CBB0377001507DD /* Sources */ = {
@@ -579,14 +620,14 @@
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
-				22CC1BD22602B21D007B8402 /* AuthStub.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
 				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,
 				9318CDEA25E2E8CD00F1A9DE /* BackProtocol.swift in Sources */,
 				934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
-				22CC1BD62602B261007B8402 /* StubTests.swift in Sources */,
+				A77190C52AA713B500D88803 /* AuthStub.swift in Sources */,
+				A77190C72AA7141A00D88803 /* StubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +676,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -650,7 +690,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -693,7 +733,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -702,11 +741,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -719,17 +759,26 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -741,15 +790,24 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = orderMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assesment.orderme;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -765,15 +823,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = orderMe;
 			};
 			name = Debug;
@@ -790,13 +856,21 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefitness.OrderMEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = orderMe;
 			};
 			name = Release;
@@ -832,6 +906,97 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Subito-it/SBTUITestTunnel.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7140EFC2A96C57A007FF2D6 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		A7140F162A96CB16007FF2D6 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		A7140F192A96CB4F007FF2D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A7140F1C2A96D0D1007FF2D6 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		A7140F202A96D0D1007FF2D6 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		A7140F222A96D0D1007FF2D6 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		A779102F2AA6CE5B00F5267D /* SBTUITestTunnelClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelClient;
+		};
+		A77910312AA6CE5B00F5267D /* SBTUITestTunnelServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A779102E2AA6CE5B00F5267D /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B2EA7611CBB0377001507DD /* Project object */;
 }
