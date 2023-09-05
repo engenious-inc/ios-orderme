@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import UIKit
 
 public class Place: Mappable {
     
