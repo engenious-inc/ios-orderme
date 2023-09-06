@@ -11,6 +11,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 import AlamofireImage
+import UIKit
 
 
 enum HostURL {
@@ -46,7 +47,7 @@ class NetworkClient {
     // general request to the API, each function here will use this one
     static func send(api: String, method: HTTPMethod, parameters: Parameters?, token: String, completion: @escaping (_ result: String?, _ error: NSError?)->()) -> Void {
         
-        let headers = [
+        let headers: HTTPHeaders = [
             "Content-Type": "application/json; charset=utf-8",
             "Accept": "application/json",
             "Authorization": "Token " + token
@@ -57,12 +58,12 @@ class NetworkClient {
         print("➡️ " + method.rawValue + ": " + baseURL + api)
         print(parameters ?? "No params")
         print(headers)
-        Alamofire.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .validate()
             .responseString { response in
                 switch response.result {
                 case .success:
-                    completion(response.result.value, nil)
+                    completion(response.value, nil)
                 case .failure(let error):
                     completion(nil, error as NSError?)
                 }
@@ -93,9 +94,9 @@ class NetworkClient {
     
     
     static func downloadImage(url : String, completion: @escaping (_ image: UIImage? , _ error: NSError?) -> () ) {
-        Alamofire.request(url).responseImage { (response) -> Void in
-            guard let image = response.result.value else {
-                completion(nil, response.result.error as NSError?)
+        AF.request(url).responseImage { (response) -> Void in
+            guard let image = response.value else {
+                completion(nil, response.error as NSError?)
                 return
             }
             completion(image, nil)
@@ -411,7 +412,7 @@ class NetworkClient {
     }
     
     static func analytics(action: AnalyticsAction, info: String? = nil) {
-        let headers = [
+        let headers: HTTPHeaders = [
             "Content-Type": "application/json; charset=utf-8",
             "Accept": "application/json",
             ]
@@ -425,7 +426,7 @@ class NetworkClient {
             "info": info ?? ""
         ]
         
-        Alamofire.request(url, method: .post,
+        AF.request(url, method: .post,
                           parameters: params,
                           encoding: JSONEncoding.default,
                           headers: headers)
