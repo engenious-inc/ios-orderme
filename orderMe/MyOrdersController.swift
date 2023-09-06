@@ -42,7 +42,7 @@ class MyOrdersController: UIViewController {
         navigationController?.view.addSubview(loginLogoutButton)
         loginLogoutButton.translatesAutoresizingMaskIntoConstraints = false
 
-        let heightConstant = (navigationController?.navigationBar.frame.height ?? 0) / 2 + loginLogoutButton.bounds.height / 2
+        let heightConstant = (navigationController?.navigationBar.frame.height ?? 0) / 2 + loginLogoutButton.bounds.height
         if let navView = navigationController?.view {
             loginLogoutButton.trailingAnchor.constraint(equalTo: navView.trailingAnchor, constant: 0).isActive = true
             loginLogoutButton.topAnchor.constraint(equalTo: navView.topAnchor, constant: heightConstant).isActive = true

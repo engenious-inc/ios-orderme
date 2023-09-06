@@ -11,7 +11,7 @@ import XCTest
 class FacebookLoginScreen: BaseScreen {
     private let emailTextField: XCUIElement = app.textFields.firstMatch
     private let passwordTextField: XCUIElement = app.secureTextFields.firstMatch
-    private let loginButton: XCUIElement = app.buttons["Log In"]
+    private let loginButton: XCUIElement = app.buttons["Log in"]
     private let continueWithFacebookButton: XCUIElement = app.buttons["Continue"]
 
     @discardableResult
