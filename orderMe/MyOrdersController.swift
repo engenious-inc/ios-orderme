@@ -6,6 +6,7 @@
 //  Copyright © 2016 Bay-QA. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import FacebookCore
 import FacebookLogin
@@ -24,7 +25,10 @@ class MyOrdersController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let statusBarHeight = (UIApplication.shared.connectedScenes.first as? UIWindowScene )?
+            .statusBarManager?
+            .statusBarFrame
+            .height ?? 0 // statusBarFrame.height
         self.tableView.contentInset = UIEdgeInsets(top: ordersViewHeight - statusBarHeight, left: 0, bottom: 0, right: 0)
         if SingletonStore.sharedInstance.user != nil {
             self.loadData()
@@ -55,7 +59,7 @@ class MyOrdersController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
-        navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
+        navigationController?.navigationBar.barStyle = UIBarStyle.black
     navigationController?.navigationBar.layer.insertSublayer(CALayer().setGradient(navigationController: navigationController!), at: 1)
     }
     
@@ -102,18 +106,21 @@ extension CALayer {
         gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
         gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
         if #available(iOS 11.0, *) {
-                    let window = UIApplication.shared.keyWindow
-                    let topPadding = window?.safeAreaInsets.top
-                    
-                    
-                    if UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20 {
-                        gradient.frame = CGRect(x: 0.0, y: 0 - (topPadding ?? 0), width: (navigationController.navigationBar.frame.size.width), height: 88)
-                    } else {
-                        gradient.frame = CGRect(x: 0.0, y: -20.0, width: (navigationController.navigationBar.frame.size.width), height: (navigationController.navigationBar.frame.size.height) + 20)
-                    }
-                } else {
-                    gradient.frame = CGRect(x: 0.0, y: -20.0, width: (navigationController.navigationBar.frame.size.width), height: (navigationController.navigationBar.frame.size.height) + 20)
-                }
+            let window = UIApplication
+                .shared
+                .windows
+                .last { $0.isKeyWindow }
+            let topPadding = window?.safeAreaInsets.top
+
+
+            if UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20 {
+                gradient.frame = CGRect(x: 0.0, y: 0 - (topPadding ?? 0), width: (navigationController.navigationBar.frame.size.width), height: 88)
+            } else {
+                gradient.frame = CGRect(x: 0.0, y: -20.0, width: (navigationController.navigationBar.frame.size.width), height: (navigationController.navigationBar.frame.size.height) + 20)
+            }
+        } else {
+            gradient.frame = CGRect(x: 0.0, y: -20.0, width: (navigationController.navigationBar.frame.size.width), height: (navigationController.navigationBar.frame.size.height) + 20)
+        }
         return gradient
     }
 }
