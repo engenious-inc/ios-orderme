@@ -87,6 +87,307 @@
 		A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
 		A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
 		A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
+		F43D48852BDA632E002E510C /* Codegen.py in Resources */ = {isa = PBXBuildFile; fileRef = F43D48842BDA632E002E510C /* Codegen.py */; };
+		F4408B682BEA68C30088BAD2 /* SampleAppUITest_21.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A3C2BEA68BC0088BAD2 /* SampleAppUITest_21.swift */; };
+		F4408B692BEA68C30088BAD2 /* SampleAppUITest_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A3D2BEA68BC0088BAD2 /* SampleAppUITest_9.swift */; };
+		F4408B6A2BEA68C30088BAD2 /* SampleAppUITest_111.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A3E2BEA68BC0088BAD2 /* SampleAppUITest_111.swift */; };
+		F4408B6B2BEA68C30088BAD2 /* SampleAppUITest_238.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A3F2BEA68BC0088BAD2 /* SampleAppUITest_238.swift */; };
+		F4408B6C2BEA68C30088BAD2 /* SampleAppUITest_29.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A402BEA68BC0088BAD2 /* SampleAppUITest_29.swift */; };
+		F4408B6D2BEA68C30088BAD2 /* SampleAppUITest_212.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A412BEA68BC0088BAD2 /* SampleAppUITest_212.swift */; };
+		F4408B6E2BEA68C30088BAD2 /* SampleAppUITest_18.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A422BEA68BC0088BAD2 /* SampleAppUITest_18.swift */; };
+		F4408B6F2BEA68C30088BAD2 /* SampleAppUITest_83.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A432BEA68BC0088BAD2 /* SampleAppUITest_83.swift */; };
+		F4408B702BEA68C30088BAD2 /* SampleAppUITest_50.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A442BEA68BD0088BAD2 /* SampleAppUITest_50.swift */; };
+		F4408B712BEA68C30088BAD2 /* SampleAppUITest_157.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A452BEA68BD0088BAD2 /* SampleAppUITest_157.swift */; };
+		F4408B722BEA68C30088BAD2 /* SampleAppUITest_122.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A462BEA68BD0088BAD2 /* SampleAppUITest_122.swift */; };
+		F4408B732BEA68C30088BAD2 /* SampleAppUITest_156.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A472BEA68BD0088BAD2 /* SampleAppUITest_156.swift */; };
+		F4408B742BEA68C30088BAD2 /* SampleAppUITest_250.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A482BEA68BD0088BAD2 /* SampleAppUITest_250.swift */; };
+		F4408B752BEA68C30088BAD2 /* SampleAppUITest_276.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A492BEA68BD0088BAD2 /* SampleAppUITest_276.swift */; };
+		F4408B762BEA68C30088BAD2 /* SampleAppUITest_281.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4A2BEA68BD0088BAD2 /* SampleAppUITest_281.swift */; };
+		F4408B772BEA68C30088BAD2 /* SampleAppUITest_79.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4B2BEA68BD0088BAD2 /* SampleAppUITest_79.swift */; };
+		F4408B782BEA68C30088BAD2 /* SampleAppUITest_293.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4C2BEA68BD0088BAD2 /* SampleAppUITest_293.swift */; };
+		F4408B792BEA68C30088BAD2 /* SampleAppUITest_256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4D2BEA68BD0088BAD2 /* SampleAppUITest_256.swift */; };
+		F4408B7A2BEA68C30088BAD2 /* SampleAppUITest_249.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4E2BEA68BD0088BAD2 /* SampleAppUITest_249.swift */; };
+		F4408B7B2BEA68C30088BAD2 /* SampleAppUITest_72.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A4F2BEA68BD0088BAD2 /* SampleAppUITest_72.swift */; };
+		F4408B7C2BEA68C30088BAD2 /* SampleAppUITest_181.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A502BEA68BD0088BAD2 /* SampleAppUITest_181.swift */; };
+		F4408B7D2BEA68C30088BAD2 /* SampleAppUITest_275.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A512BEA68BD0088BAD2 /* SampleAppUITest_275.swift */; };
+		F4408B7E2BEA68C30088BAD2 /* SampleAppUITest_253.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A522BEA68BD0088BAD2 /* SampleAppUITest_253.swift */; };
+		F4408B7F2BEA68C30088BAD2 /* SampleAppUITest_110.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A532BEA68BD0088BAD2 /* SampleAppUITest_110.swift */; };
+		F4408B802BEA68C30088BAD2 /* SampleAppUITest_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A542BEA68BD0088BAD2 /* SampleAppUITest_10.swift */; };
+		F4408B812BEA68C30088BAD2 /* SampleAppUITest_179.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A552BEA68BD0088BAD2 /* SampleAppUITest_179.swift */; };
+		F4408B822BEA68C30088BAD2 /* SampleAppUITest_39.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A562BEA68BD0088BAD2 /* SampleAppUITest_39.swift */; };
+		F4408B832BEA68C30088BAD2 /* SampleAppUITest_128.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A572BEA68BD0088BAD2 /* SampleAppUITest_128.swift */; };
+		F4408B842BEA68C30088BAD2 /* SampleAppUITest_232.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A582BEA68BD0088BAD2 /* SampleAppUITest_232.swift */; };
+		F4408B852BEA68C30088BAD2 /* SampleAppUITest_27.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A592BEA68BD0088BAD2 /* SampleAppUITest_27.swift */; };
+		F4408B862BEA68C30088BAD2 /* SampleAppUITest_81.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5A2BEA68BD0088BAD2 /* SampleAppUITest_81.swift */; };
+		F4408B872BEA68C30088BAD2 /* SampleAppUITest_124.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5B2BEA68BD0088BAD2 /* SampleAppUITest_124.swift */; };
+		F4408B882BEA68C30088BAD2 /* SampleAppUITest_86.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5C2BEA68BD0088BAD2 /* SampleAppUITest_86.swift */; };
+		F4408B892BEA68C30088BAD2 /* SampleAppUITest_243.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5D2BEA68BD0088BAD2 /* SampleAppUITest_243.swift */; };
+		F4408B8A2BEA68C30088BAD2 /* SampleAppUITest_35.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5E2BEA68BD0088BAD2 /* SampleAppUITest_35.swift */; };
+		F4408B8B2BEA68C30088BAD2 /* SampleAppUITest_218.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A5F2BEA68BD0088BAD2 /* SampleAppUITest_218.swift */; };
+		F4408B8C2BEA68C30088BAD2 /* SampleAppUITest_254.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A602BEA68BD0088BAD2 /* SampleAppUITest_254.swift */; };
+		F4408B8D2BEA68C30088BAD2 /* SampleAppUITest_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A612BEA68BD0088BAD2 /* SampleAppUITest_64.swift */; };
+		F4408B8E2BEA68C30088BAD2 /* SampleAppUITest_251.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A622BEA68BD0088BAD2 /* SampleAppUITest_251.swift */; };
+		F4408B8F2BEA68C30088BAD2 /* SampleAppUITest_288.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A632BEA68BD0088BAD2 /* SampleAppUITest_288.swift */; };
+		F4408B902BEA68C30088BAD2 /* SampleAppUITest_99.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A642BEA68BD0088BAD2 /* SampleAppUITest_99.swift */; };
+		F4408B912BEA68C30088BAD2 /* SampleAppUITest_227.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A652BEA68BD0088BAD2 /* SampleAppUITest_227.swift */; };
+		F4408B922BEA68C30088BAD2 /* SampleAppUITest_55.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A662BEA68BD0088BAD2 /* SampleAppUITest_55.swift */; };
+		F4408B932BEA68C30088BAD2 /* SampleAppUITest_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A672BEA68BD0088BAD2 /* SampleAppUITest_8.swift */; };
+		F4408B942BEA68C30088BAD2 /* SampleAppUITest_215.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A682BEA68BD0088BAD2 /* SampleAppUITest_215.swift */; };
+		F4408B952BEA68C30088BAD2 /* SampleAppUITest_200.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A692BEA68BD0088BAD2 /* SampleAppUITest_200.swift */; };
+		F4408B962BEA68C30088BAD2 /* SampleAppUITest_144.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6A2BEA68BD0088BAD2 /* SampleAppUITest_144.swift */; };
+		F4408B972BEA68C30088BAD2 /* SampleAppUITest_189.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6B2BEA68BD0088BAD2 /* SampleAppUITest_189.swift */; };
+		F4408B982BEA68C30088BAD2 /* SampleAppUITest_137.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6C2BEA68BE0088BAD2 /* SampleAppUITest_137.swift */; };
+		F4408B992BEA68C30088BAD2 /* SampleAppUITest_106.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6D2BEA68BE0088BAD2 /* SampleAppUITest_106.swift */; };
+		F4408B9A2BEA68C30088BAD2 /* SampleAppUITest_174.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6E2BEA68BE0088BAD2 /* SampleAppUITest_174.swift */; };
+		F4408B9B2BEA68C30088BAD2 /* SampleAppUITest_213.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A6F2BEA68BE0088BAD2 /* SampleAppUITest_213.swift */; };
+		F4408B9C2BEA68C30088BAD2 /* SampleAppUITest_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A702BEA68BE0088BAD2 /* SampleAppUITest_4.swift */; };
+		F4408B9D2BEA68C30088BAD2 /* SampleAppUITest_201.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A712BEA68BE0088BAD2 /* SampleAppUITest_201.swift */; };
+		F4408B9E2BEA68C30088BAD2 /* SampleAppUITest_224.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A722BEA68BE0088BAD2 /* SampleAppUITest_224.swift */; };
+		F4408B9F2BEA68C30088BAD2 /* SampleAppUITest_151.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A732BEA68BE0088BAD2 /* SampleAppUITest_151.swift */; };
+		F4408BA02BEA68C30088BAD2 /* SampleAppUITest_278.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A742BEA68BE0088BAD2 /* SampleAppUITest_278.swift */; };
+		F4408BA12BEA68C30088BAD2 /* SampleAppUITest_54.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A752BEA68BE0088BAD2 /* SampleAppUITest_54.swift */; };
+		F4408BA22BEA68C30088BAD2 /* SampleAppUITest_69.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A762BEA68BE0088BAD2 /* SampleAppUITest_69.swift */; };
+		F4408BA32BEA68C30088BAD2 /* SampleAppUITest_141.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A772BEA68BE0088BAD2 /* SampleAppUITest_141.swift */; };
+		F4408BA42BEA68C30088BAD2 /* SampleAppUITest_49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A782BEA68BE0088BAD2 /* SampleAppUITest_49.swift */; };
+		F4408BA52BEA68C30088BAD2 /* SampleAppUITest_178.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A792BEA68BE0088BAD2 /* SampleAppUITest_178.swift */; };
+		F4408BA62BEA68C30088BAD2 /* SampleAppUITest_96.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7A2BEA68BE0088BAD2 /* SampleAppUITest_96.swift */; };
+		F4408BA72BEA68C30088BAD2 /* SampleAppUITest_159.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7B2BEA68BE0088BAD2 /* SampleAppUITest_159.swift */; };
+		F4408BA82BEA68C30088BAD2 /* SampleAppUITest_78.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7C2BEA68BE0088BAD2 /* SampleAppUITest_78.swift */; };
+		F4408BA92BEA68C30088BAD2 /* SampleAppUITest_242.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7D2BEA68BE0088BAD2 /* SampleAppUITest_242.swift */; };
+		F4408BAA2BEA68C30088BAD2 /* SampleAppUITest_192.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7E2BEA68BE0088BAD2 /* SampleAppUITest_192.swift */; };
+		F4408BAB2BEA68C30088BAD2 /* SampleAppUITest_104.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A7F2BEA68BE0088BAD2 /* SampleAppUITest_104.swift */; };
+		F4408BAC2BEA68C30088BAD2 /* SampleAppUITest_108.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A802BEA68BE0088BAD2 /* SampleAppUITest_108.swift */; };
+		F4408BAD2BEA68C30088BAD2 /* SampleAppUITest_105.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A812BEA68BE0088BAD2 /* SampleAppUITest_105.swift */; };
+		F4408BAE2BEA68C30088BAD2 /* SampleAppUITest_84.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A822BEA68BE0088BAD2 /* SampleAppUITest_84.swift */; };
+		F4408BAF2BEA68C30088BAD2 /* SampleAppUITest_123.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A832BEA68BE0088BAD2 /* SampleAppUITest_123.swift */; };
+		F4408BB02BEA68C30088BAD2 /* SampleAppUITest_255.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A842BEA68BE0088BAD2 /* SampleAppUITest_255.swift */; };
+		F4408BB12BEA68C30088BAD2 /* SampleAppUITest_118.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A852BEA68BE0088BAD2 /* SampleAppUITest_118.swift */; };
+		F4408BB22BEA68C30088BAD2 /* SampleAppUITest_134.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A862BEA68BE0088BAD2 /* SampleAppUITest_134.swift */; };
+		F4408BB32BEA68C30088BAD2 /* SampleAppUITest_268.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A872BEA68BE0088BAD2 /* SampleAppUITest_268.swift */; };
+		F4408BB42BEA68C30088BAD2 /* SampleAppUITest_37.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A882BEA68BE0088BAD2 /* SampleAppUITest_37.swift */; };
+		F4408BB52BEA68C30088BAD2 /* SampleAppUITest_195.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A892BEA68BE0088BAD2 /* SampleAppUITest_195.swift */; };
+		F4408BB62BEA68C30088BAD2 /* SampleAppUITest_53.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8A2BEA68BE0088BAD2 /* SampleAppUITest_53.swift */; };
+		F4408BB72BEA68C30088BAD2 /* SampleAppUITest_229.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8B2BEA68BE0088BAD2 /* SampleAppUITest_229.swift */; };
+		F4408BB82BEA68C30088BAD2 /* SampleAppUITest_294.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8C2BEA68BE0088BAD2 /* SampleAppUITest_294.swift */; };
+		F4408BB92BEA68C30088BAD2 /* SampleAppUITest_51.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8D2BEA68BE0088BAD2 /* SampleAppUITest_51.swift */; };
+		F4408BBA2BEA68C30088BAD2 /* SampleAppUITest_75.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8E2BEA68BE0088BAD2 /* SampleAppUITest_75.swift */; };
+		F4408BBB2BEA68C30088BAD2 /* SampleAppUITest_133.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A8F2BEA68BE0088BAD2 /* SampleAppUITest_133.swift */; };
+		F4408BBC2BEA68C30088BAD2 /* SampleAppUITest_58.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A902BEA68BE0088BAD2 /* SampleAppUITest_58.swift */; };
+		F4408BBD2BEA68C30088BAD2 /* SampleAppUITest_223.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A912BEA68BE0088BAD2 /* SampleAppUITest_223.swift */; };
+		F4408BBE2BEA68C30088BAD2 /* SampleAppUITest_190.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A922BEA68BE0088BAD2 /* SampleAppUITest_190.swift */; };
+		F4408BBF2BEA68C30088BAD2 /* SampleAppUITest_204.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A932BEA68BE0088BAD2 /* SampleAppUITest_204.swift */; };
+		F4408BC02BEA68C30088BAD2 /* SampleAppUITest_222.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A942BEA68BE0088BAD2 /* SampleAppUITest_222.swift */; };
+		F4408BC12BEA68C30088BAD2 /* SampleAppUITest_246.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A952BEA68BE0088BAD2 /* SampleAppUITest_246.swift */; };
+		F4408BC22BEA68C30088BAD2 /* SampleAppUITest_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A962BEA68BE0088BAD2 /* SampleAppUITest_7.swift */; };
+		F4408BC32BEA68C30088BAD2 /* SampleAppUITest_299.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A972BEA68BE0088BAD2 /* SampleAppUITest_299.swift */; };
+		F4408BC42BEA68C30088BAD2 /* SampleAppUITest_169.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A982BEA68BE0088BAD2 /* SampleAppUITest_169.swift */; };
+		F4408BC52BEA68C30088BAD2 /* SampleAppUITest_95.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A992BEA68BE0088BAD2 /* SampleAppUITest_95.swift */; };
+		F4408BC62BEA68C30088BAD2 /* SampleAppUITest_90.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9A2BEA68BE0088BAD2 /* SampleAppUITest_90.swift */; };
+		F4408BC72BEA68C30088BAD2 /* SampleAppUITest_116.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9B2BEA68BF0088BAD2 /* SampleAppUITest_116.swift */; };
+		F4408BC82BEA68C30088BAD2 /* SampleAppUITest_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9C2BEA68BF0088BAD2 /* SampleAppUITest_1.swift */; };
+		F4408BC92BEA68C30088BAD2 /* SampleAppUITest_292.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9D2BEA68BF0088BAD2 /* SampleAppUITest_292.swift */; };
+		F4408BCA2BEA68C30088BAD2 /* SampleAppUITest_121.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9E2BEA68BF0088BAD2 /* SampleAppUITest_121.swift */; };
+		F4408BCB2BEA68C30088BAD2 /* SampleAppUITest_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408A9F2BEA68BF0088BAD2 /* SampleAppUITest_11.swift */; };
+		F4408BCC2BEA68C30088BAD2 /* SampleAppUITest_206.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA02BEA68BF0088BAD2 /* SampleAppUITest_206.swift */; };
+		F4408BCD2BEA68C30088BAD2 /* SampleAppUITest_42.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA12BEA68BF0088BAD2 /* SampleAppUITest_42.swift */; };
+		F4408BCE2BEA68C30088BAD2 /* SampleAppUITest_162.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA22BEA68BF0088BAD2 /* SampleAppUITest_162.swift */; };
+		F4408BCF2BEA68C30088BAD2 /* SampleAppUITest_235.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA32BEA68BF0088BAD2 /* SampleAppUITest_235.swift */; };
+		F4408BD02BEA68C30088BAD2 /* SampleAppUITest_199.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA42BEA68BF0088BAD2 /* SampleAppUITest_199.swift */; };
+		F4408BD12BEA68C30088BAD2 /* SampleAppUITest_269.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA52BEA68BF0088BAD2 /* SampleAppUITest_269.swift */; };
+		F4408BD22BEA68C30088BAD2 /* SampleAppUITest_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA62BEA68BF0088BAD2 /* SampleAppUITest_32.swift */; };
+		F4408BD32BEA68C30088BAD2 /* SampleAppUITest_234.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA72BEA68BF0088BAD2 /* SampleAppUITest_234.swift */; };
+		F4408BD42BEA68C30088BAD2 /* SampleAppUITest_20.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA82BEA68BF0088BAD2 /* SampleAppUITest_20.swift */; };
+		F4408BD52BEA68C30088BAD2 /* SampleAppUITest_173.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AA92BEA68BF0088BAD2 /* SampleAppUITest_173.swift */; };
+		F4408BD62BEA68C30088BAD2 /* SampleAppUITest_184.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAA2BEA68BF0088BAD2 /* SampleAppUITest_184.swift */; };
+		F4408BD72BEA68C30088BAD2 /* SampleAppUITest_136.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAB2BEA68BF0088BAD2 /* SampleAppUITest_136.swift */; };
+		F4408BD82BEA68C30088BAD2 /* SampleAppUITest_207.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAC2BEA68BF0088BAD2 /* SampleAppUITest_207.swift */; };
+		F4408BD92BEA68C30088BAD2 /* SampleAppUITest_125.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAD2BEA68BF0088BAD2 /* SampleAppUITest_125.swift */; };
+		F4408BDA2BEA68C30088BAD2 /* SampleAppUITest_233.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAE2BEA68BF0088BAD2 /* SampleAppUITest_233.swift */; };
+		F4408BDB2BEA68C30088BAD2 /* SampleAppUITest_91.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AAF2BEA68BF0088BAD2 /* SampleAppUITest_91.swift */; };
+		F4408BDC2BEA68C30088BAD2 /* SampleAppUITest_283.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB02BEA68BF0088BAD2 /* SampleAppUITest_283.swift */; };
+		F4408BDD2BEA68C30088BAD2 /* SampleAppUITest_285.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB12BEA68BF0088BAD2 /* SampleAppUITest_285.swift */; };
+		F4408BDE2BEA68C30088BAD2 /* SampleAppUITest_109.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB22BEA68BF0088BAD2 /* SampleAppUITest_109.swift */; };
+		F4408BDF2BEA68C30088BAD2 /* SampleAppUITest_252.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB32BEA68BF0088BAD2 /* SampleAppUITest_252.swift */; };
+		F4408BE02BEA68C30088BAD2 /* SampleAppUITest_45.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB42BEA68BF0088BAD2 /* SampleAppUITest_45.swift */; };
+		F4408BE12BEA68C30088BAD2 /* SampleAppUITest_177.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB52BEA68BF0088BAD2 /* SampleAppUITest_177.swift */; };
+		F4408BE22BEA68C30088BAD2 /* SampleAppUITest_244.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB62BEA68BF0088BAD2 /* SampleAppUITest_244.swift */; };
+		F4408BE32BEA68C30088BAD2 /* SampleAppUITest_247.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB72BEA68BF0088BAD2 /* SampleAppUITest_247.swift */; };
+		F4408BE42BEA68C30088BAD2 /* SampleAppUITest_237.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB82BEA68BF0088BAD2 /* SampleAppUITest_237.swift */; };
+		F4408BE52BEA68C30088BAD2 /* SampleAppUITest_284.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AB92BEA68BF0088BAD2 /* SampleAppUITest_284.swift */; };
+		F4408BE62BEA68C30088BAD2 /* SampleAppUITest_147.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABA2BEA68BF0088BAD2 /* SampleAppUITest_147.swift */; };
+		F4408BE72BEA68C30088BAD2 /* SampleAppUITest_298.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABB2BEA68BF0088BAD2 /* SampleAppUITest_298.swift */; };
+		F4408BE82BEA68C30088BAD2 /* SampleAppUITest_176.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABC2BEA68BF0088BAD2 /* SampleAppUITest_176.swift */; };
+		F4408BE92BEA68C30088BAD2 /* SampleAppUITest_120.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABD2BEA68BF0088BAD2 /* SampleAppUITest_120.swift */; };
+		F4408BEA2BEA68C30088BAD2 /* SampleAppUITest_260.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABE2BEA68BF0088BAD2 /* SampleAppUITest_260.swift */; };
+		F4408BEB2BEA68C30088BAD2 /* SampleAppUITest_115.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ABF2BEA68BF0088BAD2 /* SampleAppUITest_115.swift */; };
+		F4408BEC2BEA68C30088BAD2 /* SampleAppUITest_262.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC02BEA68BF0088BAD2 /* SampleAppUITest_262.swift */; };
+		F4408BED2BEA68C30088BAD2 /* SampleAppUITest_279.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC12BEA68BF0088BAD2 /* SampleAppUITest_279.swift */; };
+		F4408BEE2BEA68C30088BAD2 /* SampleAppUITest_34.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC22BEA68BF0088BAD2 /* SampleAppUITest_34.swift */; };
+		F4408BEF2BEA68C30088BAD2 /* SampleAppUITest_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC32BEA68BF0088BAD2 /* SampleAppUITest_47.swift */; };
+		F4408BF02BEA68C30088BAD2 /* SampleAppUITest_130.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC42BEA68BF0088BAD2 /* SampleAppUITest_130.swift */; };
+		F4408BF12BEA68C30088BAD2 /* SampleAppUITest_43.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC52BEA68BF0088BAD2 /* SampleAppUITest_43.swift */; };
+		F4408BF22BEA68C30088BAD2 /* SampleAppUITest_140.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC62BEA68BF0088BAD2 /* SampleAppUITest_140.swift */; };
+		F4408BF32BEA68C30088BAD2 /* SampleAppUITest_296.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC72BEA68BF0088BAD2 /* SampleAppUITest_296.swift */; };
+		F4408BF42BEA68C30088BAD2 /* SampleAppUITest_129.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC82BEA68BF0088BAD2 /* SampleAppUITest_129.swift */; };
+		F4408BF52BEA68C30088BAD2 /* SampleAppUITest_17.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AC92BEA68BF0088BAD2 /* SampleAppUITest_17.swift */; };
+		F4408BF62BEA68C30088BAD2 /* SampleAppUITest_68.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACA2BEA68BF0088BAD2 /* SampleAppUITest_68.swift */; };
+		F4408BF72BEA68C30088BAD2 /* SampleAppUITest_230.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACB2BEA68BF0088BAD2 /* SampleAppUITest_230.swift */; };
+		F4408BF82BEA68C30088BAD2 /* SampleAppUITest_240.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACC2BEA68BF0088BAD2 /* SampleAppUITest_240.swift */; };
+		F4408BF92BEA68C30088BAD2 /* SampleAppUITest_102.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACD2BEA68C00088BAD2 /* SampleAppUITest_102.swift */; };
+		F4408BFA2BEA68C30088BAD2 /* SampleAppUITest_135.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACE2BEA68C00088BAD2 /* SampleAppUITest_135.swift */; };
+		F4408BFB2BEA68C30088BAD2 /* SampleAppUITest_146.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ACF2BEA68C00088BAD2 /* SampleAppUITest_146.swift */; };
+		F4408BFC2BEA68C30088BAD2 /* SampleAppUITest_97.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD02BEA68C00088BAD2 /* SampleAppUITest_97.swift */; };
+		F4408BFD2BEA68C30088BAD2 /* SampleAppUITest_282.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD12BEA68C00088BAD2 /* SampleAppUITest_282.swift */; };
+		F4408BFE2BEA68C30088BAD2 /* SampleAppUITest_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD22BEA68C00088BAD2 /* SampleAppUITest_22.swift */; };
+		F4408BFF2BEA68C30088BAD2 /* SampleAppUITest_295.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD32BEA68C00088BAD2 /* SampleAppUITest_295.swift */; };
+		F4408C002BEA68C30088BAD2 /* SampleAppUITest_94.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD42BEA68C00088BAD2 /* SampleAppUITest_94.swift */; };
+		F4408C012BEA68C30088BAD2 /* SampleAppUITest_114.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD52BEA68C00088BAD2 /* SampleAppUITest_114.swift */; };
+		F4408C022BEA68C30088BAD2 /* SampleAppUITest_71.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD62BEA68C00088BAD2 /* SampleAppUITest_71.swift */; };
+		F4408C032BEA68C30088BAD2 /* SampleAppUITest_180.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD72BEA68C00088BAD2 /* SampleAppUITest_180.swift */; };
+		F4408C042BEA68C30088BAD2 /* SampleAppUITest_119.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD82BEA68C00088BAD2 /* SampleAppUITest_119.swift */; };
+		F4408C052BEA68C30088BAD2 /* SampleAppUITest_185.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AD92BEA68C00088BAD2 /* SampleAppUITest_185.swift */; };
+		F4408C062BEA68C30088BAD2 /* SampleAppUITest_131.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADA2BEA68C00088BAD2 /* SampleAppUITest_131.swift */; };
+		F4408C072BEA68C30088BAD2 /* SampleAppUITest_277.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADB2BEA68C00088BAD2 /* SampleAppUITest_277.swift */; };
+		F4408C082BEA68C30088BAD2 /* SampleAppUITest_98.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADC2BEA68C00088BAD2 /* SampleAppUITest_98.swift */; };
+		F4408C092BEA68C30088BAD2 /* SampleAppUITest_73.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADD2BEA68C00088BAD2 /* SampleAppUITest_73.swift */; };
+		F4408C0A2BEA68C30088BAD2 /* SampleAppUITest_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADE2BEA68C00088BAD2 /* SampleAppUITest_14.swift */; };
+		F4408C0B2BEA68C30088BAD2 /* SampleAppUITest_70.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408ADF2BEA68C00088BAD2 /* SampleAppUITest_70.swift */; };
+		F4408C0C2BEA68C30088BAD2 /* SampleAppUITest_209.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE02BEA68C00088BAD2 /* SampleAppUITest_209.swift */; };
+		F4408C0D2BEA68C30088BAD2 /* SampleAppUITest_150.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE12BEA68C00088BAD2 /* SampleAppUITest_150.swift */; };
+		F4408C0E2BEA68C30088BAD2 /* SampleAppUITest_61.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE22BEA68C00088BAD2 /* SampleAppUITest_61.swift */; };
+		F4408C0F2BEA68C30088BAD2 /* SampleAppUITest_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE32BEA68C00088BAD2 /* SampleAppUITest_5.swift */; };
+		F4408C102BEA68C30088BAD2 /* SampleAppUITest_267.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE42BEA68C00088BAD2 /* SampleAppUITest_267.swift */; };
+		F4408C112BEA68C30088BAD2 /* SampleAppUITest_202.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE52BEA68C00088BAD2 /* SampleAppUITest_202.swift */; };
+		F4408C122BEA68C30088BAD2 /* SampleAppUITest_273.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE62BEA68C00088BAD2 /* SampleAppUITest_273.swift */; };
+		F4408C132BEA68C30088BAD2 /* SampleAppUITest_258.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE72BEA68C00088BAD2 /* SampleAppUITest_258.swift */; };
+		F4408C142BEA68C30088BAD2 /* SampleAppUITest_168.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE82BEA68C00088BAD2 /* SampleAppUITest_168.swift */; };
+		F4408C152BEA68C30088BAD2 /* SampleAppUITest_187.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AE92BEA68C00088BAD2 /* SampleAppUITest_187.swift */; };
+		F4408C162BEA68C30088BAD2 /* SampleAppUITest_196.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AEA2BEA68C00088BAD2 /* SampleAppUITest_196.swift */; };
+		F4408C172BEA68C30088BAD2 /* SampleAppUITest_239.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AEB2BEA68C00088BAD2 /* SampleAppUITest_239.swift */; };
+		F4408C182BEA68C30088BAD2 /* SampleAppUITest_149.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AEC2BEA68C00088BAD2 /* SampleAppUITest_149.swift */; };
+		F4408C192BEA68C30088BAD2 /* SampleAppUITest_65.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AED2BEA68C00088BAD2 /* SampleAppUITest_65.swift */; };
+		F4408C1A2BEA68C30088BAD2 /* SampleAppUITest_257.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AEE2BEA68C00088BAD2 /* SampleAppUITest_257.swift */; };
+		F4408C1B2BEA68C30088BAD2 /* SampleAppUITest_63.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AEF2BEA68C00088BAD2 /* SampleAppUITest_63.swift */; };
+		F4408C1C2BEA68C30088BAD2 /* SampleAppUITest_170.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF02BEA68C00088BAD2 /* SampleAppUITest_170.swift */; };
+		F4408C1D2BEA68C30088BAD2 /* SampleAppUITest_220.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF12BEA68C00088BAD2 /* SampleAppUITest_220.swift */; };
+		F4408C1E2BEA68C30088BAD2 /* SampleAppUITest_112.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF22BEA68C00088BAD2 /* SampleAppUITest_112.swift */; };
+		F4408C1F2BEA68C30088BAD2 /* SampleAppUITest_188.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF32BEA68C00088BAD2 /* SampleAppUITest_188.swift */; };
+		F4408C202BEA68C30088BAD2 /* SampleAppUITest_186.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF42BEA68C00088BAD2 /* SampleAppUITest_186.swift */; };
+		F4408C212BEA68C30088BAD2 /* SampleAppUITest_126.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF52BEA68C00088BAD2 /* SampleAppUITest_126.swift */; };
+		F4408C222BEA68C30088BAD2 /* SampleAppUITest_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF62BEA68C00088BAD2 /* SampleAppUITest_2.swift */; };
+		F4408C232BEA68C30088BAD2 /* SampleAppUITest_197.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF72BEA68C00088BAD2 /* SampleAppUITest_197.swift */; };
+		F4408C242BEA68C30088BAD2 /* SampleAppUITest_265.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF82BEA68C00088BAD2 /* SampleAppUITest_265.swift */; };
+		F4408C252BEA68C30088BAD2 /* SampleAppUITest_44.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AF92BEA68C00088BAD2 /* SampleAppUITest_44.swift */; };
+		F4408C262BEA68C30088BAD2 /* SampleAppUITest_271.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFA2BEA68C00088BAD2 /* SampleAppUITest_271.swift */; };
+		F4408C272BEA68C30088BAD2 /* SampleAppUITest_139.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFB2BEA68C00088BAD2 /* SampleAppUITest_139.swift */; };
+		F4408C282BEA68C30088BAD2 /* SampleAppUITest_62.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFC2BEA68C00088BAD2 /* SampleAppUITest_62.swift */; };
+		F4408C292BEA68C30088BAD2 /* SampleAppUITest_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFD2BEA68C10088BAD2 /* SampleAppUITest_3.swift */; };
+		F4408C2A2BEA68C30088BAD2 /* SampleAppUITest_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFE2BEA68C10088BAD2 /* SampleAppUITest_0.swift */; };
+		F4408C2B2BEA68C30088BAD2 /* SampleAppUITest_76.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408AFF2BEA68C10088BAD2 /* SampleAppUITest_76.swift */; };
+		F4408C2C2BEA68C30088BAD2 /* SampleAppUITest_38.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B002BEA68C10088BAD2 /* SampleAppUITest_38.swift */; };
+		F4408C2D2BEA68C30088BAD2 /* SampleAppUITest_46.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B012BEA68C10088BAD2 /* SampleAppUITest_46.swift */; };
+		F4408C2E2BEA68C30088BAD2 /* SampleAppUITest_145.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B022BEA68C10088BAD2 /* SampleAppUITest_145.swift */; };
+		F4408C2F2BEA68C30088BAD2 /* SampleAppUITest_193.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B032BEA68C10088BAD2 /* SampleAppUITest_193.swift */; };
+		F4408C302BEA68C30088BAD2 /* SampleAppUITest_85.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B042BEA68C10088BAD2 /* SampleAppUITest_85.swift */; };
+		F4408C312BEA68C30088BAD2 /* SampleAppUITest_74.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B052BEA68C10088BAD2 /* SampleAppUITest_74.swift */; };
+		F4408C322BEA68C30088BAD2 /* SampleAppUITest_154.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B062BEA68C10088BAD2 /* SampleAppUITest_154.swift */; };
+		F4408C332BEA68C30088BAD2 /* SampleAppUITest_172.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B072BEA68C10088BAD2 /* SampleAppUITest_172.swift */; };
+		F4408C342BEA68C30088BAD2 /* SampleAppUITest_67.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B082BEA68C10088BAD2 /* SampleAppUITest_67.swift */; };
+		F4408C352BEA68C30088BAD2 /* SampleAppUITest_87.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B092BEA68C10088BAD2 /* SampleAppUITest_87.swift */; };
+		F4408C362BEA68C30088BAD2 /* SampleAppUITest_19.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0A2BEA68C10088BAD2 /* SampleAppUITest_19.swift */; };
+		F4408C372BEA68C30088BAD2 /* SampleAppUITest_138.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0B2BEA68C10088BAD2 /* SampleAppUITest_138.swift */; };
+		F4408C382BEA68C30088BAD2 /* SampleAppUITest_132.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0C2BEA68C10088BAD2 /* SampleAppUITest_132.swift */; };
+		F4408C392BEA68C30088BAD2 /* SampleAppUITest_16.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0D2BEA68C10088BAD2 /* SampleAppUITest_16.swift */; };
+		F4408C3A2BEA68C30088BAD2 /* SampleAppUITest_57.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0E2BEA68C10088BAD2 /* SampleAppUITest_57.swift */; };
+		F4408C3B2BEA68C30088BAD2 /* SampleAppUITest_221.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B0F2BEA68C10088BAD2 /* SampleAppUITest_221.swift */; };
+		F4408C3C2BEA68C30088BAD2 /* SampleAppUITest_226.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B102BEA68C10088BAD2 /* SampleAppUITest_226.swift */; };
+		F4408C3D2BEA68C30088BAD2 /* SampleAppUITest_263.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B112BEA68C10088BAD2 /* SampleAppUITest_263.swift */; };
+		F4408C3E2BEA68C30088BAD2 /* SampleAppUITest_26.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B122BEA68C10088BAD2 /* SampleAppUITest_26.swift */; };
+		F4408C3F2BEA68C30088BAD2 /* SampleAppUITest_191.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B132BEA68C10088BAD2 /* SampleAppUITest_191.swift */; };
+		F4408C402BEA68C30088BAD2 /* SampleAppUITest_152.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B142BEA68C10088BAD2 /* SampleAppUITest_152.swift */; };
+		F4408C412BEA68C30088BAD2 /* SampleAppUITest_175.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B152BEA68C10088BAD2 /* SampleAppUITest_175.swift */; };
+		F4408C422BEA68C30088BAD2 /* SampleAppUITest_15.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B162BEA68C10088BAD2 /* SampleAppUITest_15.swift */; };
+		F4408C432BEA68C30088BAD2 /* SampleAppUITest_228.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B172BEA68C10088BAD2 /* SampleAppUITest_228.swift */; };
+		F4408C442BEA68C30088BAD2 /* SampleAppUITest_117.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B182BEA68C10088BAD2 /* SampleAppUITest_117.swift */; };
+		F4408C452BEA68C30088BAD2 /* SampleAppUITest_167.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B192BEA68C10088BAD2 /* SampleAppUITest_167.swift */; };
+		F4408C462BEA68C30088BAD2 /* SampleAppUITest_236.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1A2BEA68C10088BAD2 /* SampleAppUITest_236.swift */; };
+		F4408C472BEA68C30088BAD2 /* SampleAppUITest_286.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1B2BEA68C10088BAD2 /* SampleAppUITest_286.swift */; };
+		F4408C482BEA68C30088BAD2 /* SampleAppUITest_266.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1C2BEA68C10088BAD2 /* SampleAppUITest_266.swift */; };
+		F4408C492BEA68C30088BAD2 /* SampleAppUITest_30.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1D2BEA68C10088BAD2 /* SampleAppUITest_30.swift */; };
+		F4408C4A2BEA68C30088BAD2 /* SampleAppUITest_203.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1E2BEA68C10088BAD2 /* SampleAppUITest_203.swift */; };
+		F4408C4B2BEA68C30088BAD2 /* SampleAppUITest_208.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B1F2BEA68C10088BAD2 /* SampleAppUITest_208.swift */; };
+		F4408C4C2BEA68C30088BAD2 /* SampleAppUITest_272.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B202BEA68C10088BAD2 /* SampleAppUITest_272.swift */; };
+		F4408C4D2BEA68C30088BAD2 /* SampleAppUITest_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B212BEA68C10088BAD2 /* SampleAppUITest_13.swift */; };
+		F4408C4E2BEA68C30088BAD2 /* SampleAppUITest_280.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B222BEA68C10088BAD2 /* SampleAppUITest_280.swift */; };
+		F4408C4F2BEA68C30088BAD2 /* SampleAppUITest_24.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B232BEA68C10088BAD2 /* SampleAppUITest_24.swift */; };
+		F4408C502BEA68C30088BAD2 /* SampleAppUITest_82.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B242BEA68C10088BAD2 /* SampleAppUITest_82.swift */; };
+		F4408C512BEA68C30088BAD2 /* SampleAppUITest_182.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B252BEA68C10088BAD2 /* SampleAppUITest_182.swift */; };
+		F4408C522BEA68C30088BAD2 /* SampleAppUITest_194.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B262BEA68C10088BAD2 /* SampleAppUITest_194.swift */; };
+		F4408C532BEA68C30088BAD2 /* SampleAppUITest_107.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B272BEA68C10088BAD2 /* SampleAppUITest_107.swift */; };
+		F4408C542BEA68C30088BAD2 /* SampleAppUITest_287.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B282BEA68C20088BAD2 /* SampleAppUITest_287.swift */; };
+		F4408C552BEA68C30088BAD2 /* SampleAppUITest_66.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B292BEA68C20088BAD2 /* SampleAppUITest_66.swift */; };
+		F4408C562BEA68C30088BAD2 /* SampleAppUITest_142.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2A2BEA68C20088BAD2 /* SampleAppUITest_142.swift */; };
+		F4408C572BEA68C30088BAD2 /* SampleAppUITest_290.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2B2BEA68C20088BAD2 /* SampleAppUITest_290.swift */; };
+		F4408C582BEA68C30088BAD2 /* SampleAppUITest_25.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2C2BEA68C20088BAD2 /* SampleAppUITest_25.swift */; };
+		F4408C592BEA68C30088BAD2 /* SampleAppUITest_33.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2D2BEA68C20088BAD2 /* SampleAppUITest_33.swift */; };
+		F4408C5A2BEA68C30088BAD2 /* SampleAppUITest_40.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2E2BEA68C20088BAD2 /* SampleAppUITest_40.swift */; };
+		F4408C5B2BEA68C30088BAD2 /* SampleAppUITest_31.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B2F2BEA68C20088BAD2 /* SampleAppUITest_31.swift */; };
+		F4408C5C2BEA68C30088BAD2 /* SampleAppUITest_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B302BEA68C20088BAD2 /* SampleAppUITest_23.swift */; };
+		F4408C5D2BEA68C30088BAD2 /* SampleAppUITest_225.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B312BEA68C20088BAD2 /* SampleAppUITest_225.swift */; };
+		F4408C5E2BEA68C30088BAD2 /* SampleAppUITest_259.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B322BEA68C20088BAD2 /* SampleAppUITest_259.swift */; };
+		F4408C5F2BEA68C30088BAD2 /* SampleAppUITest_92.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B332BEA68C20088BAD2 /* SampleAppUITest_92.swift */; };
+		F4408C602BEA68C30088BAD2 /* SampleAppUITest_93.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B342BEA68C20088BAD2 /* SampleAppUITest_93.swift */; };
+		F4408C612BEA68C30088BAD2 /* SampleAppUITest_161.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B352BEA68C20088BAD2 /* SampleAppUITest_161.swift */; };
+		F4408C622BEA68C30088BAD2 /* SampleAppUITest_12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B362BEA68C20088BAD2 /* SampleAppUITest_12.swift */; };
+		F4408C632BEA68C30088BAD2 /* SampleAppUITest_155.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B372BEA68C20088BAD2 /* SampleAppUITest_155.swift */; };
+		F4408C642BEA68C30088BAD2 /* SampleAppUITest_231.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B382BEA68C20088BAD2 /* SampleAppUITest_231.swift */; };
+		F4408C652BEA68C30088BAD2 /* SampleAppUITest_163.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B392BEA68C20088BAD2 /* SampleAppUITest_163.swift */; };
+		F4408C662BEA68C30088BAD2 /* SampleAppUITest_100.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3A2BEA68C20088BAD2 /* SampleAppUITest_100.swift */; };
+		F4408C672BEA68C30088BAD2 /* SampleAppUITest_183.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3B2BEA68C20088BAD2 /* SampleAppUITest_183.swift */; };
+		F4408C682BEA68C30088BAD2 /* SampleAppUITest_217.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3C2BEA68C20088BAD2 /* SampleAppUITest_217.swift */; };
+		F4408C692BEA68C30088BAD2 /* SampleAppUITest_36.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3D2BEA68C20088BAD2 /* SampleAppUITest_36.swift */; };
+		F4408C6A2BEA68C30088BAD2 /* SampleAppUITest_77.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3E2BEA68C20088BAD2 /* SampleAppUITest_77.swift */; };
+		F4408C6B2BEA68C30088BAD2 /* SampleAppUITest_248.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B3F2BEA68C20088BAD2 /* SampleAppUITest_248.swift */; };
+		F4408C6C2BEA68C30088BAD2 /* SampleAppUITest_52.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B402BEA68C20088BAD2 /* SampleAppUITest_52.swift */; };
+		F4408C6D2BEA68C30088BAD2 /* SampleAppUITest_103.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B412BEA68C20088BAD2 /* SampleAppUITest_103.swift */; };
+		F4408C6E2BEA68C30088BAD2 /* SampleAppUITest_211.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B422BEA68C20088BAD2 /* SampleAppUITest_211.swift */; };
+		F4408C6F2BEA68C30088BAD2 /* SampleAppUITest_291.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B432BEA68C20088BAD2 /* SampleAppUITest_291.swift */; };
+		F4408C702BEA68C30088BAD2 /* SampleAppUITest_245.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B442BEA68C20088BAD2 /* SampleAppUITest_245.swift */; };
+		F4408C712BEA68C30088BAD2 /* SampleAppUITest_214.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B452BEA68C20088BAD2 /* SampleAppUITest_214.swift */; };
+		F4408C722BEA68C30088BAD2 /* SampleAppUITest_89.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B462BEA68C20088BAD2 /* SampleAppUITest_89.swift */; };
+		F4408C732BEA68C30088BAD2 /* SampleAppUITest_148.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B472BEA68C20088BAD2 /* SampleAppUITest_148.swift */; };
+		F4408C742BEA68C30088BAD2 /* SampleAppUITest_41.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B482BEA68C20088BAD2 /* SampleAppUITest_41.swift */; };
+		F4408C752BEA68C30088BAD2 /* SampleAppUITest_261.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B492BEA68C20088BAD2 /* SampleAppUITest_261.swift */; };
+		F4408C762BEA68C30088BAD2 /* SampleAppUITest_153.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4A2BEA68C20088BAD2 /* SampleAppUITest_153.swift */; };
+		F4408C772BEA68C30088BAD2 /* SampleAppUITest_28.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4B2BEA68C20088BAD2 /* SampleAppUITest_28.swift */; };
+		F4408C782BEA68C30088BAD2 /* SampleAppUITest_274.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4C2BEA68C20088BAD2 /* SampleAppUITest_274.swift */; };
+		F4408C792BEA68C30088BAD2 /* SampleAppUITest_56.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4D2BEA68C20088BAD2 /* SampleAppUITest_56.swift */; };
+		F4408C7A2BEA68C30088BAD2 /* SampleAppUITest_166.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4E2BEA68C20088BAD2 /* SampleAppUITest_166.swift */; };
+		F4408C7B2BEA68C30088BAD2 /* SampleAppUITest_101.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B4F2BEA68C20088BAD2 /* SampleAppUITest_101.swift */; };
+		F4408C7C2BEA68C30088BAD2 /* SampleAppUITest_80.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B502BEA68C20088BAD2 /* SampleAppUITest_80.swift */; };
+		F4408C7D2BEA68C30088BAD2 /* SampleAppUITest_270.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B512BEA68C20088BAD2 /* SampleAppUITest_270.swift */; };
+		F4408C7E2BEA68C30088BAD2 /* SampleAppUITest_264.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B522BEA68C20088BAD2 /* SampleAppUITest_264.swift */; };
+		F4408C7F2BEA68C30088BAD2 /* SampleAppUITest_158.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B532BEA68C30088BAD2 /* SampleAppUITest_158.swift */; };
+		F4408C802BEA68C30088BAD2 /* SampleAppUITest_113.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B542BEA68C30088BAD2 /* SampleAppUITest_113.swift */; };
+		F4408C812BEA68C30088BAD2 /* SampleAppUITest_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B552BEA68C30088BAD2 /* SampleAppUITest_6.swift */; };
+		F4408C822BEA68C30088BAD2 /* SampleAppUITest_297.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B562BEA68C30088BAD2 /* SampleAppUITest_297.swift */; };
+		F4408C832BEA68C30088BAD2 /* SampleAppUITest_205.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B572BEA68C30088BAD2 /* SampleAppUITest_205.swift */; };
+		F4408C842BEA68C30088BAD2 /* SampleAppUITest_219.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B582BEA68C30088BAD2 /* SampleAppUITest_219.swift */; };
+		F4408C852BEA68C30088BAD2 /* SampleAppUITest_127.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B592BEA68C30088BAD2 /* SampleAppUITest_127.swift */; };
+		F4408C862BEA68C30088BAD2 /* SampleAppUITest_241.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5A2BEA68C30088BAD2 /* SampleAppUITest_241.swift */; };
+		F4408C872BEA68C30088BAD2 /* SampleAppUITest_160.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5B2BEA68C30088BAD2 /* SampleAppUITest_160.swift */; };
+		F4408C882BEA68C30088BAD2 /* SampleAppUITest_60.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5C2BEA68C30088BAD2 /* SampleAppUITest_60.swift */; };
+		F4408C892BEA68C30088BAD2 /* SampleAppUITest_171.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5D2BEA68C30088BAD2 /* SampleAppUITest_171.swift */; };
+		F4408C8A2BEA68C30088BAD2 /* SampleAppUITest_48.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5E2BEA68C30088BAD2 /* SampleAppUITest_48.swift */; };
+		F4408C8B2BEA68C30088BAD2 /* SampleAppUITest_165.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B5F2BEA68C30088BAD2 /* SampleAppUITest_165.swift */; };
+		F4408C8C2BEA68C30088BAD2 /* SampleAppUITest_88.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B602BEA68C30088BAD2 /* SampleAppUITest_88.swift */; };
+		F4408C8D2BEA68C30088BAD2 /* SampleAppUITest_59.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B612BEA68C30088BAD2 /* SampleAppUITest_59.swift */; };
+		F4408C8E2BEA68C30088BAD2 /* SampleAppUITest_216.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B622BEA68C30088BAD2 /* SampleAppUITest_216.swift */; };
+		F4408C8F2BEA68C30088BAD2 /* SampleAppUITest_210.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B632BEA68C30088BAD2 /* SampleAppUITest_210.swift */; };
+		F4408C902BEA68C30088BAD2 /* SampleAppUITest_198.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B642BEA68C30088BAD2 /* SampleAppUITest_198.swift */; };
+		F4408C912BEA68C30088BAD2 /* SampleAppUITest_289.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B652BEA68C30088BAD2 /* SampleAppUITest_289.swift */; };
+		F4408C922BEA68C30088BAD2 /* SampleAppUITest_143.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B662BEA68C30088BAD2 /* SampleAppUITest_143.swift */; };
+		F4408C932BEA68C30088BAD2 /* SampleAppUITest_164.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4408B672BEA68C30088BAD2 /* SampleAppUITest_164.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +468,307 @@
 		A707BF122AA7112C00B1A5EB /* Auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43D48842BDA632E002E510C /* Codegen.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Codegen.py; sourceTree = "<group>"; };
+		F4408A3C2BEA68BC0088BAD2 /* SampleAppUITest_21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_21.swift; sourceTree = "<group>"; };
+		F4408A3D2BEA68BC0088BAD2 /* SampleAppUITest_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_9.swift; sourceTree = "<group>"; };
+		F4408A3E2BEA68BC0088BAD2 /* SampleAppUITest_111.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_111.swift; sourceTree = "<group>"; };
+		F4408A3F2BEA68BC0088BAD2 /* SampleAppUITest_238.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_238.swift; sourceTree = "<group>"; };
+		F4408A402BEA68BC0088BAD2 /* SampleAppUITest_29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_29.swift; sourceTree = "<group>"; };
+		F4408A412BEA68BC0088BAD2 /* SampleAppUITest_212.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_212.swift; sourceTree = "<group>"; };
+		F4408A422BEA68BC0088BAD2 /* SampleAppUITest_18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_18.swift; sourceTree = "<group>"; };
+		F4408A432BEA68BC0088BAD2 /* SampleAppUITest_83.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_83.swift; sourceTree = "<group>"; };
+		F4408A442BEA68BD0088BAD2 /* SampleAppUITest_50.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_50.swift; sourceTree = "<group>"; };
+		F4408A452BEA68BD0088BAD2 /* SampleAppUITest_157.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_157.swift; sourceTree = "<group>"; };
+		F4408A462BEA68BD0088BAD2 /* SampleAppUITest_122.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_122.swift; sourceTree = "<group>"; };
+		F4408A472BEA68BD0088BAD2 /* SampleAppUITest_156.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_156.swift; sourceTree = "<group>"; };
+		F4408A482BEA68BD0088BAD2 /* SampleAppUITest_250.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_250.swift; sourceTree = "<group>"; };
+		F4408A492BEA68BD0088BAD2 /* SampleAppUITest_276.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_276.swift; sourceTree = "<group>"; };
+		F4408A4A2BEA68BD0088BAD2 /* SampleAppUITest_281.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_281.swift; sourceTree = "<group>"; };
+		F4408A4B2BEA68BD0088BAD2 /* SampleAppUITest_79.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_79.swift; sourceTree = "<group>"; };
+		F4408A4C2BEA68BD0088BAD2 /* SampleAppUITest_293.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_293.swift; sourceTree = "<group>"; };
+		F4408A4D2BEA68BD0088BAD2 /* SampleAppUITest_256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_256.swift; sourceTree = "<group>"; };
+		F4408A4E2BEA68BD0088BAD2 /* SampleAppUITest_249.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_249.swift; sourceTree = "<group>"; };
+		F4408A4F2BEA68BD0088BAD2 /* SampleAppUITest_72.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_72.swift; sourceTree = "<group>"; };
+		F4408A502BEA68BD0088BAD2 /* SampleAppUITest_181.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_181.swift; sourceTree = "<group>"; };
+		F4408A512BEA68BD0088BAD2 /* SampleAppUITest_275.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_275.swift; sourceTree = "<group>"; };
+		F4408A522BEA68BD0088BAD2 /* SampleAppUITest_253.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_253.swift; sourceTree = "<group>"; };
+		F4408A532BEA68BD0088BAD2 /* SampleAppUITest_110.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_110.swift; sourceTree = "<group>"; };
+		F4408A542BEA68BD0088BAD2 /* SampleAppUITest_10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_10.swift; sourceTree = "<group>"; };
+		F4408A552BEA68BD0088BAD2 /* SampleAppUITest_179.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_179.swift; sourceTree = "<group>"; };
+		F4408A562BEA68BD0088BAD2 /* SampleAppUITest_39.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_39.swift; sourceTree = "<group>"; };
+		F4408A572BEA68BD0088BAD2 /* SampleAppUITest_128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_128.swift; sourceTree = "<group>"; };
+		F4408A582BEA68BD0088BAD2 /* SampleAppUITest_232.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_232.swift; sourceTree = "<group>"; };
+		F4408A592BEA68BD0088BAD2 /* SampleAppUITest_27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_27.swift; sourceTree = "<group>"; };
+		F4408A5A2BEA68BD0088BAD2 /* SampleAppUITest_81.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_81.swift; sourceTree = "<group>"; };
+		F4408A5B2BEA68BD0088BAD2 /* SampleAppUITest_124.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_124.swift; sourceTree = "<group>"; };
+		F4408A5C2BEA68BD0088BAD2 /* SampleAppUITest_86.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_86.swift; sourceTree = "<group>"; };
+		F4408A5D2BEA68BD0088BAD2 /* SampleAppUITest_243.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_243.swift; sourceTree = "<group>"; };
+		F4408A5E2BEA68BD0088BAD2 /* SampleAppUITest_35.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_35.swift; sourceTree = "<group>"; };
+		F4408A5F2BEA68BD0088BAD2 /* SampleAppUITest_218.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_218.swift; sourceTree = "<group>"; };
+		F4408A602BEA68BD0088BAD2 /* SampleAppUITest_254.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_254.swift; sourceTree = "<group>"; };
+		F4408A612BEA68BD0088BAD2 /* SampleAppUITest_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_64.swift; sourceTree = "<group>"; };
+		F4408A622BEA68BD0088BAD2 /* SampleAppUITest_251.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_251.swift; sourceTree = "<group>"; };
+		F4408A632BEA68BD0088BAD2 /* SampleAppUITest_288.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_288.swift; sourceTree = "<group>"; };
+		F4408A642BEA68BD0088BAD2 /* SampleAppUITest_99.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_99.swift; sourceTree = "<group>"; };
+		F4408A652BEA68BD0088BAD2 /* SampleAppUITest_227.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_227.swift; sourceTree = "<group>"; };
+		F4408A662BEA68BD0088BAD2 /* SampleAppUITest_55.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_55.swift; sourceTree = "<group>"; };
+		F4408A672BEA68BD0088BAD2 /* SampleAppUITest_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_8.swift; sourceTree = "<group>"; };
+		F4408A682BEA68BD0088BAD2 /* SampleAppUITest_215.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_215.swift; sourceTree = "<group>"; };
+		F4408A692BEA68BD0088BAD2 /* SampleAppUITest_200.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_200.swift; sourceTree = "<group>"; };
+		F4408A6A2BEA68BD0088BAD2 /* SampleAppUITest_144.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_144.swift; sourceTree = "<group>"; };
+		F4408A6B2BEA68BD0088BAD2 /* SampleAppUITest_189.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_189.swift; sourceTree = "<group>"; };
+		F4408A6C2BEA68BE0088BAD2 /* SampleAppUITest_137.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_137.swift; sourceTree = "<group>"; };
+		F4408A6D2BEA68BE0088BAD2 /* SampleAppUITest_106.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_106.swift; sourceTree = "<group>"; };
+		F4408A6E2BEA68BE0088BAD2 /* SampleAppUITest_174.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_174.swift; sourceTree = "<group>"; };
+		F4408A6F2BEA68BE0088BAD2 /* SampleAppUITest_213.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_213.swift; sourceTree = "<group>"; };
+		F4408A702BEA68BE0088BAD2 /* SampleAppUITest_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_4.swift; sourceTree = "<group>"; };
+		F4408A712BEA68BE0088BAD2 /* SampleAppUITest_201.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_201.swift; sourceTree = "<group>"; };
+		F4408A722BEA68BE0088BAD2 /* SampleAppUITest_224.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_224.swift; sourceTree = "<group>"; };
+		F4408A732BEA68BE0088BAD2 /* SampleAppUITest_151.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_151.swift; sourceTree = "<group>"; };
+		F4408A742BEA68BE0088BAD2 /* SampleAppUITest_278.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_278.swift; sourceTree = "<group>"; };
+		F4408A752BEA68BE0088BAD2 /* SampleAppUITest_54.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_54.swift; sourceTree = "<group>"; };
+		F4408A762BEA68BE0088BAD2 /* SampleAppUITest_69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_69.swift; sourceTree = "<group>"; };
+		F4408A772BEA68BE0088BAD2 /* SampleAppUITest_141.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_141.swift; sourceTree = "<group>"; };
+		F4408A782BEA68BE0088BAD2 /* SampleAppUITest_49.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_49.swift; sourceTree = "<group>"; };
+		F4408A792BEA68BE0088BAD2 /* SampleAppUITest_178.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_178.swift; sourceTree = "<group>"; };
+		F4408A7A2BEA68BE0088BAD2 /* SampleAppUITest_96.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_96.swift; sourceTree = "<group>"; };
+		F4408A7B2BEA68BE0088BAD2 /* SampleAppUITest_159.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_159.swift; sourceTree = "<group>"; };
+		F4408A7C2BEA68BE0088BAD2 /* SampleAppUITest_78.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_78.swift; sourceTree = "<group>"; };
+		F4408A7D2BEA68BE0088BAD2 /* SampleAppUITest_242.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_242.swift; sourceTree = "<group>"; };
+		F4408A7E2BEA68BE0088BAD2 /* SampleAppUITest_192.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_192.swift; sourceTree = "<group>"; };
+		F4408A7F2BEA68BE0088BAD2 /* SampleAppUITest_104.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_104.swift; sourceTree = "<group>"; };
+		F4408A802BEA68BE0088BAD2 /* SampleAppUITest_108.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_108.swift; sourceTree = "<group>"; };
+		F4408A812BEA68BE0088BAD2 /* SampleAppUITest_105.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_105.swift; sourceTree = "<group>"; };
+		F4408A822BEA68BE0088BAD2 /* SampleAppUITest_84.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_84.swift; sourceTree = "<group>"; };
+		F4408A832BEA68BE0088BAD2 /* SampleAppUITest_123.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_123.swift; sourceTree = "<group>"; };
+		F4408A842BEA68BE0088BAD2 /* SampleAppUITest_255.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_255.swift; sourceTree = "<group>"; };
+		F4408A852BEA68BE0088BAD2 /* SampleAppUITest_118.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_118.swift; sourceTree = "<group>"; };
+		F4408A862BEA68BE0088BAD2 /* SampleAppUITest_134.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_134.swift; sourceTree = "<group>"; };
+		F4408A872BEA68BE0088BAD2 /* SampleAppUITest_268.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_268.swift; sourceTree = "<group>"; };
+		F4408A882BEA68BE0088BAD2 /* SampleAppUITest_37.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_37.swift; sourceTree = "<group>"; };
+		F4408A892BEA68BE0088BAD2 /* SampleAppUITest_195.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_195.swift; sourceTree = "<group>"; };
+		F4408A8A2BEA68BE0088BAD2 /* SampleAppUITest_53.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_53.swift; sourceTree = "<group>"; };
+		F4408A8B2BEA68BE0088BAD2 /* SampleAppUITest_229.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_229.swift; sourceTree = "<group>"; };
+		F4408A8C2BEA68BE0088BAD2 /* SampleAppUITest_294.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_294.swift; sourceTree = "<group>"; };
+		F4408A8D2BEA68BE0088BAD2 /* SampleAppUITest_51.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_51.swift; sourceTree = "<group>"; };
+		F4408A8E2BEA68BE0088BAD2 /* SampleAppUITest_75.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_75.swift; sourceTree = "<group>"; };
+		F4408A8F2BEA68BE0088BAD2 /* SampleAppUITest_133.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_133.swift; sourceTree = "<group>"; };
+		F4408A902BEA68BE0088BAD2 /* SampleAppUITest_58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_58.swift; sourceTree = "<group>"; };
+		F4408A912BEA68BE0088BAD2 /* SampleAppUITest_223.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_223.swift; sourceTree = "<group>"; };
+		F4408A922BEA68BE0088BAD2 /* SampleAppUITest_190.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_190.swift; sourceTree = "<group>"; };
+		F4408A932BEA68BE0088BAD2 /* SampleAppUITest_204.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_204.swift; sourceTree = "<group>"; };
+		F4408A942BEA68BE0088BAD2 /* SampleAppUITest_222.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_222.swift; sourceTree = "<group>"; };
+		F4408A952BEA68BE0088BAD2 /* SampleAppUITest_246.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_246.swift; sourceTree = "<group>"; };
+		F4408A962BEA68BE0088BAD2 /* SampleAppUITest_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_7.swift; sourceTree = "<group>"; };
+		F4408A972BEA68BE0088BAD2 /* SampleAppUITest_299.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_299.swift; sourceTree = "<group>"; };
+		F4408A982BEA68BE0088BAD2 /* SampleAppUITest_169.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_169.swift; sourceTree = "<group>"; };
+		F4408A992BEA68BE0088BAD2 /* SampleAppUITest_95.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_95.swift; sourceTree = "<group>"; };
+		F4408A9A2BEA68BE0088BAD2 /* SampleAppUITest_90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_90.swift; sourceTree = "<group>"; };
+		F4408A9B2BEA68BF0088BAD2 /* SampleAppUITest_116.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_116.swift; sourceTree = "<group>"; };
+		F4408A9C2BEA68BF0088BAD2 /* SampleAppUITest_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_1.swift; sourceTree = "<group>"; };
+		F4408A9D2BEA68BF0088BAD2 /* SampleAppUITest_292.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_292.swift; sourceTree = "<group>"; };
+		F4408A9E2BEA68BF0088BAD2 /* SampleAppUITest_121.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_121.swift; sourceTree = "<group>"; };
+		F4408A9F2BEA68BF0088BAD2 /* SampleAppUITest_11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_11.swift; sourceTree = "<group>"; };
+		F4408AA02BEA68BF0088BAD2 /* SampleAppUITest_206.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_206.swift; sourceTree = "<group>"; };
+		F4408AA12BEA68BF0088BAD2 /* SampleAppUITest_42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_42.swift; sourceTree = "<group>"; };
+		F4408AA22BEA68BF0088BAD2 /* SampleAppUITest_162.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_162.swift; sourceTree = "<group>"; };
+		F4408AA32BEA68BF0088BAD2 /* SampleAppUITest_235.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_235.swift; sourceTree = "<group>"; };
+		F4408AA42BEA68BF0088BAD2 /* SampleAppUITest_199.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_199.swift; sourceTree = "<group>"; };
+		F4408AA52BEA68BF0088BAD2 /* SampleAppUITest_269.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_269.swift; sourceTree = "<group>"; };
+		F4408AA62BEA68BF0088BAD2 /* SampleAppUITest_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_32.swift; sourceTree = "<group>"; };
+		F4408AA72BEA68BF0088BAD2 /* SampleAppUITest_234.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_234.swift; sourceTree = "<group>"; };
+		F4408AA82BEA68BF0088BAD2 /* SampleAppUITest_20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_20.swift; sourceTree = "<group>"; };
+		F4408AA92BEA68BF0088BAD2 /* SampleAppUITest_173.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_173.swift; sourceTree = "<group>"; };
+		F4408AAA2BEA68BF0088BAD2 /* SampleAppUITest_184.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_184.swift; sourceTree = "<group>"; };
+		F4408AAB2BEA68BF0088BAD2 /* SampleAppUITest_136.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_136.swift; sourceTree = "<group>"; };
+		F4408AAC2BEA68BF0088BAD2 /* SampleAppUITest_207.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_207.swift; sourceTree = "<group>"; };
+		F4408AAD2BEA68BF0088BAD2 /* SampleAppUITest_125.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_125.swift; sourceTree = "<group>"; };
+		F4408AAE2BEA68BF0088BAD2 /* SampleAppUITest_233.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_233.swift; sourceTree = "<group>"; };
+		F4408AAF2BEA68BF0088BAD2 /* SampleAppUITest_91.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_91.swift; sourceTree = "<group>"; };
+		F4408AB02BEA68BF0088BAD2 /* SampleAppUITest_283.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_283.swift; sourceTree = "<group>"; };
+		F4408AB12BEA68BF0088BAD2 /* SampleAppUITest_285.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_285.swift; sourceTree = "<group>"; };
+		F4408AB22BEA68BF0088BAD2 /* SampleAppUITest_109.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_109.swift; sourceTree = "<group>"; };
+		F4408AB32BEA68BF0088BAD2 /* SampleAppUITest_252.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_252.swift; sourceTree = "<group>"; };
+		F4408AB42BEA68BF0088BAD2 /* SampleAppUITest_45.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_45.swift; sourceTree = "<group>"; };
+		F4408AB52BEA68BF0088BAD2 /* SampleAppUITest_177.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_177.swift; sourceTree = "<group>"; };
+		F4408AB62BEA68BF0088BAD2 /* SampleAppUITest_244.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_244.swift; sourceTree = "<group>"; };
+		F4408AB72BEA68BF0088BAD2 /* SampleAppUITest_247.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_247.swift; sourceTree = "<group>"; };
+		F4408AB82BEA68BF0088BAD2 /* SampleAppUITest_237.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_237.swift; sourceTree = "<group>"; };
+		F4408AB92BEA68BF0088BAD2 /* SampleAppUITest_284.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_284.swift; sourceTree = "<group>"; };
+		F4408ABA2BEA68BF0088BAD2 /* SampleAppUITest_147.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_147.swift; sourceTree = "<group>"; };
+		F4408ABB2BEA68BF0088BAD2 /* SampleAppUITest_298.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_298.swift; sourceTree = "<group>"; };
+		F4408ABC2BEA68BF0088BAD2 /* SampleAppUITest_176.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_176.swift; sourceTree = "<group>"; };
+		F4408ABD2BEA68BF0088BAD2 /* SampleAppUITest_120.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_120.swift; sourceTree = "<group>"; };
+		F4408ABE2BEA68BF0088BAD2 /* SampleAppUITest_260.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_260.swift; sourceTree = "<group>"; };
+		F4408ABF2BEA68BF0088BAD2 /* SampleAppUITest_115.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_115.swift; sourceTree = "<group>"; };
+		F4408AC02BEA68BF0088BAD2 /* SampleAppUITest_262.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_262.swift; sourceTree = "<group>"; };
+		F4408AC12BEA68BF0088BAD2 /* SampleAppUITest_279.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_279.swift; sourceTree = "<group>"; };
+		F4408AC22BEA68BF0088BAD2 /* SampleAppUITest_34.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_34.swift; sourceTree = "<group>"; };
+		F4408AC32BEA68BF0088BAD2 /* SampleAppUITest_47.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_47.swift; sourceTree = "<group>"; };
+		F4408AC42BEA68BF0088BAD2 /* SampleAppUITest_130.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_130.swift; sourceTree = "<group>"; };
+		F4408AC52BEA68BF0088BAD2 /* SampleAppUITest_43.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_43.swift; sourceTree = "<group>"; };
+		F4408AC62BEA68BF0088BAD2 /* SampleAppUITest_140.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_140.swift; sourceTree = "<group>"; };
+		F4408AC72BEA68BF0088BAD2 /* SampleAppUITest_296.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_296.swift; sourceTree = "<group>"; };
+		F4408AC82BEA68BF0088BAD2 /* SampleAppUITest_129.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_129.swift; sourceTree = "<group>"; };
+		F4408AC92BEA68BF0088BAD2 /* SampleAppUITest_17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_17.swift; sourceTree = "<group>"; };
+		F4408ACA2BEA68BF0088BAD2 /* SampleAppUITest_68.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_68.swift; sourceTree = "<group>"; };
+		F4408ACB2BEA68BF0088BAD2 /* SampleAppUITest_230.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_230.swift; sourceTree = "<group>"; };
+		F4408ACC2BEA68BF0088BAD2 /* SampleAppUITest_240.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_240.swift; sourceTree = "<group>"; };
+		F4408ACD2BEA68C00088BAD2 /* SampleAppUITest_102.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_102.swift; sourceTree = "<group>"; };
+		F4408ACE2BEA68C00088BAD2 /* SampleAppUITest_135.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_135.swift; sourceTree = "<group>"; };
+		F4408ACF2BEA68C00088BAD2 /* SampleAppUITest_146.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_146.swift; sourceTree = "<group>"; };
+		F4408AD02BEA68C00088BAD2 /* SampleAppUITest_97.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_97.swift; sourceTree = "<group>"; };
+		F4408AD12BEA68C00088BAD2 /* SampleAppUITest_282.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_282.swift; sourceTree = "<group>"; };
+		F4408AD22BEA68C00088BAD2 /* SampleAppUITest_22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_22.swift; sourceTree = "<group>"; };
+		F4408AD32BEA68C00088BAD2 /* SampleAppUITest_295.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_295.swift; sourceTree = "<group>"; };
+		F4408AD42BEA68C00088BAD2 /* SampleAppUITest_94.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_94.swift; sourceTree = "<group>"; };
+		F4408AD52BEA68C00088BAD2 /* SampleAppUITest_114.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_114.swift; sourceTree = "<group>"; };
+		F4408AD62BEA68C00088BAD2 /* SampleAppUITest_71.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_71.swift; sourceTree = "<group>"; };
+		F4408AD72BEA68C00088BAD2 /* SampleAppUITest_180.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_180.swift; sourceTree = "<group>"; };
+		F4408AD82BEA68C00088BAD2 /* SampleAppUITest_119.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_119.swift; sourceTree = "<group>"; };
+		F4408AD92BEA68C00088BAD2 /* SampleAppUITest_185.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_185.swift; sourceTree = "<group>"; };
+		F4408ADA2BEA68C00088BAD2 /* SampleAppUITest_131.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_131.swift; sourceTree = "<group>"; };
+		F4408ADB2BEA68C00088BAD2 /* SampleAppUITest_277.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_277.swift; sourceTree = "<group>"; };
+		F4408ADC2BEA68C00088BAD2 /* SampleAppUITest_98.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_98.swift; sourceTree = "<group>"; };
+		F4408ADD2BEA68C00088BAD2 /* SampleAppUITest_73.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_73.swift; sourceTree = "<group>"; };
+		F4408ADE2BEA68C00088BAD2 /* SampleAppUITest_14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_14.swift; sourceTree = "<group>"; };
+		F4408ADF2BEA68C00088BAD2 /* SampleAppUITest_70.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_70.swift; sourceTree = "<group>"; };
+		F4408AE02BEA68C00088BAD2 /* SampleAppUITest_209.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_209.swift; sourceTree = "<group>"; };
+		F4408AE12BEA68C00088BAD2 /* SampleAppUITest_150.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_150.swift; sourceTree = "<group>"; };
+		F4408AE22BEA68C00088BAD2 /* SampleAppUITest_61.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_61.swift; sourceTree = "<group>"; };
+		F4408AE32BEA68C00088BAD2 /* SampleAppUITest_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_5.swift; sourceTree = "<group>"; };
+		F4408AE42BEA68C00088BAD2 /* SampleAppUITest_267.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_267.swift; sourceTree = "<group>"; };
+		F4408AE52BEA68C00088BAD2 /* SampleAppUITest_202.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_202.swift; sourceTree = "<group>"; };
+		F4408AE62BEA68C00088BAD2 /* SampleAppUITest_273.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_273.swift; sourceTree = "<group>"; };
+		F4408AE72BEA68C00088BAD2 /* SampleAppUITest_258.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_258.swift; sourceTree = "<group>"; };
+		F4408AE82BEA68C00088BAD2 /* SampleAppUITest_168.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_168.swift; sourceTree = "<group>"; };
+		F4408AE92BEA68C00088BAD2 /* SampleAppUITest_187.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_187.swift; sourceTree = "<group>"; };
+		F4408AEA2BEA68C00088BAD2 /* SampleAppUITest_196.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_196.swift; sourceTree = "<group>"; };
+		F4408AEB2BEA68C00088BAD2 /* SampleAppUITest_239.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_239.swift; sourceTree = "<group>"; };
+		F4408AEC2BEA68C00088BAD2 /* SampleAppUITest_149.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_149.swift; sourceTree = "<group>"; };
+		F4408AED2BEA68C00088BAD2 /* SampleAppUITest_65.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_65.swift; sourceTree = "<group>"; };
+		F4408AEE2BEA68C00088BAD2 /* SampleAppUITest_257.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_257.swift; sourceTree = "<group>"; };
+		F4408AEF2BEA68C00088BAD2 /* SampleAppUITest_63.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_63.swift; sourceTree = "<group>"; };
+		F4408AF02BEA68C00088BAD2 /* SampleAppUITest_170.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_170.swift; sourceTree = "<group>"; };
+		F4408AF12BEA68C00088BAD2 /* SampleAppUITest_220.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_220.swift; sourceTree = "<group>"; };
+		F4408AF22BEA68C00088BAD2 /* SampleAppUITest_112.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_112.swift; sourceTree = "<group>"; };
+		F4408AF32BEA68C00088BAD2 /* SampleAppUITest_188.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_188.swift; sourceTree = "<group>"; };
+		F4408AF42BEA68C00088BAD2 /* SampleAppUITest_186.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_186.swift; sourceTree = "<group>"; };
+		F4408AF52BEA68C00088BAD2 /* SampleAppUITest_126.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_126.swift; sourceTree = "<group>"; };
+		F4408AF62BEA68C00088BAD2 /* SampleAppUITest_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_2.swift; sourceTree = "<group>"; };
+		F4408AF72BEA68C00088BAD2 /* SampleAppUITest_197.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_197.swift; sourceTree = "<group>"; };
+		F4408AF82BEA68C00088BAD2 /* SampleAppUITest_265.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_265.swift; sourceTree = "<group>"; };
+		F4408AF92BEA68C00088BAD2 /* SampleAppUITest_44.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_44.swift; sourceTree = "<group>"; };
+		F4408AFA2BEA68C00088BAD2 /* SampleAppUITest_271.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_271.swift; sourceTree = "<group>"; };
+		F4408AFB2BEA68C00088BAD2 /* SampleAppUITest_139.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_139.swift; sourceTree = "<group>"; };
+		F4408AFC2BEA68C00088BAD2 /* SampleAppUITest_62.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_62.swift; sourceTree = "<group>"; };
+		F4408AFD2BEA68C10088BAD2 /* SampleAppUITest_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_3.swift; sourceTree = "<group>"; };
+		F4408AFE2BEA68C10088BAD2 /* SampleAppUITest_0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_0.swift; sourceTree = "<group>"; };
+		F4408AFF2BEA68C10088BAD2 /* SampleAppUITest_76.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_76.swift; sourceTree = "<group>"; };
+		F4408B002BEA68C10088BAD2 /* SampleAppUITest_38.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_38.swift; sourceTree = "<group>"; };
+		F4408B012BEA68C10088BAD2 /* SampleAppUITest_46.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_46.swift; sourceTree = "<group>"; };
+		F4408B022BEA68C10088BAD2 /* SampleAppUITest_145.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_145.swift; sourceTree = "<group>"; };
+		F4408B032BEA68C10088BAD2 /* SampleAppUITest_193.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_193.swift; sourceTree = "<group>"; };
+		F4408B042BEA68C10088BAD2 /* SampleAppUITest_85.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_85.swift; sourceTree = "<group>"; };
+		F4408B052BEA68C10088BAD2 /* SampleAppUITest_74.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_74.swift; sourceTree = "<group>"; };
+		F4408B062BEA68C10088BAD2 /* SampleAppUITest_154.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_154.swift; sourceTree = "<group>"; };
+		F4408B072BEA68C10088BAD2 /* SampleAppUITest_172.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_172.swift; sourceTree = "<group>"; };
+		F4408B082BEA68C10088BAD2 /* SampleAppUITest_67.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_67.swift; sourceTree = "<group>"; };
+		F4408B092BEA68C10088BAD2 /* SampleAppUITest_87.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_87.swift; sourceTree = "<group>"; };
+		F4408B0A2BEA68C10088BAD2 /* SampleAppUITest_19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_19.swift; sourceTree = "<group>"; };
+		F4408B0B2BEA68C10088BAD2 /* SampleAppUITest_138.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_138.swift; sourceTree = "<group>"; };
+		F4408B0C2BEA68C10088BAD2 /* SampleAppUITest_132.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_132.swift; sourceTree = "<group>"; };
+		F4408B0D2BEA68C10088BAD2 /* SampleAppUITest_16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_16.swift; sourceTree = "<group>"; };
+		F4408B0E2BEA68C10088BAD2 /* SampleAppUITest_57.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_57.swift; sourceTree = "<group>"; };
+		F4408B0F2BEA68C10088BAD2 /* SampleAppUITest_221.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_221.swift; sourceTree = "<group>"; };
+		F4408B102BEA68C10088BAD2 /* SampleAppUITest_226.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_226.swift; sourceTree = "<group>"; };
+		F4408B112BEA68C10088BAD2 /* SampleAppUITest_263.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_263.swift; sourceTree = "<group>"; };
+		F4408B122BEA68C10088BAD2 /* SampleAppUITest_26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_26.swift; sourceTree = "<group>"; };
+		F4408B132BEA68C10088BAD2 /* SampleAppUITest_191.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_191.swift; sourceTree = "<group>"; };
+		F4408B142BEA68C10088BAD2 /* SampleAppUITest_152.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_152.swift; sourceTree = "<group>"; };
+		F4408B152BEA68C10088BAD2 /* SampleAppUITest_175.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_175.swift; sourceTree = "<group>"; };
+		F4408B162BEA68C10088BAD2 /* SampleAppUITest_15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_15.swift; sourceTree = "<group>"; };
+		F4408B172BEA68C10088BAD2 /* SampleAppUITest_228.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_228.swift; sourceTree = "<group>"; };
+		F4408B182BEA68C10088BAD2 /* SampleAppUITest_117.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_117.swift; sourceTree = "<group>"; };
+		F4408B192BEA68C10088BAD2 /* SampleAppUITest_167.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_167.swift; sourceTree = "<group>"; };
+		F4408B1A2BEA68C10088BAD2 /* SampleAppUITest_236.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_236.swift; sourceTree = "<group>"; };
+		F4408B1B2BEA68C10088BAD2 /* SampleAppUITest_286.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_286.swift; sourceTree = "<group>"; };
+		F4408B1C2BEA68C10088BAD2 /* SampleAppUITest_266.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_266.swift; sourceTree = "<group>"; };
+		F4408B1D2BEA68C10088BAD2 /* SampleAppUITest_30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_30.swift; sourceTree = "<group>"; };
+		F4408B1E2BEA68C10088BAD2 /* SampleAppUITest_203.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_203.swift; sourceTree = "<group>"; };
+		F4408B1F2BEA68C10088BAD2 /* SampleAppUITest_208.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_208.swift; sourceTree = "<group>"; };
+		F4408B202BEA68C10088BAD2 /* SampleAppUITest_272.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_272.swift; sourceTree = "<group>"; };
+		F4408B212BEA68C10088BAD2 /* SampleAppUITest_13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_13.swift; sourceTree = "<group>"; };
+		F4408B222BEA68C10088BAD2 /* SampleAppUITest_280.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_280.swift; sourceTree = "<group>"; };
+		F4408B232BEA68C10088BAD2 /* SampleAppUITest_24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_24.swift; sourceTree = "<group>"; };
+		F4408B242BEA68C10088BAD2 /* SampleAppUITest_82.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_82.swift; sourceTree = "<group>"; };
+		F4408B252BEA68C10088BAD2 /* SampleAppUITest_182.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_182.swift; sourceTree = "<group>"; };
+		F4408B262BEA68C10088BAD2 /* SampleAppUITest_194.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_194.swift; sourceTree = "<group>"; };
+		F4408B272BEA68C10088BAD2 /* SampleAppUITest_107.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_107.swift; sourceTree = "<group>"; };
+		F4408B282BEA68C20088BAD2 /* SampleAppUITest_287.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_287.swift; sourceTree = "<group>"; };
+		F4408B292BEA68C20088BAD2 /* SampleAppUITest_66.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_66.swift; sourceTree = "<group>"; };
+		F4408B2A2BEA68C20088BAD2 /* SampleAppUITest_142.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_142.swift; sourceTree = "<group>"; };
+		F4408B2B2BEA68C20088BAD2 /* SampleAppUITest_290.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_290.swift; sourceTree = "<group>"; };
+		F4408B2C2BEA68C20088BAD2 /* SampleAppUITest_25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_25.swift; sourceTree = "<group>"; };
+		F4408B2D2BEA68C20088BAD2 /* SampleAppUITest_33.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_33.swift; sourceTree = "<group>"; };
+		F4408B2E2BEA68C20088BAD2 /* SampleAppUITest_40.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_40.swift; sourceTree = "<group>"; };
+		F4408B2F2BEA68C20088BAD2 /* SampleAppUITest_31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_31.swift; sourceTree = "<group>"; };
+		F4408B302BEA68C20088BAD2 /* SampleAppUITest_23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_23.swift; sourceTree = "<group>"; };
+		F4408B312BEA68C20088BAD2 /* SampleAppUITest_225.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_225.swift; sourceTree = "<group>"; };
+		F4408B322BEA68C20088BAD2 /* SampleAppUITest_259.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_259.swift; sourceTree = "<group>"; };
+		F4408B332BEA68C20088BAD2 /* SampleAppUITest_92.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_92.swift; sourceTree = "<group>"; };
+		F4408B342BEA68C20088BAD2 /* SampleAppUITest_93.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_93.swift; sourceTree = "<group>"; };
+		F4408B352BEA68C20088BAD2 /* SampleAppUITest_161.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_161.swift; sourceTree = "<group>"; };
+		F4408B362BEA68C20088BAD2 /* SampleAppUITest_12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_12.swift; sourceTree = "<group>"; };
+		F4408B372BEA68C20088BAD2 /* SampleAppUITest_155.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_155.swift; sourceTree = "<group>"; };
+		F4408B382BEA68C20088BAD2 /* SampleAppUITest_231.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_231.swift; sourceTree = "<group>"; };
+		F4408B392BEA68C20088BAD2 /* SampleAppUITest_163.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_163.swift; sourceTree = "<group>"; };
+		F4408B3A2BEA68C20088BAD2 /* SampleAppUITest_100.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_100.swift; sourceTree = "<group>"; };
+		F4408B3B2BEA68C20088BAD2 /* SampleAppUITest_183.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_183.swift; sourceTree = "<group>"; };
+		F4408B3C2BEA68C20088BAD2 /* SampleAppUITest_217.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_217.swift; sourceTree = "<group>"; };
+		F4408B3D2BEA68C20088BAD2 /* SampleAppUITest_36.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_36.swift; sourceTree = "<group>"; };
+		F4408B3E2BEA68C20088BAD2 /* SampleAppUITest_77.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_77.swift; sourceTree = "<group>"; };
+		F4408B3F2BEA68C20088BAD2 /* SampleAppUITest_248.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_248.swift; sourceTree = "<group>"; };
+		F4408B402BEA68C20088BAD2 /* SampleAppUITest_52.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_52.swift; sourceTree = "<group>"; };
+		F4408B412BEA68C20088BAD2 /* SampleAppUITest_103.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_103.swift; sourceTree = "<group>"; };
+		F4408B422BEA68C20088BAD2 /* SampleAppUITest_211.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_211.swift; sourceTree = "<group>"; };
+		F4408B432BEA68C20088BAD2 /* SampleAppUITest_291.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_291.swift; sourceTree = "<group>"; };
+		F4408B442BEA68C20088BAD2 /* SampleAppUITest_245.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_245.swift; sourceTree = "<group>"; };
+		F4408B452BEA68C20088BAD2 /* SampleAppUITest_214.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_214.swift; sourceTree = "<group>"; };
+		F4408B462BEA68C20088BAD2 /* SampleAppUITest_89.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_89.swift; sourceTree = "<group>"; };
+		F4408B472BEA68C20088BAD2 /* SampleAppUITest_148.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_148.swift; sourceTree = "<group>"; };
+		F4408B482BEA68C20088BAD2 /* SampleAppUITest_41.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_41.swift; sourceTree = "<group>"; };
+		F4408B492BEA68C20088BAD2 /* SampleAppUITest_261.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_261.swift; sourceTree = "<group>"; };
+		F4408B4A2BEA68C20088BAD2 /* SampleAppUITest_153.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_153.swift; sourceTree = "<group>"; };
+		F4408B4B2BEA68C20088BAD2 /* SampleAppUITest_28.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_28.swift; sourceTree = "<group>"; };
+		F4408B4C2BEA68C20088BAD2 /* SampleAppUITest_274.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_274.swift; sourceTree = "<group>"; };
+		F4408B4D2BEA68C20088BAD2 /* SampleAppUITest_56.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_56.swift; sourceTree = "<group>"; };
+		F4408B4E2BEA68C20088BAD2 /* SampleAppUITest_166.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_166.swift; sourceTree = "<group>"; };
+		F4408B4F2BEA68C20088BAD2 /* SampleAppUITest_101.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_101.swift; sourceTree = "<group>"; };
+		F4408B502BEA68C20088BAD2 /* SampleAppUITest_80.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_80.swift; sourceTree = "<group>"; };
+		F4408B512BEA68C20088BAD2 /* SampleAppUITest_270.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_270.swift; sourceTree = "<group>"; };
+		F4408B522BEA68C20088BAD2 /* SampleAppUITest_264.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_264.swift; sourceTree = "<group>"; };
+		F4408B532BEA68C30088BAD2 /* SampleAppUITest_158.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_158.swift; sourceTree = "<group>"; };
+		F4408B542BEA68C30088BAD2 /* SampleAppUITest_113.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_113.swift; sourceTree = "<group>"; };
+		F4408B552BEA68C30088BAD2 /* SampleAppUITest_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_6.swift; sourceTree = "<group>"; };
+		F4408B562BEA68C30088BAD2 /* SampleAppUITest_297.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_297.swift; sourceTree = "<group>"; };
+		F4408B572BEA68C30088BAD2 /* SampleAppUITest_205.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_205.swift; sourceTree = "<group>"; };
+		F4408B582BEA68C30088BAD2 /* SampleAppUITest_219.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_219.swift; sourceTree = "<group>"; };
+		F4408B592BEA68C30088BAD2 /* SampleAppUITest_127.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_127.swift; sourceTree = "<group>"; };
+		F4408B5A2BEA68C30088BAD2 /* SampleAppUITest_241.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_241.swift; sourceTree = "<group>"; };
+		F4408B5B2BEA68C30088BAD2 /* SampleAppUITest_160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_160.swift; sourceTree = "<group>"; };
+		F4408B5C2BEA68C30088BAD2 /* SampleAppUITest_60.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_60.swift; sourceTree = "<group>"; };
+		F4408B5D2BEA68C30088BAD2 /* SampleAppUITest_171.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_171.swift; sourceTree = "<group>"; };
+		F4408B5E2BEA68C30088BAD2 /* SampleAppUITest_48.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_48.swift; sourceTree = "<group>"; };
+		F4408B5F2BEA68C30088BAD2 /* SampleAppUITest_165.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_165.swift; sourceTree = "<group>"; };
+		F4408B602BEA68C30088BAD2 /* SampleAppUITest_88.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_88.swift; sourceTree = "<group>"; };
+		F4408B612BEA68C30088BAD2 /* SampleAppUITest_59.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_59.swift; sourceTree = "<group>"; };
+		F4408B622BEA68C30088BAD2 /* SampleAppUITest_216.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_216.swift; sourceTree = "<group>"; };
+		F4408B632BEA68C30088BAD2 /* SampleAppUITest_210.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_210.swift; sourceTree = "<group>"; };
+		F4408B642BEA68C30088BAD2 /* SampleAppUITest_198.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_198.swift; sourceTree = "<group>"; };
+		F4408B652BEA68C30088BAD2 /* SampleAppUITest_289.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_289.swift; sourceTree = "<group>"; };
+		F4408B662BEA68C30088BAD2 /* SampleAppUITest_143.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_143.swift; sourceTree = "<group>"; };
+		F4408B672BEA68C30088BAD2 /* SampleAppUITest_164.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_164.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +826,7 @@
 		2B2EA7601CBB0377001507DD = {
 			isa = PBXGroup;
 			children = (
+				F43D48832BDA627F002E510C /* Scripts */,
 				2B2EA76B1CBB0377001507DD /* orderMe */,
 				93A7AC6325D3713200D4BB77 /* OrderMEUITests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
@@ -373,6 +976,7 @@
 		93642C5B25FC130E0055B866 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F44088162BEA65D90088BAD2 /* DemoTests */,
 				933B0D3225DF080300DC2058 /* BaseTest.swift */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				934A798825F854D4002A26A7 /* FacebookTests.swift */,
@@ -420,6 +1024,321 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F43D48832BDA627F002E510C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F43D48842BDA632E002E510C /* Codegen.py */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		F44088162BEA65D90088BAD2 /* DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4408AFE2BEA68C10088BAD2 /* SampleAppUITest_0.swift */,
+				F4408A9C2BEA68BF0088BAD2 /* SampleAppUITest_1.swift */,
+				F4408AF62BEA68C00088BAD2 /* SampleAppUITest_2.swift */,
+				F4408AFD2BEA68C10088BAD2 /* SampleAppUITest_3.swift */,
+				F4408A702BEA68BE0088BAD2 /* SampleAppUITest_4.swift */,
+				F4408AE32BEA68C00088BAD2 /* SampleAppUITest_5.swift */,
+				F4408B552BEA68C30088BAD2 /* SampleAppUITest_6.swift */,
+				F4408A962BEA68BE0088BAD2 /* SampleAppUITest_7.swift */,
+				F4408A672BEA68BD0088BAD2 /* SampleAppUITest_8.swift */,
+				F4408A3D2BEA68BC0088BAD2 /* SampleAppUITest_9.swift */,
+				F4408A542BEA68BD0088BAD2 /* SampleAppUITest_10.swift */,
+				F4408A9F2BEA68BF0088BAD2 /* SampleAppUITest_11.swift */,
+				F4408B362BEA68C20088BAD2 /* SampleAppUITest_12.swift */,
+				F4408B212BEA68C10088BAD2 /* SampleAppUITest_13.swift */,
+				F4408ADE2BEA68C00088BAD2 /* SampleAppUITest_14.swift */,
+				F4408B162BEA68C10088BAD2 /* SampleAppUITest_15.swift */,
+				F4408B0D2BEA68C10088BAD2 /* SampleAppUITest_16.swift */,
+				F4408AC92BEA68BF0088BAD2 /* SampleAppUITest_17.swift */,
+				F4408A422BEA68BC0088BAD2 /* SampleAppUITest_18.swift */,
+				F4408B0A2BEA68C10088BAD2 /* SampleAppUITest_19.swift */,
+				F4408AA82BEA68BF0088BAD2 /* SampleAppUITest_20.swift */,
+				F4408A3C2BEA68BC0088BAD2 /* SampleAppUITest_21.swift */,
+				F4408AD22BEA68C00088BAD2 /* SampleAppUITest_22.swift */,
+				F4408B302BEA68C20088BAD2 /* SampleAppUITest_23.swift */,
+				F4408B232BEA68C10088BAD2 /* SampleAppUITest_24.swift */,
+				F4408B2C2BEA68C20088BAD2 /* SampleAppUITest_25.swift */,
+				F4408B122BEA68C10088BAD2 /* SampleAppUITest_26.swift */,
+				F4408A592BEA68BD0088BAD2 /* SampleAppUITest_27.swift */,
+				F4408B4B2BEA68C20088BAD2 /* SampleAppUITest_28.swift */,
+				F4408A402BEA68BC0088BAD2 /* SampleAppUITest_29.swift */,
+				F4408B1D2BEA68C10088BAD2 /* SampleAppUITest_30.swift */,
+				F4408B2F2BEA68C20088BAD2 /* SampleAppUITest_31.swift */,
+				F4408AA62BEA68BF0088BAD2 /* SampleAppUITest_32.swift */,
+				F4408B2D2BEA68C20088BAD2 /* SampleAppUITest_33.swift */,
+				F4408AC22BEA68BF0088BAD2 /* SampleAppUITest_34.swift */,
+				F4408A5E2BEA68BD0088BAD2 /* SampleAppUITest_35.swift */,
+				F4408B3D2BEA68C20088BAD2 /* SampleAppUITest_36.swift */,
+				F4408A882BEA68BE0088BAD2 /* SampleAppUITest_37.swift */,
+				F4408B002BEA68C10088BAD2 /* SampleAppUITest_38.swift */,
+				F4408A562BEA68BD0088BAD2 /* SampleAppUITest_39.swift */,
+				F4408B2E2BEA68C20088BAD2 /* SampleAppUITest_40.swift */,
+				F4408B482BEA68C20088BAD2 /* SampleAppUITest_41.swift */,
+				F4408AA12BEA68BF0088BAD2 /* SampleAppUITest_42.swift */,
+				F4408AC52BEA68BF0088BAD2 /* SampleAppUITest_43.swift */,
+				F4408AF92BEA68C00088BAD2 /* SampleAppUITest_44.swift */,
+				F4408AB42BEA68BF0088BAD2 /* SampleAppUITest_45.swift */,
+				F4408B012BEA68C10088BAD2 /* SampleAppUITest_46.swift */,
+				F4408AC32BEA68BF0088BAD2 /* SampleAppUITest_47.swift */,
+				F4408B5E2BEA68C30088BAD2 /* SampleAppUITest_48.swift */,
+				F4408A782BEA68BE0088BAD2 /* SampleAppUITest_49.swift */,
+				F4408A442BEA68BD0088BAD2 /* SampleAppUITest_50.swift */,
+				F4408A8D2BEA68BE0088BAD2 /* SampleAppUITest_51.swift */,
+				F4408B402BEA68C20088BAD2 /* SampleAppUITest_52.swift */,
+				F4408A8A2BEA68BE0088BAD2 /* SampleAppUITest_53.swift */,
+				F4408A752BEA68BE0088BAD2 /* SampleAppUITest_54.swift */,
+				F4408A662BEA68BD0088BAD2 /* SampleAppUITest_55.swift */,
+				F4408B4D2BEA68C20088BAD2 /* SampleAppUITest_56.swift */,
+				F4408B0E2BEA68C10088BAD2 /* SampleAppUITest_57.swift */,
+				F4408A902BEA68BE0088BAD2 /* SampleAppUITest_58.swift */,
+				F4408B612BEA68C30088BAD2 /* SampleAppUITest_59.swift */,
+				F4408B5C2BEA68C30088BAD2 /* SampleAppUITest_60.swift */,
+				F4408AE22BEA68C00088BAD2 /* SampleAppUITest_61.swift */,
+				F4408AFC2BEA68C00088BAD2 /* SampleAppUITest_62.swift */,
+				F4408AEF2BEA68C00088BAD2 /* SampleAppUITest_63.swift */,
+				F4408A612BEA68BD0088BAD2 /* SampleAppUITest_64.swift */,
+				F4408AED2BEA68C00088BAD2 /* SampleAppUITest_65.swift */,
+				F4408B292BEA68C20088BAD2 /* SampleAppUITest_66.swift */,
+				F4408B082BEA68C10088BAD2 /* SampleAppUITest_67.swift */,
+				F4408ACA2BEA68BF0088BAD2 /* SampleAppUITest_68.swift */,
+				F4408A762BEA68BE0088BAD2 /* SampleAppUITest_69.swift */,
+				F4408ADF2BEA68C00088BAD2 /* SampleAppUITest_70.swift */,
+				F4408AD62BEA68C00088BAD2 /* SampleAppUITest_71.swift */,
+				F4408A4F2BEA68BD0088BAD2 /* SampleAppUITest_72.swift */,
+				F4408ADD2BEA68C00088BAD2 /* SampleAppUITest_73.swift */,
+				F4408B052BEA68C10088BAD2 /* SampleAppUITest_74.swift */,
+				F4408A8E2BEA68BE0088BAD2 /* SampleAppUITest_75.swift */,
+				F4408AFF2BEA68C10088BAD2 /* SampleAppUITest_76.swift */,
+				F4408B3E2BEA68C20088BAD2 /* SampleAppUITest_77.swift */,
+				F4408A7C2BEA68BE0088BAD2 /* SampleAppUITest_78.swift */,
+				F4408A4B2BEA68BD0088BAD2 /* SampleAppUITest_79.swift */,
+				F4408B502BEA68C20088BAD2 /* SampleAppUITest_80.swift */,
+				F4408A5A2BEA68BD0088BAD2 /* SampleAppUITest_81.swift */,
+				F4408B242BEA68C10088BAD2 /* SampleAppUITest_82.swift */,
+				F4408A432BEA68BC0088BAD2 /* SampleAppUITest_83.swift */,
+				F4408A822BEA68BE0088BAD2 /* SampleAppUITest_84.swift */,
+				F4408B042BEA68C10088BAD2 /* SampleAppUITest_85.swift */,
+				F4408A5C2BEA68BD0088BAD2 /* SampleAppUITest_86.swift */,
+				F4408B092BEA68C10088BAD2 /* SampleAppUITest_87.swift */,
+				F4408B602BEA68C30088BAD2 /* SampleAppUITest_88.swift */,
+				F4408B462BEA68C20088BAD2 /* SampleAppUITest_89.swift */,
+				F4408A9A2BEA68BE0088BAD2 /* SampleAppUITest_90.swift */,
+				F4408AAF2BEA68BF0088BAD2 /* SampleAppUITest_91.swift */,
+				F4408B332BEA68C20088BAD2 /* SampleAppUITest_92.swift */,
+				F4408B342BEA68C20088BAD2 /* SampleAppUITest_93.swift */,
+				F4408AD42BEA68C00088BAD2 /* SampleAppUITest_94.swift */,
+				F4408A992BEA68BE0088BAD2 /* SampleAppUITest_95.swift */,
+				F4408A7A2BEA68BE0088BAD2 /* SampleAppUITest_96.swift */,
+				F4408AD02BEA68C00088BAD2 /* SampleAppUITest_97.swift */,
+				F4408ADC2BEA68C00088BAD2 /* SampleAppUITest_98.swift */,
+				F4408A642BEA68BD0088BAD2 /* SampleAppUITest_99.swift */,
+				F4408B3A2BEA68C20088BAD2 /* SampleAppUITest_100.swift */,
+				F4408B4F2BEA68C20088BAD2 /* SampleAppUITest_101.swift */,
+				F4408ACD2BEA68C00088BAD2 /* SampleAppUITest_102.swift */,
+				F4408B412BEA68C20088BAD2 /* SampleAppUITest_103.swift */,
+				F4408A7F2BEA68BE0088BAD2 /* SampleAppUITest_104.swift */,
+				F4408A812BEA68BE0088BAD2 /* SampleAppUITest_105.swift */,
+				F4408A6D2BEA68BE0088BAD2 /* SampleAppUITest_106.swift */,
+				F4408B272BEA68C10088BAD2 /* SampleAppUITest_107.swift */,
+				F4408A802BEA68BE0088BAD2 /* SampleAppUITest_108.swift */,
+				F4408AB22BEA68BF0088BAD2 /* SampleAppUITest_109.swift */,
+				F4408A532BEA68BD0088BAD2 /* SampleAppUITest_110.swift */,
+				F4408A3E2BEA68BC0088BAD2 /* SampleAppUITest_111.swift */,
+				F4408AF22BEA68C00088BAD2 /* SampleAppUITest_112.swift */,
+				F4408B542BEA68C30088BAD2 /* SampleAppUITest_113.swift */,
+				F4408AD52BEA68C00088BAD2 /* SampleAppUITest_114.swift */,
+				F4408ABF2BEA68BF0088BAD2 /* SampleAppUITest_115.swift */,
+				F4408A9B2BEA68BF0088BAD2 /* SampleAppUITest_116.swift */,
+				F4408B182BEA68C10088BAD2 /* SampleAppUITest_117.swift */,
+				F4408A852BEA68BE0088BAD2 /* SampleAppUITest_118.swift */,
+				F4408AD82BEA68C00088BAD2 /* SampleAppUITest_119.swift */,
+				F4408ABD2BEA68BF0088BAD2 /* SampleAppUITest_120.swift */,
+				F4408A9E2BEA68BF0088BAD2 /* SampleAppUITest_121.swift */,
+				F4408A462BEA68BD0088BAD2 /* SampleAppUITest_122.swift */,
+				F4408A832BEA68BE0088BAD2 /* SampleAppUITest_123.swift */,
+				F4408A5B2BEA68BD0088BAD2 /* SampleAppUITest_124.swift */,
+				F4408AAD2BEA68BF0088BAD2 /* SampleAppUITest_125.swift */,
+				F4408AF52BEA68C00088BAD2 /* SampleAppUITest_126.swift */,
+				F4408B592BEA68C30088BAD2 /* SampleAppUITest_127.swift */,
+				F4408A572BEA68BD0088BAD2 /* SampleAppUITest_128.swift */,
+				F4408AC82BEA68BF0088BAD2 /* SampleAppUITest_129.swift */,
+				F4408AC42BEA68BF0088BAD2 /* SampleAppUITest_130.swift */,
+				F4408ADA2BEA68C00088BAD2 /* SampleAppUITest_131.swift */,
+				F4408B0C2BEA68C10088BAD2 /* SampleAppUITest_132.swift */,
+				F4408A8F2BEA68BE0088BAD2 /* SampleAppUITest_133.swift */,
+				F4408A862BEA68BE0088BAD2 /* SampleAppUITest_134.swift */,
+				F4408ACE2BEA68C00088BAD2 /* SampleAppUITest_135.swift */,
+				F4408AAB2BEA68BF0088BAD2 /* SampleAppUITest_136.swift */,
+				F4408A6C2BEA68BE0088BAD2 /* SampleAppUITest_137.swift */,
+				F4408B0B2BEA68C10088BAD2 /* SampleAppUITest_138.swift */,
+				F4408AFB2BEA68C00088BAD2 /* SampleAppUITest_139.swift */,
+				F4408AC62BEA68BF0088BAD2 /* SampleAppUITest_140.swift */,
+				F4408A772BEA68BE0088BAD2 /* SampleAppUITest_141.swift */,
+				F4408B2A2BEA68C20088BAD2 /* SampleAppUITest_142.swift */,
+				F4408B662BEA68C30088BAD2 /* SampleAppUITest_143.swift */,
+				F4408A6A2BEA68BD0088BAD2 /* SampleAppUITest_144.swift */,
+				F4408B022BEA68C10088BAD2 /* SampleAppUITest_145.swift */,
+				F4408ACF2BEA68C00088BAD2 /* SampleAppUITest_146.swift */,
+				F4408ABA2BEA68BF0088BAD2 /* SampleAppUITest_147.swift */,
+				F4408B472BEA68C20088BAD2 /* SampleAppUITest_148.swift */,
+				F4408AEC2BEA68C00088BAD2 /* SampleAppUITest_149.swift */,
+				F4408AE12BEA68C00088BAD2 /* SampleAppUITest_150.swift */,
+				F4408A732BEA68BE0088BAD2 /* SampleAppUITest_151.swift */,
+				F4408B142BEA68C10088BAD2 /* SampleAppUITest_152.swift */,
+				F4408B4A2BEA68C20088BAD2 /* SampleAppUITest_153.swift */,
+				F4408B062BEA68C10088BAD2 /* SampleAppUITest_154.swift */,
+				F4408B372BEA68C20088BAD2 /* SampleAppUITest_155.swift */,
+				F4408A472BEA68BD0088BAD2 /* SampleAppUITest_156.swift */,
+				F4408A452BEA68BD0088BAD2 /* SampleAppUITest_157.swift */,
+				F4408B532BEA68C30088BAD2 /* SampleAppUITest_158.swift */,
+				F4408A7B2BEA68BE0088BAD2 /* SampleAppUITest_159.swift */,
+				F4408B5B2BEA68C30088BAD2 /* SampleAppUITest_160.swift */,
+				F4408B352BEA68C20088BAD2 /* SampleAppUITest_161.swift */,
+				F4408AA22BEA68BF0088BAD2 /* SampleAppUITest_162.swift */,
+				F4408B392BEA68C20088BAD2 /* SampleAppUITest_163.swift */,
+				F4408B672BEA68C30088BAD2 /* SampleAppUITest_164.swift */,
+				F4408B5F2BEA68C30088BAD2 /* SampleAppUITest_165.swift */,
+				F4408B4E2BEA68C20088BAD2 /* SampleAppUITest_166.swift */,
+				F4408B192BEA68C10088BAD2 /* SampleAppUITest_167.swift */,
+				F4408AE82BEA68C00088BAD2 /* SampleAppUITest_168.swift */,
+				F4408A982BEA68BE0088BAD2 /* SampleAppUITest_169.swift */,
+				F4408AF02BEA68C00088BAD2 /* SampleAppUITest_170.swift */,
+				F4408B5D2BEA68C30088BAD2 /* SampleAppUITest_171.swift */,
+				F4408B072BEA68C10088BAD2 /* SampleAppUITest_172.swift */,
+				F4408AA92BEA68BF0088BAD2 /* SampleAppUITest_173.swift */,
+				F4408A6E2BEA68BE0088BAD2 /* SampleAppUITest_174.swift */,
+				F4408B152BEA68C10088BAD2 /* SampleAppUITest_175.swift */,
+				F4408ABC2BEA68BF0088BAD2 /* SampleAppUITest_176.swift */,
+				F4408AB52BEA68BF0088BAD2 /* SampleAppUITest_177.swift */,
+				F4408A792BEA68BE0088BAD2 /* SampleAppUITest_178.swift */,
+				F4408A552BEA68BD0088BAD2 /* SampleAppUITest_179.swift */,
+				F4408AD72BEA68C00088BAD2 /* SampleAppUITest_180.swift */,
+				F4408A502BEA68BD0088BAD2 /* SampleAppUITest_181.swift */,
+				F4408B252BEA68C10088BAD2 /* SampleAppUITest_182.swift */,
+				F4408B3B2BEA68C20088BAD2 /* SampleAppUITest_183.swift */,
+				F4408AAA2BEA68BF0088BAD2 /* SampleAppUITest_184.swift */,
+				F4408AD92BEA68C00088BAD2 /* SampleAppUITest_185.swift */,
+				F4408AF42BEA68C00088BAD2 /* SampleAppUITest_186.swift */,
+				F4408AE92BEA68C00088BAD2 /* SampleAppUITest_187.swift */,
+				F4408AF32BEA68C00088BAD2 /* SampleAppUITest_188.swift */,
+				F4408A6B2BEA68BD0088BAD2 /* SampleAppUITest_189.swift */,
+				F4408A922BEA68BE0088BAD2 /* SampleAppUITest_190.swift */,
+				F4408B132BEA68C10088BAD2 /* SampleAppUITest_191.swift */,
+				F4408A7E2BEA68BE0088BAD2 /* SampleAppUITest_192.swift */,
+				F4408B032BEA68C10088BAD2 /* SampleAppUITest_193.swift */,
+				F4408B262BEA68C10088BAD2 /* SampleAppUITest_194.swift */,
+				F4408A892BEA68BE0088BAD2 /* SampleAppUITest_195.swift */,
+				F4408AEA2BEA68C00088BAD2 /* SampleAppUITest_196.swift */,
+				F4408AF72BEA68C00088BAD2 /* SampleAppUITest_197.swift */,
+				F4408B642BEA68C30088BAD2 /* SampleAppUITest_198.swift */,
+				F4408AA42BEA68BF0088BAD2 /* SampleAppUITest_199.swift */,
+				F4408A692BEA68BD0088BAD2 /* SampleAppUITest_200.swift */,
+				F4408A712BEA68BE0088BAD2 /* SampleAppUITest_201.swift */,
+				F4408AE52BEA68C00088BAD2 /* SampleAppUITest_202.swift */,
+				F4408B1E2BEA68C10088BAD2 /* SampleAppUITest_203.swift */,
+				F4408A932BEA68BE0088BAD2 /* SampleAppUITest_204.swift */,
+				F4408B572BEA68C30088BAD2 /* SampleAppUITest_205.swift */,
+				F4408AA02BEA68BF0088BAD2 /* SampleAppUITest_206.swift */,
+				F4408AAC2BEA68BF0088BAD2 /* SampleAppUITest_207.swift */,
+				F4408B1F2BEA68C10088BAD2 /* SampleAppUITest_208.swift */,
+				F4408AE02BEA68C00088BAD2 /* SampleAppUITest_209.swift */,
+				F4408B632BEA68C30088BAD2 /* SampleAppUITest_210.swift */,
+				F4408B422BEA68C20088BAD2 /* SampleAppUITest_211.swift */,
+				F4408A412BEA68BC0088BAD2 /* SampleAppUITest_212.swift */,
+				F4408A6F2BEA68BE0088BAD2 /* SampleAppUITest_213.swift */,
+				F4408B452BEA68C20088BAD2 /* SampleAppUITest_214.swift */,
+				F4408A682BEA68BD0088BAD2 /* SampleAppUITest_215.swift */,
+				F4408B622BEA68C30088BAD2 /* SampleAppUITest_216.swift */,
+				F4408B3C2BEA68C20088BAD2 /* SampleAppUITest_217.swift */,
+				F4408A5F2BEA68BD0088BAD2 /* SampleAppUITest_218.swift */,
+				F4408B582BEA68C30088BAD2 /* SampleAppUITest_219.swift */,
+				F4408AF12BEA68C00088BAD2 /* SampleAppUITest_220.swift */,
+				F4408B0F2BEA68C10088BAD2 /* SampleAppUITest_221.swift */,
+				F4408A942BEA68BE0088BAD2 /* SampleAppUITest_222.swift */,
+				F4408A912BEA68BE0088BAD2 /* SampleAppUITest_223.swift */,
+				F4408A722BEA68BE0088BAD2 /* SampleAppUITest_224.swift */,
+				F4408B312BEA68C20088BAD2 /* SampleAppUITest_225.swift */,
+				F4408B102BEA68C10088BAD2 /* SampleAppUITest_226.swift */,
+				F4408A652BEA68BD0088BAD2 /* SampleAppUITest_227.swift */,
+				F4408B172BEA68C10088BAD2 /* SampleAppUITest_228.swift */,
+				F4408A8B2BEA68BE0088BAD2 /* SampleAppUITest_229.swift */,
+				F4408ACB2BEA68BF0088BAD2 /* SampleAppUITest_230.swift */,
+				F4408B382BEA68C20088BAD2 /* SampleAppUITest_231.swift */,
+				F4408A582BEA68BD0088BAD2 /* SampleAppUITest_232.swift */,
+				F4408AAE2BEA68BF0088BAD2 /* SampleAppUITest_233.swift */,
+				F4408AA72BEA68BF0088BAD2 /* SampleAppUITest_234.swift */,
+				F4408AA32BEA68BF0088BAD2 /* SampleAppUITest_235.swift */,
+				F4408B1A2BEA68C10088BAD2 /* SampleAppUITest_236.swift */,
+				F4408AB82BEA68BF0088BAD2 /* SampleAppUITest_237.swift */,
+				F4408A3F2BEA68BC0088BAD2 /* SampleAppUITest_238.swift */,
+				F4408AEB2BEA68C00088BAD2 /* SampleAppUITest_239.swift */,
+				F4408ACC2BEA68BF0088BAD2 /* SampleAppUITest_240.swift */,
+				F4408B5A2BEA68C30088BAD2 /* SampleAppUITest_241.swift */,
+				F4408A7D2BEA68BE0088BAD2 /* SampleAppUITest_242.swift */,
+				F4408A5D2BEA68BD0088BAD2 /* SampleAppUITest_243.swift */,
+				F4408AB62BEA68BF0088BAD2 /* SampleAppUITest_244.swift */,
+				F4408B442BEA68C20088BAD2 /* SampleAppUITest_245.swift */,
+				F4408A952BEA68BE0088BAD2 /* SampleAppUITest_246.swift */,
+				F4408AB72BEA68BF0088BAD2 /* SampleAppUITest_247.swift */,
+				F4408B3F2BEA68C20088BAD2 /* SampleAppUITest_248.swift */,
+				F4408A4E2BEA68BD0088BAD2 /* SampleAppUITest_249.swift */,
+				F4408A482BEA68BD0088BAD2 /* SampleAppUITest_250.swift */,
+				F4408A622BEA68BD0088BAD2 /* SampleAppUITest_251.swift */,
+				F4408AB32BEA68BF0088BAD2 /* SampleAppUITest_252.swift */,
+				F4408A522BEA68BD0088BAD2 /* SampleAppUITest_253.swift */,
+				F4408A602BEA68BD0088BAD2 /* SampleAppUITest_254.swift */,
+				F4408A842BEA68BE0088BAD2 /* SampleAppUITest_255.swift */,
+				F4408A4D2BEA68BD0088BAD2 /* SampleAppUITest_256.swift */,
+				F4408AEE2BEA68C00088BAD2 /* SampleAppUITest_257.swift */,
+				F4408AE72BEA68C00088BAD2 /* SampleAppUITest_258.swift */,
+				F4408B322BEA68C20088BAD2 /* SampleAppUITest_259.swift */,
+				F4408ABE2BEA68BF0088BAD2 /* SampleAppUITest_260.swift */,
+				F4408B492BEA68C20088BAD2 /* SampleAppUITest_261.swift */,
+				F4408AC02BEA68BF0088BAD2 /* SampleAppUITest_262.swift */,
+				F4408B112BEA68C10088BAD2 /* SampleAppUITest_263.swift */,
+				F4408B522BEA68C20088BAD2 /* SampleAppUITest_264.swift */,
+				F4408AF82BEA68C00088BAD2 /* SampleAppUITest_265.swift */,
+				F4408B1C2BEA68C10088BAD2 /* SampleAppUITest_266.swift */,
+				F4408AE42BEA68C00088BAD2 /* SampleAppUITest_267.swift */,
+				F4408A872BEA68BE0088BAD2 /* SampleAppUITest_268.swift */,
+				F4408AA52BEA68BF0088BAD2 /* SampleAppUITest_269.swift */,
+				F4408B512BEA68C20088BAD2 /* SampleAppUITest_270.swift */,
+				F4408AFA2BEA68C00088BAD2 /* SampleAppUITest_271.swift */,
+				F4408B202BEA68C10088BAD2 /* SampleAppUITest_272.swift */,
+				F4408AE62BEA68C00088BAD2 /* SampleAppUITest_273.swift */,
+				F4408B4C2BEA68C20088BAD2 /* SampleAppUITest_274.swift */,
+				F4408A512BEA68BD0088BAD2 /* SampleAppUITest_275.swift */,
+				F4408A492BEA68BD0088BAD2 /* SampleAppUITest_276.swift */,
+				F4408ADB2BEA68C00088BAD2 /* SampleAppUITest_277.swift */,
+				F4408A742BEA68BE0088BAD2 /* SampleAppUITest_278.swift */,
+				F4408AC12BEA68BF0088BAD2 /* SampleAppUITest_279.swift */,
+				F4408B222BEA68C10088BAD2 /* SampleAppUITest_280.swift */,
+				F4408A4A2BEA68BD0088BAD2 /* SampleAppUITest_281.swift */,
+				F4408AD12BEA68C00088BAD2 /* SampleAppUITest_282.swift */,
+				F4408AB02BEA68BF0088BAD2 /* SampleAppUITest_283.swift */,
+				F4408AB92BEA68BF0088BAD2 /* SampleAppUITest_284.swift */,
+				F4408AB12BEA68BF0088BAD2 /* SampleAppUITest_285.swift */,
+				F4408B1B2BEA68C10088BAD2 /* SampleAppUITest_286.swift */,
+				F4408B282BEA68C20088BAD2 /* SampleAppUITest_287.swift */,
+				F4408A632BEA68BD0088BAD2 /* SampleAppUITest_288.swift */,
+				F4408B652BEA68C30088BAD2 /* SampleAppUITest_289.swift */,
+				F4408B2B2BEA68C20088BAD2 /* SampleAppUITest_290.swift */,
+				F4408B432BEA68C20088BAD2 /* SampleAppUITest_291.swift */,
+				F4408A9D2BEA68BF0088BAD2 /* SampleAppUITest_292.swift */,
+				F4408A4C2BEA68BD0088BAD2 /* SampleAppUITest_293.swift */,
+				F4408A8C2BEA68BE0088BAD2 /* SampleAppUITest_294.swift */,
+				F4408AD32BEA68C00088BAD2 /* SampleAppUITest_295.swift */,
+				F4408AC72BEA68BF0088BAD2 /* SampleAppUITest_296.swift */,
+				F4408B562BEA68C30088BAD2 /* SampleAppUITest_297.swift */,
+				F4408ABB2BEA68BF0088BAD2 /* SampleAppUITest_298.swift */,
+				F4408A972BEA68BE0088BAD2 /* SampleAppUITest_299.swift */,
+			);
+			path = DemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -457,6 +1376,7 @@
 				93A7AC5E25D3713200D4BB77 /* Sources */,
 				93A7AC5F25D3713200D4BB77 /* Frameworks */,
 				93A7AC6025D3713200D4BB77 /* Resources */,
+				F43D48872BDA73D6002E510C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -540,11 +1460,32 @@
 			files = (
 				93B27BB926015CF100A45BB9 /* Places.json in Resources */,
 				22CC1BFB2602C6B2007B8402 /* (null) in Resources */,
+				F43D48852BDA632E002E510C /* Codegen.py in Resources */,
 				A707BF142AA7112D00B1A5EB /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F43D48872BDA73D6002E510C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n #python3 \"${PROJECT_DIR}/Scripts/Codegen.py\" 300 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B2EA7651CBB0377001507DD /* Sources */ = {
@@ -598,24 +1539,324 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4408C372BEA68C30088BAD2 /* SampleAppUITest_138.swift in Sources */,
+				F4408B8C2BEA68C30088BAD2 /* SampleAppUITest_254.swift in Sources */,
+				F4408B7F2BEA68C30088BAD2 /* SampleAppUITest_110.swift in Sources */,
+				F4408B682BEA68C30088BAD2 /* SampleAppUITest_21.swift in Sources */,
+				F4408C1C2BEA68C30088BAD2 /* SampleAppUITest_170.swift in Sources */,
+				F4408B9F2BEA68C30088BAD2 /* SampleAppUITest_151.swift in Sources */,
+				F4408C122BEA68C30088BAD2 /* SampleAppUITest_273.swift in Sources */,
+				F4408C832BEA68C30088BAD2 /* SampleAppUITest_205.swift in Sources */,
+				F4408B782BEA68C30088BAD2 /* SampleAppUITest_293.swift in Sources */,
+				F4408B712BEA68C30088BAD2 /* SampleAppUITest_157.swift in Sources */,
 				93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */,
+				F4408C6F2BEA68C30088BAD2 /* SampleAppUITest_291.swift in Sources */,
+				F4408C212BEA68C30088BAD2 /* SampleAppUITest_126.swift in Sources */,
+				F4408BC82BEA68C30088BAD2 /* SampleAppUITest_1.swift in Sources */,
+				F4408C672BEA68C30088BAD2 /* SampleAppUITest_183.swift in Sources */,
+				F4408B722BEA68C30088BAD2 /* SampleAppUITest_122.swift in Sources */,
+				F4408B992BEA68C30088BAD2 /* SampleAppUITest_106.swift in Sources */,
+				F4408BFF2BEA68C30088BAD2 /* SampleAppUITest_295.swift in Sources */,
+				F4408C3D2BEA68C30088BAD2 /* SampleAppUITest_263.swift in Sources */,
+				F4408B792BEA68C30088BAD2 /* SampleAppUITest_256.swift in Sources */,
+				F4408C132BEA68C30088BAD2 /* SampleAppUITest_258.swift in Sources */,
+				F4408C582BEA68C30088BAD2 /* SampleAppUITest_25.swift in Sources */,
+				F4408C202BEA68C30088BAD2 /* SampleAppUITest_186.swift in Sources */,
+				F4408B9C2BEA68C30088BAD2 /* SampleAppUITest_4.swift in Sources */,
+				F4408B742BEA68C30088BAD2 /* SampleAppUITest_250.swift in Sources */,
+				F4408BF82BEA68C30088BAD2 /* SampleAppUITest_240.swift in Sources */,
+				F4408BA82BEA68C30088BAD2 /* SampleAppUITest_78.swift in Sources */,
+				F4408BBB2BEA68C30088BAD2 /* SampleAppUITest_133.swift in Sources */,
+				F4408B842BEA68C30088BAD2 /* SampleAppUITest_232.swift in Sources */,
+				F4408BA72BEA68C30088BAD2 /* SampleAppUITest_159.swift in Sources */,
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
+				F4408C822BEA68C30088BAD2 /* SampleAppUITest_297.swift in Sources */,
+				F4408C292BEA68C30088BAD2 /* SampleAppUITest_3.swift in Sources */,
+				F4408C8E2BEA68C30088BAD2 /* SampleAppUITest_216.swift in Sources */,
+				F4408C712BEA68C30088BAD2 /* SampleAppUITest_214.swift in Sources */,
+				F4408C5D2BEA68C30088BAD2 /* SampleAppUITest_225.swift in Sources */,
+				F4408BA92BEA68C30088BAD2 /* SampleAppUITest_242.swift in Sources */,
+				F4408BA02BEA68C30088BAD2 /* SampleAppUITest_278.swift in Sources */,
+				F4408C872BEA68C30088BAD2 /* SampleAppUITest_160.swift in Sources */,
+				F4408C782BEA68C30088BAD2 /* SampleAppUITest_274.swift in Sources */,
+				F4408C3E2BEA68C30088BAD2 /* SampleAppUITest_26.swift in Sources */,
+				F4408C072BEA68C30088BAD2 /* SampleAppUITest_277.swift in Sources */,
+				F4408BAD2BEA68C30088BAD2 /* SampleAppUITest_105.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
+				F4408C492BEA68C30088BAD2 /* SampleAppUITest_30.swift in Sources */,
+				F4408B9E2BEA68C30088BAD2 /* SampleAppUITest_224.swift in Sources */,
+				F4408B732BEA68C30088BAD2 /* SampleAppUITest_156.swift in Sources */,
+				F4408B9D2BEA68C30088BAD2 /* SampleAppUITest_201.swift in Sources */,
+				F4408C542BEA68C30088BAD2 /* SampleAppUITest_287.swift in Sources */,
+				F4408C312BEA68C30088BAD2 /* SampleAppUITest_74.swift in Sources */,
+				F4408B8E2BEA68C30088BAD2 /* SampleAppUITest_251.swift in Sources */,
+				F4408BCF2BEA68C30088BAD2 /* SampleAppUITest_235.swift in Sources */,
+				F4408BCC2BEA68C30088BAD2 /* SampleAppUITest_206.swift in Sources */,
+				F4408C012BEA68C30088BAD2 /* SampleAppUITest_114.swift in Sources */,
+				F4408C892BEA68C30088BAD2 /* SampleAppUITest_171.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
+				F4408C642BEA68C30088BAD2 /* SampleAppUITest_231.swift in Sources */,
+				F4408C6A2BEA68C30088BAD2 /* SampleAppUITest_77.swift in Sources */,
+				F4408BA22BEA68C30088BAD2 /* SampleAppUITest_69.swift in Sources */,
+				F4408C932BEA68C30088BAD2 /* SampleAppUITest_164.swift in Sources */,
+				F4408C4C2BEA68C30088BAD2 /* SampleAppUITest_272.swift in Sources */,
+				F4408BBE2BEA68C30088BAD2 /* SampleAppUITest_190.swift in Sources */,
+				F4408BF62BEA68C30088BAD2 /* SampleAppUITest_68.swift in Sources */,
+				F4408C2C2BEA68C30088BAD2 /* SampleAppUITest_38.swift in Sources */,
+				F4408C5B2BEA68C30088BAD2 /* SampleAppUITest_31.swift in Sources */,
+				F4408BE92BEA68C30088BAD2 /* SampleAppUITest_120.swift in Sources */,
+				F4408C882BEA68C30088BAD2 /* SampleAppUITest_60.swift in Sources */,
+				F4408BBD2BEA68C30088BAD2 /* SampleAppUITest_223.swift in Sources */,
+				F4408C622BEA68C30088BAD2 /* SampleAppUITest_12.swift in Sources */,
+				F4408C4A2BEA68C30088BAD2 /* SampleAppUITest_203.swift in Sources */,
+				F4408C3F2BEA68C30088BAD2 /* SampleAppUITest_191.swift in Sources */,
+				F4408C432BEA68C30088BAD2 /* SampleAppUITest_228.swift in Sources */,
+				F4408B892BEA68C30088BAD2 /* SampleAppUITest_243.swift in Sources */,
 				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
 				934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */,
+				F4408C222BEA68C30088BAD2 /* SampleAppUITest_2.swift in Sources */,
+				F4408C7D2BEA68C30088BAD2 /* SampleAppUITest_270.swift in Sources */,
+				F4408BB72BEA68C30088BAD2 /* SampleAppUITest_229.swift in Sources */,
+				F4408C262BEA68C30088BAD2 /* SampleAppUITest_271.swift in Sources */,
+				F4408C0B2BEA68C30088BAD2 /* SampleAppUITest_70.swift in Sources */,
+				F4408B932BEA68C30088BAD2 /* SampleAppUITest_8.swift in Sources */,
+				F4408C7C2BEA68C30088BAD2 /* SampleAppUITest_80.swift in Sources */,
+				F4408BFD2BEA68C30088BAD2 /* SampleAppUITest_282.swift in Sources */,
+				F4408C0F2BEA68C30088BAD2 /* SampleAppUITest_5.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
+				F4408C522BEA68C30088BAD2 /* SampleAppUITest_194.swift in Sources */,
+				F4408C5E2BEA68C30088BAD2 /* SampleAppUITest_259.swift in Sources */,
+				F4408C0C2BEA68C30088BAD2 /* SampleAppUITest_209.swift in Sources */,
+				F4408B912BEA68C30088BAD2 /* SampleAppUITest_227.swift in Sources */,
+				F4408C6E2BEA68C30088BAD2 /* SampleAppUITest_211.swift in Sources */,
+				F4408C4B2BEA68C30088BAD2 /* SampleAppUITest_208.swift in Sources */,
+				F4408BE22BEA68C30088BAD2 /* SampleAppUITest_244.swift in Sources */,
+				F4408BF32BEA68C30088BAD2 /* SampleAppUITest_296.swift in Sources */,
+				F4408BEB2BEA68C30088BAD2 /* SampleAppUITest_115.swift in Sources */,
+				F4408BEA2BEA68C30088BAD2 /* SampleAppUITest_260.swift in Sources */,
+				F4408C5A2BEA68C30088BAD2 /* SampleAppUITest_40.swift in Sources */,
+				F4408C102BEA68C30088BAD2 /* SampleAppUITest_267.swift in Sources */,
+				F4408BE42BEA68C30088BAD2 /* SampleAppUITest_237.swift in Sources */,
+				F4408C052BEA68C30088BAD2 /* SampleAppUITest_185.swift in Sources */,
+				F4408C792BEA68C30088BAD2 /* SampleAppUITest_56.swift in Sources */,
+				F4408C0E2BEA68C30088BAD2 /* SampleAppUITest_61.swift in Sources */,
+				F4408B832BEA68C30088BAD2 /* SampleAppUITest_128.swift in Sources */,
+				F4408C092BEA68C30088BAD2 /* SampleAppUITest_73.swift in Sources */,
+				F4408B762BEA68C30088BAD2 /* SampleAppUITest_281.swift in Sources */,
+				F4408BDC2BEA68C30088BAD2 /* SampleAppUITest_283.swift in Sources */,
+				F4408B702BEA68C30088BAD2 /* SampleAppUITest_50.swift in Sources */,
+				F4408C632BEA68C30088BAD2 /* SampleAppUITest_155.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
+				F4408BF22BEA68C30088BAD2 /* SampleAppUITest_140.swift in Sources */,
+				F4408C112BEA68C30088BAD2 /* SampleAppUITest_202.swift in Sources */,
+				F4408C652BEA68C30088BAD2 /* SampleAppUITest_163.swift in Sources */,
+				F4408C5C2BEA68C30088BAD2 /* SampleAppUITest_23.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
+				F4408BAA2BEA68C30088BAD2 /* SampleAppUITest_192.swift in Sources */,
+				F4408BE02BEA68C30088BAD2 /* SampleAppUITest_45.swift in Sources */,
+				F4408C852BEA68C30088BAD2 /* SampleAppUITest_127.swift in Sources */,
+				F4408BB22BEA68C30088BAD2 /* SampleAppUITest_134.swift in Sources */,
+				F4408BE52BEA68C30088BAD2 /* SampleAppUITest_284.swift in Sources */,
+				F4408BF12BEA68C30088BAD2 /* SampleAppUITest_43.swift in Sources */,
+				F4408BC02BEA68C30088BAD2 /* SampleAppUITest_222.swift in Sources */,
+				F4408C512BEA68C30088BAD2 /* SampleAppUITest_182.swift in Sources */,
+				F4408BD52BEA68C30088BAD2 /* SampleAppUITest_173.swift in Sources */,
+				F4408C162BEA68C30088BAD2 /* SampleAppUITest_196.swift in Sources */,
+				F4408BE72BEA68C30088BAD2 /* SampleAppUITest_298.swift in Sources */,
+				F4408BAC2BEA68C30088BAD2 /* SampleAppUITest_108.swift in Sources */,
+				F4408C3B2BEA68C30088BAD2 /* SampleAppUITest_221.swift in Sources */,
+				F4408C7E2BEA68C30088BAD2 /* SampleAppUITest_264.swift in Sources */,
+				F4408C532BEA68C30088BAD2 /* SampleAppUITest_107.swift in Sources */,
+				F4408BB62BEA68C30088BAD2 /* SampleAppUITest_53.swift in Sources */,
+				F4408C362BEA68C30088BAD2 /* SampleAppUITest_19.swift in Sources */,
+				F4408C4E2BEA68C30088BAD2 /* SampleAppUITest_280.swift in Sources */,
+				F4408BDD2BEA68C30088BAD2 /* SampleAppUITest_285.swift in Sources */,
+				F4408C422BEA68C30088BAD2 /* SampleAppUITest_15.swift in Sources */,
+				F4408C272BEA68C30088BAD2 /* SampleAppUITest_139.swift in Sources */,
+				F4408BDA2BEA68C30088BAD2 /* SampleAppUITest_233.swift in Sources */,
+				F4408BEC2BEA68C30088BAD2 /* SampleAppUITest_262.swift in Sources */,
+				F4408BCB2BEA68C30088BAD2 /* SampleAppUITest_11.swift in Sources */,
+				F4408C032BEA68C30088BAD2 /* SampleAppUITest_180.swift in Sources */,
+				F4408C342BEA68C30088BAD2 /* SampleAppUITest_67.swift in Sources */,
+				F4408BD02BEA68C30088BAD2 /* SampleAppUITest_199.swift in Sources */,
+				F4408BCD2BEA68C30088BAD2 /* SampleAppUITest_42.swift in Sources */,
+				F4408C472BEA68C30088BAD2 /* SampleAppUITest_286.swift in Sources */,
+				F4408BE82BEA68C30088BAD2 /* SampleAppUITest_176.swift in Sources */,
+				F4408BF92BEA68C30088BAD2 /* SampleAppUITest_102.swift in Sources */,
+				F4408B7B2BEA68C30088BAD2 /* SampleAppUITest_72.swift in Sources */,
+				F4408B6F2BEA68C30088BAD2 /* SampleAppUITest_83.swift in Sources */,
+				F4408C1F2BEA68C30088BAD2 /* SampleAppUITest_188.swift in Sources */,
+				F4408BC92BEA68C30088BAD2 /* SampleAppUITest_292.swift in Sources */,
+				F4408C382BEA68C30088BAD2 /* SampleAppUITest_132.swift in Sources */,
+				F4408C442BEA68C30088BAD2 /* SampleAppUITest_117.swift in Sources */,
+				F4408BE32BEA68C30088BAD2 /* SampleAppUITest_247.swift in Sources */,
+				F4408C302BEA68C30088BAD2 /* SampleAppUITest_85.swift in Sources */,
+				F4408C6D2BEA68C30088BAD2 /* SampleAppUITest_103.swift in Sources */,
+				F4408BDE2BEA68C30088BAD2 /* SampleAppUITest_109.swift in Sources */,
+				F4408B972BEA68C30088BAD2 /* SampleAppUITest_189.swift in Sources */,
+				F4408C412BEA68C30088BAD2 /* SampleAppUITest_175.swift in Sources */,
+				F4408C402BEA68C30088BAD2 /* SampleAppUITest_152.swift in Sources */,
+				F4408C1E2BEA68C30088BAD2 /* SampleAppUITest_112.swift in Sources */,
+				F4408BA52BEA68C30088BAD2 /* SampleAppUITest_178.swift in Sources */,
+				F4408C062BEA68C30088BAD2 /* SampleAppUITest_131.swift in Sources */,
+				F4408B9B2BEA68C30088BAD2 /* SampleAppUITest_213.swift in Sources */,
+				F4408B902BEA68C30088BAD2 /* SampleAppUITest_99.swift in Sources */,
+				F4408BD32BEA68C30088BAD2 /* SampleAppUITest_234.swift in Sources */,
+				F4408BAB2BEA68C30088BAD2 /* SampleAppUITest_104.swift in Sources */,
+				F4408B6C2BEA68C30088BAD2 /* SampleAppUITest_29.swift in Sources */,
+				F4408B6E2BEA68C30088BAD2 /* SampleAppUITest_18.swift in Sources */,
+				F4408C692BEA68C30088BAD2 /* SampleAppUITest_36.swift in Sources */,
+				F4408C332BEA68C30088BAD2 /* SampleAppUITest_172.swift in Sources */,
 				22CC1BD22602B21D007B8402 /* (null) in Sources */,
+				F4408B752BEA68C30088BAD2 /* SampleAppUITest_276.swift in Sources */,
+				F4408C842BEA68C30088BAD2 /* SampleAppUITest_219.swift in Sources */,
+				F4408C8D2BEA68C30088BAD2 /* SampleAppUITest_59.swift in Sources */,
+				F4408B8D2BEA68C30088BAD2 /* SampleAppUITest_64.swift in Sources */,
+				F4408BC32BEA68C30088BAD2 /* SampleAppUITest_299.swift in Sources */,
+				F4408C142BEA68C30088BAD2 /* SampleAppUITest_168.swift in Sources */,
+				F4408BFB2BEA68C30088BAD2 /* SampleAppUITest_146.swift in Sources */,
+				F4408C322BEA68C30088BAD2 /* SampleAppUITest_154.swift in Sources */,
+				F4408BDB2BEA68C30088BAD2 /* SampleAppUITest_91.swift in Sources */,
+				F4408C2B2BEA68C30088BAD2 /* SampleAppUITest_76.swift in Sources */,
+				F4408C572BEA68C30088BAD2 /* SampleAppUITest_290.swift in Sources */,
+				F4408C282BEA68C30088BAD2 /* SampleAppUITest_62.swift in Sources */,
+				F4408B812BEA68C30088BAD2 /* SampleAppUITest_179.swift in Sources */,
+				F4408B852BEA68C30088BAD2 /* SampleAppUITest_27.swift in Sources */,
+				F4408BFC2BEA68C30088BAD2 /* SampleAppUITest_97.swift in Sources */,
+				F4408C772BEA68C30088BAD2 /* SampleAppUITest_28.swift in Sources */,
+				F4408C5F2BEA68C30088BAD2 /* SampleAppUITest_92.swift in Sources */,
+				F4408BA12BEA68C30088BAD2 /* SampleAppUITest_54.swift in Sources */,
+				F4408C352BEA68C30088BAD2 /* SampleAppUITest_87.swift in Sources */,
+				F4408B962BEA68C30088BAD2 /* SampleAppUITest_144.swift in Sources */,
+				F4408C002BEA68C30088BAD2 /* SampleAppUITest_94.swift in Sources */,
+				F4408BD62BEA68C30088BAD2 /* SampleAppUITest_184.swift in Sources */,
+				F4408BCA2BEA68C30088BAD2 /* SampleAppUITest_121.swift in Sources */,
+				F4408BD72BEA68C30088BAD2 /* SampleAppUITest_136.swift in Sources */,
+				F4408BC42BEA68C30088BAD2 /* SampleAppUITest_169.swift in Sources */,
+				F4408C482BEA68C30088BAD2 /* SampleAppUITest_266.swift in Sources */,
+				F4408B862BEA68C30088BAD2 /* SampleAppUITest_81.swift in Sources */,
+				F4408C0A2BEA68C30088BAD2 /* SampleAppUITest_14.swift in Sources */,
+				F4408BD12BEA68C30088BAD2 /* SampleAppUITest_269.swift in Sources */,
+				F4408BEF2BEA68C30088BAD2 /* SampleAppUITest_47.swift in Sources */,
+				F4408BC52BEA68C30088BAD2 /* SampleAppUITest_95.swift in Sources */,
+				F4408BF42BEA68C30088BAD2 /* SampleAppUITest_129.swift in Sources */,
+				F4408BC72BEA68C30088BAD2 /* SampleAppUITest_116.swift in Sources */,
+				F4408BA32BEA68C30088BAD2 /* SampleAppUITest_141.swift in Sources */,
+				F4408C462BEA68C30088BAD2 /* SampleAppUITest_236.swift in Sources */,
+				F4408BB82BEA68C30088BAD2 /* SampleAppUITest_294.swift in Sources */,
+				F4408C732BEA68C30088BAD2 /* SampleAppUITest_148.swift in Sources */,
+				F4408C682BEA68C30088BAD2 /* SampleAppUITest_217.swift in Sources */,
+				F4408BB92BEA68C30088BAD2 /* SampleAppUITest_51.swift in Sources */,
+				F4408BA42BEA68C30088BAD2 /* SampleAppUITest_49.swift in Sources */,
+				F4408BA62BEA68C30088BAD2 /* SampleAppUITest_96.swift in Sources */,
+				F4408C2E2BEA68C30088BAD2 /* SampleAppUITest_145.swift in Sources */,
+				F4408B7E2BEA68C30088BAD2 /* SampleAppUITest_253.swift in Sources */,
+				F4408BED2BEA68C30088BAD2 /* SampleAppUITest_279.swift in Sources */,
+				F4408C3A2BEA68C30088BAD2 /* SampleAppUITest_57.swift in Sources */,
+				F4408C7F2BEA68C30088BAD2 /* SampleAppUITest_158.swift in Sources */,
+				F4408C702BEA68C30088BAD2 /* SampleAppUITest_245.swift in Sources */,
+				F4408BDF2BEA68C30088BAD2 /* SampleAppUITest_252.swift in Sources */,
+				F4408C8C2BEA68C30088BAD2 /* SampleAppUITest_88.swift in Sources */,
+				F4408C8B2BEA68C30088BAD2 /* SampleAppUITest_165.swift in Sources */,
+				F4408BB42BEA68C30088BAD2 /* SampleAppUITest_37.swift in Sources */,
+				F4408B952BEA68C30088BAD2 /* SampleAppUITest_200.swift in Sources */,
+				F4408BBC2BEA68C30088BAD2 /* SampleAppUITest_58.swift in Sources */,
+				F4408B882BEA68C30088BAD2 /* SampleAppUITest_86.swift in Sources */,
+				F4408BD42BEA68C30088BAD2 /* SampleAppUITest_20.swift in Sources */,
+				F4408C752BEA68C30088BAD2 /* SampleAppUITest_261.swift in Sources */,
+				F4408BB12BEA68C30088BAD2 /* SampleAppUITest_118.swift in Sources */,
+				F4408B6B2BEA68C30088BAD2 /* SampleAppUITest_238.swift in Sources */,
+				F4408C3C2BEA68C30088BAD2 /* SampleAppUITest_226.swift in Sources */,
+				F4408B9A2BEA68C30088BAD2 /* SampleAppUITest_174.swift in Sources */,
+				F4408BC12BEA68C30088BAD2 /* SampleAppUITest_246.swift in Sources */,
+				F4408C042BEA68C30088BAD2 /* SampleAppUITest_119.swift in Sources */,
+				F4408C562BEA68C30088BAD2 /* SampleAppUITest_142.swift in Sources */,
+				F4408C7B2BEA68C30088BAD2 /* SampleAppUITest_101.swift in Sources */,
+				F4408B692BEA68C30088BAD2 /* SampleAppUITest_9.swift in Sources */,
+				F4408C452BEA68C30088BAD2 /* SampleAppUITest_167.swift in Sources */,
+				F4408B8F2BEA68C30088BAD2 /* SampleAppUITest_288.swift in Sources */,
+				F4408C242BEA68C30088BAD2 /* SampleAppUITest_265.swift in Sources */,
+				F4408C182BEA68C30088BAD2 /* SampleAppUITest_149.swift in Sources */,
+				F4408C742BEA68C30088BAD2 /* SampleAppUITest_41.swift in Sources */,
+				F4408C1A2BEA68C30088BAD2 /* SampleAppUITest_257.swift in Sources */,
+				F4408C252BEA68C30088BAD2 /* SampleAppUITest_44.swift in Sources */,
+				F4408C0D2BEA68C30088BAD2 /* SampleAppUITest_150.swift in Sources */,
+				F4408B7A2BEA68C30088BAD2 /* SampleAppUITest_249.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
+				F4408BF02BEA68C30088BAD2 /* SampleAppUITest_130.swift in Sources */,
+				F4408C802BEA68C30088BAD2 /* SampleAppUITest_113.swift in Sources */,
+				F4408B872BEA68C30088BAD2 /* SampleAppUITest_124.swift in Sources */,
+				F4408B922BEA68C30088BAD2 /* SampleAppUITest_55.swift in Sources */,
+				F4408C912BEA68C30088BAD2 /* SampleAppUITest_289.swift in Sources */,
+				F4408BD22BEA68C30088BAD2 /* SampleAppUITest_32.swift in Sources */,
+				F4408C662BEA68C30088BAD2 /* SampleAppUITest_100.swift in Sources */,
 				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,
+				F4408C1B2BEA68C30088BAD2 /* SampleAppUITest_63.swift in Sources */,
+				F4408B772BEA68C30088BAD2 /* SampleAppUITest_79.swift in Sources */,
+				F4408C2A2BEA68C30088BAD2 /* SampleAppUITest_0.swift in Sources */,
+				F4408B7C2BEA68C30088BAD2 /* SampleAppUITest_181.swift in Sources */,
+				F4408C1D2BEA68C30088BAD2 /* SampleAppUITest_220.swift in Sources */,
+				F4408B982BEA68C30088BAD2 /* SampleAppUITest_137.swift in Sources */,
+				F4408BB32BEA68C30088BAD2 /* SampleAppUITest_268.swift in Sources */,
 				9318CDEA25E2E8CD00F1A9DE /* BackProtocol.swift in Sources */,
+				F4408B6D2BEA68C30088BAD2 /* SampleAppUITest_212.swift in Sources */,
 				934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */,
+				F4408C592BEA68C30088BAD2 /* SampleAppUITest_33.swift in Sources */,
+				F4408B7D2BEA68C30088BAD2 /* SampleAppUITest_275.swift in Sources */,
+				F4408C172BEA68C30088BAD2 /* SampleAppUITest_239.swift in Sources */,
+				F4408BBF2BEA68C30088BAD2 /* SampleAppUITest_204.swift in Sources */,
+				F4408BE12BEA68C30088BAD2 /* SampleAppUITest_177.swift in Sources */,
+				F4408C192BEA68C30088BAD2 /* SampleAppUITest_65.swift in Sources */,
+				F4408C4F2BEA68C30088BAD2 /* SampleAppUITest_24.swift in Sources */,
+				F4408C812BEA68C30088BAD2 /* SampleAppUITest_6.swift in Sources */,
+				F4408C502BEA68C30088BAD2 /* SampleAppUITest_82.swift in Sources */,
+				F4408B6A2BEA68C30088BAD2 /* SampleAppUITest_111.swift in Sources */,
+				F4408C4D2BEA68C30088BAD2 /* SampleAppUITest_13.swift in Sources */,
+				F4408C232BEA68C30088BAD2 /* SampleAppUITest_197.swift in Sources */,
+				F4408BB52BEA68C30088BAD2 /* SampleAppUITest_195.swift in Sources */,
+				F4408C392BEA68C30088BAD2 /* SampleAppUITest_16.swift in Sources */,
+				F4408C612BEA68C30088BAD2 /* SampleAppUITest_161.swift in Sources */,
+				F4408C762BEA68C30088BAD2 /* SampleAppUITest_153.swift in Sources */,
+				F4408BBA2BEA68C30088BAD2 /* SampleAppUITest_75.swift in Sources */,
+				F4408BD82BEA68C30088BAD2 /* SampleAppUITest_207.swift in Sources */,
+				F4408C022BEA68C30088BAD2 /* SampleAppUITest_71.swift in Sources */,
+				F4408B8A2BEA68C30088BAD2 /* SampleAppUITest_35.swift in Sources */,
+				F4408C7A2BEA68C30088BAD2 /* SampleAppUITest_166.swift in Sources */,
+				F4408C862BEA68C30088BAD2 /* SampleAppUITest_241.swift in Sources */,
+				F4408B942BEA68C30088BAD2 /* SampleAppUITest_215.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
+				F4408BFA2BEA68C30088BAD2 /* SampleAppUITest_135.swift in Sources */,
+				F4408BEE2BEA68C30088BAD2 /* SampleAppUITest_34.swift in Sources */,
+				F4408B802BEA68C30088BAD2 /* SampleAppUITest_10.swift in Sources */,
+				F4408B8B2BEA68C30088BAD2 /* SampleAppUITest_218.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 				22CC1BD62602B261007B8402 /* (null) in Sources */,
+				F4408BB02BEA68C30088BAD2 /* SampleAppUITest_255.swift in Sources */,
+				F4408B822BEA68C30088BAD2 /* SampleAppUITest_39.swift in Sources */,
+				F4408BCE2BEA68C30088BAD2 /* SampleAppUITest_162.swift in Sources */,
+				F4408C152BEA68C30088BAD2 /* SampleAppUITest_187.swift in Sources */,
+				F4408BAE2BEA68C30088BAD2 /* SampleAppUITest_84.swift in Sources */,
+				F4408C8F2BEA68C30088BAD2 /* SampleAppUITest_210.swift in Sources */,
+				F4408BAF2BEA68C30088BAD2 /* SampleAppUITest_123.swift in Sources */,
+				F4408C6B2BEA68C30088BAD2 /* SampleAppUITest_248.swift in Sources */,
+				F4408C922BEA68C30088BAD2 /* SampleAppUITest_143.swift in Sources */,
+				F4408BD92BEA68C30088BAD2 /* SampleAppUITest_125.swift in Sources */,
+				F4408BFE2BEA68C30088BAD2 /* SampleAppUITest_22.swift in Sources */,
+				F4408C6C2BEA68C30088BAD2 /* SampleAppUITest_52.swift in Sources */,
+				F4408BF52BEA68C30088BAD2 /* SampleAppUITest_17.swift in Sources */,
+				F4408BF72BEA68C30088BAD2 /* SampleAppUITest_230.swift in Sources */,
+				F4408BC22BEA68C30088BAD2 /* SampleAppUITest_7.swift in Sources */,
+				F4408BE62BEA68C30088BAD2 /* SampleAppUITest_147.swift in Sources */,
+				F4408C722BEA68C30088BAD2 /* SampleAppUITest_89.swift in Sources */,
+				F4408C2F2BEA68C30088BAD2 /* SampleAppUITest_193.swift in Sources */,
+				F4408C902BEA68C30088BAD2 /* SampleAppUITest_198.swift in Sources */,
+				F4408C602BEA68C30088BAD2 /* SampleAppUITest_93.swift in Sources */,
+				F4408C8A2BEA68C30088BAD2 /* SampleAppUITest_48.swift in Sources */,
 				A707BF132AA7112D00B1A5EB /* AuthStub.swift in Sources */,
+				F4408C2D2BEA68C30088BAD2 /* SampleAppUITest_46.swift in Sources */,
+				F4408BC62BEA68C30088BAD2 /* SampleAppUITest_90.swift in Sources */,
+				F4408C082BEA68C30088BAD2 /* SampleAppUITest_98.swift in Sources */,
+				F4408C552BEA68C30088BAD2 /* SampleAppUITest_66.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

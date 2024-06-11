@@ -20,6 +20,20 @@
                ReferencedContainer = "container:orderMe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "93A7AC6125D3713200D4BB77"
+               BuildableName = "OrderMEUITests.xctest"
+               BlueprintName = "OrderMEUITests"
+               ReferencedContainer = "container:orderMe.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,7 +57,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22722DA5226EBD6500B352A8"
+               BlueprintIdentifier = "93A7AC6125D3713200D4BB77"
                BuildableName = "OrderMEUITests.xctest"
                BlueprintName = "OrderMEUITests"
                ReferencedContainer = "container:orderMe.xcodeproj">
