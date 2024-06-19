@@ -8,6 +8,7 @@ class SampleAppUITest_0: BaseTest {
         app.launchTunnel()
     }
 
+    // Test comment!
     func testVerifyMyReservationsTabIsRestricted() {
         let loginScreen = LoginScreen()
         let restaurantsListScreen = loginScreen.loginLater()
