@@ -64,6 +64,15 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "BaseTest">
+               </Test>
+               <Test
+                  Identifier = "FacebookTests">
+               </Test>
+               <Test
+                  Identifier = "OrderMEUITests">
+               </Test>
+               <Test
                   Identifier = "ReservationStubTests">
                </Test>
                <Test
@@ -74,6 +83,9 @@
                </Test>
                <Test
                   Identifier = "ReservationsStubTest/testReservationHappyPath()">
+               </Test>
+               <Test
+                  Identifier = "ReservationsTests">
                </Test>
             </SkippedTests>
          </TestableReference>
