@@ -3,7 +3,7 @@ import XCTest
 
 class SampleAppUITest_0: BaseTest {
 
-    // Test 
+    //
 
     override func setUp() {
         super.setUp()
