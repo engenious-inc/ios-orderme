@@ -4,7 +4,7 @@ import XCTest
 class SampleAppUITest_0: BaseTest {
 
     // Test
-    // Another test comment.
+    // Another test comment. Comment.
 
     override func setUp() {
         super.setUp()
