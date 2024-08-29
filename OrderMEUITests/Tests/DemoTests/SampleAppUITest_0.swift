@@ -3,7 +3,11 @@ import XCTest
 
 class SampleAppUITest_0: BaseTest {
 
-    //
+    // Some comment.
+    // Some comment.
+    // Some comment.// Some comment.// Some comment.// Some comment.
+    // Some comment.
+    // Some comment.
 
     override func setUp() {
         super.setUp()
