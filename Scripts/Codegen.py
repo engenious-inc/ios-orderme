@@ -12,7 +12,11 @@ class SampleAppUITest_{i}: BaseTest {{
 
     override func setUp() {{
         super.setUp()
-        app.launchTunnel()
+        app.launch()
+    }}
+
+    override func tearDown() {{
+        super.tearDown()
     }}
 
     func testVerifyMyReservationsTabIsRestricted() {{
