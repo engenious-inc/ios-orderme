@@ -3,8 +3,6 @@ import XCTest
 
 class SampleAppUITest_0: BaseTest {
 
-    //
-
     override func setUp() {
         super.setUp()
         app.launch()
