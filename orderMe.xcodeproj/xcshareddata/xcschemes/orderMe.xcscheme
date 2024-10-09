@@ -64,9 +64,6 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "BaseTest">
-               </Test>
-               <Test
                   Identifier = "FacebookTests">
                </Test>
                <Test
