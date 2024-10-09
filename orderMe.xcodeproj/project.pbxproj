@@ -1062,11 +1062,8 @@
 		933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D2E25DF06F400DC2058 /* BaseScreen.swift */; };
 		933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D3225DF080300DC2058 /* BaseTest.swift */; };
 		934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A798425F6EC2C002A26A7 /* FacebookLoginScreen.swift */; };
-		934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A798825F854D4002A26A7 /* FacebookTests.swift */; };
 		93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C5725FC0FAF0055B866 /* ReservationsScreen.swift */; };
-		93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C5C25FC13290055B866 /* ReservationsTests.swift */; };
 		93642C6325FC15570055B866 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642C6225FC15570055B866 /* DateExtension.swift */; };
-		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
 		93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27BB226015AF600A45BB9 /* PlacesStub.swift */; };
 		93B27BB926015CF100A45BB9 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B27BB826015CF100A45BB9 /* Places.json */; };
 		A707BF132AA7112D00B1A5EB /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707BF112AA7112C00B1A5EB /* AuthStub.swift */; };
@@ -3639,12 +3636,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93642C5D25FC13290055B866 /* ReservationsTests.swift in Sources */,
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
-				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
-				934A798925F854D4002A26A7 /* FacebookTests.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
