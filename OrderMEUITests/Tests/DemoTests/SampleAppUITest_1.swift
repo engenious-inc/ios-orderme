@@ -13,12 +13,18 @@ class SampleAppUITest_1: BaseTest {
     }
 
     func testVerifyMyReservationsTabIsRestricted() {
+        let randomValue = arc4random_uniform(2)
+
         let loginScreen = LoginScreen()
         let restaurantsListScreen = loginScreen.loginLater()
-        let myReservationsScreen = restaurantsListScreen.tapMyReservations()
 
-        XCTAssert(myReservationsScreen.youDidNotLoginAlert.waitForExistence(timeout: 2),
-                  "You did not login alert is not present")
+        if randomValue == 0 {
+            let myReservationsScreen = restaurantsListScreen.tapMyReservations()
+            XCTAssert(myReservationsScreen.youDidNotLoginAlert.waitForExistence(timeout: 2),
+                      "You did not login alert is not present")
+        } else {
+            XCTFail("You did not login alert is not present")
+        }
     }
 
 }
