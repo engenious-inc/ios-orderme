@@ -9,9 +9,14 @@
 import XCTest
 
 class LoginScreen: BaseScreen {
-    private let loginLaterButton: XCUIElement = app.buttons["loginLaterButton"]
+    private lazy var loginLaterButton: Button = element.buttons["loginLaterButton"].build()
+}
 
-    public func loginLater() {
-        loginLaterButton.tap()
+// MARK: - Activities
+extension LoginScreen {
+    @discardableResult
+    func loginLater()-> Self {
+        loginLaterButton.element.tap()
+        return self
     }
 }

@@ -9,9 +9,14 @@
 import XCTest
 
 class RestaurantsListScreen: BaseScreen {
-    private let republiqueRest = app.staticTexts["Republique"]
+    private lazy var republiqueRest: StaticText = element.staticTexts["Republique"].build()
+}
 
-    public func openRepubliqueRestaurant() {
-        republiqueRest.tap()
+// MARK: - Activities
+extension RestaurantsListScreen {
+    @discardableResult
+    func openRepubliqueRestaurant() -> Self {
+        republiqueRest.element.tap()
+        return self
     }
 }

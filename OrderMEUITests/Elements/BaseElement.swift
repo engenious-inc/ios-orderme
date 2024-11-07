@@ -7,7 +7,7 @@
 //
 import XCTest
 
-class BaseElement {
+class BaseElement: Initializable, States {
 
     let element: XCUIElement
     let description: String

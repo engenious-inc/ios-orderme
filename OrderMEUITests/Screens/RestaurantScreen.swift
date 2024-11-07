@@ -9,11 +9,24 @@
 import XCTest
 
 class RestaurantScreen: BaseScreen {
-    private let callRestOption = app.collectionViews.staticTexts["+1 310-362-6115"]
+    private lazy var callRestOption: StaticText = element.collectionViews.staticTexts["+1 310-362-6115"].build()
+    private lazy var callAlert: StaticText = element.staticTexts["Call Republique"].build()
+}
 
-    let callAlert = app.alerts["Call Republique"]
+// MARK: - Activities
+extension RestaurantScreen {
+    @discardableResult
+    func callRestaurant() -> Self {
+        callRestOption.element.tap()
+        return self
+    }
+}
 
-    public func callRestaurant() {
-        callRestOption.tap()
+// MARK: - Verifications
+extension RestaurantScreen {
+    @discardableResult
+    func assertCallAlertIsPresent() -> Self {
+        callAlert.assert(state: .exist)
+        return self
     }
 }
