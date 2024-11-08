@@ -30,7 +30,7 @@ extension RestaurantScreen {
     }
 
     @discardableResult
-    func choose(_ option: RestaurantOption) -> Self {
+    func choose(option: RestaurantOption) -> Self {
         switch option {
         case .detectTable:
             detectTableOption.element.tap()
