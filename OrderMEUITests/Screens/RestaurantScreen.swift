@@ -8,9 +8,17 @@
 
 import XCTest
 
+enum RestaurantOption {
+    case detectTable
+    case callAWaiter
+    case callRestaurant
+}
+
 class RestaurantScreen: BaseScreen {
-    private lazy var callRestOption: StaticText = element.collectionViews.staticTexts["+1 310-362-6115"].build()
     private lazy var callAlert: StaticText = element.staticTexts["Call Republique"].build()
+    private lazy var callRestOption: StaticText = element.collectionViews.staticTexts["+1 310-362-6115"].build()
+    private lazy var detectTableOption: StaticText = element.collectionViews.staticTexts["Detect Table"].build()
+    private lazy var callAWaiterOption: StaticText = element.collectionViews.staticTexts["Call Waiter"].build()
 }
 
 // MARK: - Activities
@@ -18,6 +26,19 @@ extension RestaurantScreen {
     @discardableResult
     func callRestaurant() -> Self {
         callRestOption.element.tap()
+        return self
+    }
+
+    @discardableResult
+    func choose(_ option: RestaurantOption) -> Self {
+        switch option {
+        case .detectTable:
+            detectTableOption.element.tap()
+        case .callAWaiter:
+            callAWaiterOption.element.tap()
+        case .callRestaurant:
+            callRestaurant()
+        }
         return self
     }
 }

@@ -48,7 +48,7 @@ class OrderMEUITests: BaseTest {
             .openRepubliqueRestaurant()
 
         RestaurantScreen()
-            .callRestaurant()
+            .choose(.callRestaurant)
             .assertCallAlertIsPresent()
     }
 }
