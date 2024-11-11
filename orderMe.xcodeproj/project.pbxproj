@@ -56,6 +56,9 @@
 		933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D2E25DF06F400DC2058 /* BaseScreen.swift */; };
 		933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0D3225DF080300DC2058 /* BaseTest.swift */; };
 		93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */; };
+		A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BA8292CE2286700FB6F71 /* TabBarProtocol.swift */; };
+		A50BA82C2CE2289400FB6F71 /* MyReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BA82B2CE2288B00FB6F71 /* MyReservationsScreen.swift */; };
+		A50BA82E2CE228B800FB6F71 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BA82D2CE228B300FB6F71 /* Alert.swift */; };
 		A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51539B72CD11788002279D3 /* BaseElement.swift */; };
 		A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592445E2CDCDF280084A246 /* XCUIElement.swift */; };
 		A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244612CDCDF5D0084A246 /* Initializable.swift */; };
@@ -142,6 +145,9 @@
 		93A7AC6225D3713200D4BB77 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		93A7AC6625D3713200D4BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50BA8292CE2286700FB6F71 /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
+		A50BA82B2CE2288B00FB6F71 /* MyReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsScreen.swift; sourceTree = "<group>"; };
+		A50BA82D2CE228B300FB6F71 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A51539B72CD11788002279D3 /* BaseElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseElement.swift; sourceTree = "<group>"; };
 		A592445E2CDCDF280084A246 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		A59244612CDCDF5D0084A246 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
@@ -322,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				933B0D2E25DF06F400DC2058 /* BaseScreen.swift */,
+				A50BA82B2CE2288B00FB6F71 /* MyReservationsScreen.swift */,
 				931BAFB225DDB35200D04D00 /* LoginScreen.swift */,
 				931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */,
 				931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */,
@@ -355,8 +362,9 @@
 			isa = PBXGroup;
 			children = (
 				A51539B72CD11788002279D3 /* BaseElement.swift */,
-				A59244672CDCEBD50084A246 /* StaticText.swift */,
+				A50BA82D2CE228B300FB6F71 /* Alert.swift */,
 				A59244652CDCE4D50084A246 /* Button.swift */,
+				A59244672CDCEBD50084A246 /* StaticText.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -372,6 +380,7 @@
 		A59244602CDCDF500084A246 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A50BA8292CE2286700FB6F71 /* TabBarProtocol.swift */,
 				A59244632CDCDFCE0084A246 /* States.swift */,
 				A59244612CDCDF5D0084A246 /* Initializable.swift */,
 			);
@@ -559,6 +568,8 @@
 			files = (
 				A59244682CDCEBDC0084A246 /* StaticText.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
+				A50BA82C2CE2289400FB6F71 /* MyReservationsScreen.swift in Sources */,
+				A50BA82E2CE228B800FB6F71 /* Alert.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
@@ -567,6 +578,7 @@
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 				A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */,
 				A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */,
+				A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */,
 				A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */,
 				A59244662CDCE4D80084A246 /* Button.swift in Sources */,
 			);

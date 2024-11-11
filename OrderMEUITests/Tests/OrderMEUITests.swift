@@ -51,4 +51,13 @@ class OrderMEUITests: BaseTest {
             .choose(option: .callRestaurant)
             .assertCallAlertIsPresent()
     }
+
+    func testVerifyMyReservationsTabIsRestricted() {
+        LoginScreen()
+            .loginLater()
+        RestaurantsListScreen()
+            .tapMyReservations()
+        MyReservationsScreen()
+            .assertYouDidNotLoginAlertIsPresent()
+    }
 }

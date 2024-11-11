@@ -8,7 +8,7 @@
 
 import XCTest
 
-class RestaurantsListScreen: BaseScreen {
+class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private lazy var republiqueRest: StaticText = element.staticTexts["Republique"].build()
 }
 
