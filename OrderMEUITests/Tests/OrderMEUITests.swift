@@ -60,4 +60,13 @@ class OrderMEUITests: BaseTest {
         MyReservationsScreen()
             .assertYouDidNotLoginAlertIsPresent()
     }
+
+    func testVerifyBackNavigationFromRestaurantScreen() {
+        LoginScreen()
+            .loginLater()
+        RestaurantsListScreen()
+            .openRepubliqueRestaurant()
+        RestaurantScreen()
+            .backTo(screen: RestaurantsListScreen.self)
+    }
 }

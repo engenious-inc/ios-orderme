@@ -14,7 +14,7 @@ enum RestaurantOption {
     case callRestaurant
 }
 
-class RestaurantScreen: BaseScreen {
+class RestaurantScreen: BaseScreen, BackProtocol {
     private lazy var callAlert: StaticText = element.staticTexts["Call Republique"].build()
     private lazy var callRestOption: StaticText = element.collectionViews.staticTexts["+1 310-362-6115"].build()
     private lazy var detectTableOption: StaticText = element.collectionViews.staticTexts["Detect Table"].build()
