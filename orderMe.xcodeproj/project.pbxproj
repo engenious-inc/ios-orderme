@@ -66,6 +66,9 @@
 		A59244642CDCDFD40084A246 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244632CDCDFCE0084A246 /* States.swift */; };
 		A59244662CDCE4D80084A246 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244652CDCE4D50084A246 /* Button.swift */; };
 		A59244682CDCEBDC0084A246 /* StaticText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244672CDCEBD50084A246 /* StaticText.swift */; };
+		A5EF4BFE2CE6040B00AA966D /* DetectTableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EF4BFD2CE6040200AA966D /* DetectTableScreen.swift */; };
+		A5EF4C002CE604AE00AA966D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EF4BFF2CE604AC00AA966D /* TextField.swift */; };
+		A5EF4C042CE6070200AA966D /* WaiterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EF4C032CE606FB00AA966D /* WaiterScreen.swift */; };
 		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
 		A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
 		A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
@@ -156,6 +159,9 @@
 		A59244632CDCDFCE0084A246 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		A59244652CDCE4D50084A246 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A59244672CDCEBD50084A246 /* StaticText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticText.swift; sourceTree = "<group>"; };
+		A5EF4BFD2CE6040200AA966D /* DetectTableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTableScreen.swift; sourceTree = "<group>"; };
+		A5EF4BFF2CE604AC00AA966D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		A5EF4C032CE606FB00AA966D /* WaiterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiterScreen.swift; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -334,6 +340,8 @@
 				931BAFB225DDB35200D04D00 /* LoginScreen.swift */,
 				931BAFB825DDB45700D04D00 /* RestaurantsListScreen.swift */,
 				931BAFBC25DDB50A00D04D00 /* RestaurantScreen.swift */,
+				A5EF4BFD2CE6040200AA966D /* DetectTableScreen.swift */,
+				A5EF4C032CE606FB00AA966D /* WaiterScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -367,6 +375,7 @@
 				A50BA82D2CE228B300FB6F71 /* Alert.swift */,
 				A59244652CDCE4D50084A246 /* Button.swift */,
 				A59244672CDCEBD50084A246 /* StaticText.swift */,
+				A5EF4BFF2CE604AC00AA966D /* TextField.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -574,15 +583,18 @@
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				A50BA82C2CE2289400FB6F71 /* MyReservationsScreen.swift in Sources */,
 				A50BA82E2CE228B800FB6F71 /* Alert.swift in Sources */,
+				A5EF4BFE2CE6040B00AA966D /* DetectTableScreen.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				A59244642CDCDFD40084A246 /* States.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
+				A5EF4C042CE6070200AA966D /* WaiterScreen.swift in Sources */,
 				A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */,
 				A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */,
 				A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */,
+				A5EF4C002CE604AE00AA966D /* TextField.swift in Sources */,
 				A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */,
 				A59244662CDCE4D80084A246 /* Button.swift in Sources */,
 			);

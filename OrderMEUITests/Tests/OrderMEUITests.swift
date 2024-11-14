@@ -9,35 +9,25 @@
 import XCTest
 
 class OrderMEUITests: BaseTest {
+    func testBringAMenu() {
+        LoginScreen()
+            .loginLater()
 
-    func testBringAMenu() throws {
-        let app = XCUIApplication()
-        app.launch()
+        RestaurantsListScreen()
+            .openRepubliqueRestaurant()
 
-        let loginLaterButton = app.buttons["loginLaterButton"]
-        loginLaterButton.tap()
+        RestaurantScreen()
+            .choose(option: .detectTable)
 
-        let republiqueRest = app.staticTexts["Republique"]
-        republiqueRest.tap()
+        DetectTableScreen()
+            .selectTable(number: 7)
 
-        let detectTableOption = app.collectionViews.staticTexts["Detect table"]
-        detectTableOption.tap()
+        RestaurantScreen()
+            .choose(option: .callAWaiter)
 
-        let tableNumberField = app.textFields["tableNumberTextField"]
-        tableNumberField.tap()
-        tableNumberField.typeText("3")
-        let selectTableButton = app.buttons["Select table"]
-        selectTableButton.tap()
-
-        let callAWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
-        callAWaiterOption.tap()
-
-        let waiterAlert = app.alerts["The waiter is on his way"]
-        let bringAMenuButton = waiterAlert.buttons["Bring a menu"]
-        bringAMenuButton.tap()
-
-        let gotItAlert = app.alerts["Got it!"]
-        XCTAssert(gotItAlert.waitForExistence(timeout: 2), "Got it alert is not present")
+        WaiterScreen()
+            .choose(option: .bringAMenu)
+            .assertGotItAlertIsPresent()
     }
 
     func testCallRestaurant() {
@@ -55,8 +45,10 @@ class OrderMEUITests: BaseTest {
     func testVerifyMyReservationsTabIsRestricted() {
         LoginScreen()
             .loginLater()
+
         RestaurantsListScreen()
             .tapMyReservations()
+
         MyReservationsScreen()
             .assertYouDidNotLoginAlertIsPresent()
     }
@@ -64,8 +56,10 @@ class OrderMEUITests: BaseTest {
     func testVerifyBackNavigationFromRestaurantScreen() {
         LoginScreen()
             .loginLater()
+
         RestaurantsListScreen()
             .openRepubliqueRestaurant()
+
         RestaurantScreen()
             .backTo(screen: RestaurantsListScreen.self)
     }
