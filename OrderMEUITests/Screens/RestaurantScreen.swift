@@ -16,9 +16,9 @@ enum RestaurantOption {
 
 class RestaurantScreen: BaseScreen, BackProtocol {
     private lazy var callAlert: StaticText = element.staticTexts["Call Republique"].build()
-    private lazy var callRestOption: StaticText = element.collectionViews.staticTexts["+1 310-362-6115"].build()
-    private lazy var detectTableOption: StaticText = element.collectionViews.staticTexts["Detect table"].build()
-    private lazy var callAWaiterOption: StaticText = element.collectionViews.staticTexts["Call a waiter"].build()
+    private lazy var callRestOption: StaticText = element.collectionViews.cells.element(boundBy: 4).build()
+    private lazy var detectTableOption: StaticText = element.collectionViews.cells.element(boundBy: 0).build()
+    private lazy var callAWaiterOption: StaticText = element.collectionViews.cells.element(boundBy: 3).build()
 }
 
 // MARK: - Activities
