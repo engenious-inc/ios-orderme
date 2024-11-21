@@ -16,7 +16,7 @@ class RestaurantsListScreen: BaseScreen, TabBarProtocol {
 extension RestaurantsListScreen {
     @discardableResult
     func openRepubliqueRestaurant() -> Self {
-        republiqueRest.element.tap()
+        republiqueRest.tap()
         return self
     }
 }

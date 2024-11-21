@@ -34,17 +34,17 @@ extension WaiterScreen {
     func choose(option: WaiterOption) -> Self {
         switch option {
         case .bringAMenu:
-            bringAMenuOption.element.tap()
+            bringAMenuOption.tap()
         case .bringTheBill:
-            bringTheBillOption.element.tap()
+            bringTheBillOption.tap()
         case .cleanTheTable:
-            cleanTheTableOption.element.tap()
+            cleanTheTableOption.tap()
         case .callAHookahMan:
-            callAHookahManOption.element.tap()
+            callAHookahManOption.tap()
         case .other:
-            otherOption.element.tap()
+            otherOption.tap()
         case .cancel:
-            cancelOption.element.tap()
+            cancelOption.tap()
         }
         return self
     }

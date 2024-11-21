@@ -61,6 +61,7 @@
 		A50BA82E2CE228B800FB6F71 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BA82D2CE228B300FB6F71 /* Alert.swift */; };
 		A50BA8302CE22FC400FB6F71 /* BackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BA82F2CE22FC000FB6F71 /* BackProtocol.swift */; };
 		A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51539B72CD11788002279D3 /* BaseElement.swift */; };
+		A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57ACC982CEF5DCC00786DE8 /* Interactions.swift */; };
 		A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592445E2CDCDF280084A246 /* XCUIElement.swift */; };
 		A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244612CDCDF5D0084A246 /* Initializable.swift */; };
 		A59244642CDCDFD40084A246 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244632CDCDFCE0084A246 /* States.swift */; };
@@ -155,6 +156,7 @@
 		A50BA82D2CE228B300FB6F71 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A50BA82F2CE22FC000FB6F71 /* BackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackProtocol.swift; sourceTree = "<group>"; };
 		A51539B72CD11788002279D3 /* BaseElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseElement.swift; sourceTree = "<group>"; };
+		A57ACC982CEF5DCC00786DE8 /* Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactions.swift; sourceTree = "<group>"; };
 		A592445E2CDCDF280084A246 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		A59244612CDCDF5D0084A246 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
 		A59244632CDCDFCE0084A246 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 				A50BA8292CE2286700FB6F71 /* TabBarProtocol.swift */,
 				A59244632CDCDFCE0084A246 /* States.swift */,
 				A59244612CDCDF5D0084A246 /* Initializable.swift */,
+				A57ACC982CEF5DCC00786DE8 /* Interactions.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				A59244642CDCDFD40084A246 /* States.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 				A5EF4C042CE6070200AA966D /* WaiterScreen.swift in Sources */,
+				A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */,
 				A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */,
 				A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */,
 				A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */,

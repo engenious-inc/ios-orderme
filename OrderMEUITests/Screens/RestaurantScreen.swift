@@ -25,7 +25,8 @@ class RestaurantScreen: BaseScreen, BackProtocol {
 extension RestaurantScreen {
     @discardableResult
     func callRestaurant() -> Self {
-        callRestOption.element.tap()
+        callRestOption.tap()
+        callRestOption.tap()
         return self
     }
 
@@ -33,9 +34,9 @@ extension RestaurantScreen {
     func choose(option: RestaurantOption) -> Self {
         switch option {
         case .detectTable:
-            detectTableOption.element.tap()
+            detectTableOption.tap()
         case .callAWaiter:
-            callAWaiterOption.element.tap()
+            callAWaiterOption.tap()
         case .callRestaurant:
             callRestaurant()
         }

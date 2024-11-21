@@ -16,8 +16,8 @@ class DetectTableScreen: BaseScreen {
 // MARK: - Activities
 extension DetectTableScreen {
     func selectTable(number table: Int) {
-        selectTableTextField.element.tap()
+        selectTableTextField.tap()
         selectTableTextField.element.typeText(String(table))
-        selectTableButton.element.tap()
+        selectTableButton.tap()
     }
 }
