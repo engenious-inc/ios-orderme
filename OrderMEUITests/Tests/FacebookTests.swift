@@ -10,7 +10,6 @@ import XCTest
 
 class FacebookTests: BaseTest {
     override func tearDown() {
-        Springboard.deleteApp()
         super.tearDown()
     }
 
