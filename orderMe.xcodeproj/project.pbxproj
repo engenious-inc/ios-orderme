@@ -64,6 +64,7 @@
 		A5247EC62CF5C2CF006566F2 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC52CF5C2C7006566F2 /* Springboard.swift */; };
 		A5247EC82CF5C9D6006566F2 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */; };
 		A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC92CF5CA77006566F2 /* SecureTextField.swift */; };
+		A5247ECC2CF5E1A9006566F2 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */; };
 		A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57ACC982CEF5DCC00786DE8 /* Interactions.swift */; };
 		A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592445E2CDCDF280084A246 /* XCUIElement.swift */; };
 		A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244612CDCDF5D0084A246 /* Initializable.swift */; };
@@ -162,6 +163,7 @@
 		A5247EC52CF5C2C7006566F2 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		A5247EC92CF5CA77006566F2 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTests.swift; sourceTree = "<group>"; };
 		A57ACC982CEF5DCC00786DE8 /* Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactions.swift; sourceTree = "<group>"; };
 		A592445E2CDCDF280084A246 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		A59244612CDCDF5D0084A246 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 			children = (
 				933B0D3225DF080300DC2058 /* BaseTest.swift */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
+				A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 				A5EF4C042CE6070200AA966D /* WaiterScreen.swift in Sources */,
 				A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */,
+				A5247ECC2CF5E1A9006566F2 /* FacebookTests.swift in Sources */,
 				A51539B82CD1178D002279D3 /* BaseElement.swift in Sources */,
 				A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */,
 				A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */,
