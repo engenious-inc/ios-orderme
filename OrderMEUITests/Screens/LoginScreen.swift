@@ -10,6 +10,8 @@ import XCTest
 
 class LoginScreen: BaseScreen {
     private lazy var loginLaterButton: Button = element.buttons["loginLaterButton"].build()
+    private lazy var facebookButton: Button = element.buttons["facebookLoginButton"].build()
+    private lazy var continueWithFacebookSpringAlert: Alert = Springboard.shared.alerts.buttons["Continue"].build()
 }
 
 // MARK: - Activities
@@ -17,6 +19,15 @@ extension LoginScreen {
     @discardableResult
     func loginLater()-> Self {
         loginLaterButton.tap()
+        return self
+    }
+
+    @discardableResult
+    func loginWithFacebook()-> Self {
+        facebookButton.tap()
+        if continueWithFacebookSpringAlert.element.waitForExistence(timeout: 0.5) {
+            continueWithFacebookSpringAlert.tap()
+        }
         return self
     }
 }

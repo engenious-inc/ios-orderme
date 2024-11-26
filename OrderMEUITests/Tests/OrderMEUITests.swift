@@ -63,4 +63,14 @@ class OrderMEUITests: BaseTest {
         RestaurantScreen()
             .backTo(screen: RestaurantsListScreen.self)
     }
+
+    func testLoginWithFacebook() {
+        LoginScreen()
+            .loginWithFacebook()
+        FacebookLoginScreen()
+            .typeEmail("zkpedymhza_1614299001@tfbnw.net")
+            .typePassword("orderme12345")
+            .login()
+            .continueWithFacebook()
+    }
 }

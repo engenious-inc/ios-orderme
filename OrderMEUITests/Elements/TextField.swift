@@ -8,4 +8,14 @@
 
 import XCTest
 
-final class TextField: BaseElement {}
+class TextField: BaseElement {
+    @discardableResult
+    func type(_ text: String) -> Self {
+        guard element.waitForExistence(timeout: defaultTimeout) else {
+            XCTFail("\(element.description) is not visible")
+            return self
+        }
+        element.typeText(text)
+        return self
+    }
+}
