@@ -47,7 +47,7 @@ extension FacebookLoginScreen {
         return self
     }
 
-    private func isContinueWithFacebookButtonVisible() -> Bool {
+    func isContinueWithFacebookButtonVisible() -> Bool {
         return continueWithFacebookButton.element.waitForExistence(timeout: defaultTimeout)
     }
 }
