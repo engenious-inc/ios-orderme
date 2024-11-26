@@ -67,10 +67,14 @@ class OrderMEUITests: BaseTest {
     func testLoginWithFacebook() {
         LoginScreen()
             .loginWithFacebook()
-        FacebookLoginScreen()
+        if !FacebookLoginScreen().isContinueWithFacebookButtonVisible() {
+            FacebookLoginScreen()
             .typeEmail("zkpedymhza_1614299001@tfbnw.net")
             .typePassword("orderme12345")
             .login()
             .continueWithFacebook()
+        } else {
+            FacebookLoginScreen().continueWithFacebook()
+        }
     }
 }
