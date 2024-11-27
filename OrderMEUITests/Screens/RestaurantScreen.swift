@@ -12,6 +12,7 @@ enum RestaurantOption {
     case detectTable
     case callAWaiter
     case callRestaurant
+    case reservation
 }
 
 class RestaurantScreen: BaseScreen, BackProtocol {
@@ -19,6 +20,7 @@ class RestaurantScreen: BaseScreen, BackProtocol {
     private lazy var callRestOption: Cell = element.collectionViews.cells.element(boundBy: 4).build()
     private lazy var detectTableOption: Cell = element.collectionViews.cells.element(boundBy: 0).build()
     private lazy var callAWaiterOption: Cell = element.collectionViews.cells.element(boundBy: 3).build()
+    private lazy var reservationOption: Cell = element.collectionViews.cells.element(boundBy: 2).build()
 }
 
 // MARK: - Activities
@@ -39,6 +41,8 @@ extension RestaurantScreen {
             callAWaiterOption.tap()
         case .callRestaurant:
             callRestaurant()
+        case .reservation:
+            reservationOption.tap()
         }
         return self
     }
