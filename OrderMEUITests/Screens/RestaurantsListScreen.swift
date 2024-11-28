@@ -10,6 +10,7 @@ import XCTest
 
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private lazy var republiqueRest: StaticText = element.staticTexts["Republique"].build()
+    private lazy var hakkasanRest: StaticText = element.staticTexts["Hakkasan"].build()
     private lazy var allowWhileUsingAppAlert: Alert = Springboard.shared.alerts.firstMatch.buttons["Allow While Using App"].build()
 
     required init(element: XCUIElement = app, description: String? = nil, timeout: Double? = nil) {
@@ -23,6 +24,12 @@ extension RestaurantsListScreen {
     @discardableResult
     func openRepubliqueRestaurant() -> Self {
         republiqueRest.tap()
+        return self
+    }
+
+    @discardableResult
+    func openHakkasanRestaurant() -> Self {
+        hakkasanRest.tap()
         return self
     }
 

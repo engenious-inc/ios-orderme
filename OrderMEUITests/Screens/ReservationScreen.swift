@@ -12,7 +12,7 @@ enum AmPm: String {
     case pmTime = "PM"
 }
 
-class ReservationsScreen: BaseScreen {
+class ReservationsScreen: BaseScreen, TabBarProtocol {
     private lazy var monthDayPicker: PickerWheel = element.pickerWheels.element(boundBy: 0).build()
     private lazy var hourPicker: PickerWheel = element.pickerWheels.element(boundBy: 1).build()
     private lazy var minutePicker: PickerWheel = element.pickerWheels.element(boundBy: 2).build()
@@ -20,6 +20,10 @@ class ReservationsScreen: BaseScreen {
 
     private lazy var bookButton: Button = element.staticTexts["Book"].build()
     private lazy var weNeedPhoneAlert: Alert = element.alerts["We need your phone number"].build()
+    private lazy var phoneNumberTextField: TextField = element.textFields["Phone number"].build()
+    private lazy var numberOfPeopleTextField: TextField = element.textFields["Number of people"].build()
+    private lazy var successAlert: Alert = element.alerts["Success!"].build()
+    private lazy var okButton: Button = element.buttons["OK"].build()
 }
 
 // MARK: - Actions
@@ -44,22 +48,45 @@ extension ReservationsScreen {
         bookButton.tap()
         return self
     }
+
+    @discardableResult
+    func tapOK() -> Self {
+        okButton.tap()
+        return self
+    }
+
+    @discardableResult
+    func typePhoneNumber(_ phone: String) -> Self {
+        phoneNumberTextField.tap()
+        phoneNumberTextField.type(phone)
+        return self
+    }
+
+    @discardableResult
+    func typeNumberOfPeople(_ number: String) -> Self {
+        numberOfPeopleTextField.tap()
+        numberOfPeopleTextField.type(number)
+        return self
+    }
 }
 
 // MARK: - Verifications
 extension ReservationsScreen {
     @discardableResult
     func assertWeNeedPhoneExist() -> Self {
-        XCTAssertTrue(weNeedPhoneAlert.element.waitForExistence(timeout: defaultTimeout),
-                      "We need your phone number alert is not visible")
+        weNeedPhoneAlert.assert(state: .exist)
         return self
     }
+
     @discardableResult
     func assertBookButtonIsPresent() -> Self {
-        guard bookButton.element.waitForExistence(timeout: defaultTimeout) else {
-            XCTFail("Reservations Screen is not present")
-            return self
-        }
+        bookButton.assert(state: .exist)
+        return self
+    }
+
+    @discardableResult
+    func assertSuccessAllertExist() -> Self {
+        successAlert.assert(state: .exist)
         return self
     }
 }
