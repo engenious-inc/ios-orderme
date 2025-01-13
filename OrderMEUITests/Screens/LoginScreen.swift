@@ -24,6 +24,14 @@ extension LoginScreen {
     }
 
     @discardableResult
+    func skipFacebook(authStub: AuthStub, placesStub: PlacesStub) -> Self {
+        authStub.start()
+        placesStub.start()
+        facebookButton.tap()
+        return self
+    }
+
+    @discardableResult
     func loginWithFacebook()-> Self {
         facebookButton.tap()
         if continueWithFacebookSpringAlert.element.waitForExistence(timeout: defaultTimeout) {

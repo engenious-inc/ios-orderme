@@ -17,6 +17,5 @@ class BaseTest: XCTestCase {
         BaseTest.shared = self
         continueAfterFailure = false
         app.launchArguments = ["startStubServer", "logOut"]
-        app.launchTunnel()
     }
 }

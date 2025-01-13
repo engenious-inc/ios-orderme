@@ -69,6 +69,9 @@
 		A5180DA82D35906900339031 /* SBTUITestTunnelServer in Frameworks */ = {isa = PBXBuildFile; productRef = A5180DA72D35906900339031 /* SBTUITestTunnelServer */; };
 		A5180DAB2D359CB700339031 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = A5180DAA2D359CAF00339031 /* Places.json */; };
 		A5180DAD2D359CBD00339031 /* PlacesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5180DAC2D359CBA00339031 /* PlacesStub.swift */; };
+		A5180DB32D35A1CF00339031 /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5180DB22D35A1C800339031 /* Auth.json */; };
+		A5180DB52D35A1DD00339031 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5180DB42D35A1D800339031 /* AuthStub.swift */; };
+		A5180DB72D35A21400339031 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5180DB62D35A1FD00339031 /* StubTests.swift */; };
 		A5247EC62CF5C2CF006566F2 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC52CF5C2C7006566F2 /* Springboard.swift */; };
 		A5247EC82CF5C9D6006566F2 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */; };
 		A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC92CF5CA77006566F2 /* SecureTextField.swift */; };
@@ -174,6 +177,9 @@
 		A51539B72CD11788002279D3 /* BaseElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseElement.swift; sourceTree = "<group>"; };
 		A5180DAA2D359CAF00339031 /* Places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Places.json; sourceTree = "<group>"; };
 		A5180DAC2D359CBA00339031 /* PlacesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesStub.swift; sourceTree = "<group>"; };
+		A5180DB22D35A1C800339031 /* Auth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
+		A5180DB42D35A1D800339031 /* AuthStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
+		A5180DB62D35A1FD00339031 /* StubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
 		A5247EC52CF5C2C7006566F2 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		A5247EC92CF5CA77006566F2 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
@@ -398,6 +404,7 @@
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */,
 				A50F164D2CF7880C002884ED /* ReservationTests.swift */,
+				A5180DB62D35A1FD00339031 /* StubTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -420,6 +427,7 @@
 		A5180DA92D35973B00339031 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				A5180DB12D35A1B300339031 /* Auth */,
 				A5180DB02D35A19100339031 /* Places */,
 			);
 			path = Stubs;
@@ -432,6 +440,15 @@
 				A5180DAA2D359CAF00339031 /* Places.json */,
 			);
 			path = Places;
+			sourceTree = "<group>";
+		};
+		A5180DB12D35A1B300339031 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A5180DB42D35A1D800339031 /* AuthStub.swift */,
+				A5180DB22D35A1C800339031 /* Auth.json */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		A5247EC42CF5C2BF006566F2 /* Utils */ = {
@@ -588,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5180DAB2D359CB700339031 /* Places.json in Resources */,
+				A5180DB32D35A1CF00339031 /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +667,7 @@
 				A50BA8302CE22FC400FB6F71 /* BackProtocol.swift in Sources */,
 				A50F164E2CF78813002884ED /* ReservationTests.swift in Sources */,
 				A59244682CDCEBDC0084A246 /* StaticText.swift in Sources */,
+				A5180DB52D35A1DD00339031 /* AuthStub.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
 				A50F16502CF78896002884ED /* Date.swift in Sources */,
 				A50BA82C2CE2289400FB6F71 /* MyReservationsScreen.swift in Sources */,
@@ -671,6 +690,7 @@
 				A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */,
 				A50BA82A2CE2286E00FB6F71 /* TabBarProtocol.swift in Sources */,
 				A5EF4C002CE604AE00AA966D /* TextField.swift in Sources */,
+				A5180DB72D35A21400339031 /* StubTests.swift in Sources */,
 				A59622372CEE524900AC0FC5 /* Cell.swift in Sources */,
 				A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */,
 				A59244662CDCE4D80084A246 /* Button.swift in Sources */,

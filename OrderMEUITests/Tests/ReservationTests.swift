@@ -9,6 +9,11 @@
 import XCTest
 
 class ReservationTests: BaseTest {
+    override func setUp() {
+        super.setUp()
+        app.launchTunnel()
+    }
+    
     func testPhoneNumberRequired() {
         let today = Date()
         guard let futureDate = today.getUIDateForTodayPlus(days: 3) else {
