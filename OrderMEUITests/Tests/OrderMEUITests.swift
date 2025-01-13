@@ -32,7 +32,7 @@ class OrderMEUITests: BaseTest {
 
     func testCallRestaurant() {
         LoginScreen()
-            .loginLater()
+            .loginLater(stub: .multiplePlaces)
 
         RestaurantsListScreen()
             .openRepubliqueRestaurant()

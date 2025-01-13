@@ -1,4 +1,5 @@
 {
+  "originHash" : "c4a4b19d660b496d14e121ccfe0627ce52b331ceeb2b6244cdaca028d077ed05",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -35,7 +36,16 @@
         "revision" : "0b96a734de3ea1c87374ae677064f86adb0716ec",
         "version" : "4.2.0"
       }
+    },
+    {
+      "identity" : "sbtuitesttunnel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Subito-it/SBTUITestTunnel",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bca57e5a8f0fd3c391fc2988f8957aed277ef8a9"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

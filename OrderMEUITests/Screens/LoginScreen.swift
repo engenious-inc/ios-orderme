@@ -17,7 +17,8 @@ class LoginScreen: BaseScreen {
 // MARK: - Activities
 extension LoginScreen {
     @discardableResult
-    func loginLater()-> Self {
+    func loginLater(stub: PlacesStub? = nil) -> Self {
+        stub?.start()
         loginLaterButton.tap()
         return self
     }

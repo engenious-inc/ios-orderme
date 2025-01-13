@@ -7,12 +7,16 @@
 //
 
 import XCTest
+import SBTUITestTunnelClient
 
 class BaseTest: XCTestCase {
+
+    static var shared: BaseTest!
+
     override func setUpWithError() throws {
+        BaseTest.shared = self
         continueAfterFailure = false
-        let app = XCUIApplication()
-        app.launchArguments = ["logOut"]
-        app.launch()
+        app.launchArguments = ["startStubServer", "logOut"]
+        app.launchTunnel()
     }
 }

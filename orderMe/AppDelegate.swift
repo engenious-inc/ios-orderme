@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import FBSDKShareKit
-
+import SBTUITestTunnelServer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         ApplicationDelegate.shared.application(application,
                                                didFinishLaunchingWithOptions: launchOptions)
+        if ProcessInfo.processInfo.arguments.contains("startStubServer") {
+            SBTUITestTunnelServer.takeOff()
+        }
+
         if ProcessInfo.processInfo.arguments.contains("logOut") {
             let loginManager = LoginManager()
             loginManager.logOut()

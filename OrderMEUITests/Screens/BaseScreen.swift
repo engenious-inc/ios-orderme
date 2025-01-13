@@ -7,9 +7,10 @@
 //
 
 import XCTest
+import SBTUITestTunnelClient
 
 class BaseScreen: Initializable {
-    static let app = XCUIApplication()
+    static let app: SBTUITunneledApplication! = BaseTest.shared.app
     let element: XCUIElement
     let description: String
     let timeout: Double
