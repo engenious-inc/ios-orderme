@@ -420,10 +420,18 @@
 		A5180DA92D35973B00339031 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				A5180DB02D35A19100339031 /* Places */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		A5180DB02D35A19100339031 /* Places */ = {
+			isa = PBXGroup;
+			children = (
 				A5180DAC2D359CBA00339031 /* PlacesStub.swift */,
 				A5180DAA2D359CAF00339031 /* Places.json */,
 			);
-			path = Stubs;
+			path = Places;
 			sourceTree = "<group>";
 		};
 		A5247EC42CF5C2BF006566F2 /* Utils */ = {
