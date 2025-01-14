@@ -123,7 +123,7 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
             self.tableView.reloadData()
             if places.isEmpty {
                 let alert = UIAlertController(title: "No Places",
-                                              message: "There are no restaurants in your areaa",
+                                              message: "There are no restaurants in your area",
                                               preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
