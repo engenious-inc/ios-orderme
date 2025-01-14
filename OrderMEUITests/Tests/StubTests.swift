@@ -7,13 +7,24 @@
 //
 
 import XCTest
+import SBTUITestTunnelClient
+
+enum AnalyticsAction: String {
+     case loginLaterTapped
+     case placesListShown
+     case placeTapped
+}
 
 class StubTests: BaseTest {
 
     override func setUp() {
         super.setUp()
         app.launchArguments += ["mockFacebook"]
-        app.launchTunnel()
+        app.launchTunnel {
+            AnalyticsStub.success.start()
+            // capture all requests
+            self.app.monitorRequests(matching: SBTRequestMatch(url: ".*"))
+        }
     }
 
     func testCallRestaurantStubbed() {
@@ -42,5 +53,18 @@ class StubTests: BaseTest {
 
         RestaurantsListScreen()
             .assertUnexpectedServerErrorAlertIsPresent()
+    }
+
+    func testOpenRepubliqueAnalytics() {
+        LoginScreen()
+            .loginLater(stub: .multiplePlaces)
+
+        assertAnalytics(action: .loginLaterTapped, info: "")
+        assertAnalytics(action: .placesListShown, info: "2 places")
+
+        RestaurantsListScreen()
+            .openRepubliqueRestaurant()
+
+        assertAnalytics(action: .placeTapped, info: "3")
     }
 }

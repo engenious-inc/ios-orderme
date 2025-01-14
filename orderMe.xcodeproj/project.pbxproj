@@ -77,6 +77,7 @@
 		A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC92CF5CA77006566F2 /* SecureTextField.swift */; };
 		A5247ECC2CF5E1A9006566F2 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */; };
 		A5442FEE2D36A1D9008EE130 /* EmptyPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = A5442FED2D36A1C4008EE130 /* EmptyPlaces.json */; };
+		A5442FF12D36A847008EE130 /* AnalyticsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5442FF02D36A843008EE130 /* AnalyticsStub.swift */; };
 		A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57ACC982CEF5DCC00786DE8 /* Interactions.swift */; };
 		A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592445E2CDCDF280084A246 /* XCUIElement.swift */; };
 		A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244612CDCDF5D0084A246 /* Initializable.swift */; };
@@ -186,6 +187,7 @@
 		A5247EC92CF5CA77006566F2 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTests.swift; sourceTree = "<group>"; };
 		A5442FED2D36A1C4008EE130 /* EmptyPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyPlaces.json; sourceTree = "<group>"; };
+		A5442FF02D36A843008EE130 /* AnalyticsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsStub.swift; sourceTree = "<group>"; };
 		A57ACC982CEF5DCC00786DE8 /* Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactions.swift; sourceTree = "<group>"; };
 		A592445E2CDCDF280084A246 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		A59244612CDCDF5D0084A246 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 		A5180DA92D35973B00339031 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				A5442FEF2D36A83B008EE130 /* Analytics */,
 				A5180DB12D35A1B300339031 /* Auth */,
 				A5180DB02D35A19100339031 /* Places */,
 			);
@@ -460,6 +463,14 @@
 				A5247EC52CF5C2C7006566F2 /* Springboard.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A5442FEF2D36A83B008EE130 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				A5442FF02D36A843008EE130 /* AnalyticsStub.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		A592445D2CDCDF010084A246 /* Extensions */ = {
@@ -670,6 +681,7 @@
 				A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */,
 				A50BA8302CE22FC400FB6F71 /* BackProtocol.swift in Sources */,
 				A50F164E2CF78813002884ED /* ReservationTests.swift in Sources */,
+				A5442FF12D36A847008EE130 /* AnalyticsStub.swift in Sources */,
 				A59244682CDCEBDC0084A246 /* StaticText.swift in Sources */,
 				A5180DB52D35A1DD00339031 /* AuthStub.swift in Sources */,
 				93A7AC6525D3713200D4BB77 /* OrderMEUITests.swift in Sources */,
