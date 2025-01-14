@@ -27,4 +27,20 @@ class StubTests: BaseTest {
             .choose(option: .callRestaurant)
             .assertCallAlertIsPresent()
      }
+
+    func testPlacesError() {
+        LoginScreen()
+            .loginLater(stub: .emptyList)
+
+        RestaurantsListScreen()
+            .assertNoPlacesAlertIsPresent()
+    }
+
+    func test500ServerError() {
+        LoginScreen()
+            .loginLater(stub: .failure(code: 500))
+
+        RestaurantsListScreen()
+            .assertUnexpectedServerErrorAlertIsPresent()
+    }
 }

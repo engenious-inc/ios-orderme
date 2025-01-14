@@ -76,6 +76,7 @@
 		A5247EC82CF5C9D6006566F2 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */; };
 		A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC92CF5CA77006566F2 /* SecureTextField.swift */; };
 		A5247ECC2CF5E1A9006566F2 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */; };
+		A5442FEE2D36A1D9008EE130 /* EmptyPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = A5442FED2D36A1C4008EE130 /* EmptyPlaces.json */; };
 		A57ACC992CEF5DD700786DE8 /* Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57ACC982CEF5DCC00786DE8 /* Interactions.swift */; };
 		A592445F2CDCDF2E0084A246 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592445E2CDCDF280084A246 /* XCUIElement.swift */; };
 		A59244622CDCDF6A0084A246 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59244612CDCDF5D0084A246 /* Initializable.swift */; };
@@ -184,6 +185,7 @@
 		A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		A5247EC92CF5CA77006566F2 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTests.swift; sourceTree = "<group>"; };
+		A5442FED2D36A1C4008EE130 /* EmptyPlaces.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyPlaces.json; sourceTree = "<group>"; };
 		A57ACC982CEF5DCC00786DE8 /* Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactions.swift; sourceTree = "<group>"; };
 		A592445E2CDCDF280084A246 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		A59244612CDCDF5D0084A246 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 		A5180DB02D35A19100339031 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				A5442FED2D36A1C4008EE130 /* EmptyPlaces.json */,
 				A5180DAC2D359CBA00339031 /* PlacesStub.swift */,
 				A5180DAA2D359CAF00339031 /* Places.json */,
 			);
@@ -605,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5180DAB2D359CB700339031 /* Places.json in Resources */,
+				A5442FEE2D36A1D9008EE130 /* EmptyPlaces.json in Resources */,
 				A5180DB32D35A1CF00339031 /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
