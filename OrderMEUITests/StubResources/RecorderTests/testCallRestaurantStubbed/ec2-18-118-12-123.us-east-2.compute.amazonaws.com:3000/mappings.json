@@ -1,0 +1,64 @@
+{
+  "mappings" : [
+    {
+      "activeIterations" : 1,
+      "requestBody" : "",
+      "requestEndpoint" : "\/places",
+      "requestHeaders" : {
+        "Accept" : "application\/json",
+        "Accept-Encoding" : "br;q=1.0, gzip;q=0.9, deflate;q=0.8",
+        "Accept-Language" : "en;q=1.0",
+        "Authorization" : "Token ",
+        "Connection" : "keep-alive",
+        "Content-Type" : "application\/json; charset=utf-8",
+        "Host" : "127.0.0.1:3000",
+        "If-None-Match" : "W\/\"596-80QvUXzbYbrk716cmae2rg1+4xg\"",
+        "User-Agent" : "OrderME\/1.0 (com.assesment.orderme; build:1; iOS 18.0.0) Alamofire\/5.7.1"
+      },
+      "requestID" : "EA7F9ACC-B07B-4DCA-BD38-0726C2F623E9",
+      "requestMethod" : "GET",
+      "responseDelay" : 0,
+      "responseHeaders" : {
+        "Connection" : "keep-alive",
+        "Content-Length" : "1430",
+        "Content-Type" : "application\/json; charset=utf-8",
+        "Date" : "Tue, 21 Jan 2025 20:55:43 GMT",
+        "ETag" : "W\/\"596-80QvUXzbYbrk716cmae2rg1+4xg\"",
+        "Keep-Alive" : "timeout=5",
+        "X-Powered-By" : "Express"
+      },
+      "responseID" : "02AB25AC-8EA7-4F1E-937B-63C1366B4F1B",
+      "responseStatus" : 200
+    },
+    {
+      "activeIterations" : 1,
+      "requestBody" : "",
+      "requestEndpoint" : "\/menu\/3",
+      "requestHeaders" : {
+        "Accept" : "application\/json",
+        "Accept-Encoding" : "br;q=1.0, gzip;q=0.9, deflate;q=0.8",
+        "Accept-Language" : "en;q=1.0",
+        "Authorization" : "Token ",
+        "Connection" : "keep-alive",
+        "Content-Type" : "application\/json; charset=utf-8",
+        "Host" : "127.0.0.1:3000",
+        "If-None-Match" : "W\/\"391-TLbf0F68LLoZGk9K2n0jp62b8\/U\"",
+        "User-Agent" : "OrderME\/1.0 (com.assesment.orderme; build:1; iOS 18.0.0) Alamofire\/5.7.1"
+      },
+      "requestID" : "331246FB-CCC4-45A7-A144-A450DB2BC6FD",
+      "requestMethod" : "GET",
+      "responseDelay" : 0,
+      "responseHeaders" : {
+        "Connection" : "keep-alive",
+        "Content-Length" : "913",
+        "Content-Type" : "application\/json; charset=utf-8",
+        "Date" : "Tue, 21 Jan 2025 20:55:45 GMT",
+        "ETag" : "W\/\"391-TLbf0F68LLoZGk9K2n0jp62b8\/U\"",
+        "Keep-Alive" : "timeout=5",
+        "X-Powered-By" : "Express"
+      },
+      "responseID" : "DA93F651-5F77-4FF5-9A31-4EE47FAC35E8",
+      "responseStatus" : 200
+    }
+  ]
+}

@@ -44,4 +44,15 @@ final class RecorderTests: BaseTest {
         application.buttons["loginLaterButton"].tap()
         sleep(10)
     }
+
+    func testCallRestaurantStubbed() {
+        application.launch()
+        application.buttons["loginLaterButton"].tap()
+
+        let romanovRestaurantLabel = application.staticTexts["Engenious"]
+        romanovRestaurantLabel.tap()
+
+        application.collectionViews.cells.element(boundBy: 4).tap()
+        XCTAssert(application.staticTexts["Call Engenious"].waitForExistence(timeout: 7.0))
+    }
 }

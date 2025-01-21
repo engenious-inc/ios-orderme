@@ -1,0 +1,63 @@
+{
+  "categories" : [
+    {
+      "id" : 17,
+      "name" : "Desserts",
+      "placeId" : 3
+    },
+    {
+      "id" : 15,
+      "name" : "Fish",
+      "placeId" : 3
+    },
+    {
+      "id" : 16,
+      "name" : "Drinks",
+      "placeId" : 3
+    }
+  ],
+  "dishes" : [
+    {
+      "categoryId" : 17,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 27,
+      "name" : "PRIME BEEF FILET",
+      "price" : 45
+    },
+    {
+      "categoryId" : 17,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 28,
+      "name" : "PRIME BEEF ",
+      "price" : 60
+    },
+    {
+      "categoryId" : 15,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 29,
+      "name" : "BEEF",
+      "price" : 55
+    },
+    {
+      "categoryId" : 15,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 30,
+      "name" : "Parsnips",
+      "price" : 15
+    },
+    {
+      "categoryId" : 16,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 31,
+      "name" : "Green Tea",
+      "price" : 122
+    },
+    {
+      "categoryId" : 16,
+      "description" : "roasted celery root, parsnips, wild mushroom bordelaise",
+      "id" : 32,
+      "name" : "Black Tea",
+      "price" : 72
+    }
+  ]
+}
