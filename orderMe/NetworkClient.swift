@@ -40,10 +40,16 @@ var defaultHost = HostURL.digitalOcean
 var analyticsHost = HostURL.digitalOcean
 
 class NetworkClient {
-    
-    static let baseURL = defaultHost.baseURL
+
     static let dateFormatter = DateFormatter() // for converting Dates to string
-    
+    static var baseURL: String {
+        if let stubRecoder = ProcessInfo().environment["HOST"] {
+            return stubRecoder
+        } else {
+            return defaultHost.baseURL
+        }
+    }
+
     // general request to the API, each function here will use this one
     static func send(api: String, method: HTTPMethod, parameters: Parameters?, token: String, completion: @escaping (_ result: String?, _ error: NSError?)->()) -> Void {
         

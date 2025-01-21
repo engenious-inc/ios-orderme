@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,11 @@
 		A5180DB32D35A1CF00339031 /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5180DB22D35A1C800339031 /* Auth.json */; };
 		A5180DB52D35A1DD00339031 /* AuthStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5180DB42D35A1D800339031 /* AuthStub.swift */; };
 		A5180DB72D35A21400339031 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5180DB62D35A1FD00339031 /* StubTests.swift */; };
+		A51FE65E2D40268C00254617 /* SwiftProxy in Frameworks */ = {isa = PBXBuildFile; productRef = A51FE65D2D40268C00254617 /* SwiftProxy */; };
+		A51FE6602D40268C00254617 /* SwiftProxyCLI in Frameworks */ = {isa = PBXBuildFile; productRef = A51FE65F2D40268C00254617 /* SwiftProxyCLI */; };
+		A51FE6632D4026AA00254617 /* StubRecorder in Frameworks */ = {isa = PBXBuildFile; productRef = A51FE6622D4026AA00254617 /* StubRecorder */; };
+		A51FE6652D4026B700254617 /* RecordedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FE6642D4026B400254617 /* RecordedTests.swift */; };
+		A51FE6932D4028BB00254617 /* StubResources in Resources */ = {isa = PBXBuildFile; fileRef = A51FE6922D4028AE00254617 /* StubResources */; };
 		A5247EC62CF5C2CF006566F2 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC52CF5C2C7006566F2 /* Springboard.swift */; };
 		A5247EC82CF5C9D6006566F2 /* FacebookLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */; };
 		A5247ECA2CF5CA7B006566F2 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5247EC92CF5CA77006566F2 /* SecureTextField.swift */; };
@@ -182,6 +187,8 @@
 		A5180DB22D35A1C800339031 /* Auth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
 		A5180DB42D35A1D800339031 /* AuthStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStub.swift; sourceTree = "<group>"; };
 		A5180DB62D35A1FD00339031 /* StubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
+		A51FE6642D4026B400254617 /* RecordedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedTests.swift; sourceTree = "<group>"; };
+		A51FE6922D4028AE00254617 /* StubResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = StubResources; path = OrderMEUITests/StubResources; sourceTree = "<group>"; };
 		A5247EC52CF5C2C7006566F2 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		A5247EC72CF5C9CF006566F2 /* FacebookLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginScreen.swift; sourceTree = "<group>"; };
 		A5247EC92CF5CA77006566F2 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
@@ -201,6 +208,10 @@
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A51FE6672D4026FE00254617 /* StubResources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = StubResources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2B2EA7661CBB0377001507DD /* Frameworks */ = {
@@ -222,9 +233,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51FE6602D40268C00254617 /* SwiftProxyCLI in Frameworks */,
 				A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */,
+				A51FE6632D4026AA00254617 /* StubRecorder in Frameworks */,
 				A5180DA62D35906900339031 /* SBTUITestTunnelClient in Frameworks */,
 				A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */,
+				A51FE65E2D40268C00254617 /* SwiftProxy in Frameworks */,
 				A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */,
 				A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */,
 				A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */,
@@ -252,6 +266,7 @@
 				93A7AC6325D3713200D4BB77 /* OrderMEUITests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
 				ED4E7941F9C50F3BEA03680F /* Frameworks */,
+				A51FE6922D4028AE00254617 /* StubResources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -389,6 +404,7 @@
 		93A7AC6325D3713200D4BB77 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				A51FE6672D4026FE00254617 /* StubResources */,
 				A5180DA92D35973B00339031 /* Stubs */,
 				A51539B62CD11774002279D3 /* Elements */,
 				931BAFB125DDB34000D04D00 /* Screens */,
@@ -404,6 +420,7 @@
 		A51539B52CD11769002279D3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A51FE6642D4026B400254617 /* RecordedTests.swift */,
 				933B0D3225DF080300DC2058 /* BaseTest.swift */,
 				93A7AC6425D3713200D4BB77 /* OrderMEUITests.swift */,
 				A5247ECB2CF5E1A4006566F2 /* FacebookTests.swift */,
@@ -592,6 +609,8 @@
 				A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				A5180DA42D35906900339031 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */,
+				A51FE65C2D40268C00254617 /* XCRemoteSwiftPackageReference "swift-proxy" */,
+				A51FE6612D4026AA00254617 /* XCRemoteSwiftPackageReference "stub-recorder" */,
 			);
 			productRefGroup = 2B2EA76A1CBB0377001507DD /* Products */;
 			projectDirPath = "";
@@ -620,6 +639,7 @@
 			files = (
 				A5180DAB2D359CB700339031 /* Places.json in Resources */,
 				A5442FEE2D36A1D9008EE130 /* EmptyPlaces.json in Resources */,
+				A51FE6932D4028BB00254617 /* StubResources in Resources */,
 				A5180DB32D35A1CF00339031 /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +717,7 @@
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
 				A59244642CDCDFD40084A246 /* States.swift in Sources */,
+				A51FE6652D4026B700254617 /* RecordedTests.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
 				A5EF4C042CE6070200AA966D /* WaiterScreen.swift in Sources */,
 				A5180DAD2D359CBD00339031 /* PlacesStub.swift in Sources */,
@@ -991,6 +1012,22 @@
 				kind = branch;
 			};
 		};
+		A51FE65C2D40268C00254617 /* XCRemoteSwiftPackageReference "swift-proxy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/engenious-inc/swift-proxy.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A51FE6612D4026AA00254617 /* XCRemoteSwiftPackageReference "stub-recorder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/engenious-inc/stub-recorder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
@@ -1035,6 +1072,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A5180DA42D35906900339031 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
 			productName = SBTUITestTunnelServer;
+		};
+		A51FE65D2D40268C00254617 /* SwiftProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A51FE65C2D40268C00254617 /* XCRemoteSwiftPackageReference "swift-proxy" */;
+			productName = SwiftProxy;
+		};
+		A51FE65F2D40268C00254617 /* SwiftProxyCLI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A51FE65C2D40268C00254617 /* XCRemoteSwiftPackageReference "swift-proxy" */;
+			productName = SwiftProxyCLI;
+		};
+		A51FE6622D4026AA00254617 /* StubRecorder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A51FE6612D4026AA00254617 /* XCRemoteSwiftPackageReference "stub-recorder" */;
+			productName = StubRecorder;
 		};
 		A7140EFC2A96C57A007FF2D6 /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;

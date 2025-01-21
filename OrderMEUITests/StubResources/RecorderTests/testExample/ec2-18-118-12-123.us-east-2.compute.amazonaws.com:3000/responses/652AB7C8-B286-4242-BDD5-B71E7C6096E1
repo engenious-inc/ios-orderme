@@ -1,0 +1,56 @@
+[
+  {
+    "address" : "750 N Hill St, LA, CA, USA",
+    "id" : 1,
+    "imagePath" : "https:\/\/restaurantengine.com\/wp-content\/uploads\/2019\/01\/Great-Small-Restaurant-Interior-Designs.jpg",
+    "latitude" : "34.062270",
+    "longitude" : "-118.239631",
+    "name" : "Engenious Restaurant",
+    "phone" : "+1 213-687-3088"
+  },
+  {
+    "address" : "1 Kearny St, San Francisco, CA",
+    "id" : 2,
+    "imagePath" : "http:\/\/hauteliving.com\/wp-content\/uploads\/2014\/11\/Hakkasan-sf_bar.jpg",
+    "latitude" : "34.062270",
+    "longitude" : "-118.239631",
+    "name" : "Hakkasan",
+    "phone" : "+1 415-829-8148"
+  },
+  {
+    "address" : "12229 Ventura Blvd, Studio City, CA",
+    "id" : 3,
+    "imagePath" : "https:\/\/media-cdn.tripadvisor.com\/media\/photo-o\/07\/a9\/82\/16\/romanov-restaurant.jpg",
+    "latitude" : "34.062270",
+    "longitude" : "-118.239631",
+    "name" : "Romanov",
+    "phone" : "+1 818 760-3177"
+  },
+  {
+    "address" : "1615 Cahuenga Blvd, Los Angeles, CA",
+    "id" : 4,
+    "imagePath" : "https:\/\/static.urbandaddy.com\/uploads\/assets\/image\/articles\/standard\/3aab34dfcbb7471aa387f3db341b89d2.jpg",
+    "latitude" : "34.062270",
+    "longitude" : "-118.239631",
+    "name" : "Beauty & Essex",
+    "phone" : "+1 323 676-8880"
+  },
+  {
+    "address" : "624 South La Brea Ave, LA, CA, USA",
+    "id" : 5,
+    "imagePath" : "https:\/\/resizer.otstatic.com\/v2\/photos\/large\/25178655.jpg",
+    "latitude" : "34.064198",
+    "longitude" : "-118.343863",
+    "name" : "Republique",
+    "phone" : "+1 310-362-6115"
+  },
+  {
+    "address" : "Park, NY, CA",
+    "id" : 6,
+    "imagePath" : "http:\/\/hauteliving.com\/wp-content\/uploads\/2014\/11\/Hakkasan-sf_bar.jpg",
+    "latitude" : "12.3123",
+    "longitude" : "23.1312",
+    "name" : "Burger",
+    "phone" : "5555555"
+  }
+]
