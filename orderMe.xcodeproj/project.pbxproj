@@ -84,56 +84,31 @@
 		A77F22622AA4313900ECD9FC /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
 		A77F22632AA4313900ECD9FC /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
 		A77F22642AA4313900ECD9FC /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
-		F416D4C02CDE3F530064C8E2 /* SampleAppUITest_41.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D48E2CDE3F520064C8E2 /* SampleAppUITest_41.swift */; };
 		F416D4C12CDE3F530064C8E2 /* SampleAppUITest_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D48F2CDE3F520064C8E2 /* SampleAppUITest_9.swift */; };
-		F416D4C22CDE3F530064C8E2 /* SampleAppUITest_45.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4902CDE3F520064C8E2 /* SampleAppUITest_45.swift */; };
-		F416D4C32CDE3F530064C8E2 /* SampleAppUITest_42.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4912CDE3F520064C8E2 /* SampleAppUITest_42.swift */; };
-		F416D4C42CDE3F530064C8E2 /* SampleAppUITest_36.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4922CDE3F520064C8E2 /* SampleAppUITest_36.swift */; };
 		F416D4C52CDE3F530064C8E2 /* SampleAppUITest_17.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4932CDE3F520064C8E2 /* SampleAppUITest_17.swift */; };
 		F416D4C62CDE3F530064C8E2 /* SampleAppUITest_24.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4942CDE3F520064C8E2 /* SampleAppUITest_24.swift */; };
 		F416D4C72CDE3F530064C8E2 /* SampleAppUITest_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4952CDE3F520064C8E2 /* SampleAppUITest_8.swift */; };
 		F416D4C82CDE3F530064C8E2 /* SampleAppUITest_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4962CDE3F520064C8E2 /* SampleAppUITest_14.swift */; };
 		F416D4C92CDE3F530064C8E2 /* SampleAppUITest_12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4972CDE3F520064C8E2 /* SampleAppUITest_12.swift */; };
 		F416D4CA2CDE3F530064C8E2 /* SampleAppUITest_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4982CDE3F520064C8E2 /* SampleAppUITest_7.swift */; };
-		F416D4CB2CDE3F530064C8E2 /* SampleAppUITest_34.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4992CDE3F520064C8E2 /* SampleAppUITest_34.swift */; };
 		F416D4CC2CDE3F530064C8E2 /* SampleAppUITest_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49A2CDE3F520064C8E2 /* SampleAppUITest_3.swift */; };
-		F416D4CD2CDE3F530064C8E2 /* SampleAppUITest_28.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49B2CDE3F520064C8E2 /* SampleAppUITest_28.swift */; };
 		F416D4CE2CDE3F530064C8E2 /* SampleAppUITest_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49C2CDE3F520064C8E2 /* SampleAppUITest_1.swift */; };
 		F416D4CF2CDE3F530064C8E2 /* SampleAppUITest_20.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49D2CDE3F520064C8E2 /* SampleAppUITest_20.swift */; };
-		F416D4D02CDE3F530064C8E2 /* SampleAppUITest_47.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49E2CDE3F520064C8E2 /* SampleAppUITest_47.swift */; };
 		F416D4D12CDE3F530064C8E2 /* SampleAppUITest_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D49F2CDE3F520064C8E2 /* SampleAppUITest_13.swift */; };
 		F416D4D22CDE3F530064C8E2 /* SampleAppUITest_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A02CDE3F520064C8E2 /* SampleAppUITest_11.swift */; };
-		F416D4D32CDE3F530064C8E2 /* SampleAppUITest_29.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A12CDE3F520064C8E2 /* SampleAppUITest_29.swift */; };
 		F416D4D42CDE3F530064C8E2 /* SampleAppUITest_15.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A22CDE3F520064C8E2 /* SampleAppUITest_15.swift */; };
 		F416D4D52CDE3F530064C8E2 /* SampleAppUITest_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A32CDE3F520064C8E2 /* SampleAppUITest_10.swift */; };
 		F416D4D62CDE3F530064C8E2 /* SampleAppUITest_18.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A42CDE3F520064C8E2 /* SampleAppUITest_18.swift */; };
 		F416D4D72CDE3F530064C8E2 /* SampleAppUITest_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A52CDE3F520064C8E2 /* SampleAppUITest_4.swift */; };
-		F416D4D82CDE3F530064C8E2 /* SampleAppUITest_26.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A62CDE3F520064C8E2 /* SampleAppUITest_26.swift */; };
 		F416D4D92CDE3F530064C8E2 /* SampleAppUITest_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A72CDE3F520064C8E2 /* SampleAppUITest_2.swift */; };
-		F416D4DA2CDE3F530064C8E2 /* SampleAppUITest_31.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A82CDE3F520064C8E2 /* SampleAppUITest_31.swift */; };
-		F416D4DB2CDE3F530064C8E2 /* SampleAppUITest_35.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4A92CDE3F530064C8E2 /* SampleAppUITest_35.swift */; };
 		F416D4DC2CDE3F530064C8E2 /* SampleAppUITest_16.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AA2CDE3F530064C8E2 /* SampleAppUITest_16.swift */; };
-		F416D4DD2CDE3F530064C8E2 /* SampleAppUITest_27.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AB2CDE3F530064C8E2 /* SampleAppUITest_27.swift */; };
-		F416D4DE2CDE3F530064C8E2 /* SampleAppUITest_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AC2CDE3F530064C8E2 /* SampleAppUITest_32.swift */; };
-		F416D4DF2CDE3F530064C8E2 /* SampleAppUITest_37.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AD2CDE3F530064C8E2 /* SampleAppUITest_37.swift */; };
-		F416D4E02CDE3F530064C8E2 /* SampleAppUITest_40.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AE2CDE3F530064C8E2 /* SampleAppUITest_40.swift */; };
 		F416D4E12CDE3F530064C8E2 /* SampleAppUITest_21.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4AF2CDE3F530064C8E2 /* SampleAppUITest_21.swift */; };
 		F416D4E22CDE3F530064C8E2 /* SampleAppUITest_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B02CDE3F530064C8E2 /* SampleAppUITest_0.swift */; };
 		F416D4E32CDE3F530064C8E2 /* SampleAppUITest_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B12CDE3F530064C8E2 /* SampleAppUITest_6.swift */; };
 		F416D4E42CDE3F530064C8E2 /* SampleAppUITest_19.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B22CDE3F530064C8E2 /* SampleAppUITest_19.swift */; };
-		F416D4E52CDE3F530064C8E2 /* SampleAppUITest_38.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B32CDE3F530064C8E2 /* SampleAppUITest_38.swift */; };
-		F416D4E62CDE3F530064C8E2 /* SampleAppUITest_39.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B42CDE3F530064C8E2 /* SampleAppUITest_39.swift */; };
-		F416D4E72CDE3F530064C8E2 /* SampleAppUITest_43.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B52CDE3F530064C8E2 /* SampleAppUITest_43.swift */; };
 		F416D4E82CDE3F530064C8E2 /* SampleAppUITest_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B62CDE3F530064C8E2 /* SampleAppUITest_22.swift */; };
-		F416D4E92CDE3F530064C8E2 /* SampleAppUITest_44.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B72CDE3F530064C8E2 /* SampleAppUITest_44.swift */; };
-		F416D4EA2CDE3F530064C8E2 /* SampleAppUITest_46.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B82CDE3F530064C8E2 /* SampleAppUITest_46.swift */; };
 		F416D4EB2CDE3F530064C8E2 /* SampleAppUITest_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4B92CDE3F530064C8E2 /* SampleAppUITest_23.swift */; };
-		F416D4EC2CDE3F530064C8E2 /* SampleAppUITest_49.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BA2CDE3F530064C8E2 /* SampleAppUITest_49.swift */; };
-		F416D4ED2CDE3F530064C8E2 /* SampleAppUITest_33.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BB2CDE3F530064C8E2 /* SampleAppUITest_33.swift */; };
-		F416D4EE2CDE3F530064C8E2 /* SampleAppUITest_25.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BC2CDE3F530064C8E2 /* SampleAppUITest_25.swift */; };
 		F416D4EF2CDE3F530064C8E2 /* SampleAppUITest_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BD2CDE3F530064C8E2 /* SampleAppUITest_5.swift */; };
-		F416D4F02CDE3F530064C8E2 /* SampleAppUITest_48.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BE2CDE3F530064C8E2 /* SampleAppUITest_48.swift */; };
-		F416D4F12CDE3F530064C8E2 /* SampleAppUITest_30.swift in Sources */ = {isa = PBXBuildFile; fileRef = F416D4BF2CDE3F530064C8E2 /* SampleAppUITest_30.swift */; };
 		F43D48852BDA632E002E510C /* Codegen.py in Resources */ = {isa = PBXBuildFile; fileRef = F43D48842BDA632E002E510C /* Codegen.py */; };
 /* End PBXBuildFile section */
 
@@ -212,56 +187,31 @@
 		A707BF122AA7112C00B1A5EB /* Auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F416D48E2CDE3F520064C8E2 /* SampleAppUITest_41.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_41.swift; sourceTree = "<group>"; };
 		F416D48F2CDE3F520064C8E2 /* SampleAppUITest_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_9.swift; sourceTree = "<group>"; };
-		F416D4902CDE3F520064C8E2 /* SampleAppUITest_45.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_45.swift; sourceTree = "<group>"; };
-		F416D4912CDE3F520064C8E2 /* SampleAppUITest_42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_42.swift; sourceTree = "<group>"; };
-		F416D4922CDE3F520064C8E2 /* SampleAppUITest_36.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_36.swift; sourceTree = "<group>"; };
 		F416D4932CDE3F520064C8E2 /* SampleAppUITest_17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_17.swift; sourceTree = "<group>"; };
 		F416D4942CDE3F520064C8E2 /* SampleAppUITest_24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_24.swift; sourceTree = "<group>"; };
 		F416D4952CDE3F520064C8E2 /* SampleAppUITest_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_8.swift; sourceTree = "<group>"; };
 		F416D4962CDE3F520064C8E2 /* SampleAppUITest_14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_14.swift; sourceTree = "<group>"; };
 		F416D4972CDE3F520064C8E2 /* SampleAppUITest_12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_12.swift; sourceTree = "<group>"; };
 		F416D4982CDE3F520064C8E2 /* SampleAppUITest_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_7.swift; sourceTree = "<group>"; };
-		F416D4992CDE3F520064C8E2 /* SampleAppUITest_34.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_34.swift; sourceTree = "<group>"; };
 		F416D49A2CDE3F520064C8E2 /* SampleAppUITest_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_3.swift; sourceTree = "<group>"; };
-		F416D49B2CDE3F520064C8E2 /* SampleAppUITest_28.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_28.swift; sourceTree = "<group>"; };
 		F416D49C2CDE3F520064C8E2 /* SampleAppUITest_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_1.swift; sourceTree = "<group>"; };
 		F416D49D2CDE3F520064C8E2 /* SampleAppUITest_20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_20.swift; sourceTree = "<group>"; };
-		F416D49E2CDE3F520064C8E2 /* SampleAppUITest_47.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_47.swift; sourceTree = "<group>"; };
 		F416D49F2CDE3F520064C8E2 /* SampleAppUITest_13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_13.swift; sourceTree = "<group>"; };
 		F416D4A02CDE3F520064C8E2 /* SampleAppUITest_11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_11.swift; sourceTree = "<group>"; };
-		F416D4A12CDE3F520064C8E2 /* SampleAppUITest_29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_29.swift; sourceTree = "<group>"; };
 		F416D4A22CDE3F520064C8E2 /* SampleAppUITest_15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_15.swift; sourceTree = "<group>"; };
 		F416D4A32CDE3F520064C8E2 /* SampleAppUITest_10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_10.swift; sourceTree = "<group>"; };
 		F416D4A42CDE3F520064C8E2 /* SampleAppUITest_18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_18.swift; sourceTree = "<group>"; };
 		F416D4A52CDE3F520064C8E2 /* SampleAppUITest_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_4.swift; sourceTree = "<group>"; };
-		F416D4A62CDE3F520064C8E2 /* SampleAppUITest_26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_26.swift; sourceTree = "<group>"; };
 		F416D4A72CDE3F520064C8E2 /* SampleAppUITest_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_2.swift; sourceTree = "<group>"; };
-		F416D4A82CDE3F520064C8E2 /* SampleAppUITest_31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_31.swift; sourceTree = "<group>"; };
-		F416D4A92CDE3F530064C8E2 /* SampleAppUITest_35.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_35.swift; sourceTree = "<group>"; };
 		F416D4AA2CDE3F530064C8E2 /* SampleAppUITest_16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_16.swift; sourceTree = "<group>"; };
-		F416D4AB2CDE3F530064C8E2 /* SampleAppUITest_27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_27.swift; sourceTree = "<group>"; };
-		F416D4AC2CDE3F530064C8E2 /* SampleAppUITest_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_32.swift; sourceTree = "<group>"; };
-		F416D4AD2CDE3F530064C8E2 /* SampleAppUITest_37.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_37.swift; sourceTree = "<group>"; };
-		F416D4AE2CDE3F530064C8E2 /* SampleAppUITest_40.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_40.swift; sourceTree = "<group>"; };
 		F416D4AF2CDE3F530064C8E2 /* SampleAppUITest_21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_21.swift; sourceTree = "<group>"; };
 		F416D4B02CDE3F530064C8E2 /* SampleAppUITest_0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_0.swift; sourceTree = "<group>"; };
 		F416D4B12CDE3F530064C8E2 /* SampleAppUITest_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_6.swift; sourceTree = "<group>"; };
 		F416D4B22CDE3F530064C8E2 /* SampleAppUITest_19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_19.swift; sourceTree = "<group>"; };
-		F416D4B32CDE3F530064C8E2 /* SampleAppUITest_38.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_38.swift; sourceTree = "<group>"; };
-		F416D4B42CDE3F530064C8E2 /* SampleAppUITest_39.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_39.swift; sourceTree = "<group>"; };
-		F416D4B52CDE3F530064C8E2 /* SampleAppUITest_43.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_43.swift; sourceTree = "<group>"; };
 		F416D4B62CDE3F530064C8E2 /* SampleAppUITest_22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_22.swift; sourceTree = "<group>"; };
-		F416D4B72CDE3F530064C8E2 /* SampleAppUITest_44.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_44.swift; sourceTree = "<group>"; };
-		F416D4B82CDE3F530064C8E2 /* SampleAppUITest_46.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_46.swift; sourceTree = "<group>"; };
 		F416D4B92CDE3F530064C8E2 /* SampleAppUITest_23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_23.swift; sourceTree = "<group>"; };
-		F416D4BA2CDE3F530064C8E2 /* SampleAppUITest_49.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_49.swift; sourceTree = "<group>"; };
-		F416D4BB2CDE3F530064C8E2 /* SampleAppUITest_33.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_33.swift; sourceTree = "<group>"; };
-		F416D4BC2CDE3F530064C8E2 /* SampleAppUITest_25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_25.swift; sourceTree = "<group>"; };
 		F416D4BD2CDE3F530064C8E2 /* SampleAppUITest_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_5.swift; sourceTree = "<group>"; };
-		F416D4BE2CDE3F530064C8E2 /* SampleAppUITest_48.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_48.swift; sourceTree = "<group>"; };
-		F416D4BF2CDE3F530064C8E2 /* SampleAppUITest_30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppUITest_30.swift; sourceTree = "<group>"; };
 		F43D48842BDA632E002E510C /* Codegen.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Codegen.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -551,31 +501,6 @@
 				F416D4B62CDE3F530064C8E2 /* SampleAppUITest_22.swift */,
 				F416D4B92CDE3F530064C8E2 /* SampleAppUITest_23.swift */,
 				F416D4942CDE3F520064C8E2 /* SampleAppUITest_24.swift */,
-				F416D4BC2CDE3F530064C8E2 /* SampleAppUITest_25.swift */,
-				F416D4A62CDE3F520064C8E2 /* SampleAppUITest_26.swift */,
-				F416D4AB2CDE3F530064C8E2 /* SampleAppUITest_27.swift */,
-				F416D49B2CDE3F520064C8E2 /* SampleAppUITest_28.swift */,
-				F416D4A12CDE3F520064C8E2 /* SampleAppUITest_29.swift */,
-				F416D4BF2CDE3F530064C8E2 /* SampleAppUITest_30.swift */,
-				F416D4A82CDE3F520064C8E2 /* SampleAppUITest_31.swift */,
-				F416D4AC2CDE3F530064C8E2 /* SampleAppUITest_32.swift */,
-				F416D4BB2CDE3F530064C8E2 /* SampleAppUITest_33.swift */,
-				F416D4992CDE3F520064C8E2 /* SampleAppUITest_34.swift */,
-				F416D4A92CDE3F530064C8E2 /* SampleAppUITest_35.swift */,
-				F416D4922CDE3F520064C8E2 /* SampleAppUITest_36.swift */,
-				F416D4AD2CDE3F530064C8E2 /* SampleAppUITest_37.swift */,
-				F416D4B32CDE3F530064C8E2 /* SampleAppUITest_38.swift */,
-				F416D4B42CDE3F530064C8E2 /* SampleAppUITest_39.swift */,
-				F416D4AE2CDE3F530064C8E2 /* SampleAppUITest_40.swift */,
-				F416D48E2CDE3F520064C8E2 /* SampleAppUITest_41.swift */,
-				F416D4912CDE3F520064C8E2 /* SampleAppUITest_42.swift */,
-				F416D4B52CDE3F530064C8E2 /* SampleAppUITest_43.swift */,
-				F416D4B72CDE3F530064C8E2 /* SampleAppUITest_44.swift */,
-				F416D4902CDE3F520064C8E2 /* SampleAppUITest_45.swift */,
-				F416D4B82CDE3F530064C8E2 /* SampleAppUITest_46.swift */,
-				F416D49E2CDE3F520064C8E2 /* SampleAppUITest_47.swift */,
-				F416D4BE2CDE3F530064C8E2 /* SampleAppUITest_48.swift */,
-				F416D4BA2CDE3F530064C8E2 /* SampleAppUITest_49.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -780,33 +705,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F416D4E62CDE3F530064C8E2 /* SampleAppUITest_39.swift in Sources */,
-				F416D4DF2CDE3F530064C8E2 /* SampleAppUITest_37.swift in Sources */,
 				F416D4CC2CDE3F530064C8E2 /* SampleAppUITest_3.swift in Sources */,
 				F416D4D72CDE3F530064C8E2 /* SampleAppUITest_4.swift in Sources */,
 				93642C6325FC15570055B866 /* DateExtension.swift in Sources */,
 				F416D4D12CDE3F530064C8E2 /* SampleAppUITest_13.swift in Sources */,
 				F416D4D42CDE3F530064C8E2 /* SampleAppUITest_15.swift in Sources */,
 				9318CDD525E2DDD300F1A9DE /* MyReservationsScreen.swift in Sources */,
-				F416D4C32CDE3F530064C8E2 /* SampleAppUITest_42.swift in Sources */,
-				F416D4E92CDE3F530064C8E2 /* SampleAppUITest_44.swift in Sources */,
-				F416D4EA2CDE3F530064C8E2 /* SampleAppUITest_46.swift in Sources */,
 				F416D4CA2CDE3F530064C8E2 /* SampleAppUITest_7.swift in Sources */,
-				F416D4F12CDE3F530064C8E2 /* SampleAppUITest_30.swift in Sources */,
 				F416D4D22CDE3F530064C8E2 /* SampleAppUITest_11.swift in Sources */,
 				F416D4EF2CDE3F530064C8E2 /* SampleAppUITest_5.swift in Sources */,
 				F416D4E42CDE3F530064C8E2 /* SampleAppUITest_19.swift in Sources */,
 				F416D4EB2CDE3F530064C8E2 /* SampleAppUITest_23.swift in Sources */,
 				93B27BB326015AF600A45BB9 /* PlacesStub.swift in Sources */,
 				931BAFB925DDB45700D04D00 /* RestaurantsListScreen.swift in Sources */,
-				F416D4C02CDE3F530064C8E2 /* SampleAppUITest_41.swift in Sources */,
-				F416D4DA2CDE3F530064C8E2 /* SampleAppUITest_31.swift in Sources */,
 				93642C5825FC0FAF0055B866 /* ReservationsScreen.swift in Sources */,
-				F416D4EC2CDE3F530064C8E2 /* SampleAppUITest_49.swift in Sources */,
-				F416D4C42CDE3F530064C8E2 /* SampleAppUITest_36.swift in Sources */,
 				F416D4C52CDE3F530064C8E2 /* SampleAppUITest_17.swift in Sources */,
 				931BAFBD25DDB50A00D04D00 /* RestaurantScreen.swift in Sources */,
-				F416D4E52CDE3F530064C8E2 /* SampleAppUITest_38.swift in Sources */,
 				22CC1BD22602B21D007B8402 /* (null) in Sources */,
 				F416D4E12CDE3F530064C8E2 /* SampleAppUITest_21.swift in Sources */,
 				F416D4E22CDE3F530064C8E2 /* SampleAppUITest_0.swift in Sources */,
@@ -815,35 +729,21 @@
 				F416D4C12CDE3F530064C8E2 /* SampleAppUITest_9.swift in Sources */,
 				F416D4C62CDE3F530064C8E2 /* SampleAppUITest_24.swift in Sources */,
 				F416D4D92CDE3F530064C8E2 /* SampleAppUITest_2.swift in Sources */,
-				F416D4EE2CDE3F530064C8E2 /* SampleAppUITest_25.swift in Sources */,
-				F416D4CB2CDE3F530064C8E2 /* SampleAppUITest_34.swift in Sources */,
 				931BAFB325DDB35200D04D00 /* LoginScreen.swift in Sources */,
-				F416D4DD2CDE3F530064C8E2 /* SampleAppUITest_27.swift in Sources */,
 				F416D4CE2CDE3F530064C8E2 /* SampleAppUITest_1.swift in Sources */,
 				F416D4DC2CDE3F530064C8E2 /* SampleAppUITest_16.swift in Sources */,
 				9318CDC925E2DA6A00F1A9DE /* TabBarProtocol.swift in Sources */,
-				F416D4D32CDE3F530064C8E2 /* SampleAppUITest_29.swift in Sources */,
 				F416D4D52CDE3F530064C8E2 /* SampleAppUITest_10.swift in Sources */,
-				F416D4D82CDE3F530064C8E2 /* SampleAppUITest_26.swift in Sources */,
-				F416D4D02CDE3F530064C8E2 /* SampleAppUITest_47.swift in Sources */,
 				F416D4C72CDE3F530064C8E2 /* SampleAppUITest_8.swift in Sources */,
 				F416D4E32CDE3F530064C8E2 /* SampleAppUITest_6.swift in Sources */,
 				F416D4D62CDE3F530064C8E2 /* SampleAppUITest_18.swift in Sources */,
 				F416D4E82CDE3F530064C8E2 /* SampleAppUITest_22.swift in Sources */,
 				9318CDEA25E2E8CD00F1A9DE /* BackProtocol.swift in Sources */,
 				F416D4C82CDE3F530064C8E2 /* SampleAppUITest_14.swift in Sources */,
-				F416D4DE2CDE3F530064C8E2 /* SampleAppUITest_32.swift in Sources */,
 				934A798525F6EC2C002A26A7 /* FacebookLoginScreen.swift in Sources */,
-				F416D4C22CDE3F530064C8E2 /* SampleAppUITest_45.swift in Sources */,
-				F416D4E72CDE3F530064C8E2 /* SampleAppUITest_43.swift in Sources */,
 				933B0D3325DF080300DC2058 /* BaseTest.swift in Sources */,
-				F416D4ED2CDE3F530064C8E2 /* SampleAppUITest_33.swift in Sources */,
-				F416D4E02CDE3F530064C8E2 /* SampleAppUITest_40.swift in Sources */,
-				F416D4DB2CDE3F530064C8E2 /* SampleAppUITest_35.swift in Sources */,
 				933B0D2F25DF06F400DC2058 /* BaseScreen.swift in Sources */,
-				F416D4CD2CDE3F530064C8E2 /* SampleAppUITest_28.swift in Sources */,
 				22CC1BD62602B261007B8402 /* (null) in Sources */,
-				F416D4F02CDE3F530064C8E2 /* SampleAppUITest_48.swift in Sources */,
 				A707BF132AA7112D00B1A5EB /* AuthStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -977,7 +877,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BLYD5L95G;
 				INFOPLIST_FILE = orderMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1006,7 +906,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BLYD5L95G;
 				INFOPLIST_FILE = orderMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1036,7 +936,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BLYD5L95G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1070,7 +970,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8BLYD5L95G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OrderMEUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
