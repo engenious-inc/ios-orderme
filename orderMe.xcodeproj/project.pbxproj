@@ -202,6 +202,8 @@
 		A59244652CDCE4D50084A246 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A59244672CDCEBD50084A246 /* StaticText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticText.swift; sourceTree = "<group>"; };
 		A59622362CEE524700AC0FC5 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		A5C9E0802D5B8536003B8284 /* Smoke.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Smoke.xctestplan; sourceTree = "<group>"; };
+		A5C9E0812D5B8658003B8284 /* Regression.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Regression.xctestplan; path = OrderMEUITests/TestPlans/Regression.xctestplan; sourceTree = SOURCE_ROOT; };
 		A5EF4BFD2CE6040200AA966D /* DetectTableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTableScreen.swift; sourceTree = "<group>"; };
 		A5EF4BFF2CE604AC00AA966D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		A5EF4C032CE606FB00AA966D /* WaiterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiterScreen.swift; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 				A51539B62CD11774002279D3 /* Elements */,
 				931BAFB125DDB34000D04D00 /* Screens */,
 				A51539B52CD11769002279D3 /* Tests */,
+				A5C9E07F2D5B84FE003B8284 /* TestPlans */,
 				A592445D2CDCDF010084A246 /* Extensions */,
 				A59244602CDCDF500084A246 /* Protocols */,
 				A5247EC42CF5C2BF006566F2 /* Utils */,
@@ -509,6 +512,15 @@
 				A57ACC982CEF5DCC00786DE8 /* Interactions.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A5C9E07F2D5B84FE003B8284 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				A5C9E0812D5B8658003B8284 /* Regression.xctestplan */,
+				A5C9E0802D5B8536003B8284 /* Smoke.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 		ED4E7941F9C50F3BEA03680F /* Frameworks */ = {

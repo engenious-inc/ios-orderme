@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "BD6CC61A-EB12-485D-A706-B7A9DDA5EC00",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "BaseTest",
+        "OrderMEUITests",
+        "OrderMEUITests\/testBringAMenu()",
+        "OrderMEUITests\/testCallRestaurant()",
+        "OrderMEUITests\/testLoginWithFacebook()",
+        "OrderMEUITests\/testVerifyBackNavigationFromRestaurantScreen()",
+        "OrderMEUITests\/testVerifyMyReservationsTabIsRestricted()",
+        "StubTests",
+        "StubTests\/test500ServerError()",
+        "StubTests\/testCallRestaurantStubbed()",
+        "StubTests\/testOpenRepubliqueAnalytics()",
+        "StubTests\/testPlacesError()"
+      ],
+      "target" : {
+        "containerPath" : "container:orderMe.xcodeproj",
+        "identifier" : "93A7AC6125D3713200D4BB77",
+        "name" : "OrderMEUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
