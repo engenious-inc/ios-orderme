@@ -168,6 +168,7 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		445679102D5B761E004F3F04 /* orderMe.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = orderMe.xctestplan; sourceTree = "<group>"; };
 		9318CDC825E2DA6A00F1A9DE /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
 		9318CDD425E2DDD300F1A9DE /* MyReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsScreen.swift; sourceTree = "<group>"; };
 		9318CDE925E2E8CD00F1A9DE /* BackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackProtocol.swift; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 		2B2EA7601CBB0377001507DD = {
 			isa = PBXGroup;
 			children = (
+				445679102D5B761E004F3F04 /* orderMe.xctestplan */,
 				F43D48832BDA627F002E510C /* Scripts */,
 				2B2EA76B1CBB0377001507DD /* orderMe */,
 				93A7AC6325D3713200D4BB77 /* OrderMEUITests */,
