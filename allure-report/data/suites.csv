@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13715","testExample","","","passed","","","OrderMEUITests.RecorderTests","OrderMEUITests.RecorderTests",""
+"","13685","testCallRestaurant","","","passed","","","OrderMEUITests.OrderMEUITests","OrderMEUITests.OrderMEUITests",""
+"","7698","testVerifyMyReservationsTabIsRestricted","","","passed","","","OrderMEUITests.OrderMEUITests","OrderMEUITests.OrderMEUITests",""
+"","8852","testVerifyBackNavigationFromRestaurantScreen","","","passed","","","OrderMEUITests.OrderMEUITests","OrderMEUITests.OrderMEUITests",""
+"","13388","testPhoneNumberRequired","","","passed","","","OrderMEUITests.ReservationTests","OrderMEUITests.ReservationTests",""
+"","16944","testBringAMenu","","","passed","","","OrderMEUITests.OrderMEUITests","OrderMEUITests.OrderMEUITests",""

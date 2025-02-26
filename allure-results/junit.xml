@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='OrderMEUITests.xctest' tests='12' failures='0'>
+  <testsuite name='OrderMEUITests.OrderMEUITests' tests='4' failures='0'>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testBringAMenu' time='18.133'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testCallRestaurant' time='13.619'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testVerifyBackNavigationFromRestaurantScreen' time='8.852'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testVerifyMyReservationsTabIsRestricted' time='7.698'/>
+  </testsuite>
+  <testsuite name='OrderMEUITests.RecorderTests' tests='1' failures='0'>
+    <testcase classname='OrderMEUITests.RecorderTests' name='testExample' time='13.715'/>
+  </testsuite>
+  <testsuite name='OrderMEUITests.ReservationTests' tests='1' failures='0'>
+    <testcase classname='OrderMEUITests.ReservationTests' name='testPhoneNumberRequired' time='13.388'/>
+  </testsuite>
+  <testsuite name='OrderMEUITests.OrderMEUITests' tests='4' failures='0'>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testBringAMenu' time='16.944'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testCallRestaurant' time='13.685'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testVerifyBackNavigationFromRestaurantScreen' time='8.935'/>
+    <testcase classname='OrderMEUITests.OrderMEUITests' name='testVerifyMyReservationsTabIsRestricted' time='7.704'/>
+  </testsuite>
+  <testsuite name='OrderMEUITests.RecorderTests' tests='1' failures='0'>
+    <testcase classname='OrderMEUITests.RecorderTests' name='testExample' time='13.718'/>
+  </testsuite>
+  <testsuite name='OrderMEUITests.ReservationTests' tests='1' failures='0'>
+    <testcase classname='OrderMEUITests.ReservationTests' name='testPhoneNumberRequired' time='13.455'/>
+  </testsuite>
+</testsuites>
