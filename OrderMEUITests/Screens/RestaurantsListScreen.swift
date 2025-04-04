@@ -11,6 +11,7 @@ import XCTest
 class RestaurantsListScreen: BaseScreen, TabBarProtocol {
     private lazy var republiqueRest: StaticText = element.staticTexts["Republique"].build()
     private lazy var hakkasanRest: StaticText = element.staticTexts["Hakkasan"].build()
+    private lazy var beautyAndEssexRest: StaticText = element.staticTexts["Beauty & Essex"].build()
     private lazy var allowWhileUsingAppAlert: Alert = Springboard.shared.alerts.firstMatch.buttons["Allow While Using App"].build()
     private lazy var noPlacesAlert: Alert = element.alerts["No Places"].build()
     private lazy var unexpectedServerErrorAlert: Alert = element.alerts["Unexpected server error"].build()
@@ -32,6 +33,12 @@ extension RestaurantsListScreen {
     @discardableResult
     func openHakkasanRestaurant() -> Self {
         hakkasanRest.tap()
+        return self
+    }
+
+    @discardableResult
+    func openBeautyAndEssexRestaurant() -> Self {
+        beautyAndEssexRest.tap()
         return self
     }
 
