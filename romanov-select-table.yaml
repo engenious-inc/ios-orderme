@@ -1,0 +1,15 @@
+# flow.yaml
+
+appId: com.assesment.orderme
+---
+- launchApp
+- tapOn: "Login Later"
+- scroll
+- tapOn: "Romanov"
+- tapOn: "Detect table"
+- tapOn: "Table #"
+- inputText: "4"
+- tapOn: "Select table"
+- assertVisible: "Table #4"
+
+
