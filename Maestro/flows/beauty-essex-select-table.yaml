@@ -1,0 +1,13 @@
+appId: com.assesment.orderme
+---
+- launchApp
+- tapOn:
+    id: "loginLaterButton"
+- tapOn:
+    id: "Beauty & Essex"
+- tapOn: "Detect table"
+- tapOn:
+    id: "tableNumberTextField"
+- inputText: "4"
+- tapOn: "Select table"
+- assertVisible: "Table #4"
