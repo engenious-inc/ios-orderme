@@ -1,0 +1,20 @@
+appId: com.assesment.orderme
+---
+- launchApp
+- tapOn: "Login Later"
+- scroll
+- tapOn: "Burger"
+- assertVisible: "Reservation"
+- tapOn: "Reservation"
+- assertVisible: "Book"
+- tapOn: "Phone number"
+- inputRandomNumber
+- tapOn: "Number of people"
+- inputText: "4"
+- tapOn: "Book"
+- runFlow:
+    when:
+        visible: "You did not login"
+    commands:
+        - tapOn: "Login"
+- assertVisible: "Continue with Facebook"
