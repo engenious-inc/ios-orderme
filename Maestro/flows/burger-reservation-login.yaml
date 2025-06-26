@@ -17,4 +17,4 @@ appId: com.assesment.orderme
         visible: "You did not login"
     commands:
         - tapOn: "Login"
-- assertVisible: "Continue with Facebook"
+- assertVisible: " Continue with Facebook"
