@@ -1,0 +1,11 @@
+appId: com.assesment.orderme
+---
+- assertVisible: "Reservation"
+- tapOn: "Reservation"
+- assertVisible: "Book"
+- tapOn: "Phone number"
+- inputRandomNumber
+- tapOn: "Number of people"
+- inputRandomNumber:
+    length: 1
+- tapOn: "Book"

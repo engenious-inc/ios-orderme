@@ -1,0 +1,12 @@
+appId: com.assesment.orderme
+---
+- launchApp
+- tapOn: "Login Later"
+- tapOn: "Hakkasan"
+- runFlow: ../subflows/table-reservation.yaml
+- runFlow:
+    when:
+        visible: "You did not login"
+    commands:
+        - tapOn: "Login"
+        - runFlow: ../subflows/login-screen-assertion.yaml
