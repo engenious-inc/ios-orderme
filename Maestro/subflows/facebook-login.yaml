@@ -1,0 +1,27 @@
+appId: com.assesment.orderme
+---
+- launchApp:
+    appId: "com.assesment.orderme"
+    clearState: true
+- tapOn:  " Continue with Facebook"
+- tapOn: "Continue"
+- runFlow:
+    when:
+        visible: "Mobile number or email address"
+    commands:
+        - tapOn: "Mobile number or email address"
+        - inputText: "zkpedymhza_1614299001@tfbnw.net"
+        - tapOn: "Password"
+        - inputText: "orderme12345"
+        - tapOn: "Log in"
+- runFlow:
+    when:
+        visible: "Save your login info?"
+    commands:
+        - tapOn: "Save"
+- runFlow:
+    when:
+        visible: "You previously logged in to OrderMe with Facebook."
+    commands:
+        - tapOn: "Continue as Tom"
+- assertVisible: "Home"
