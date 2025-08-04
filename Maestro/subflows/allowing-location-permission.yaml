@@ -1,0 +1,12 @@
+appId: com.assesment.orderme
+---
+- launchApp:
+    permissions:
+      location: unset
+- tapOn: "Login Later"
+- runFlow:
+    when:
+        visible: "App needs locations services"
+    commands:
+        - tapOn: "Allow Once"
+- assertVisible: "Home"
