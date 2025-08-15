@@ -1,0 +1,4 @@
+includeTags:
+  - tag1
+excludeTags:
+  - tag2

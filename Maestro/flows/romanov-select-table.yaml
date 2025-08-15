@@ -1,4 +1,6 @@
 appId: com.assesment.orderme
+tags:
+    - tag1
 ---
 - launchApp
 - tapOn: "Login Later"

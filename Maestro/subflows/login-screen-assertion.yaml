@@ -1,4 +1,6 @@
 appId: com.assesment.orderme
+tags:
+    - subflow
 ---
 - assertVisible: " Continue with Facebook"
 - assertVisible: "Login Later"
