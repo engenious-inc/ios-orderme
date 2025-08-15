@@ -1,0 +1,32 @@
+appId: com.assesment.orderme
+tags:
+    - dev
+---
+- launchApp:
+    clearState: true
+- runFlow: ../subflows/login-screen-assertion.yaml
+- runFlow: ../subflows/facebook-login.yaml
+- tapOn: "Republique"
+- runFlow: ../subflows/table-reservation.yaml
+- assertVisible: "Success!"
+- assertVisible: "Your table was successfully booked"
+- tapOn: "OK"
+- tapOn: "arrow back"
+- tapOn: "My reservations"
+- tapOn: "Home"
+- assertVisible: "Republique"
+- assertVisible: "Detect table"
+- tapOn: "Detect table"
+- tapOn: "Table #"
+- inputText: "4"
+- tapOn: "Select table"
+- assertVisible: "Table #4"
+- tapOn: "Menu"
+- tapOn: "Lasagna"
+- assertVisible: "TOURNEDOS"
+- tapOn: "bt plus"
+- tapOn: "Bucket"
+- assertVisible: "Accept"
+- tapOn: "Accept"
+- assertVisible: "Success!"
+- assertVisible: "Your order was successfully sent to the kitchen"
