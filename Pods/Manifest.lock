@@ -50,7 +50,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - AlamofireImage
     - Crashlytics
@@ -80,6 +80,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
 
-PODFILE CHECKSUM: 33b34c824b575ec39896df0c166d8f4e4094a069
+PODFILE CHECKSUM: 5ba9ed4b946709e7a1e8b888bf5e53152ece678a
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.16.2
