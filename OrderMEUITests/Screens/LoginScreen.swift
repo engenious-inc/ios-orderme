@@ -9,14 +9,13 @@
 import Foundation
 import XCTest
 
-class LoginScreen{
-    
+class LoginScreen {
+
     static let app = XCUIApplication()
     
     private let loginLaterButton: XCUIElement = app.buttons["Login Later"]
     
-    func loginLater(){
+    func loginLater() {
         loginLaterButton.tap()
-    }
-    
+    }    
 }

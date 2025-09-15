@@ -7,10 +7,10 @@
 //
 
 import Foundation
-
 import XCTest
 
 class DetectTableScreen {
+
     private static let app = XCUIApplication()
     
     private let textField = app.textFields["tableNumberTextField"]
@@ -24,6 +24,4 @@ class DetectTableScreen {
     func select() {
         selectButton.tap()
     }
-    
-    
 }

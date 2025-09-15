@@ -51,7 +51,7 @@ public class Place: Mappable {
 
 // Mark :  Equatable
 extension Place: Equatable {
-    public static func ==(lhs: Place, rhs: Place) -> Bool {
+    public static func == (lhs: Place, rhs: Place) -> Bool {
         return lhs.id == rhs.id
     }
 }

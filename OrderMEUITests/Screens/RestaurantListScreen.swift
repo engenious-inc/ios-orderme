@@ -9,6 +9,7 @@
 import XCTest
 
 class RestaurantListScreen {
+
     private static let app = XCUIApplication()
     
     private let republiqueRestaurant = app.tables.staticTexts["Republique"]

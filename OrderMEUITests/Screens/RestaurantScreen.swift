@@ -9,6 +9,7 @@
 import XCTest
 
 class RestaurantScreen {
+
     private static let app = XCUIApplication()
     
     private let detectTableOption = app.collectionViews.staticTexts["Detect table"]
