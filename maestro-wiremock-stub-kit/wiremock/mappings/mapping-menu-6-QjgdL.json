@@ -1,0 +1,19 @@
+{
+  "id" : "3fd8ada1-ee1e-3000-82c5-2124f9d4e379",
+  "request" : {
+    "url" : "/menu/6",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-menu-6-QjgdL.json",
+    "headers" : {
+      "Keep-Alive" : "timeout=5",
+      "ETag" : "W/\"820-W8Bu8vKPErMdFf5wOu8abtuJukY\"",
+      "Date" : "Fri, 26 Sep 2025 11:11:02 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "X-Powered-By" : "Express"
+    }
+  },
+  "uuid" : "3fd8ada1-ee1e-3000-82c5-2124f9d4e379"
+}

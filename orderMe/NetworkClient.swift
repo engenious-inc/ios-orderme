@@ -41,7 +41,18 @@ var analyticsHost = HostURL.digitalOcean
 
 class NetworkClient {
     
-    static let baseURL = defaultHost.baseURL
+    static var baseURL: String {
+        let ud = UserDefaults.standard.string(forKey: "BASE_URL") ?? ""
+        let args = ProcessInfo.processInfo.arguments
+        let env = ProcessInfo.processInfo.environment["BASE_URL"] ?? ""
+
+        let picked = !ud.isEmpty ? ud :
+                     (args.firstIndex(of: "BASE_URL").flatMap { i in
+                         (i + 1 < args.count) ? args[i + 1] : nil
+                     } ?? "") != "" ? args[args.firstIndex(of: "BASE_URL")! + 1] :
+                     (!env.isEmpty ? env : defaultHost.baseURL)
+        return picked
+    }
     static let dateFormatter = DateFormatter() // for converting Dates to string
     
     // general request to the API, each function here will use this one
@@ -417,8 +428,8 @@ class NetworkClient {
             "Accept": "application/json",
             ]
         
-        let url = (analyticsHost.analyticsURL + "/analytics") as URLConvertible
-        
+        let url = (NetworkClient.baseURL + "/analytics") as URLConvertible
+
         print("➡️ ANALYTICS: \(action.rawValue) \(info ?? "") ")
         
         let params = [

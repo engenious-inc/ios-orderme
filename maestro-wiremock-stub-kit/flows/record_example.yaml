@@ -1,0 +1,34 @@
+appId: ${APP_ID}
+name: "Record with WireMock"
+env:
+  WIREMOCK_BASE: ${WIREMOCK_BASE}
+  # Пример: https://api.example.com (используется только информативно в шагах)
+  REAL_API_BASE: ${REAL_API_BASE}
+
+onFlowStart:
+  # Можно пинговать WireMock и чистить request journal (необязательно)
+  - runScript:
+      file: ../scripts/wiremock_admin.js
+      env:
+        ACTION: "resetRequests"
+        WIREMOCK_BASE: ${WIREMOCK_BASE}
+
+---
+- launchApp:
+    clearState: true
+    arguments:
+      # Передаём базовый URL прямо в приложение
+      BASE_URL: ${WIREMOCK_BASE}
+      IS_E2E: true
+
+# Далее идут ваши UI-шага для получения/создания данных
+# - tapOn: "Login"
+# - inputText: "user@example.com"
+# ...
+
+- runScript:
+    file: ../scripts/wiremock_admin.js
+    env:
+      ACTION: "assertRequests"
+      WIREMOCK_BASE: ${WIREMOCK_BASE}
+      MIN_COUNT: "1"

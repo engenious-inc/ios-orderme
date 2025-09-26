@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  wiremock-record:
+    image: wiremock/wiremock:latest
+    container_name: maestro_wiremock_record
+    ports:
+      - "8080:8080"
+    environment:
+      # Важное: проксируем ВСЕ запросы на реальный API и просим писать маппинги
+      WIREMOCK_OPTIONS: >-
+        --verbose
+        --disable-gzip
+        --global-response-templating
+        --record-mappings
+        --proxy-all=${REAL_API_BASE}
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+      - ./wiremock/__files:/home/wiremock/__files
+    # healthcheck для удобства
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/__admin/mappings"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+
+  wiremock-playback:
+    image: wiremock/wiremock:latest
+    container_name: maestro_wiremock_playback
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings:ro
+      - ./wiremock/__files:/home/wiremock/__files:ro
+    environment:
+      WIREMOCK_OPTIONS: >-
+        --verbose
+        --disable-gzip
+        --global-response-templating
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/__admin/mappings"]
+      interval: 2s
+      timeout: 2s
+      retries: 30

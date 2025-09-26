@@ -1,0 +1,19 @@
+{
+  "id" : "fe9ab2dc-01b1-35db-b60d-1363d9c417b9",
+  "request" : {
+    "url" : "/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-(root)-7yMQI.txt",
+    "headers" : {
+      "Keep-Alive" : "timeout=5",
+      "ETag" : "W/\"c-Lve95gjOVATpfV8EL5X4nxwjKHE\"",
+      "Date" : "Fri, 26 Sep 2025 09:38:16 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "X-Powered-By" : "Express"
+    }
+  },
+  "uuid" : "fe9ab2dc-01b1-35db-b60d-1363d9c417b9"
+}

@@ -1,0 +1,6 @@
+<!-- DEBUG-only: разрешить HTTP для localhost/эмулятора -->
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</dict>

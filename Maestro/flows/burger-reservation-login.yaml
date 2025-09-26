@@ -1,6 +1,11 @@
 appId: com.assesment.orderme
+# (env можно оставить для скриптов, но это НЕ влияет на приложение)
 ---
-- launchApp
+- launchApp:
+    clearState: true
+    arguments:
+      BASE_URL: http://127.0.0.1:8080   # или 8081, если менял порт в compose
+      IS_E2E: true                      # опционально, если используешь флаги
 - tapOn: "Login Later"
 - scroll
 - tapOn: "Burger"

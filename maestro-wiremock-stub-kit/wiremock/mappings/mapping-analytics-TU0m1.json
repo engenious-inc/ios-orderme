@@ -1,0 +1,24 @@
+{
+  "id" : "7dacd3b0-94ed-3080-b7c3-ff91c592bcd8",
+  "request" : {
+    "url" : "/analytics",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"info\":\"\",\"action\":\"loginLaterTapped\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-analytics-TU0m1.json",
+    "headers" : {
+      "Keep-Alive" : "timeout=5",
+      "ETag" : "W/\"18-YFqoBQb8zyVvu6bak9QMn2tkrxY\"",
+      "Date" : "Fri, 26 Sep 2025 11:10:59 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "X-Powered-By" : "Express"
+    }
+  },
+  "uuid" : "7dacd3b0-94ed-3080-b7c3-ff91c592bcd8"
+}
