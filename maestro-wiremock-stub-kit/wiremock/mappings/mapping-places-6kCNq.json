@@ -1,19 +1,19 @@
 {
-  "id" : "b9623907-d2d5-3aaf-a66d-fdf8abb92ebe",
+  "id" : "ff70fec3-9c86-35a4-8dc1-f2bee1832535",
   "request" : {
     "url" : "/places",
     "method" : "GET"
   },
   "response" : {
     "status" : 200,
-    "bodyFileName" : "body-places-lC8zH.json",
+    "bodyFileName" : "body-places-6kCNq.json",
     "headers" : {
       "Keep-Alive" : "timeout=5",
       "ETag" : "W/\"59f-0pHDiqNSB/jvYbirpAqgCZn5t7I\"",
-      "Date" : "Fri, 26 Sep 2025 11:10:59 GMT",
+      "Date" : "Thu, 02 Oct 2025 09:38:19 GMT",
       "Content-Type" : "application/json; charset=utf-8",
       "X-Powered-By" : "Express"
     }
   },
-  "uuid" : "b9623907-d2d5-3aaf-a66d-fdf8abb92ebe"
+  "uuid" : "ff70fec3-9c86-35a4-8dc1-f2bee1832535"
 }

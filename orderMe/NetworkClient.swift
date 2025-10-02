@@ -54,7 +54,21 @@ class NetworkClient {
         return picked
     }
     static let dateFormatter = DateFormatter() // for converting Dates to string
-    
+
+    private static func normalizeURL(_ url: String) -> String {
+        let lower = url.lowercased()
+        if lower.hasPrefix("http://") || lower.hasPrefix("https://") {
+            return url
+        }
+        var base = NetworkClient.baseURL
+        if base.hasSuffix("/") && url.hasPrefix("/") {
+            base.removeLast()
+        } else if !base.hasSuffix("/") && !url.hasPrefix("/") {
+            base += "/"
+        }
+        return base + url
+    }
+
     // general request to the API, each function here will use this one
     static func send(api: String, method: HTTPMethod, parameters: Parameters?, token: String, completion: @escaping (_ result: String?, _ error: NSError?)->()) -> Void {
         
@@ -105,7 +119,7 @@ class NetworkClient {
     
     
     static func downloadImage(url : String, completion: @escaping (_ image: UIImage? , _ error: NSError?) -> () ) {
-        AF.request(url).responseImage { (response) -> Void in
+        AF.request(normalizeURL(url)).responseImage { (response) -> Void in
             guard let image = response.value else {
                 completion(nil, response.error as NSError?)
                 return

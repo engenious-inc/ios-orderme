@@ -4,10 +4,6 @@ import re, json, os, sys, glob
 
 MAPPINGS_DIR = sys.argv[1] if len(sys.argv) > 1 else "./wiremock/mappings"
 
-# Простая нормализация динамических значений
-# - заменяем ISO8601 даты на плейсхолдер
-# - удаляем header'ы типа Date, Set-Cookie и т.п.
-
 HEADER_BLACKLIST = {"Date", "date", "Set-Cookie", "set-cookie", "Server", "server", "Expires", "expires"}
 ISO_DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z")
 

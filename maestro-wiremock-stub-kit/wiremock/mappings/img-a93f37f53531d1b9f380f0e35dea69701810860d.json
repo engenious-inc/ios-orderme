@@ -1,0 +1,13 @@
+{
+  "request": {
+    "url": "/assets/a93f37f53531d1b9f380f0e35dea69701810860d.jpg",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "image/jpeg"
+    },
+    "bodyFileName": "assets/a93f37f53531d1b9f380f0e35dea69701810860d.jpg"
+  }
+}
