@@ -22,8 +22,8 @@ def download(url: str) -> (bytes, str):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", required=True, help="папка wiremock")
-    ap.add_argument("--placeholder", help="png/jpg на случай нескачанных картинок")
+    ap.add_argument("--base", required=True, help="wiremock folder")
+    ap.add_argument("--placeholder", help="png/jpg")
     args = ap.parse_args()
 
     files_dir = os.path.join(args.base, "__files")
@@ -37,7 +37,6 @@ def main():
             placeholder_data = f.read()
         placeholder_ext = "png" if args.placeholder.lower().endswith(".png") else "jpg"
 
-    # Собираем все json-файлы с телами ответов
     body_files = [os.path.join(files_dir, f) for f in os.listdir(files_dir) if f.endswith(".json")]
 
     url_to_local = {}
@@ -52,12 +51,10 @@ def main():
             url = m.group(2)
             if url in url_to_local:
                 return f'"{key}":"{url_to_local[url]}"'
-            # качаем
             try:
                 data, ext = download(url)
             except Exception:
                 if placeholder_data is None:
-                    # если нет плейсхолдера — оставляем как есть
                     return m.group(0)
                 data, ext = placeholder_data, placeholder_ext
             h = sha1(data)
