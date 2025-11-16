@@ -40,6 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                           open: url,
                                                           options: options)
         }
+        if let base = UserDefaults.standard.string(forKey: "BASE_URL"), !base.isEmpty {
+            defaultHost = .localhost(base)
+            analyticsHost = .localhost(base)
+        }
         return false
     }
     
