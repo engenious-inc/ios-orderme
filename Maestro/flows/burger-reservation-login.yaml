@@ -13,6 +13,7 @@ tags:
 - inputRandomNumber
 - tapOn: "Number of people"
 - inputText: "4"
+- tapOn: "Pick a date"
 - tapOn: "Book"
 - runFlow:
     when:
