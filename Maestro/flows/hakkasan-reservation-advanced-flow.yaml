@@ -1,8 +1,7 @@
 appId: com.assesment.orderme
-tags:
-    - tag2
+onFlowStart:
+  - runFlow: ../helpers/_bootstrap.yaml
 ---
-- launchApp
 - tapOn: "Login Later"
 - tapOn: "Hakkasan"
 - runFlow: ../subflows/table-reservation.yaml

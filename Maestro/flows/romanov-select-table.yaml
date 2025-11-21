@@ -1,8 +1,7 @@
 appId: com.assesment.orderme
-tags:
-    - tag1
+onFlowStart:
+  - runFlow: ../helpers/_bootstrap.yaml
 ---
-- launchApp
 - tapOn: "Login Later"
 - scroll
 - tapOn: "Romanov"
