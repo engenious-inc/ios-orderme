@@ -1,0 +1,15 @@
+appId: com.example.orderme
+---
+- launchApp:
+    clearState: true
+    arguments:
+      BASE_URL: http://127.0.0.1:8080
+      IS_E2E: true
+- tapOn: "Login Later"
+- assertVisible:
+    text: "Restaurants"
+- assertVisible: "Romanov"
+- tapOn: "Romanov"
+- assertVisible: "Burger"
+- tapOn: "Burger"
+- assertVisible: "Ocean Seafood"
