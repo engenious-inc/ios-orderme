@@ -7,6 +7,7 @@
 
 ## User settings
 xcuserdata/
+orderMe.xcworkspace/xcuserdata/*
 
 orderMe.xcworkspace/xcuserdata/*
 Pods/Pods.xcodeproj/xcuserdata/*

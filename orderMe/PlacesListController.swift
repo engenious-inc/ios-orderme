@@ -107,6 +107,11 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
     fileprivate func getPlaces() {
         NetworkClient.getPlaces { (placesOpt, error) in
             if let error = error {
+                let alert = UIAlertController(title: "Unexpected server error",
+                                              message: "Please contact app support",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(error.localizedDescription)
                 return
             }
@@ -116,6 +121,13 @@ class PlacesListController: UIViewController, CLLocationManagerDelegate {
             self.places = places
             SingletonStore.sharedInstance.allplaces = self.places
             self.tableView.reloadData()
+            if places.isEmpty {
+                let alert = UIAlertController(title: "No Places",
+                                              message: "There are no restaurants in your area",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             NetworkClient.analytics(action: .placesListShown, info: "\(places.count) places")
         }
     }
