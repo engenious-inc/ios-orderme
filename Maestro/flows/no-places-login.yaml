@@ -1,0 +1,7 @@
+appId: com.assesment.orderme
+onFlowStart:
+  - runFlow: ../helpers/_bootstrap.yaml
+---
+- tapOn: "Login Later"
+- assertVisible: "No Places"
+- assertVisible: "There are no restaurants in your area"
