@@ -1,0 +1,8 @@
+appId: com.assesment.orderme
+onFlowStart:
+  - runFlow: ../helpers/_bootstrap.yaml
+---
+- tapOn: "Login Later"
+- assertVisible: "Unexpected server error"
+- assertVisible: "Please contact app support"
+- assertVisible: "OK"
