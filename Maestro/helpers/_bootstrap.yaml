@@ -2,6 +2,7 @@ appId: com.assesment.orderme
 ---
 - launchApp:
     clearState: true
-    arguments:
-      BASE_URL: http://127.0.0.1:8080
-      IS_E2E: true
+# Turned off while not using maestro stub-recorder
+#    arguments:
+#      BASE_URL: http://127.0.0.1:8080
+#      IS_E2E: true

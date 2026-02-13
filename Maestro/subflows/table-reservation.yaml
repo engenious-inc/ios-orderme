@@ -8,4 +8,5 @@ appId: com.assesment.orderme
 - tapOn: "Number of people"
 - inputRandomNumber:
     length: 1
+- tapOn: "Pick a date"
 - tapOn: "Book"
