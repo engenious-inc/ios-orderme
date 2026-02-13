@@ -1,0 +1,27 @@
+appId: com.assesment.orderme
+onFlowStart:
+  - runFlow: ../helpers/_bootstrap.yaml
+---
+- runFlow: ../subflows/_load_elements.yaml
+
+- tapOn: ${output.login.loginLater}
+- scroll
+- tapOn: ${output.restaurants.burger}
+
+- assertVisible: ${output.reservation.reservationTab}
+- tapOn: ${output.reservation.reservationTab}
+- assertVisible: ${output.reservation.book}
+- tapOn: ${output.reservation.phoneNumber}
+- inputRandomNumber
+- tapOn: ${output.reservation.numberOfPeople}
+- inputText: "4"
+- tapOn: ${output.reservation.pickDate}
+- tapOn: ${output.reservation.book}
+
+- runFlow:
+    when:
+      visible: "You did not login"
+    commands:
+      - tapOn: ${output.login.loginButton}
+
+- assertVisible: ${output.login.continueWithFacebook}

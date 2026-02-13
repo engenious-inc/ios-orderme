@@ -1,0 +1,3 @@
+output.restaurants = {
+  burger: "Burger"
+};

@@ -1,0 +1,5 @@
+appId: com.assesment.orderme
+---
+- runScript: ../elements/login.js
+- runScript: ../elements/restaurants.js
+- runScript: ../elements/reservation.js
