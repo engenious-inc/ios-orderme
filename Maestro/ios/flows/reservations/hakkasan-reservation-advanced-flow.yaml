@@ -1,10 +1,15 @@
 appId: com.assesment.orderme
+env:
+  restaurantName: ${restaurantName || "Hakkasan"}
 onFlowStart:
   - runFlow: ../../helpers/_bootstrap.yaml
 ---
 - tapOn: "Login Later"
-- tapOn: "Hakkasan"
-- runFlow: ../../subflows/screens/table-reservation.yaml
+- tapOn: ${restaurantName}
+- runFlow:
+    file: ../../subflows/screens/table-reservation.yaml
+    env:
+      restaurantName: ${restaurantName}
 - runFlow:
     when:
         visible: "You did not login"
