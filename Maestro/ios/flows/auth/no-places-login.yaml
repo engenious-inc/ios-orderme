@@ -1,6 +1,6 @@
 appId: com.assesment.orderme
 onFlowStart:
-  - runFlow: ../helpers/_bootstrap.yaml
+  - runFlow: ../../helpers/_bootstrap.yaml
 ---
 - tapOn: "Login Later"
 - assertVisible: "No Places"

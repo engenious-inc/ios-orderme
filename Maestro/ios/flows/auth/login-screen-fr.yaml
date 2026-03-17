@@ -1,0 +1,12 @@
+appId: com.assesment.orderme
+tags:
+  - localization
+  - french
+onFlowStart:
+  - runFlow: ../../helpers/_bootstrap.yaml
+---
+- runFlow:
+    file: ../../subflows/screens/login-screen-assertion.yaml
+    env:
+      loginLaterLabel: "Se connecter plus tard"
+

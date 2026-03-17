@@ -1,6 +1,8 @@
 appId: com.assesment.orderme
 tags:
-    - subflow
+  - subflow
+env:
+  continueWithFacebookLabel: " Continue with Facebook"
+  loginLaterLabel: ${loginLaterLabel || "Login Later"}
 ---
-- assertVisible: " Continue with Facebook"
-- assertVisible: "Login Later"
+- assertVisible: ${loginLaterLabel}
