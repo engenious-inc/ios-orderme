@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginLaterButton.setTitle(NSLocalizedString("login_later_button_title", comment: "Login Later button on login screen"), for: .normal)
         loginToFacebook.accessibilityIdentifier = AccessibilityIdentifiers.LoginScreen.loginToFacebook
         loginLaterButton.accessibilityIdentifier = AccessibilityIdentifiers.LoginScreen.loginLaterButton
     }
