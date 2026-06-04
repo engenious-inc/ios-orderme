@@ -1,0 +1,12 @@
+appId: com.assesment.orderme
+env:
+  categoryName: ${categoryName || "Lasagna"}
+  dishName: ${dishName || "TOURNEDOS"}
+---
+- tapOn: "Menu"
+- tapOn: ${categoryName}
+- assertVisible: ${dishName}
+- tapOn:
+    id: "plusButton"
+- tapOn:
+    id: "bucketButton"

@@ -1,0 +1,33 @@
+appId: com.assesment.orderme
+tags:
+  - dev
+  - guest
+env:
+  restaurantName: ${restaurantName || "Republique"}
+  categoryName: ${categoryName || "Lasagna"}
+  dishName: ${dishName || "TOURNEDOS"}
+  tableNumber: ${tableNumber || "4"}
+onFlowStart:
+  - runFlow: ../../helpers/_bootstrap.yaml
+---
+- runFlow: ../../subflows/screens/login-later.yaml
+
+- assertVisible: ${restaurantName}
+- tapOn: ${restaurantName}
+
+- runFlow:
+    file: ../../subflows/screens/detect-table.yaml
+    env:
+      tableNumber: ${tableNumber}
+
+- runFlow:
+    file: ../../subflows/screens/add-dish-to-bucket.yaml
+    env:
+      categoryName: ${categoryName}
+      dishName: ${dishName}
+
+- tapOn:
+    id: "acceptButton"
+
+- assertVisible: "You did not login"
+- assertNotVisible: "Success!"

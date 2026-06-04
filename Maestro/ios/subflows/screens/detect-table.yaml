@@ -1,0 +1,10 @@
+appId: com.assesment.orderme
+env:
+  tableNumber: ${tableNumber || "4"}
+---
+- tapOn: "Detect table"
+- tapOn:
+    id: "tableNumberTextField"
+- inputText: ${tableNumber}
+- tapOn: "Select table"
+- assertVisible: "Table #${tableNumber}"
