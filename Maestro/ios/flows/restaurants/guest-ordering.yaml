@@ -1,0 +1,44 @@
+appId: com.assesment.orderme
+tags:
+  - dev
+  - guest
+  - ordering
+env:
+  restaurantName: ${restaurantName || "Republique"}
+  categoryName: ${categoryName || "Lasagna"}
+  dishName: ${dishName || "TOURNEDOS"}
+  tableNumber: ${tableNumber || "4"}
+onFlowStart:
+  - runFlow: ../../helpers/_bootstrap.yaml
+---
+- runFlow: ../../subflows/screens/login-later.yaml
+
+- runFlow:
+    when:
+      visible: "App needs locations services"
+    commands:
+      - tapOn: "Allow Once"
+
+- assertVisible: ${restaurantName}
+- tapOn: ${restaurantName}
+
+- runFlow:
+    file: ../../subflows/screens/detect-table.yaml
+    env:
+      tableNumber: ${tableNumber}
+
+- runFlow:
+    file: ../../subflows/screens/add-dish-to-bucket.yaml
+    env:
+      categoryName: ${categoryName}
+      dishName: ${dishName}
+
+- assertVisible: "Accept"
+- tapOn:
+    id: "acceptButton"
+
+- assertVisible: "You did not login"
+- assertVisible: "You need to login for reservations"
+- assertVisible: "Login"
+- assertVisible: "Cancel"
+- assertNotVisible: "Success!"
