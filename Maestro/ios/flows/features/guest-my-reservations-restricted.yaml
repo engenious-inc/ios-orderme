@@ -1,0 +1,34 @@
+appId: com.assesment.orderme
+tags:
+  - dev
+  - guest
+  - reservations
+env:
+  restaurantName: ${restaurantName || "Republique"}
+  myReservationsTab: ${myReservationsTab || "My reservations"}
+  loginAlertTitle: ${loginAlertTitle || "You did not login"}
+  loginAlertMessage: ${loginAlertMessage || "You need to login for viewing your orders"}
+onFlowStart:
+  - runFlow: ../../helpers/_bootstrap.yaml
+---
+- runFlow: ../../subflows/screens/login-later.yaml
+
+- runFlow:
+    when:
+      visible: "App needs locations services"
+    commands:
+      - tapOn: "Allow Once"
+
+- assertVisible: ${restaurantName}
+
+- tapOn: ${myReservationsTab}
+
+- assertVisible: ${loginAlertTitle}
+- assertVisible: ${loginAlertMessage}
+- assertVisible: "Login"
+- assertVisible: "Cancel"
+
+- tapOn: "Cancel"
+
+- assertVisible: ${restaurantName}
+- assertNotVisible: ${loginAlertTitle}
