@@ -2,3 +2,5 @@ Pods/Pods.xcodeproj/xcuserdata/*
 orderMe.xcodeproj/xcuserdata/*
 orderMe.xcworkspace/xcuserdata/*
 **/.DS_Store
+xcuserdata/
+.DS_Store

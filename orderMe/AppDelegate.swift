@@ -10,7 +10,6 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import FBSDKShareKit
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

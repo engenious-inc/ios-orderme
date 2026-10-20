@@ -1,5 +1,5 @@
 source 'https://cdn.cocoapods.org/'
-platform :ios, '12.0'
+platform :ios, '15.0'
 
 use_frameworks!
 
@@ -12,8 +12,6 @@ target "orderMe" do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-  pod 'Fabric'
-  pod 'Crashlytics'
   pod 'SwiftLint'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
@@ -23,10 +21,8 @@ target "orderMe" do
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        # Force CocoaPods targets to always build for x86_64
-        config.build_settings['ARCHS[sdk=iphonesimulator*]'] = 'x86_64'
-        # Force Deployment Target for all pods to at least 12.0
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+        # Force Deployment Target for all pods to at least 15.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       end
     end
   end

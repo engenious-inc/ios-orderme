@@ -2,9 +2,6 @@ PODS:
   - Alamofire (4.9.1)
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
-  - Crashlytics (3.14.0):
-    - Fabric (~> 1.10.2)
-  - Fabric (1.10.2)
   - FacebookCore (0.9.0):
     - FBSDKCoreKit (~> 5.0)
   - FacebookLogin (0.9.0):
@@ -37,8 +34,6 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - Crashlytics
-  - Fabric
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -53,8 +48,6 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
-    - Crashlytics
-    - Fabric
     - FacebookCore
     - FacebookLogin
     - FacebookShare
@@ -68,8 +61,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
-  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
-  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
   FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
   FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
@@ -80,6 +71,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
 
-PODFILE CHECKSUM: 5ba9ed4b946709e7a1e8b888bf5e53152ece678a
+PODFILE CHECKSUM: 6ba125fcc40fd18ade140f5bfc65c7844a738a53
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.17.0
